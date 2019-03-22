@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     float posX = 0;
     float posZ = 0;
 
-    [SerializeField] Camera _cam;
+    [SerializeField] float CLAMP_ANGLE_Y = 30f;
 
     // Start is called before the first frame update
     void Start()
@@ -44,13 +44,8 @@ public class PlayerController : MonoBehaviour
         rotX += Input.GetAxis("Mouse X") * _mouseSensivity * Time.deltaTime;
         rotY += Input.GetAxis("Mouse Y") * _mouseSensivity * Time.deltaTime;
         //rotX = Mathf.Clamp(rotX, -80f, 80f);
-        rotY = Mathf.Clamp(rotY, -10f, 10f);
+        rotY = Mathf.Clamp(rotY, -CLAMP_ANGLE_Y, CLAMP_ANGLE_Y);
 
         transform.rotation = Quaternion.Euler(-rotY, rotX, 0f);
-    }
-
-    void OnGUI()
-    {
-        GUI.Box(new Rect(Screen.width / 2, Screen.height / 2, 10, 10), "");
     }
 }
