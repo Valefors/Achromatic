@@ -14,6 +14,23 @@ public class PlayerController : MonoBehaviour
     float posZ = 0;
 
     [SerializeField] float CLAMP_ANGLE_Y = 30f;
+    public Transform spawnPosition;
+
+    bool _isManipulating = false;
+
+    #region Singleton
+    public static PlayerController instance {
+        get { return _instance; }
+    }
+
+    static PlayerController _instance;
+
+    private void Awake()
+    {
+        if (_instance == null) _instance = this;
+        else Debug.LogError("AN INSTANCE ALREADY EXISTS");
+    }
+    #endregion
 
     // Start is called before the first frame update
     void Start()
@@ -29,8 +46,27 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CameraRotation();
-        Move();
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (!CrossHair.instance.isDetecting) return;
+
+            CrossHair.instance.SetManipulationMode();
+            _isManipulating = true;
+        }
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            if (!_isManipulating) return;
+
+            _isManipulating = false;
+            CrossHair.instance.SetNormalMode();
+        }
+
+        if (!_isManipulating)
+        {
+            CameraRotation();
+            Move();
+        }
     }
 
     void Move()
@@ -43,7 +79,6 @@ public class PlayerController : MonoBehaviour
     {
         rotX += Input.GetAxis("Mouse X") * _mouseSensivity * Time.deltaTime;
         rotY += Input.GetAxis("Mouse Y") * _mouseSensivity * Time.deltaTime;
-        //rotX = Mathf.Clamp(rotX, -80f, 80f);
         rotY = Mathf.Clamp(rotY, -CLAMP_ANGLE_Y, CLAMP_ANGLE_Y);
 
         transform.rotation = Quaternion.Euler(-rotY, rotX, 0f);

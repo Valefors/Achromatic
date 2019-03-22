@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class rotateObject : MonoBehaviour
 {
-    [SerializeField] float _rotateSpeed = 20;
+    [SerializeField] float _rotateSpeed = 200;
 
     // Start is called before the first frame update
     private void OnMouseDrag()
@@ -19,11 +19,5 @@ public class rotateObject : MonoBehaviour
     public void ResetPosition()
     {
         transform.rotation = Quaternion.identity;
-    }
-
-    private void Update()
-    {
-        //float nexPos = 5 * Time.deltaTime;
-        //transform.position = new Vector3(0, 0, transform.position.z - nexPos);
     }
 }

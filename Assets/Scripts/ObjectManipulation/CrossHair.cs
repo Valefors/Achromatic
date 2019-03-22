@@ -6,13 +6,17 @@ using UnityEngine.UI;
 
 public class CrossHair : MonoBehaviour
 {
-    Interactable _selectedObject = null;
+    public Interactable selectedObject = null;
     [SerializeField] Text _objectSelectedText;
 
     Image _imageComponent;
     [SerializeField] Sprite _normalSprite;
     [SerializeField] Sprite _hooverSprite;
 
+    public bool isDetecting = false;
+    bool _isManipulating = false;
+
+    #region Singleton
     public static CrossHair instance {
         get { return _instance; }
     }
@@ -24,6 +28,7 @@ public class CrossHair : MonoBehaviour
         if (_instance == null) _instance = this;
         else Debug.LogError("AN INSTANCE ALREADY EXISTS");
     }
+    #endregion
 
     private void Start()
     {
@@ -42,7 +47,7 @@ public class CrossHair : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ObjectDetection();
+        if(!_isManipulating) ObjectDetection();
     }
 
     void ObjectDetection()
@@ -54,19 +59,20 @@ public class CrossHair : MonoBehaviour
         {
             if (rayHit.collider.gameObject.GetComponent<Interactable>() == null)
             {
-                if (_selectedObject != null) SetObjectNormal();
+                if (selectedObject != null) SetObjectNormal();
 
                 _imageComponent.sprite = _normalSprite;
                 _objectSelectedText.text = "";
+                isDetecting = false;
 
                 return;
             }
 
-            if (_selectedObject == null) SetHooverObject(rayHit.collider.gameObject.GetComponent<Interactable>());
+            if (selectedObject == null) SetHooverObject(rayHit.collider.gameObject.GetComponent<Interactable>());
 
-            if (rayHit.collider.gameObject != _selectedObject.gameObject)
+            if (rayHit.collider.gameObject != selectedObject.gameObject)
             {
-                _selectedObject.SetModeNormal();
+                selectedObject.SetModeNormal();
                 SetHooverObject(rayHit.collider.gameObject.GetComponent<Interactable>());
             }      
         }
@@ -74,16 +80,41 @@ public class CrossHair : MonoBehaviour
 
     void SetHooverObject(Interactable pObject)
     {
-        _selectedObject = pObject;
-        _selectedObject.SetModeHoover();
+        selectedObject = pObject;
+        selectedObject.SetModeHoover();
 
         _imageComponent.sprite = _hooverSprite;
         _objectSelectedText.text = pObject.transform.name;
+        isDetecting = true;
     }
 
     void SetObjectNormal()
     {
-        _selectedObject.SetModeNormal();
-        _selectedObject = null;
+        selectedObject.SetModeNormal();
+        selectedObject = null;
+        isDetecting = false;
+    }
+
+    public void SetManipulationMode()
+    {
+        _isManipulating = true;
+
+        selectedObject.SetManipulationMode();
+
+        isDetecting = false;
+        _imageComponent.sprite = _normalSprite;
+        _objectSelectedText.text = "";
+
+        _imageComponent.enabled = false;
+    }
+
+    public void SetNormalMode()
+    {
+        _isManipulating = false;
+        selectedObject.SetModeNormal();
+
+        selectedObject = null;
+
+        _imageComponent.enabled = true;
     }
 }
