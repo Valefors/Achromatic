@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 9218682592036419188}
   - component: {fileID: 9132350578323974908}
   - component: {fileID: 9132350578323974909}
-  - component: {fileID: 9132350578323974906}
   - component: {fileID: 1216506298093729}
+  - component: {fileID: 8872018433425717810}
   m_Layer: 0
   m_Name: waterbottle
   m_TagString: Untagged
@@ -134,18 +134,6 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
---- !u!114 &9132350578323974906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9131314397261137758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1216506298093729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,3 +147,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotateSpeed: 200
+--- !u!114 &8872018433425717810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9131314397261137758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de751f6eab6f52c4aa2517fcbb56dcd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

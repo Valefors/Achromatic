@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 5631172519038840577}
   - component: {fileID: 5703608277672936103}
   - component: {fileID: 5653891916884103952}
-  - component: {fileID: 5653891916884103954}
   - component: {fileID: 5653891916884103955}
   - component: {fileID: 1123692439323575}
+  - component: {fileID: 7263146493954569330}
   m_Layer: 0
   m_Name: battery
   m_TagString: Untagged
@@ -115,18 +115,6 @@ CapsuleCollider:
   m_Height: 0.29166785
   m_Direction: 1
   m_Center: {x: -0, y: 0.010838434, z: 0}
---- !u!114 &5653891916884103954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5653518640951074595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5653891916884103955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,3 +146,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotateSpeed: 200
+--- !u!114 &7263146493954569330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5653518640951074595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de751f6eab6f52c4aa2517fcbb56dcd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -4,21 +4,19 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
-    Outline _outline;
-    bool _isManipulate = false;
-    Vector3 _originalPosition;
+    protected Outline _outline;
 
-    private void Start()
+    void Start()
     {
-        _outline = GetComponent<Outline>();
-        _originalPosition = transform.position;
-
-        SetModeNormal();
+        Init();
+        //EventManager.StartListening(EventManager.MANIPULATION_EVENT, SetManipulationMode);
     }
 
-    private void Update()
+    protected virtual void Init()
     {
-        if (_isManipulate) ManipulationMode();
+        _outline = GetComponent<Outline>();
+        if (_outline == null) Debug.LogError("NO OUTLINE SCRIPT IN " + this);
+        SetModeNormal();
     }
 
     public void SetModeHoover()
@@ -26,22 +24,14 @@ public class Interactable : MonoBehaviour
         _outline.enabled = true;
     }
 
-    public void SetModeNormal()
+    public virtual void SetModeNormal()
     {
-        transform.position = _originalPosition;
-        transform.rotation = Quaternion.identity;
-
         _outline.enabled = false;
-        _isManipulate = false;
     }
 
-    public void SetManipulationMode()
+    public virtual void SetInteractionMode()
     {
-        _isManipulate = true;
+
     }
 
-    void ManipulationMode()
-    {
-        transform.position = PlayerController.instance.spawnPosition.position;
-    }
 }

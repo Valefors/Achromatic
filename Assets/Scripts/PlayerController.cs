@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float CLAMP_ANGLE_Y = 30f;
     public Transform spawnPosition;
 
-    bool _isManipulating = false;
+    public bool _isManipulating = false;
 
     #region Singleton
     public static PlayerController instance {
@@ -36,6 +36,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         CursorLock();
+        EventManager.StartListening(EventManager.MANIPULATION_EVENT, Manipulation);
+        EventManager.StartListening(EventManager.END_MANIPULATION_EVENT, SetModeNormal);
     }
 
     void CursorLock()
@@ -49,17 +51,16 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             if (!CrossHair.instance.isDetecting) return;
-
-            CrossHair.instance.SetManipulationMode();
-            _isManipulating = true;
+            CrossHair.instance.OnClick();
+            //CrossHair.instance.SetManipulationMode();
         }
 
         if (Input.GetMouseButtonDown(1))
         {
             if (!_isManipulating) return;
 
-            _isManipulating = false;
-            CrossHair.instance.SetNormalMode();
+            EventManager.TriggerEvent(EventManager.END_MANIPULATION_EVENT);
+            //CrossHair.instance.SetNormalMode();
         }
 
         if (!_isManipulating)
@@ -82,5 +83,15 @@ public class PlayerController : MonoBehaviour
         rotY = Mathf.Clamp(rotY, -CLAMP_ANGLE_Y, CLAMP_ANGLE_Y);
 
         transform.rotation = Quaternion.Euler(-rotY, rotX, 0f);
+    }
+
+    void Manipulation()
+    {
+        _isManipulating = true;
+    }
+
+    void SetModeNormal()
+    {
+        _isManipulating = false;
     }
 }

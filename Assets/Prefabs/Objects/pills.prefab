@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 5612538794051994385}
   - component: {fileID: 5540880438840377279}
   - component: {fileID: 5599873218777585989}
-  - component: {fileID: 5599873218777585987}
   - component: {fileID: 5599873218777585986}
   - component: {fileID: 1985339655191694}
+  - component: {fileID: 6998170989212237688}
   m_Layer: 0
   m_Name: pills
   m_TagString: Untagged
@@ -115,18 +115,6 @@ CapsuleCollider:
   m_Height: 0.302796
   m_Direction: 1
   m_Center: {x: 0, y: 0.0143500045, z: 0}
---- !u!114 &5599873218777585987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5598452222772476299}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5599873218777585986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,3 +146,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotateSpeed: 200
+--- !u!114 &6998170989212237688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5598452222772476299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de751f6eab6f52c4aa2517fcbb56dcd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
