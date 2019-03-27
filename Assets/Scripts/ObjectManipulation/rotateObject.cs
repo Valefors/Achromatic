@@ -4,20 +4,23 @@ using UnityEngine;
 
 public class rotateObject : MonoBehaviour
 {
-    [SerializeField] float _rotateSpeed = 200;
+    [SerializeField] float minX = -360.0f;
+    [SerializeField] float maxX = 360.0f;
 
-    // Start is called before the first frame update
-    private void OnMouseDrag()
+    [SerializeField] float minY = -180.0f;
+    [SerializeField] float maxY = 180.0f;
+
+    [SerializeField] float sensX = 500.0f;
+    [SerializeField] float sensY = 500.0f;
+
+    [SerializeField] float rotationY = 0.0f;
+    [SerializeField] float rotationX = 0.0f;
+
+    void OnMouseDrag()
     {
-        float rotX = Input.GetAxis("Mouse X") * _rotateSpeed * Mathf.Deg2Rad;
-        float rotY = Input.GetAxis("Mouse Y") * _rotateSpeed * Mathf.Deg2Rad;
-
-        transform.Rotate(Vector3.up, -rotX, Space.World);
-        transform.Rotate(Vector3.right, rotY, Space.World);
-    }
-
-    public void ResetPosition()
-    {
-        transform.rotation = Quaternion.identity;
+        rotationX += Input.GetAxis("Mouse X") * sensX * Time.deltaTime;
+        rotationY += Input.GetAxis("Mouse Y") * sensY * Time.deltaTime;
+        rotationY = Mathf.Clamp(rotationY, minY, maxY);
+        transform.localEulerAngles = new Vector3(-rotationY, -rotationX, 0);
     }
 }
