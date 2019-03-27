@@ -396,9 +396,9 @@ GameObject:
   - component: {fileID: 3595351823366303831}
   - component: {fileID: 3505726650683381965}
   - component: {fileID: 3599590042826292515}
-  - component: {fileID: 3599590042826292541}
   - component: {fileID: 3599590042826292540}
   - component: {fileID: 1124578667890118}
+  - component: {fileID: 82062781226005528}
   m_Layer: 0
   m_Name: matchbox
   m_TagString: Untagged
@@ -458,18 +458,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.43813872, y: 0.083176136, z: 0.2462542}
   m_Center: {x: -0.05149901, y: 0.032211065, z: 0.00056517124}
---- !u!114 &3599590042826292541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3600538699675275657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &3599590042826292540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -501,6 +489,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotateSpeed: 200
+--- !u!114 &82062781226005528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3600538699675275657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de751f6eab6f52c4aa2517fcbb56dcd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3600626845904616809
 GameObject:
   m_ObjectHideFlags: 0

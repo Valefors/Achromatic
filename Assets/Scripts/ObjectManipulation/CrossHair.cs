@@ -34,6 +34,9 @@ public class CrossHair : MonoBehaviour
     {
         _imageComponent = GetComponent<Image>();
         _objectSelectedText.text = "";
+
+        EventManager.StartListening(EventManager.MANIPULATION_EVENT, SetManipulationMode);
+        EventManager.StartListening(EventManager.END_MANIPULATION_EVENT, SetNormalMode);
         Check();
     }
 
@@ -50,13 +53,34 @@ public class CrossHair : MonoBehaviour
         if(!_isManipulating) ObjectDetection();
     }
 
+    public void OnClick()
+    {
+        if(selectedObject.GetComponent<InteractableProps>()) EventManager.TriggerEvent(EventManager.MANIPULATION_EVENT);
+        selectedObject.SetInteractionMode();
+    }
+
     void ObjectDetection()
     {
         RaycastHit rayHit;
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Debug.DrawLine(ray.origin, Camera.main.transform.forward * 50000000, Color.red);
 
-        if(Physics.Raycast(ray,out rayHit, 500))
+        if (Physics.Raycast(ray,out rayHit, 50000000))
         {
+            if (rayHit.collider.gameObject.GetComponent<Interactable>())
+            {
+                if (selectedObject == null) selectedObject = rayHit.collider.gameObject.GetComponent<Interactable>();
+
+                if (rayHit.collider.gameObject != selectedObject.gameObject)
+                {
+                    selectedObject.SetModeNormal();
+                    selectedObject = rayHit.collider.gameObject.GetComponent<Interactable>();
+
+                }
+
+                SetHoover();
+            }
+
             if (rayHit.collider.gameObject.GetComponent<Interactable>() == null)
             {
                 if (selectedObject != null) SetObjectNormal();
@@ -67,24 +91,16 @@ public class CrossHair : MonoBehaviour
 
                 return;
             }
-
-            if (selectedObject == null) SetHooverObject(rayHit.collider.gameObject.GetComponent<Interactable>());
-
-            if (rayHit.collider.gameObject != selectedObject.gameObject)
-            {
-                selectedObject.SetModeNormal();
-                SetHooverObject(rayHit.collider.gameObject.GetComponent<Interactable>());
-            }      
         }
     }
 
-    void SetHooverObject(Interactable pObject)
+    void SetHoover()
     {
-        selectedObject = pObject;
         selectedObject.SetModeHoover();
 
         _imageComponent.sprite = _hooverSprite;
-        _objectSelectedText.text = pObject.transform.name;
+        _objectSelectedText.text = selectedObject.transform.name;
+
         isDetecting = true;
     }
 
@@ -92,19 +108,15 @@ public class CrossHair : MonoBehaviour
     {
         selectedObject.SetModeNormal();
         selectedObject = null;
-        isDetecting = false;
     }
 
     public void SetManipulationMode()
     {
         _isManipulating = true;
-
-        selectedObject.SetManipulationMode();
-
         isDetecting = false;
+
         _imageComponent.sprite = _normalSprite;
         _objectSelectedText.text = "";
-
         _imageComponent.enabled = false;
     }
 

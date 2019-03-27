@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 9159127413776474254}
   - component: {fileID: 9087374488406593726}
   - component: {fileID: 9173505320085903071}
-  - component: {fileID: 9173505320085903069}
   - component: {fileID: 9173505320085903070}
   - component: {fileID: 1275267697881216}
+  - component: {fileID: 2581068463259673069}
   m_Layer: 0
   m_Name: flashlight
   m_TagString: Untagged
@@ -116,18 +116,6 @@ CapsuleCollider:
   m_Height: 1.0101799
   m_Direction: 1
   m_Center: {x: -0.0011013336, y: 0.49125093, z: 0}
---- !u!114 &9173505320085903069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9172233360468549524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &9173505320085903070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,3 +147,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotateSpeed: 200
+--- !u!114 &2581068463259673069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9172233360468549524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de751f6eab6f52c4aa2517fcbb56dcd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
