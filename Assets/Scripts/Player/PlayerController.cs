@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     public Transform spawnPosition;
 
     public bool _isManipulating = false;
+    public bool _withObject = false;
 
     #region Singleton
     public static PlayerController instance {
@@ -36,8 +37,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         CursorLock();
-        EventManager.StartListening(EventManager.MANIPULATION_EVENT, Manipulation);
-        EventManager.StartListening(EventManager.END_MANIPULATION_EVENT, SetModeNormal);
+        EventManager.StartListening(EventManager.START_HOLDING_EVENT, Manipulation);
+        EventManager.StartListening(EventManager.END_HOLDING_EVENT, SetModeNormal);
     }
 
     void CursorLock()
@@ -50,23 +51,30 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if (!CrossHair.instance.isDetecting) return;
-            CrossHair.instance.OnClick();
-            //CrossHair.instance.SetManipulationMode();
+            if (!_withObject)
+            {
+                if (!CrossHair.instance.isDetecting) return; //Check if we can take an object
+                CrossHair.instance.OnClick();
+            }
+
+            else EventManager.TriggerEvent(EventManager.END_HOLDING_EVENT);
         }
 
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButton(1))
         {
-            if (!_isManipulating) return;
-
+            _isManipulating = true;
+            EventManager.TriggerEvent(EventManager.MANIPULATION_EVENT);
+        }
+        else
+        {
+            _isManipulating = false;
             EventManager.TriggerEvent(EventManager.END_MANIPULATION_EVENT);
-            //CrossHair.instance.SetNormalMode();
         }
 
         if (!_isManipulating)
         {
-            CameraRotation();
             Move();
+            CameraRotation();
         }
     }
 
@@ -85,13 +93,25 @@ public class PlayerController : MonoBehaviour
         transform.rotation = Quaternion.Euler(-rotY, rotX, 0f);
     }
 
+    void SetModeInteraction()
+    {
+        _withObject = true;
+    }
+
     void Manipulation()
     {
+        _withObject = true;
         _isManipulating = true;
     }
 
     void SetModeNormal()
     {
-        _isManipulating = false;
+        _withObject = false;
+    }
+
+    private void OnDestroy()
+    {
+        EventManager.StopListening(EventManager.START_HOLDING_EVENT, Manipulation);
+        EventManager.StopListening(EventManager.END_HOLDING_EVENT, SetModeNormal);
     }
 }

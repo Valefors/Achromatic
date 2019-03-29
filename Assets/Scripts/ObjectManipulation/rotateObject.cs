@@ -16,11 +16,26 @@ public class rotateObject : MonoBehaviour
     [SerializeField] float rotationY = 0.0f;
     [SerializeField] float rotationX = 0.0f;
 
-    void OnMouseDrag()
+    bool _isManipulating = false;
+
+    void Update()
     {
+        if (!_isManipulating) return;
+
         rotationX += Input.GetAxis("Mouse X") * sensX * Time.deltaTime;
         rotationY += Input.GetAxis("Mouse Y") * sensY * Time.deltaTime;
         rotationY = Mathf.Clamp(rotationY, minY, maxY);
         transform.localEulerAngles = new Vector3(-rotationY, -rotationX, 0);
     }
+
+    public void SetManipulationMode()
+    {
+        _isManipulating = true;
+    }
+
+    public void SetNormalMode()
+    {
+        _isManipulating = false;
+    }
+
 }

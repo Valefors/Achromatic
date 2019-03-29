@@ -35,8 +35,8 @@ public class CrossHair : MonoBehaviour
         _imageComponent = GetComponent<Image>();
         _objectSelectedText.text = "";
 
-        EventManager.StartListening(EventManager.MANIPULATION_EVENT, SetManipulationMode);
-        EventManager.StartListening(EventManager.END_MANIPULATION_EVENT, SetNormalMode);
+        EventManager.StartListening(EventManager.START_HOLDING_EVENT, SetHoldingMode);
+        EventManager.StartListening(EventManager.END_HOLDING_EVENT, SetNormalMode);
         Check();
     }
 
@@ -55,7 +55,7 @@ public class CrossHair : MonoBehaviour
 
     public void OnClick()
     {
-        if(selectedObject.GetComponent<InteractableProps>()) EventManager.TriggerEvent(EventManager.MANIPULATION_EVENT);
+        if(selectedObject.GetComponent<InteractableProps>()) EventManager.TriggerEvent(EventManager.START_HOLDING_EVENT);
         selectedObject.SetInteractionMode();
     }
 
@@ -110,7 +110,7 @@ public class CrossHair : MonoBehaviour
         selectedObject = null;
     }
 
-    public void SetManipulationMode()
+    public void SetHoldingMode()
     {
         _isManipulating = true;
         isDetecting = false;
@@ -128,5 +128,11 @@ public class CrossHair : MonoBehaviour
         selectedObject = null;
 
         _imageComponent.enabled = true;
+    }
+
+    private void OnDestroy()
+    {
+        EventManager.StopListening(EventManager.MANIPULATION_EVENT, SetHoldingMode);
+        EventManager.StopListening(EventManager.END_HOLDING_EVENT, SetNormalMode);
     }
 }

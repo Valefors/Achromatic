@@ -9,7 +9,6 @@ public class Interactable : MonoBehaviour
     void Start()
     {
         Init();
-        //EventManager.StartListening(EventManager.MANIPULATION_EVENT, SetManipulationMode);
     }
 
     protected virtual void Init()
