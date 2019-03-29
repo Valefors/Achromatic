@@ -7,6 +7,8 @@ public class EventManager : MonoBehaviour
 {
     public static string MANIPULATION_EVENT = "manipulation";
     public static string END_MANIPULATION_EVENT = "end_manipulation";
+    public static string START_HOLDING_EVENT = "start_holding";
+    public static string END_HOLDING_EVENT = "end_holding";
 
     private Dictionary<string, UnityEvent> eventDictionary;
 
