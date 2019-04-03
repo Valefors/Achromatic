@@ -50,5 +50,9 @@ sysinfo.txt
 *.apk
 *.unitypackage
 
+# Wwise settings
+/[Aa]ssets/WwiseSettings.xml
+
+
 # Crashlytics generated file
 crashlytics-build.properties
