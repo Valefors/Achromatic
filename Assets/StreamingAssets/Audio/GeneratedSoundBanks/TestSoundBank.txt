@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3157003241	test			\Default Work Unit\test	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	576890552	Tonnerre	C:\Users\Pc\Documents\ENJMIN\ProjetM1\Achromatic\AchromaticWwise\.cache\Windows\SFX\Tonnerre_10C4C929.wem		\Actor-Mixer Hierarchy\TestWorkUnit\New Blend Container\Tonnerre		10755960
+
