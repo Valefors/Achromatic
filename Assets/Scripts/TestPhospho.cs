@@ -22,6 +22,7 @@ public class TestPhospho : MonoBehaviour
             _textPhospho.SetActive(true);
             _lightPlayer.SetActive(true);
             ChangeLightSettings();
+            //AkSoundEngine.PostEvent("test", gameObject);
         }
 
         if (Input.GetKeyDown(KeyCode.R))
