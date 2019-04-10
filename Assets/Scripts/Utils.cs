@@ -12,5 +12,7 @@ public static class Utils
     public static string RIGHT_CLICK_ACTION = "RightClick";
 
     //Interaction possible
-    public static string ROTATING_OBJECT_INTERACTION = "TAKE";
+    public static string ROTATING_OBJECT_INTERACTION = "EXAMINE";
+    public static string MOVABLE_OBJECT_INTERACTION = "TAKE";
+    public static string PUT_INTERACTION = "PUT";
 }

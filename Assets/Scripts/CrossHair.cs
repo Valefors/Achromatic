@@ -7,7 +7,6 @@ using UnityEngine.UI;
 
 public class CrossHair : MonoBehaviour
 {
-    //public Interactable selectedObject = null;
     [SerializeField] Text _objectSelectedText;
     [SerializeField] Text _objectInteractionText;
 
@@ -15,8 +14,6 @@ public class CrossHair : MonoBehaviour
     [SerializeField] Sprite _normalSprite;
     [SerializeField] Sprite _hooverSprite;
 
-    /*public bool isDetecting = false;
-    bool _isManipulating = false;*/
     private Player _player; // The Rewired Player
     bool _rightClick = false;
     bool _leftClick = false;
@@ -45,8 +42,6 @@ public class CrossHair : MonoBehaviour
         _objectSelectedText.text = "";
         _objectInteractionText.text = "";
 
-        //EventManager.StartListening(EventManager.START_HOLDING_EVENT, SetHoldingMode);
-        //EventManager.StartListening(EventManager.END_HOLDING_EVENT, SetNormalMode);
         Check();
     }
 
@@ -61,7 +56,6 @@ public class CrossHair : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if(!_isManipulating) ObjectDetection();
         GetInput();
         ProcessInput();
         ObjectDetection();
@@ -79,12 +73,10 @@ public class CrossHair : MonoBehaviour
         {
             if (_lookedObject == null) return;
 
-            if(_lookedObject.GetComponent<RotatingInteractable>())
-            _lookedObject = null;
-            HideCursor();
-
             EventParam e = new EventParam();
-            
+            e.lookedObject = _lookedObject;
+            _lookedObject = null;
+
             EventManager.TriggerEvent(EventManager.CLICK_ON_OBJECT_EVENT, e);
         }
     }
@@ -137,7 +129,7 @@ public class CrossHair : MonoBehaviour
         EventManager.TriggerEvent(EventManager.END_HOOVER_EVENT, e);
     }
 
-    void HideCursor()
+    public void HideCursor()
     {
         _imageComponent.sprite = _normalSprite;
         _imageComponent.gameObject.SetActive(false);
@@ -145,7 +137,6 @@ public class CrossHair : MonoBehaviour
         _objectInteractionText.text = "";
         _objectSelectedText.gameObject.SetActive(false);
         _objectInteractionText.gameObject.SetActive(false);
-        print("reé");
     }
 
     public void ShowCursor()
@@ -153,88 +144,5 @@ public class CrossHair : MonoBehaviour
         _imageComponent.gameObject.SetActive(true);
         _objectSelectedText.gameObject.SetActive(true);
         _objectInteractionText.gameObject.SetActive(true);
-    }
-
-    /*public void OnClick()
-    {
-        if(selectedObject.GetComponent<InteractableProps>()) EventManager.TriggerEvent(EventManager.START_HOLDING_EVENT);
-        selectedObject.SetInteractionMode();
-    }*/
-
-    /*void ObjectDetection()
-    {
-        RaycastHit rayHit;
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        Debug.DrawLine(ray.origin, Camera.main.transform.forward * 50000000, Color.red);
-
-        if (Physics.Raycast(ray,out rayHit, 50000000))
-        {
-            if (rayHit.collider.gameObject.GetComponent<Interactable>())
-            {
-                if (selectedObject == null) selectedObject = rayHit.collider.gameObject.GetComponent<Interactable>();
-
-                if (rayHit.collider.gameObject != selectedObject.gameObject)
-                {
-                    selectedObject.SetModeNormal();
-                    selectedObject = rayHit.collider.gameObject.GetComponent<Interactable>();
-
-                }
-
-                SetHoover();
-            }
-
-            if (rayHit.collider.gameObject.GetComponent<Interactable>() == null)
-            {
-                if (selectedObject != null) SetObjectNormal();
-
-                _imageComponent.sprite = _normalSprite;
-                _objectSelectedText.text = "";
-                isDetecting = false;
-
-                return;
-            }
-        }
-    }
-
-    void SetHoover()
-    {
-        selectedObject.SetModeHoover();
-
-        _imageComponent.sprite = _hooverSprite;
-        _objectSelectedText.text = selectedObject.transform.name;
-
-        isDetecting = true;
-    }
-
-    void SetObjectNormal()
-    {
-        selectedObject.SetModeNormal();
-        selectedObject = null;
-    }
-
-    public void SetHoldingMode()
-    {
-        _isManipulating = true;
-        isDetecting = false;
-
-        _imageComponent.sprite = _normalSprite;
-        _objectSelectedText.text = "";
-        _imageComponent.enabled = false;
-    }
-
-    public void SetNormalMode()
-    {
-        _isManipulating = false;
-        selectedObject.SetModeNormal();
-
-        selectedObject = null;
-
-        _imageComponent.enabled = true;
-    }*/
-
-    private void OnDestroy()
-    {
-        //EventManager.StopListening(EventManager.MANIPULATION_EVENT, SetHoldingMode);
-        //EventManager.StopListening(EventManager.END_HOLDING_EVENT, SetNormalMode);
     }
 }
