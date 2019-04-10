@@ -16,8 +16,8 @@ public class InteractableProps : Interactable
         _originalPosition = transform.position;
         _roScript = GetComponent<rotateObject>();
 
-        EventManager.StartListening(EventManager.MANIPULATION_EVENT, SetManipulationMode);
-        EventManager.StartListening(EventManager.END_MANIPULATION_EVENT, SetEndManipulationMode);
+        //EventManager.StartListening(EventManager.MANIPULATION_EVENT, SetManipulationMode);
+        //EventManager.StartListening(EventManager.END_MANIPULATION_EVENT, SetEndManipulationMode);
 
         Init();
     }
@@ -28,7 +28,7 @@ public class InteractableProps : Interactable
         if (_isHolding) HoldingnMode();
     }
 
-    public override void SetModeNormal()
+    /*public override void SetModeNormal()
     {
         base.SetModeNormal();
 
@@ -37,7 +37,7 @@ public class InteractableProps : Interactable
         _roScript.SetNormalMode();
 
         _isHolding = false;
-    }
+    }*/
 
     void SetManipulationMode()
     {
@@ -49,11 +49,11 @@ public class InteractableProps : Interactable
         if (_isHolding) _roScript.SetNormalMode();
     }
 
-    public override void SetInteractionMode()
+    /*public override void SetInteractionMode()
     {
         base.SetInteractionMode();
         _isHolding = true;
-    }
+    }*/
 
     void HoldingnMode()
     {
@@ -62,7 +62,8 @@ public class InteractableProps : Interactable
 
     private void OnDestroy()
     {
-        EventManager.StopListening(EventManager.MANIPULATION_EVENT, SetManipulationMode);
-        EventManager.StopListening(EventManager.END_MANIPULATION_EVENT, SetEndManipulationMode);
+        Destroy();
+        //EventManager.StopListening(EventManager.MANIPULATION_EVENT, SetManipulationMode);
+        //EventManager.StopListening(EventManager.END_MANIPULATION_EVENT, SetEndManipulationMode);
     }
 }

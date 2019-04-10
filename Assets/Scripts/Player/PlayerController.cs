@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Rewired;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,6 +20,8 @@ public class PlayerController : MonoBehaviour
     public bool _isManipulating = false;
     public bool _withObject = false;
 
+    private Player player; // The Rewired Player
+
     #region Singleton
     public static PlayerController instance {
         get { return _instance; }
@@ -30,15 +33,17 @@ public class PlayerController : MonoBehaviour
     {
         if (_instance == null) _instance = this;
         else Debug.LogError("AN INSTANCE ALREADY EXISTS");
+
+        player = ReInput.players.GetPlayer(0);
     }
     #endregion
 
     // Start is called before the first frame update
     void Start()
     {
-        CursorLock();
-        EventManager.StartListening(EventManager.START_HOLDING_EVENT, Manipulation);
-        EventManager.StartListening(EventManager.END_HOLDING_EVENT, SetModeNormal);
+        //CursorLock();
+        //EventManager.StartListening(EventManager.START_HOLDING_EVENT, Manipulation);
+        //EventManager.StartListening(EventManager.END_HOLDING_EVENT, SetModeNormal);
     }
 
     void CursorLock()
@@ -47,7 +52,7 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
@@ -74,14 +79,16 @@ public class PlayerController : MonoBehaviour
         if (!_isManipulating)
         {
             Move();
-            CameraRotation();
+            //CameraRotation();
         }
-    }
+    }*/
 
     void Move()
     {
-        transform.position += transform.forward * Time.deltaTime * _speed * Input.GetAxis("Vertical");
-        transform.position += transform.right * Time.deltaTime * _speed * Input.GetAxis("Horizontal");
+        //transform.position += transform.forward * Time.deltaTime * _speed * Input.GetAxis("Vertical");
+        //transform.position += transform.right * Time.deltaTime * _speed * Input.GetAxis("Horizontal");
+        transform.position += transform.forward * Time.deltaTime * _speed * player.GetAxis("MoveVertical");
+        transform.position += transform.right * Time.deltaTime * _speed * player.GetAxis("MoveHorizontal");
     }
 
     void CameraRotation()
@@ -111,7 +118,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnDestroy()
     {
-        EventManager.StopListening(EventManager.START_HOLDING_EVENT, Manipulation);
-        EventManager.StopListening(EventManager.END_HOLDING_EVENT, SetModeNormal);
+        //EventManager.StopListening(EventManager.START_HOLDING_EVENT, Manipulation);
+        //EventManager.StopListening(EventManager.END_HOLDING_EVENT, SetModeNormal);
     }
 }

@@ -167,8 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c2b9610f7f89ac449c3af9568b73aef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedObject: {fileID: 0}
   _objectSelectedText: {fileID: 665608063}
+  _objectInteractionText: {fileID: 0}
   _normalSprite: {fileID: 21300000, guid: 721711b09d2ff3c4d97bbcfd16e0e75d, type: 3}
   _hooverSprite: {fileID: 21300000, guid: 4883a958d47aad545b52d4473b5d6fe1, type: 3}
-  isDetecting: 0

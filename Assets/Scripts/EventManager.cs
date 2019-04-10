@@ -1,16 +1,15 @@
-﻿using UnityEngine;
-using UnityEngine.Events;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 
 public class EventManager : MonoBehaviour
 {
-    public static string MANIPULATION_EVENT = "manipulation";
-    public static string END_MANIPULATION_EVENT = "end_manipulation";
-    public static string START_HOLDING_EVENT = "start_holding";
-    public static string END_HOLDING_EVENT = "end_holding";
+    public static string HOOVER_EVENT = "HooverEvent";
+    public static string END_HOOVER_EVENT = "EndHooverEvent";
+    public static string CLICK_ON_OBJECT_EVENT = "ClickOnObjectEvent";
 
-    private Dictionary<string, UnityEvent> eventDictionary;
+    private Dictionary<string, Action<EventParam>> eventDictionary;
 
     private static EventManager eventManager;
 
@@ -29,7 +28,6 @@ public class EventManager : MonoBehaviour
                     eventManager.Init();
                 }
             }
-
             return eventManager;
         }
     }
@@ -38,41 +36,73 @@ public class EventManager : MonoBehaviour
     {
         if (eventDictionary == null)
         {
-            eventDictionary = new Dictionary<string, UnityEvent>();
+            eventDictionary = new Dictionary<string, Action<EventParam>>();
         }
     }
 
-    public static void StartListening(string eventName, UnityAction listener)
+    public static void StartListening(string eventName, Action<EventParam> listener)
     {
-        UnityEvent thisEvent = null;
+        Action<EventParam> thisEvent;
         if (instance.eventDictionary.TryGetValue(eventName, out thisEvent))
         {
-            thisEvent.AddListener(listener);
+            //Add more event to the existing one
+            thisEvent += listener;
+
+            //Update the Dictionary
+            instance.eventDictionary[eventName] = thisEvent;
         }
         else
         {
-            thisEvent = new UnityEvent();
-            thisEvent.AddListener(listener);
+            //Add event to the Dictionary for the first time
+            thisEvent += listener;
             instance.eventDictionary.Add(eventName, thisEvent);
         }
     }
 
-    public static void StopListening(string eventName, UnityAction listener)
+    public static void StopListening(string eventName, Action<EventParam> listener)
     {
         if (eventManager == null) return;
-        UnityEvent thisEvent = null;
+        Action<EventParam> thisEvent;
         if (instance.eventDictionary.TryGetValue(eventName, out thisEvent))
         {
-            thisEvent.RemoveListener(listener);
+            //Remove event from the existing one
+            thisEvent -= listener;
+
+            //Update the Dictionary
+            instance.eventDictionary[eventName] = thisEvent;
         }
     }
 
-    public static void TriggerEvent(string eventName)
+    public static void TriggerEvent(string eventName, EventParam eventParam)
     {
-        UnityEvent thisEvent = null;
+        Action<EventParam> thisEvent = null;
         if (instance.eventDictionary.TryGetValue(eventName, out thisEvent))
         {
-            thisEvent.Invoke();
+            thisEvent.Invoke(eventParam);
+            // OR USE  instance.eventDictionary[eventName](eventParam);
         }
     }
 }
+
+//Re-usable structure/ Can be a class to. Add all parameters you need inside it
+public class EventParam
+{
+    /*public string param1;
+    public int param2;
+    public float param3;
+    public bool param4;*/
+    //TO-DO REVOIR EVENT MANAGER
+    public Interactable lookedObject;
+}
+
+/*public class DetectionEvent : EventParam
+{
+    public Interactable objectDetected;
+
+    public DetectionEvent(Interactable pObject)
+    {
+        objectDetected = pObject;
+    }
+}*/
+
+
