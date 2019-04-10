@@ -34,15 +34,18 @@ public class MovableInteractable : Interactable
             PutObject();
             return;
         }
+
         if (!_isHoover) return;
 
         SetModeHolding();
-        _putLocation.gameObject.SetActive(true);
+        
     }
 
     void SetModeHolding()
     {
         _isHolding = true;
+        _putLocation.gameObject.SetActive(true);
+        CrossHair.instance.SetHoldingMode();
     }
 
     void HoldingMode()
@@ -55,5 +58,6 @@ public class MovableInteractable : Interactable
         transform.position = _putLocation.transform.position;
         _isHolding = false;
         _putLocation.gameObject.SetActive(false);
+        CrossHair.instance.SetReleaseMode();
     }
 }

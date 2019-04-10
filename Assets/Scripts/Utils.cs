@@ -15,4 +15,5 @@ public static class Utils
     public static string ROTATING_OBJECT_INTERACTION = "EXAMINE";
     public static string MOVABLE_OBJECT_INTERACTION = "TAKE";
     public static string PUT_INTERACTION = "PUT";
+    public static string OTHER_HOLDING_INTERACTION = "You already have an object in hand!";
 }

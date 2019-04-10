@@ -18,6 +18,8 @@ public class CrossHair : MonoBehaviour
     bool _rightClick = false;
     bool _leftClick = false;
 
+    bool _isHolding = false;
+
     Interactable _lookedObject;
 
     #region Singleton
@@ -72,6 +74,12 @@ public class CrossHair : MonoBehaviour
         if (_leftClick)
         {
             if (_lookedObject == null) return;
+
+            if(!_lookedObject.GetComponent<PutInteractable>() && _isHolding)
+            {
+                _objectInteractionText.text = Utils.OTHER_HOLDING_INTERACTION;
+                return;
+            }
 
             EventParam e = new EventParam();
             e.lookedObject = _lookedObject;
@@ -144,5 +152,15 @@ public class CrossHair : MonoBehaviour
         _imageComponent.gameObject.SetActive(true);
         _objectSelectedText.gameObject.SetActive(true);
         _objectInteractionText.gameObject.SetActive(true);
+    }
+
+    public void SetHoldingMode()
+    {
+        _isHolding = true;
+    }
+
+    public void SetReleaseMode()
+    {
+        _isHolding = false;
     }
 }
