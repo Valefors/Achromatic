@@ -41,8 +41,6 @@ public class RotatingInteractable : Interactable
 
     void ProcessInput()
     {
-        
-
         if (_rightClick) _roScript.SetManipulationMode();
         else _roScript.SetNormalMode();
 
@@ -56,13 +54,14 @@ public class RotatingInteractable : Interactable
     public override void SetInteractionMode(EventParam e)
     {
         if (!_isHoover) return;
-        HoldingMode();
+        ManipulationMode();
     }
 
-    void HoldingMode()
+    void ManipulationMode()
     {
-        transform.position = PlayerControls.instance.spawnPosition.position;
-        PlayerControls.instance.isHolding = true;
+        transform.position = PlayerControls.instance.manipulationPosition.position;
+        PlayerControls.instance.isManipulating = true;
+        CrossHair.instance.HideCursor();
 
         _isManipulate = true;
     }
@@ -76,7 +75,7 @@ public class RotatingInteractable : Interactable
         _isManipulate = false;
         _isFirstClick = false;
 
-        PlayerControls.instance.isHolding = false;
+        PlayerControls.instance.isManipulating = false;
         CrossHair.instance.ShowCursor();
     }
 }

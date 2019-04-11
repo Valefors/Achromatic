@@ -17,8 +17,12 @@ public class PlayerControls : MonoBehaviour
     private float _mouseSensivity = 250.0f;
     [SerializeField] float CLAMP_ANGLE_Y = 30f;
 
-    public Transform spawnPosition;
-    public bool isHolding = false;
+    //Position for rotating objects
+    public Transform manipulationPosition;
+    [HideInInspector] public bool isManipulating = false;
+
+    //Position for movable objects
+    public Transform holdingPoint;
 
     #region Singleton
     public static PlayerControls instance {
@@ -74,7 +78,7 @@ public class PlayerControls : MonoBehaviour
 
         else CursorLock();
 
-        if (isHolding) return;
+        if (isManipulating) return;
 
         if (_moveVector.x != 0.0f || _moveVector.y != 0.0f) Move();
         Rotation();
