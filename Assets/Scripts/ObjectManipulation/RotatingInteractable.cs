@@ -44,25 +44,17 @@ public class RotatingInteractable : Interactable
         if (_rightClick) _roScript.SetManipulationMode();
         else _roScript.SetNormalMode();
 
-        //if (_leftClick) PutBack();
-        if (_leftClick && _isFirstClick) PutBack();
-
-
-        if (_leftClick && !_isFirstClick) _isFirstClick = true;
+        if (_leftClick) PutBack();
     }
 
     public override void SetInteractionMode()
     {
-        if (!_isHoover) return;
         ManipulationMode();
     }
 
     void ManipulationMode()
     {
         transform.position = PlayerControls.instance.manipulationPosition.position;
-        PlayerControls.instance.isManipulating = true;
-        CrossHair.instance.HideCursor();
-
         _isManipulate = true;
     }
 
@@ -73,9 +65,7 @@ public class RotatingInteractable : Interactable
         transform.rotation = Quaternion.identity;
 
         _isManipulate = false;
-        _isFirstClick = false;
 
-        PlayerControls.instance.isManipulating = false;
-        CrossHair.instance.ShowCursor();
+        InteractableManager.instance.StopRotatingInteraction();
     }
 }

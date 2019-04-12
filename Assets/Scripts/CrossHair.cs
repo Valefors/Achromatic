@@ -18,11 +18,8 @@ public class CrossHair : MonoBehaviour
     bool _rightClick = false;
     bool _leftClick = false;
 
-    public bool isHolding = false;
-    public MovableInteractable holdingObject = null;
-
-    Interactable _lookedObject;
     bool _isRefusing = false;
+    bool _isDisplay = true;
 
     #region Singleton
     public static CrossHair instance {
@@ -76,19 +73,6 @@ public class CrossHair : MonoBehaviour
         if (_leftClick)
         {
             InteractableManager.instance.CheckObjectToSetInteraction();
-            /*if (_lookedObject == null) return;
-
-            if(!(_lookedObject.GetComponent<PutInteractable>() || _lookedObject.GetComponent<MovableInteractable>()) && isHolding)
-            {
-                _objectInteractionText.text = Utils.OTHER_HOLDING_INTERACTION;
-                return;
-            }
-
-            EventParam e = new EventParam();
-            e.lookedObject = _lookedObject;
-            _lookedObject = null;
-
-            EventManager.TriggerEvent(EventManager.CLICK_ON_OBJECT_EVENT, e);*/
         }
     }
 
@@ -97,6 +81,8 @@ public class CrossHair : MonoBehaviour
         RaycastHit rayHit;
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         Debug.DrawLine(ray.origin, Camera.main.transform.forward * 5, Color.red);
+
+        if (!_isDisplay) return;
 
         if (Physics.Raycast(ray, out rayHit, 5))
         {
@@ -119,7 +105,6 @@ public class CrossHair : MonoBehaviour
 
     void SetHooverMode()
     {
-        //_lookedObject = pObject;
         _imageComponent.sprite = _hooverSprite;
         _objectSelectedText.text = InteractableManager.instance.hooverObject.name;
         if (!_isRefusing) _objectInteractionText.text = InteractableManager.instance.hooverObject.INTERACTION_NAME;
@@ -127,14 +112,11 @@ public class CrossHair : MonoBehaviour
 
     void SetNormalMode()
     {
-        //_lookedObject = null;
         _imageComponent.sprite = _normalSprite;
         _objectSelectedText.text = "";
         _objectInteractionText.text = "";
 
         InteractableManager.instance.SetObjectNormalMode();
-        //EventParam e = new EventParam();
-        //EventManager.TriggerEvent(EventManager.END_HOOVER_EVENT, e);
     }
 
     public void HideCursor()
@@ -145,6 +127,8 @@ public class CrossHair : MonoBehaviour
         _objectInteractionText.text = "";
         _objectSelectedText.gameObject.SetActive(false);
         _objectInteractionText.gameObject.SetActive(false);
+
+        _isDisplay = false;
     }
 
     public void ShowCursor()
@@ -152,6 +136,8 @@ public class CrossHair : MonoBehaviour
         _imageComponent.gameObject.SetActive(true);
         _objectSelectedText.gameObject.SetActive(true);
         _objectInteractionText.gameObject.SetActive(true);
+
+        _isDisplay = true;
     }
 
     public void SetRefuseText()

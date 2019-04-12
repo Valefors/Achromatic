@@ -19,7 +19,7 @@ public class PlayerControls : MonoBehaviour
 
     //Position for rotating objects
     public Transform manipulationPosition;
-    [HideInInspector] public bool isManipulating = false;
+    [HideInInspector] public bool _isManipulating = false;
 
     //Position for movable objects
     public Transform holdingPoint;
@@ -78,7 +78,7 @@ public class PlayerControls : MonoBehaviour
 
         else CursorLock();
 
-        if (isManipulating) return;
+        if (_isManipulating) return;
 
         if (_moveVector.x != 0.0f || _moveVector.y != 0.0f) Move();
         Rotation();
@@ -97,5 +97,15 @@ public class PlayerControls : MonoBehaviour
         rotY = Mathf.Clamp(rotY, -CLAMP_ANGLE_Y, CLAMP_ANGLE_Y);
 
         transform.rotation = Quaternion.Euler(-rotY, rotX, 0f);
+    }
+
+    public void SetManipulationMode()
+    {
+        _isManipulating = true;
+    }
+
+    public void SetNormalMode()
+    {
+        _isManipulating = false;
     }
 }

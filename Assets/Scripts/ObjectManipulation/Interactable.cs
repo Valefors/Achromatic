@@ -22,10 +22,6 @@ public abstract class Interactable : MonoBehaviour
 
     protected virtual void Init()
     {
-        //EventManager.StartListening(EventManager.HOOVER_EVENT, SetModeHoover);
-        //EventManager.StartListening(EventManager.END_HOOVER_EVENT, SetModeNormal);
-        //EventManager.StartListening(EventManager.CLICK_ON_OBJECT_EVENT, SetInteractionMode);
-
         _outline = GetComponent<Outline>();
         if (_outline == null) Debug.LogError("NO OUTLINE SCRIPT IN " + this);
 
@@ -55,9 +51,7 @@ public abstract class Interactable : MonoBehaviour
 
     protected virtual void Destroy()
     {
-        //EventManager.StopListening(EventManager.HOOVER_EVENT, SetModeHoover);
-        //EventManager.StopListening(EventManager.END_HOOVER_EVENT, SetModeHoover);
-        //EventManager.StopListening(EventManager.CLICK_ON_OBJECT_EVENT, SetInteractionMode);
+
     }
 
 }

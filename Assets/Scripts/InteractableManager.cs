@@ -50,9 +50,18 @@ public class InteractableManager : MonoBehaviour
                 CrossHair.instance.SetRefuseText();
                 return;
             }
+
+            DoRotatingInteraction();
         }
 
-        else print("cc mes bb");
+        else
+        {
+            if (holdingObject != null)
+            {
+                CrossHair.instance.SetRefuseText();
+                return;
+            }
+        }
 
         hooverObject = null;
     }
@@ -74,6 +83,19 @@ public class InteractableManager : MonoBehaviour
             hooverObject.SetModeNormal();
             hooverObject = null;
         }
+    }
+
+    void DoRotatingInteraction()
+    {
+        hooverObject.SetInteractionMode();
+        CrossHair.instance.HideCursor();
+        PlayerControls.instance.SetManipulationMode();
+    }
+
+    public void StopRotatingInteraction()
+    {
+        PlayerControls.instance.SetNormalMode();
+        CrossHair.instance.ShowCursor();
     }
 
     void DoMovableInteraction()
@@ -104,5 +126,10 @@ public class InteractableManager : MonoBehaviour
         holdingObject.PutObject(lSwitchObject.putLocation);
         lSwitchObject.putLocation = null;
         TakeObject(lSwitchObject);
+    }
+
+    void CheckIfHoldingObjectExists()
+    {
+
     }
 }
