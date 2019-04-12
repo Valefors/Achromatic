@@ -18,9 +18,11 @@ public class CrossHair : MonoBehaviour
     bool _rightClick = false;
     bool _leftClick = false;
 
-    bool _isHolding = false;
+    public bool isHolding = false;
+    public MovableInteractable holdingObject = null;
 
     Interactable _lookedObject;
+    bool _isRefusing = false;
 
     #region Singleton
     public static CrossHair instance {
@@ -73,9 +75,10 @@ public class CrossHair : MonoBehaviour
     {
         if (_leftClick)
         {
-            if (_lookedObject == null) return;
+            InteractableManager.instance.CheckObjectToSetInteraction();
+            /*if (_lookedObject == null) return;
 
-            if(!_lookedObject.GetComponent<PutInteractable>() && _isHolding)
+            if(!(_lookedObject.GetComponent<PutInteractable>() || _lookedObject.GetComponent<MovableInteractable>()) && isHolding)
             {
                 _objectInteractionText.text = Utils.OTHER_HOLDING_INTERACTION;
                 return;
@@ -85,7 +88,7 @@ public class CrossHair : MonoBehaviour
             e.lookedObject = _lookedObject;
             _lookedObject = null;
 
-            EventManager.TriggerEvent(EventManager.CLICK_ON_OBJECT_EVENT, e);
+            EventManager.TriggerEvent(EventManager.CLICK_ON_OBJECT_EVENT, e);*/
         }
     }
 
@@ -99,10 +102,12 @@ public class CrossHair : MonoBehaviour
         {
             if (rayHit.collider.gameObject.GetComponent<Interactable>())
             {
-                if (rayHit.collider.gameObject.GetComponent<Interactable>() != _lookedObject)
-                {
-                    SetHooverMode(rayHit.collider.gameObject.GetComponent<Interactable>());
-                }
+                if (InteractableManager.instance.holdingObject == null
+                    && rayHit.collider.gameObject.GetComponent<PutInteractable>()) return;
+
+                InteractableManager.instance.SetObjectHooverMode(rayHit.collider.gameObject.GetComponent<Interactable>());
+                SetHooverMode();
+
                 return;
             }
 
@@ -112,29 +117,24 @@ public class CrossHair : MonoBehaviour
         SetNormalMode();
     }
 
-    void SetHooverMode(Interactable pObject)
+    void SetHooverMode()
     {
-        _lookedObject = pObject;
+        //_lookedObject = pObject;
         _imageComponent.sprite = _hooverSprite;
-        _objectSelectedText.text = _lookedObject.name;
-        _objectInteractionText.text = _lookedObject.INTERACTION_NAME;
-
-        //TO-DO REFAIRE EVENTS
-        EventParam e = new EventParam();
-        e.lookedObject = _lookedObject;
-
-        EventManager.TriggerEvent(EventManager.HOOVER_EVENT, e);
+        _objectSelectedText.text = InteractableManager.instance.hooverObject.name;
+        if (!_isRefusing) _objectInteractionText.text = InteractableManager.instance.hooverObject.INTERACTION_NAME;
     }
 
     void SetNormalMode()
     {
-        _lookedObject = null;
+        //_lookedObject = null;
         _imageComponent.sprite = _normalSprite;
         _objectSelectedText.text = "";
         _objectInteractionText.text = "";
 
-        EventParam e = new EventParam();
-        EventManager.TriggerEvent(EventManager.END_HOOVER_EVENT, e);
+        InteractableManager.instance.SetObjectNormalMode();
+        //EventParam e = new EventParam();
+        //EventManager.TriggerEvent(EventManager.END_HOOVER_EVENT, e);
     }
 
     public void HideCursor()
@@ -154,13 +154,17 @@ public class CrossHair : MonoBehaviour
         _objectInteractionText.gameObject.SetActive(true);
     }
 
-    public void SetHoldingMode()
+    public void SetRefuseText()
     {
-        _isHolding = true;
+        StartCoroutine(RefuseCoroutine());
     }
 
-    public void SetReleaseMode()
+    IEnumerator RefuseCoroutine()
     {
-        _isHolding = false;
+        _isRefusing = true;
+        _objectInteractionText.text = Utils.OTHER_HOLDING_INTERACTION;
+        
+        yield return new WaitForSeconds(1.2f);
+        _isRefusing = false;
     }
 }

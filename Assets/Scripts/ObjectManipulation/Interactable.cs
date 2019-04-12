@@ -22,9 +22,9 @@ public abstract class Interactable : MonoBehaviour
 
     protected virtual void Init()
     {
-        EventManager.StartListening(EventManager.HOOVER_EVENT, SetModeHoover);
-        EventManager.StartListening(EventManager.END_HOOVER_EVENT, SetModeNormal);
-        EventManager.StartListening(EventManager.CLICK_ON_OBJECT_EVENT, SetInteractionMode);
+        //EventManager.StartListening(EventManager.HOOVER_EVENT, SetModeHoover);
+        //EventManager.StartListening(EventManager.END_HOOVER_EVENT, SetModeNormal);
+        //EventManager.StartListening(EventManager.CLICK_ON_OBJECT_EVENT, SetInteractionMode);
 
         _outline = GetComponent<Outline>();
         if (_outline == null) Debug.LogError("NO OUTLINE SCRIPT IN " + this);
@@ -33,28 +33,19 @@ public abstract class Interactable : MonoBehaviour
         _player = ReInput.players.GetPlayer(0);
     }
 
-    public void SetModeHoover(EventParam e)
+    public void SetModeHoover()
     {
-        if (e.lookedObject == this)
-        {
-            _outline.enabled = true;
-            _isHoover = true;
-        }
+        if (_outline != null) _outline.enabled = true;
     }
 
-    public virtual void SetModeNormal(EventParam e)
+    public virtual void SetModeNormal()
     {
-        if (_isHoover)
-        {
-            _isHoover = false;
-            _outline.enabled = false;
-        }
+        if(_outline != null) _outline.enabled = false;
     }
 
-    public virtual void SetInteractionMode(EventParam e)
+    public virtual void SetInteractionMode()
     {
-        if (!_isHoover) return;
-        print("do stuff");
+
     }
 
     private void OnDestroy()
@@ -64,9 +55,9 @@ public abstract class Interactable : MonoBehaviour
 
     protected virtual void Destroy()
     {
-        EventManager.StopListening(EventManager.HOOVER_EVENT, SetModeHoover);
-        EventManager.StopListening(EventManager.END_HOOVER_EVENT, SetModeHoover);
-        EventManager.StopListening(EventManager.CLICK_ON_OBJECT_EVENT, SetInteractionMode);
+        //EventManager.StopListening(EventManager.HOOVER_EVENT, SetModeHoover);
+        //EventManager.StopListening(EventManager.END_HOOVER_EVENT, SetModeHoover);
+        //EventManager.StopListening(EventManager.CLICK_ON_OBJECT_EVENT, SetInteractionMode);
     }
 
 }

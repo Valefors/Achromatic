@@ -12,10 +12,9 @@ public class Door : Interactable
         Init();
     }
 
-    public override void SetInteractionMode(EventParam e)
+    public override void SetInteractionMode()
     {
-        base.SetInteractionMode(e);
-        if (!_isHoover) return;
+        base.SetInteractionMode();
 
         OpenDoor();
     }

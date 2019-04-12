@@ -5,7 +5,7 @@ using UnityEngine;
 public class MovableInteractable : Interactable
 {
     bool _isHolding = false;
-    [SerializeField] PutInteractable _putLocation;
+    public PutInteractable putLocation;
 
     // Start is called before the first frame update
     void Start()
@@ -17,8 +17,8 @@ public class MovableInteractable : Interactable
     {
         base.Init();
         _interactionName = Utils.MOVABLE_OBJECT_INTERACTION;
-        if (_putLocation == null) Debug.LogError("MISSING REFERENCE IN " + this);
-        _putLocation.gameObject.SetActive(false);
+        if (putLocation == null) Debug.LogError("MISSING REFERENCE IN " + this);
+        putLocation.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -27,25 +27,27 @@ public class MovableInteractable : Interactable
         if(_isHolding) HoldingMode();
     }
 
-    public override void SetInteractionMode(EventParam e)
+    public override void SetInteractionMode()
     {
-        if(e.lookedObject == _putLocation)
-        {
-            PutObject();
-            return;
-        }
-
-        if (!_isHoover) return;
-
-        SetModeHolding();
-        
+        SetModeHolding(); 
     }
 
-    void SetModeHolding()
+    void SwitchPosition(MovableInteractable pObject)
+    {
+        transform.position = pObject.transform.position;
+        putLocation = pObject.putLocation;
+        putLocation.gameObject.SetActive(false);
+        _isHolding = false;
+
+        pObject.GetComponent<MovableInteractable>().putLocation = null;
+        pObject.GetComponent<MovableInteractable>().SetModeHolding();
+    }
+
+    public void SetModeHolding()
     {
         _isHolding = true;
-        _putLocation.gameObject.SetActive(true);
-        CrossHair.instance.SetHoldingMode();
+        if(putLocation != null) putLocation.gameObject.SetActive(true);
+        putLocation = null;
     }
 
     void HoldingMode()
@@ -53,11 +55,12 @@ public class MovableInteractable : Interactable
         transform.position = PlayerControls.instance.holdingPoint.position;
     }
 
-    void PutObject()
+    public void PutObject(PutInteractable pFreeSpace)
     {
-        transform.position = _putLocation.transform.position;
+        transform.position = pFreeSpace.transform.position;
+        putLocation = pFreeSpace;
+        putLocation.gameObject.SetActive(false);
+
         _isHolding = false;
-        _putLocation.gameObject.SetActive(false);
-        CrossHair.instance.SetReleaseMode();
     }
 }

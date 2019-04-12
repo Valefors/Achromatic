@@ -51,7 +51,7 @@ public class RotatingInteractable : Interactable
         if (_leftClick && !_isFirstClick) _isFirstClick = true;
     }
 
-    public override void SetInteractionMode(EventParam e)
+    public override void SetInteractionMode()
     {
         if (!_isHoover) return;
         ManipulationMode();
