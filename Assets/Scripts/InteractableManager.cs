@@ -61,6 +61,8 @@ public class InteractableManager : MonoBehaviour
                 CrossHair.instance.SetRefuseText();
                 return;
             }
+
+            hooverObject.SetInteractionMode();
         }
 
         hooverObject = null;
@@ -68,9 +70,7 @@ public class InteractableManager : MonoBehaviour
 
     public void SetObjectHooverMode(Interactable pObject)
     {
-        if (hooverObject != null) hooverObject.SetModeNormal();
-
-        
+        if (hooverObject != null) hooverObject.SetModeNormal();   
 
         hooverObject = pObject;
         hooverObject.SetModeHoover();
