@@ -28,6 +28,10 @@ public class UIManager : MonoBehaviour
     }
     #endregion
 
+    private void Start()
+    {
+        Cursor.visible = false;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -48,6 +52,7 @@ public class UIManager : MonoBehaviour
             _currentScreen = _optionScreen;
 
             onUI = true;
+            Cursor.visible = true;
         }
     }
 
@@ -57,6 +62,7 @@ public class UIManager : MonoBehaviour
         {
             _currentScreen.gameObject.SetActive(false);
             onUI = false;
+            Cursor.visible = true;
         }
     }
 }
