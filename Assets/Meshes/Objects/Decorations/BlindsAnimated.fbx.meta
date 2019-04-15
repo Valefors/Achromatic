@@ -1,0 +1,218 @@
+fileFormatVersion: 2
+guid: 0366705ab7fb4af44ba63e143fa411c5
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Blind01
+    100002: Blind02
+    100004: Blind03
+    100006: Blind04
+    100008: Blind05
+    100010: Blind06
+    100012: Blind07
+    100014: Blind08
+    100016: Blind09
+    100018: Blind10
+    100020: Blind11
+    100022: Blind12
+    100024: Blind13
+    100026: Blind14
+    100028: Blind15
+    100030: Blind16
+    100032: Blind17
+    100034: Blind18
+    100036: Blind19
+    100038: Blind20
+    100040: Blind21
+    100042: Blind22
+    100044: Blind23
+    100046: //RootNode
+    100048: BlindsSupport
+    100050: BlindWindow
+    400000: Blind01
+    400002: Blind02
+    400004: Blind03
+    400006: Blind04
+    400008: Blind05
+    400010: Blind06
+    400012: Blind07
+    400014: Blind08
+    400016: Blind09
+    400018: Blind10
+    400020: Blind11
+    400022: Blind12
+    400024: Blind13
+    400026: Blind14
+    400028: Blind15
+    400030: Blind16
+    400032: Blind17
+    400034: Blind18
+    400036: Blind19
+    400038: Blind20
+    400040: Blind21
+    400042: Blind22
+    400044: Blind23
+    400046: //RootNode
+    400048: BlindsSupport
+    400050: BlindWindow
+    2100000: lambert1
+    2300000: Blind01
+    2300002: Blind02
+    2300004: Blind03
+    2300006: Blind04
+    2300008: Blind05
+    2300010: Blind06
+    2300012: Blind07
+    2300014: Blind08
+    2300016: Blind09
+    2300018: Blind10
+    2300020: Blind11
+    2300022: Blind12
+    2300024: Blind13
+    2300026: Blind14
+    2300028: Blind15
+    2300030: Blind16
+    2300032: Blind17
+    2300034: Blind18
+    2300036: Blind19
+    2300038: Blind20
+    2300040: Blind21
+    2300042: Blind22
+    2300044: Blind23
+    2300046: BlindsSupport
+    3300000: Blind01
+    3300002: Blind02
+    3300004: Blind03
+    3300006: Blind04
+    3300008: Blind05
+    3300010: Blind06
+    3300012: Blind07
+    3300014: Blind08
+    3300016: Blind09
+    3300018: Blind10
+    3300020: Blind11
+    3300022: Blind12
+    3300024: Blind13
+    3300026: Blind14
+    3300028: Blind15
+    3300030: Blind16
+    3300032: Blind17
+    3300034: Blind18
+    3300036: Blind19
+    3300038: Blind20
+    3300040: Blind21
+    3300042: Blind22
+    3300044: Blind23
+    3300046: BlindsSupport
+    4300000: BlindsSupport
+    4300002: Blind01
+    4300004: Blind02
+    4300006: Blind03
+    4300008: Blind04
+    4300010: Blind05
+    4300012: Blind06
+    4300014: Blind07
+    4300016: Blind08
+    4300018: Blind09
+    4300020: Blind10
+    4300022: Blind11
+    4300024: Blind12
+    4300026: Blind13
+    4300028: Blind14
+    4300030: Blind15
+    4300032: Blind16
+    4300034: Blind17
+    4300036: Blind18
+    4300038: Blind19
+    4300040: Blind20
+    4300042: Blind21
+    4300044: Blind22
+    4300046: Blind23
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -5,19 +5,19 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: Lamp
-    100004: pPlane1
+    100004: LampHandle
     400000: //RootNode
     400002: Lamp
-    400004: pPlane1
+    400004: LampHandle
     2100000: lambert1
     2100002: lambert6
     2100004: lambert5
     2300000: Lamp
-    2300002: pPlane1
+    2300002: LampHandle
     3300000: Lamp
-    3300002: pPlane1
+    3300002: LampHandle
     4300000: Lamp
-    4300002: pPlane1
+    4300002: LampHandle
   externalObjects: {}
   materials:
     importMaterials: 1
