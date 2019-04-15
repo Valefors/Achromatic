@@ -371,5 +371,9 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /AchromaticWwise
+  - /AchromaticWwise/Events
+  - /AchromaticWwise/Events/Default Work Unit
+  - /AchromaticWwise/SoundBanks
+  - /AchromaticWwise/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
