@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class MovableInteractable : Interactable
 {
-    bool _isHolding = false;
+    protected bool _isHolding = false;
     public PutInteractable putLocation;
-    [SerializeField] PutInteractable _correctLocation;
+    [SerializeField] private PutInteractable _correctLocation;
 
     // Start is called before the first frame update
     void Start()
@@ -52,12 +52,12 @@ public class MovableInteractable : Interactable
         putLocation = null;
     }
 
-    void HoldingMode()
+    protected void HoldingMode()
     {
         transform.position = PlayerControls.instance.holdingPoint.position;
     }
 
-    public void PutObject(PutInteractable pFreeSpace)
+    public virtual void PutObject(PutInteractable pFreeSpace)
     {
         transform.position = pFreeSpace.spawnPosition.position;
         putLocation = pFreeSpace;

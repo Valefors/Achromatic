@@ -32,6 +32,8 @@ public class InteractableManager : MonoBehaviour
 
         else if (hooverObject.GetComponent<PutInteractable>()) DoPutInteraction(hooverObject.GetComponent<PutInteractable>());
 
+        else if (hooverObject.GetComponent<Lock>()) DoLockInteraction();
+
         else if (hooverObject.GetComponent<RotatingInteractable>())
         {
             if (holdingObject != null)
@@ -97,6 +99,16 @@ public class InteractableManager : MonoBehaviour
     void DoPutInteraction(PutInteractable pFreeSpace)
     {
         holdingObject.PutObject(pFreeSpace);
+        holdingObject = null;
+    }
+
+    void DoLockInteraction()
+    {
+        if (!holdingObject.GetComponent<Key>()) return;
+
+        holdingObject.GetComponent<Key>().Unlock();
+        hooverObject.GetComponent<Lock>().Unlock();
+
         holdingObject = null;
     }
 

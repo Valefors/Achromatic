@@ -7,6 +7,8 @@ public class PuzzleManager : MonoBehaviour
     int _correctSpots = 0; //Number of correct objects put for puzzle 2
     const int MAX_SPOTS = 4;
 
+    [SerializeField] GameObject _drawer;
+
     #region Singleton
     public static PuzzleManager instance {
         get { return _instance; }
@@ -40,5 +42,6 @@ public class PuzzleManager : MonoBehaviour
     {
         print("KEY");
         InteractableManager.instance.DisableMovableInteraction();
+        _drawer.GetComponent<Animator>().SetBool("isOpen", true);
     }
 }
