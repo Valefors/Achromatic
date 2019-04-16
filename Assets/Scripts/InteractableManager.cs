@@ -5,9 +5,10 @@ using UnityEngine;
 public class InteractableManager : MonoBehaviour
 {
     //Faire un get
-    public Interactable hooverObject = null;
-    public MovableInteractable holdingObject = null;
+    [HideInInspector] public Interactable hooverObject = null;
+    [HideInInspector] public MovableInteractable holdingObject = null;
 
+    [SerializeField] MovableInteractable[] _movableObjects;
 
     #region Singleton
     public static InteractableManager instance {
@@ -22,18 +23,6 @@ public class InteractableManager : MonoBehaviour
         else Debug.LogError("AN INSTANCE ALREADY EXISTS");
     }
     #endregion
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void CheckObjectToSetInteraction()
     {
@@ -128,8 +117,11 @@ public class InteractableManager : MonoBehaviour
         TakeObject(lSwitchObject);
     }
 
-    void CheckIfHoldingObjectExists()
+    public void DisableMovableInteraction()
     {
-
+        for(int i = 0; i < _movableObjects.Length; i++)
+        {
+            Destroy(_movableObjects[i].GetComponent<MovableInteractable>());
+        }
     }
 }

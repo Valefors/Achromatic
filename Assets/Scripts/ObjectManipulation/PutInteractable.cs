@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PutInteractable : Interactable
 {
-    Vector3 putPosition;
+    public Transform spawnPosition;
 
     // Start is called before the first frame update
     void Awake()
@@ -14,7 +14,7 @@ public class PutInteractable : Interactable
 
     protected override void Init()
     {
-        putPosition = transform.position;
         _interactionName = Utils.PUT_INTERACTION;
+        if (spawnPosition == null) Debug.LogError("NO SPAWN POSITION IN " + this);
     }
 }

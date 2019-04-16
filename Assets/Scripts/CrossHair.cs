@@ -7,12 +7,12 @@ using UnityEngine.UI;
 
 public class CrossHair : MonoBehaviour
 {
-    [SerializeField] Text _objectSelectedText;
-    [SerializeField] Text _objectInteractionText;
+    [SerializeField] Text _objectSelectedText = null;
+    [SerializeField] Text _objectInteractionText = null;
 
     Image _imageComponent;
-    [SerializeField] Sprite _normalSprite;
-    [SerializeField] Sprite _hooverSprite;
+    [SerializeField] Sprite _normalSprite = null;
+    [SerializeField] Sprite _hooverSprite = null;
 
     private Player _player; // The Rewired Player
     bool _rightClick = false;

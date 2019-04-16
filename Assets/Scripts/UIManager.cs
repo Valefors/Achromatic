@@ -7,7 +7,7 @@ public class UIManager : MonoBehaviour
 {
     bool _optionScreenEnabled = false;
     Player _player;
-    [SerializeField] RectTransform _optionScreen;
+    [SerializeField] RectTransform _optionScreen = null;
     public bool onUI = false; //When an UI thing is shown on screen
 
     RectTransform _currentScreen;

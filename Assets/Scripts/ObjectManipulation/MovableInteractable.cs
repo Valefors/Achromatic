@@ -6,6 +6,7 @@ public class MovableInteractable : Interactable
 {
     bool _isHolding = false;
     public PutInteractable putLocation;
+    [SerializeField] PutInteractable _correctLocation;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +20,7 @@ public class MovableInteractable : Interactable
         _interactionName = Utils.MOVABLE_OBJECT_INTERACTION;
         if (putLocation == null) Debug.LogError("MISSING REFERENCE IN " + this);
         putLocation.gameObject.SetActive(false);
+        if (_correctLocation == putLocation) PuzzleManager.instance.UpdateCorrectSpots(true);
     }
 
     // Update is called once per frame
@@ -57,10 +59,13 @@ public class MovableInteractable : Interactable
 
     public void PutObject(PutInteractable pFreeSpace)
     {
-        transform.position = pFreeSpace.transform.position;
+        transform.position = pFreeSpace.spawnPosition.position;
         putLocation = pFreeSpace;
         putLocation.gameObject.SetActive(false);
 
         _isHolding = false;
+
+        if (putLocation == _correctLocation) PuzzleManager.instance.UpdateCorrectSpots(true);
+        else PuzzleManager.instance.UpdateCorrectSpots(false);
     }
 }
