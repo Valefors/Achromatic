@@ -29,7 +29,7 @@ public abstract class Interactable : MonoBehaviour
         _player = ReInput.players.GetPlayer(0);
     }
 
-    public void SetModeHoover()
+    public virtual void SetModeHoover()
     {
         if (_outline != null) _outline.enabled = true;
     }

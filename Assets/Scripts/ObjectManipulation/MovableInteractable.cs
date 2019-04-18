@@ -61,6 +61,7 @@ public class MovableInteractable : Interactable
     {
         transform.position = pFreeSpace.spawnPosition.position;
         putLocation = pFreeSpace;
+        putLocation.SetModeNormal();
         putLocation.gameObject.SetActive(false);
 
         _isHolding = false;
