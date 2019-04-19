@@ -33,15 +33,17 @@ public class PutInteractable : Interactable
         Destroy(_phantomObject.GetComponent<Interactable>());
         Destroy(_phantomObject.GetComponent<Outline>());
 
-        _phantomObject.GetComponent<Renderer>().material.SetFloat("_Transparency", 0.6f);
-        StartCoroutine(GlowCoroutine());
+        _phantomObject.GetComponent<Renderer>().material.SetColor("_Color", new Color(1,1,1,0.6f));
+        _phantomObject.GetComponent<Renderer>().material.EnableKeyword("_EMISSION");
+        //StartCoroutine(GlowCoroutine());
     }
 
     public override void SetModeNormal()
     {
         base.SetModeNormal();
-        StopCoroutine(GlowCoroutine());
-        _phantomObject.GetComponent<Renderer>().material.SetFloat("_Transparency", 1f);
+        //StopCoroutine(GlowCoroutine());
+        _phantomObject.GetComponent<Renderer>().material.SetColor("_Color", new Color(1, 1, 1, 1));
+        _phantomObject.GetComponent<Renderer>().material.DisableKeyword("_EMISSION");
         Destroy(_phantomObject);
     }
 
