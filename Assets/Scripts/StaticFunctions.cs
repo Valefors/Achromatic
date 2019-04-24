@@ -29,8 +29,6 @@ public static class StaticFunctions
         float progress = 0f;
         float newValue = 1f;
 
-        Debug.Log("la");
-
         while (newValue > 0f)
         {
             newValue = Mathf.Lerp(1f, 0f, progress);

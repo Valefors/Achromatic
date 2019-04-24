@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LD_For_Romane.unity
     guid: c184489e2ac1993448a1d7a117edda76
+  - enabled: 1
+    path: Assets/Scenes/LoadingScene.unity
+    guid: aac2a4bf5a1ff394b81696a974f953c4
   m_configObjects: {}

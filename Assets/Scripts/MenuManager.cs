@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
@@ -10,8 +11,11 @@ public class MenuManager : MonoBehaviour
     [SerializeField] RectTransform _menuPanel;
     [SerializeField] RectTransform _creditsPanel;
 
+    [SerializeField] RectTransform _FadeInOutPanel;
+
     private void Start()
     {
+        StartCoroutine(StaticFunctions.FadeOut(result => _FadeInOutPanel.GetComponent<CanvasGroup>().alpha = result, 0.8f, null));
         _currentPanel = _menuPanel;
     }
 
@@ -25,6 +29,16 @@ public class MenuManager : MonoBehaviour
     {
         _selectedPanel = _creditsPanel;
         DisableCurrentScreen();
+    }
+
+    public void OnLoading()
+    {
+        StartCoroutine(StaticFunctions.FadeIn(result => _FadeInOutPanel.GetComponent<CanvasGroup>().alpha = result, 1f, LoadScene));
+    }
+
+    void LoadScene()
+    {
+        SceneManager.LoadScene("LoadingScene");
     }
 
     void DisableCurrentScreen()
