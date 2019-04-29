@@ -10,9 +10,10 @@ public class MenuManager : MonoBehaviour
     RectTransform _selectedPanel;
     [SerializeField] RectTransform _menuPanel;
     [SerializeField] RectTransform _creditsPanel;
+    [SerializeField] RectTransform _introPanel;
 
     [SerializeField] RectTransform _FadeInOutPanel;
-
+    [SerializeField] Sprite[] _introImages;
     private void Start()
     {
         StartCoroutine(StaticFunctions.FadeOut(result => _FadeInOutPanel.GetComponent<CanvasGroup>().alpha = result, 0.8f, null));
@@ -31,7 +32,29 @@ public class MenuManager : MonoBehaviour
         DisableCurrentScreen();
     }
 
-    public void OnLoading()
+    public void OnPlay()
+    {
+        StartCoroutine(StaticFunctions.FadeIn(result => _FadeInOutPanel.GetComponent<CanvasGroup>().alpha = result, 1f, Intro));
+    }
+
+    void Intro()
+    {
+        _introPanel.gameObject.SetActive(true);
+        StartCoroutine(StaticFunctions.FadeOut(result => _FadeInOutPanel.GetComponent<CanvasGroup>().alpha = result, 0.1f));
+        _introPanel.GetComponent<Image>().sprite = _introImages[0];
+        StartCoroutine(IntroCoroutine());
+    }
+
+    IEnumerator IntroCoroutine()
+    {
+        for(int i =0; i < _introImages.Length; i++)
+        {
+            _introPanel.GetComponent<Image>().sprite = _introImages[i];
+            yield return new WaitForSeconds(1f);
+        }
+    }
+
+    void OnLoading()
     {
         StartCoroutine(StaticFunctions.FadeIn(result => _FadeInOutPanel.GetComponent<CanvasGroup>().alpha = result, 1f, LoadScene));
     }
