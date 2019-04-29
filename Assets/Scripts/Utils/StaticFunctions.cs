@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using UnityEngine.Rendering;
 
 public static class StaticFunctions
 {
@@ -70,5 +71,12 @@ public static class StaticFunctions
             progress += Time.unscaledDeltaTime / duration;
             yield return null;
         }
+    }
+
+    public static void ChangeLightSettings(Color pLightColor, float pLightIntensity = 1,  AmbientMode pAmbientMode = AmbientMode.Skybox)
+    {
+        RenderSettings.reflectionIntensity = pLightIntensity;
+        RenderSettings.ambientMode = pAmbientMode;
+        RenderSettings.ambientSkyColor = pLightColor;
     }
 }

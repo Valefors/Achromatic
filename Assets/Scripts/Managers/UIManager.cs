@@ -31,6 +31,7 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         Cursor.visible = false;
+        CursorLock();
     }
     // Update is called once per frame
     void Update()
@@ -53,6 +54,7 @@ public class UIManager : MonoBehaviour
 
             onUI = true;
             Cursor.visible = true;
+            CursorUnlock();
         }
     }
 
@@ -63,6 +65,17 @@ public class UIManager : MonoBehaviour
             _currentScreen.gameObject.SetActive(false);
             onUI = false;
             Cursor.visible = true;
+            CursorLock();
         }
+    }
+
+    void CursorLock()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    void CursorUnlock()
+    {
+        Cursor.lockState = CursorLockMode.None;
     }
 }

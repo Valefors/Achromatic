@@ -80,7 +80,6 @@ public class CrossHair : MonoBehaviour
     {
         RaycastHit rayHit;
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        Debug.DrawLine(ray.origin, Camera.main.transform.forward * 5, Color.red);
 
         if (!_isDisplay || UIManager.instance.onUI) return;
 

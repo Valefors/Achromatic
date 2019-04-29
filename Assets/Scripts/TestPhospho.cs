@@ -21,7 +21,7 @@ public class TestPhospho : MonoBehaviour
         {
             //_textPhospho.SetActive(true);
            // _lightPlayer.SetActive(true);
-            ChangeLightSettings();
+            //ChangeLightSettings();
             AkSoundEngine.PostEvent("test", gameObject);
         }
 
@@ -29,21 +29,9 @@ public class TestPhospho : MonoBehaviour
         {
             //_textPhospho.SetActive(false);
             //_lightPlayer.SetActive(false);
-            PutSettingsBack();
+            //PutSettingsBack();
         }
     }
 
-    void ChangeLightSettings()
-    {
-        RenderSettings.reflectionIntensity = 0;
-        RenderSettings.ambientMode = UnityEngine.Rendering.AmbientMode.Flat;
-        RenderSettings.ambientSkyColor = Color.black;
-    }
-
-    void PutSettingsBack()
-    {
-        RenderSettings.reflectionIntensity = 1;
-        RenderSettings.ambientMode = UnityEngine.Rendering.AmbientMode.Skybox;
-        RenderSettings.ambientSkyColor = Color.white;
-    }
+    
 }

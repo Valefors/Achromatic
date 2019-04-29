@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Outline))]
 public class MovableInteractable : Interactable
 {
     protected bool _isHolding = false;

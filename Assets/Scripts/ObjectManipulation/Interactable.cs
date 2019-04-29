@@ -23,7 +23,6 @@ public abstract class Interactable : MonoBehaviour
     protected virtual void Init()
     {
         _outline = GetComponent<Outline>();
-        if (_outline == null) Debug.LogError("NO OUTLINE SCRIPT IN " + this);
 
         _outline.enabled = false;
         _player = ReInput.players.GetPlayer(0);

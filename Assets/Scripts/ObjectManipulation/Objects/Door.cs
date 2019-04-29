@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Outline))]
 public class Door : Interactable
 {
     [SerializeField] private Animator animator;
@@ -10,6 +11,7 @@ public class Door : Interactable
     void Start()
     {
         Init();
+        _interactionName = Utils.OPEN_INTERACTION;
     }
 
     public override void SetInteractionMode()

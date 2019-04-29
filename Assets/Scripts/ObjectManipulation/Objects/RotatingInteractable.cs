@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(rotateObject))]
 public class RotatingInteractable : Interactable
 {
     rotateObject _roScript;

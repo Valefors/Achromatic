@@ -24,6 +24,8 @@ public class PlayerControls : MonoBehaviour
     //Position for movable objects
     public Transform holdingPoint;
 
+    Light _lightSpot;
+
     #region Singleton
     public static PlayerControls instance {
         get { return _instance; }
@@ -37,22 +39,13 @@ public class PlayerControls : MonoBehaviour
         else Debug.LogError("AN INSTANCE ALREADY EXISTS");
 
         _player = ReInput.players.GetPlayer(0);
+        _lightSpot = GetComponent<Light>();
     }
     #endregion
 
-    void Start()
+    private void Start()
     {
-        CursorLock();
-    }
-
-    void CursorLock()
-    {
-        Cursor.lockState = CursorLockMode.Locked;
-    }
-
-    void CursorUnlock()
-    {
-        Cursor.lockState = CursorLockMode.None;
+        SetModeLightOn();
     }
 
     // Update is called once per frame
@@ -70,13 +63,7 @@ public class PlayerControls : MonoBehaviour
 
     void ProcessInput()
     {
-        if (UIManager.instance.onUI)
-        {
-            CursorUnlock();
-            return;
-        }
-
-        else CursorLock();
+        if (UIManager.instance.onUI) return;
 
         if (_isManipulating) return;
 
@@ -107,5 +94,15 @@ public class PlayerControls : MonoBehaviour
     public void SetNormalMode()
     {
         _isManipulating = false;
+    }
+
+    public void SetModeLightOn()
+    {
+        _lightSpot.enabled = false;
+    }
+
+    public void SetModeLightOff()
+    {
+        _lightSpot.enabled = true;
     }
 }

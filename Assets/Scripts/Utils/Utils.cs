@@ -16,5 +16,7 @@ public static class Utils
     public static string MOVABLE_OBJECT_INTERACTION = "TAKE";
     public static string PUT_INTERACTION = "PUT";
     public static string UNLOCK_INTERACTION = "UNLOCK";
+    public static string OPEN_INTERACTION = "OPEN";
+    public static string CLOSE_INTERACTION = "CLOSE";
     public static string OTHER_HOLDING_INTERACTION = "You already have an object in hand!";
 }

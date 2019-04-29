@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class PuzzleManager : MonoBehaviour
 {
@@ -8,6 +9,10 @@ public class PuzzleManager : MonoBehaviour
     const int MAX_SPOTS = 4;
 
     [SerializeField] GameObject _drawer;
+    [SerializeField] GameObject _hiddenNumbers;
+
+    Color _offLight = new Color(0, 0, 0);
+    Color _ambientLight = new Color(108, 108, 108);
 
     #region Singleton
     public static PuzzleManager instance {
@@ -23,6 +28,27 @@ public class PuzzleManager : MonoBehaviour
     }
     #endregion
 
+    private void Start()
+    {
+        _hiddenNumbers.SetActive(false);    
+    }
+
+    #region Puzzle 1
+
+    public void OpenBlinds()
+    {
+        _hiddenNumbers.SetActive(false);
+        StaticFunctions.ChangeLightSettings(_ambientLight, 1, AmbientMode.Skybox);
+    }
+
+    public void CloseBlinds()
+    {
+        _hiddenNumbers.SetActive(true);
+        StaticFunctions.ChangeLightSettings(_offLight, 0, AmbientMode.Flat);
+    }
+    #endregion
+
+    #region Puzzle 2
     public void UpdateCorrectSpots(bool pUpOrNot)
     {
         print(_correctSpots);
@@ -40,8 +66,8 @@ public class PuzzleManager : MonoBehaviour
 
     void UnlockDrawer()
     {
-        print("KEY");
         InteractableManager.instance.DisableMovableInteraction();
         _drawer.GetComponent<Animator>().SetBool("isOpen", true);
     }
+    #endregion
 }
