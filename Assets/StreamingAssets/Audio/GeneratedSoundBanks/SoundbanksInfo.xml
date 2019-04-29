@@ -11,24 +11,61 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
+		<SoundBank Id="534561221" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\MainSoundbank</ObjectPath>
+			<ShortName>MainSoundbank</ShortName>
+			<Path>MainSoundbank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1562304622" Name="Play_Ambient" ObjectPath="\Events\Default Work Unit\Play_Ambient"/>
+				<Event Id="1485308649" Name="Play_Poser" ObjectPath="\Events\Default Work Unit\Play_Poser"/>
+				<Event Id="326001232" Name="Play_Prendre" ObjectPath="\Events\Default Work Unit\Play_Prendre"/>
+				<Event Id="3535750338" Name="Play_StoreFerme" ObjectPath="\Events\Default Work Unit\Play_StoreFerme"/>
+				<Event Id="3670131286" Name="Play_StoreOuvre" ObjectPath="\Events\Default Work Unit\Play_StoreOuvre"/>
+				<Event Id="3827058668" Name="StartMusic" ObjectPath="\Events\Default Work Unit\StartMusic"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="210629628" Language="SFX">
+					<ShortName>PRENDRE.wav</ShortName>
+					<Path>SFX\PRENDRE_10C4C929.wem</Path>
+				</File>
+				<File Id="397175661" Language="SFX">
+					<ShortName>ATOMSPHERE.wav</ShortName>
+					<Path>SFX\ATOMSPHERE_D79FB2B7.wem</Path>
+				</File>
+				<File Id="408457289" Language="SFX">
+					<ShortName>STORE OUVERT-001.wav</ShortName>
+					<Path>SFX\STORE OUVERT-001_10C4C929.wem</Path>
+				</File>
+				<File Id="480456306" Language="SFX">
+					<ShortName>AchromaticIngame.wav</ShortName>
+					<Path>SFX\AchromaticIngame_D79FB2B7.wem</Path>
+				</File>
+				<File Id="567844903" Language="SFX">
+					<ShortName>STORE FERME-002.wav</ShortName>
+					<Path>SFX\STORE FERME-002_10C4C929.wem</Path>
+				</File>
+				<File Id="699570814" Language="SFX">
+					<ShortName>STORE OUVERT-002.wav</ShortName>
+					<Path>SFX\STORE OUVERT-002_10C4C929.wem</Path>
+				</File>
+				<File Id="818942271" Language="SFX">
+					<ShortName>STORE FERME-001.wav</ShortName>
+					<Path>SFX\STORE FERME-001_10C4C929.wem</Path>
+				</File>
+				<File Id="823889252" Language="SFX">
+					<ShortName>AchromaticMenu.wav</ShortName>
+					<Path>SFX\AchromaticMenu_D79FB2B7.wem</Path>
+				</File>
+				<File Id="1009810986" Language="SFX">
+					<ShortName>POSER.wav</ShortName>
+					<Path>SFX\POSER_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
-		</SoundBank>
-		<SoundBank Id="3157003241" Language="SFX">
-			<ObjectPath>\SoundBanks\Default Work Unit\Test</ObjectPath>
-			<ShortName>Test</ShortName>
-			<Path>Test.bnk</Path>
-			<IncludedEvents>
-				<Event Id="3157003241" Name="test" ObjectPath="\Events\Default Work Unit\test"/>
-			</IncludedEvents>
-			<IncludedMemoryFiles>
-				<File Id="576890552" Language="SFX">
-					<ShortName>Tonnerre.wav</ShortName>
-					<Path>SFX\Tonnerre_10C4C929.wem</Path>
-				</File>
-			</IncludedMemoryFiles>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

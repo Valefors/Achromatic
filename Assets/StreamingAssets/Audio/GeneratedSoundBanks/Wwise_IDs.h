@@ -13,8 +13,28 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID TEST = 3157003241U;
+        static const AkUniqueID PLAY_AMBIENT = 1562304622U;
+        static const AkUniqueID PLAY_POSER = 1485308649U;
+        static const AkUniqueID PLAY_PRENDRE = 326001232U;
+        static const AkUniqueID PLAY_STOREFERME = 3535750338U;
+        static const AkUniqueID PLAY_STOREOUVRE = 3670131286U;
+        static const AkUniqueID STARTMUSIC = 3827058668U;
     } // namespace EVENTS
+
+    namespace SWITCHES
+    {
+        namespace NAVIGATION
+        {
+            static const AkUniqueID GROUP = 1082482811U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID INGAME = 984691642U;
+                static const AkUniqueID MENU = 2607556080U;
+            } // namespace SWITCH
+        } // namespace NAVIGATION
+
+    } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
     {
@@ -35,7 +55,7 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
-        static const AkUniqueID TEST = 3157003241U;
+        static const AkUniqueID MAINSOUNDBANK = 534561221U;
     } // namespace BANKS
 
     namespace BUSSES

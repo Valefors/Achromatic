@@ -191,33 +191,93 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 5431db33e0abce49a36a5c955da577d1
     GuidInternal: 
-    m_lastTime: -8586468763698279746
+    m_lastTime: -8586450492725886444
     List:
-    - name: Test
+    - name: MainSoundbank
       guid: 8d03fac40834914eb17985f729118ac9
-      id: 3157003241
+      id: 534561221
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Test
+      - ElementName: MainSoundbank
         ObjectType: 7
-      Path: Default Work Unit\Test
+      Path: Default Work Unit\MainSoundbank
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: ea02e87e1b1f2b43a3a880b8176a3219
     GuidInternal: 
-    m_lastTime: -8586468763698618739
+    m_lastTime: -8586450493137486154
     List:
-    - name: test
-      guid: 29e81243216e0a43a45cc7f5171e9d30
-      id: 3157003241
+    - name: Play_Ambient
+      guid: ebb2121b08340c4a9881a2f0023c9f54
+      id: 1562304622
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: test
+      - ElementName: Play_Ambient
         ObjectType: 3
-      Path: Default Work Unit\test
+      Path: Default Work Unit\Play_Ambient
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Poser
+      guid: 60d31f35eeca504eb45eb67467861dea
+      id: 1485308649
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Poser
+        ObjectType: 3
+      Path: Default Work Unit\Play_Poser
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Prendre
+      guid: 3e5e23feb096e240bef4402e47298b78
+      id: 326001232
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Prendre
+        ObjectType: 3
+      Path: Default Work Unit\Play_Prendre
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_StoreFerme
+      guid: ada9e761b07c9b48b50034ad5882a824
+      id: 3535750338
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_StoreFerme
+        ObjectType: 3
+      Path: Default Work Unit\Play_StoreFerme
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_StoreOuvre
+      guid: 763ef3152ea6ac41bce5a9714fee4d4b
+      id: 3670131286
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_StoreOuvre
+        ObjectType: 3
+      Path: Default Work Unit\Play_StoreOuvre
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: StartMusic
+      guid: bc58a9646a643143b89418fe1e68cbcb
+      id: 3827058668
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: StartMusic
+        ObjectType: 3
+      Path: Default Work Unit\StartMusic
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -353,15 +413,40 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: cf583aa02c766a46800db63ca387b0e0
     GuidInternal: 
-    m_lastTime: -8586468763698160104
+    m_lastTime: -8586450518735739545
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 6bd9a0f29f6f2942b6a3168f45197355
     GuidInternal: 
-    m_lastTime: -8586468763698160104
-    List: []
+    m_lastTime: -8586450518735819327
+    List:
+    - name: Navigation
+      guid: d8c11905f2d43244bfcbd1145adceb60
+      id: 1082482811
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Navigation
+        ObjectType: 11
+      Path: Default Work Unit\Navigation
+      values:
+      - name: Ingame
+        guid: 9dd7b3bd900b654794bd24d4666e5d59
+        id: 984691642
+        PathAndIcons:
+        - ElementName: Ingame
+          ObjectType: 10
+      - name: Menu
+        guid: 94a6317f1438ab438a5bd52f0100cc2e
+        id: 2607556080
+        PathAndIcons:
+        - ElementName: Menu
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
