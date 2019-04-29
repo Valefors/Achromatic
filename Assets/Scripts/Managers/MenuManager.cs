@@ -52,6 +52,8 @@ public class MenuManager : MonoBehaviour
             _introPanel.GetComponent<Image>().sprite = _introImages[i];
             yield return new WaitForSeconds(1f);
         }
+
+        LoadScene();
     }
 
     void OnLoading()

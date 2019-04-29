@@ -51,6 +51,8 @@ public class MovableInteractable : Interactable
         _isHolding = true;
         if(putLocation != null) putLocation.gameObject.SetActive(true);
         putLocation = null;
+
+        AkSoundEngine.PostEvent("Play_Prendre", gameObject);
     }
 
     protected void HoldingMode()
@@ -66,6 +68,8 @@ public class MovableInteractable : Interactable
         putLocation.gameObject.SetActive(false);
 
         _isHolding = false;
+
+        AkSoundEngine.PostEvent("Play_Poser", gameObject);
 
         if (putLocation == _correctLocation) PuzzleManager.instance.UpdateCorrectSpots(true);
         else PuzzleManager.instance.UpdateCorrectSpots(false);

@@ -28,6 +28,8 @@ public class Blinds : Interactable
         PuzzleManager.instance.OpenBlinds();
         PlayerControls.instance.SetModeLightOn();
         _interactionName = Utils.CLOSE_INTERACTION;
+
+        AkSoundEngine.PostEvent("Play_StoreOuvre", gameObject);
     }
 
     void CloseBlinds()
@@ -36,5 +38,7 @@ public class Blinds : Interactable
         PuzzleManager.instance.CloseBlinds();
         PlayerControls.instance.SetModeLightOff();
         _interactionName = Utils.OPEN_INTERACTION;
+
+        AkSoundEngine.PostEvent("Play_StoreFerme", gameObject);
     }
 }

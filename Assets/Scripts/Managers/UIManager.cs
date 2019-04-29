@@ -32,7 +32,10 @@ public class UIManager : MonoBehaviour
     {
         Cursor.visible = false;
         CursorLock();
+
+        AkSoundEngine.PostEvent("Play_Ambient", gameObject);
     }
+
     // Update is called once per frame
     void Update()
     {

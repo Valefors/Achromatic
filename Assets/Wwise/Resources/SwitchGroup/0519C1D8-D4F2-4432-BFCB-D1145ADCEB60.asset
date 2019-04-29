@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4abf4867ed6a163439c279985cc64c87, type: 3}
-  m_Name: C4FA038D-3408-4E91-B179-85F729118AC9
+  m_Script: {fileID: 11500000, guid: 4263b81ab5d9eea45b34a4888e1c3eba, type: 3}
+  m_Name: 0519C1D8-D4F2-4432-BFCB-D1145ADCEB60
   m_EditorClassIdentifier: 
-  objectName: MainSoundbank
-  id: 534561221
-  guid: C4FA038D-3408-4E91-B179-85F729118AC9
+  objectName: Navigation
+  id: 1082482811
+  guid: 0519C1D8-D4F2-4432-BFCB-D1145ADCEB60
