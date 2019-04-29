@@ -42,9 +42,12 @@ public class PutInteractable : Interactable
     {
         base.SetModeNormal();
         //StopCoroutine(GlowCoroutine());
-        _phantomObject.GetComponent<Renderer>().material.SetColor("_Color", new Color(1, 1, 1, 1));
-        _phantomObject.GetComponent<Renderer>().material.DisableKeyword("_EMISSION");
-        Destroy(_phantomObject);
+        if(_phantomObject != null)
+        { 
+            _phantomObject.GetComponent<Renderer>().material.SetColor("_Color", new Color(1, 1, 1, 1));
+            _phantomObject.GetComponent<Renderer>().material.DisableKeyword("_EMISSION");
+            Destroy(_phantomObject);
+        }
     }
 
     IEnumerator GlowCoroutine()
