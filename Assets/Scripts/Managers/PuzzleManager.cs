@@ -51,7 +51,6 @@ public class PuzzleManager : MonoBehaviour
     #region Puzzle 2
     public void UpdateCorrectSpots(bool pUpOrNot)
     {
-        print(_correctSpots);
         if (_correctSpots >= MAX_SPOTS) return;
 
         if (pUpOrNot) _correctSpots++;
