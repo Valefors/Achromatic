@@ -6,10 +6,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	3670131286	Play_StoreOuvre			\Default Work Unit\Play_StoreOuvre	
 	3827058668	StartMusic			\Default Work Unit\StartMusic	
 
-Switch Group	ID	Name			Wwise Object Path	Notes
+State Group	ID	Name			Wwise Object Path	Notes
 	1082482811	Navigation			\Default Work Unit\Navigation	
 
-Switch	ID	Name	Switch Group			Notes
+State	ID	Name	State Group			Notes
+	0	None	Navigation			
 	984691642	Ingame	Navigation			
 	2607556080	Menu	Navigation			
 

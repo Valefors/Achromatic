@@ -413,40 +413,46 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: cf583aa02c766a46800db63ca387b0e0
     GuidInternal: 
-    m_lastTime: -8586450518735739545
-    List: []
-  SwitchWwu:
-  - PhysicalPath: Switches\Default Work Unit.wwu
-    ParentPhysicalPath: 
-    guid: 6bd9a0f29f6f2942b6a3168f45197355
-    GuidInternal: 
-    m_lastTime: -8586450518735819327
+    m_lastTime: -8586449753417325523
     List:
     - name: Navigation
-      guid: d8c11905f2d43244bfcbd1145adceb60
+      guid: e6b7acbd07689c4ca0588816580734c1
       id: 1082482811
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Navigation
-        ObjectType: 11
+        ObjectType: 9
       Path: Default Work Unit\Navigation
       values:
       - name: Ingame
-        guid: 9dd7b3bd900b654794bd24d4666e5d59
+        guid: 717e35cec9fb1a4b9df38d99479308ec
         id: 984691642
         PathAndIcons:
         - ElementName: Ingame
-          ObjectType: 10
+          ObjectType: 8
       - name: Menu
-        guid: 94a6317f1438ab438a5bd52f0100cc2e
+        guid: c45ca930185e114ab2fbe2bf4bf008cb
         id: 2607556080
         PathAndIcons:
         - ElementName: Menu
-          ObjectType: 10
+          ObjectType: 8
+      - name: None
+        guid: 824b4391ae3bd9429b2ae1e80323595d
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 6bd9a0f29f6f2942b6a3168f45197355
+    GuidInternal: 
+    m_lastTime: -8586449753417395338
+    List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -456,9 +462,8 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /AchromaticWwise
-  - /AchromaticWwise/Events
-  - /AchromaticWwise/Events/Default Work Unit
-  - /AchromaticWwise/SoundBanks
-  - /AchromaticWwise/SoundBanks/Default Work Unit
+  - /AchromaticWwise/States
+  - /AchromaticWwise/States/Default Work Unit
+  - /AchromaticWwise/States/Default Work Unit/Navigation
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

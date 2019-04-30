@@ -1,3 +1,11 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1082482811	Navigation			\Default Work Unit\Navigation	
+
+State	ID	Name	State Group			Notes
+	0	None	Navigation			
+	984691642	Ingame	Navigation			
+	2607556080	Menu	Navigation			
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	504532776	Brick			\Factory Reflect Acoustic Textures\Textures\Brick	
 	513139656	Mountain			\Factory Reflect Acoustic Textures\Textures\Mountain	

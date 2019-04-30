@@ -9,5 +9,6 @@ public class LoadScene : MonoBehaviour
     void Start()
     {
         SceneManager.LoadScene(2);
+        AkSoundEngine.SetState("Navigation", "Ingame");
     }
 }

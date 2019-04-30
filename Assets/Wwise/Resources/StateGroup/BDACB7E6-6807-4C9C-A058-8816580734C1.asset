@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55c12b86307279644bca6d17245aed12, type: 3}
-  m_Name: 7F31A694-3814-43AB-8A5B-D52F0100CC2E
+  m_Script: {fileID: 11500000, guid: 8574be89cc9ab4546a54f000e45bc632, type: 3}
+  m_Name: BDACB7E6-6807-4C9C-A058-8816580734C1
   m_EditorClassIdentifier: 
-  objectName: Menu
-  id: 2607556080
-  guid: 7F31A694-3814-43AB-8A5B-D52F0100CC2E
-  WwiseSwitchGroupReference: {fileID: 0}
+  objectName: Navigation
+  id: 1082482811
+  guid: BDACB7E6-6807-4C9C-A058-8816580734C1

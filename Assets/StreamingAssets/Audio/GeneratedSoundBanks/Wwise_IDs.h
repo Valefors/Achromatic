@@ -21,20 +21,20 @@ namespace AK
         static const AkUniqueID STARTMUSIC = 3827058668U;
     } // namespace EVENTS
 
-    namespace SWITCHES
+    namespace STATES
     {
         namespace NAVIGATION
         {
             static const AkUniqueID GROUP = 1082482811U;
 
-            namespace SWITCH
+            namespace STATE
             {
                 static const AkUniqueID INGAME = 984691642U;
                 static const AkUniqueID MENU = 2607556080U;
-            } // namespace SWITCH
+            } // namespace STATE
         } // namespace NAVIGATION
 
-    } // namespace SWITCHES
+    } // namespace STATES
 
     namespace GAME_PARAMETERS
     {
