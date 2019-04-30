@@ -14,10 +14,24 @@ public class MenuManager : MonoBehaviour
 
     [SerializeField] RectTransform _FadeInOutPanel;
     [SerializeField] Sprite[] _introImages;
+
+    bool _inIntro = false;
+    int _introIndex = 0;
+
     private void Start()
     {
         StartCoroutine(StaticFunctions.FadeOut(result => _FadeInOutPanel.GetComponent<CanvasGroup>().alpha = result, 0.8f, null));
         _currentPanel = _menuPanel;
+    }
+
+    private void Update()
+    {
+        if (!_inIntro) return;
+
+        if(Input.GetMouseButtonDown(0))
+        {
+            UpdateIntro();
+        }   
     }
 
     public void OnBack()
@@ -41,8 +55,22 @@ public class MenuManager : MonoBehaviour
     {
         _introPanel.gameObject.SetActive(true);
         StartCoroutine(StaticFunctions.FadeOut(result => _FadeInOutPanel.GetComponent<CanvasGroup>().alpha = result, 0.1f));
-        _introPanel.GetComponent<Image>().sprite = _introImages[0];
-        StartCoroutine(IntroCoroutine());
+        _introPanel.GetComponent<Image>().sprite = _introImages[_introIndex];
+        _inIntro = true;
+       // StartCoroutine(IntroCoroutine());
+    }
+
+    void UpdateIntro()
+    {
+        if(_introIndex >= _introImages.Length - 1)
+        {
+            _inIntro = false;
+            LoadScene();
+            return;
+        }
+
+        _introIndex++;
+        _introPanel.GetComponent<Image>().sprite = _introImages[_introIndex];
     }
 
     IEnumerator IntroCoroutine()
