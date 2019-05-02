@@ -4,7 +4,6 @@ using UnityEngine;
 
 [RequireComponent(typeof(rotateObject))]
 [RequireComponent(typeof(Outline))]
-[RequireComponent(typeof(BoxCollider))]
 public class RotatingInteractable : Interactable
 {
     rotateObject _roScript;
