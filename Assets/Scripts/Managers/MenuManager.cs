@@ -57,7 +57,6 @@ public class MenuManager : MonoBehaviour
         StartCoroutine(StaticFunctions.FadeOut(result => _FadeInOutPanel.GetComponent<CanvasGroup>().alpha = result, 0.1f));
         _introPanel.GetComponent<Image>().sprite = _introImages[_introIndex];
         _inIntro = true;
-       // StartCoroutine(IntroCoroutine());
     }
 
     void UpdateIntro()
@@ -71,17 +70,6 @@ public class MenuManager : MonoBehaviour
 
         _introIndex++;
         _introPanel.GetComponent<Image>().sprite = _introImages[_introIndex];
-    }
-
-    IEnumerator IntroCoroutine()
-    {
-        for(int i =0; i < _introImages.Length; i++)
-        {
-            _introPanel.GetComponent<Image>().sprite = _introImages[i];
-            yield return new WaitForSeconds(1f);
-        }
-
-        LoadScene();
     }
 
     void OnLoading()

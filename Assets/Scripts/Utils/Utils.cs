@@ -19,4 +19,7 @@ public static class Utils
     public static string OPEN_INTERACTION = "OPEN";
     public static string CLOSE_INTERACTION = "CLOSE";
     public static string OTHER_HOLDING_INTERACTION = "You already have an object in hand!";
+
+    //Color light
+    public static Color lightColor = new Color(150, 150, 150);
 }
