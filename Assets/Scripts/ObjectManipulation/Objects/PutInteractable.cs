@@ -76,4 +76,9 @@ public class PutInteractable : Interactable
             yield return new WaitForSeconds(0.05f);
         }
     }
+
+    private void OnDrawGizmos()
+    {
+        
+    }
 }
