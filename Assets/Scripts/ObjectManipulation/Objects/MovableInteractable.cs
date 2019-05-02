@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Outline))]
+[RequireComponent(typeof(BoxCollider))]
 public class MovableInteractable : Interactable
 {
     protected bool _isHolding = false;
