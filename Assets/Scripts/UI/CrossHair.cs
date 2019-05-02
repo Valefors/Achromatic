@@ -83,7 +83,7 @@ public class CrossHair : MonoBehaviour
 
         if (!_isDisplay || UIManager.instance.onUI) return;
 
-        if (Physics.Raycast(ray, out rayHit, 5))
+        if (Physics.Raycast(ray, out rayHit, 3))
         {
             if (rayHit.collider.gameObject.GetComponent<Interactable>())
             {

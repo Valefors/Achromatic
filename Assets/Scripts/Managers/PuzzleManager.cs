@@ -10,6 +10,9 @@ public class PuzzleManager : MonoBehaviour
 
     [SerializeField] GameObject _drawer;
     [SerializeField] GameObject _hiddenNumbers;
+    //Bad stuff, need an array
+    [SerializeField] GameObject _hiddenCross;
+    [SerializeField] GameObject _hiddenText;
 
     Color _offLight = new Color(0, 0, 0);
     Color _ambientLight = Utils.lightColor;
@@ -30,7 +33,9 @@ public class PuzzleManager : MonoBehaviour
 
     private void Start()
     {
-        _hiddenNumbers.SetActive(false);    
+        _hiddenNumbers.SetActive(false);
+        _hiddenCross.SetActive(false);
+        _hiddenText.SetActive(false);
     }
 
     #region Puzzle 1
@@ -38,12 +43,16 @@ public class PuzzleManager : MonoBehaviour
     public void OpenBlinds()
     {
         _hiddenNumbers.SetActive(false);
+        _hiddenCross.SetActive(false);
+        _hiddenText.SetActive(false);
         StaticFunctions.ChangeLightSettings(_ambientLight, 1, AmbientMode.Skybox);
     }
 
     public void CloseBlinds()
     {
         _hiddenNumbers.SetActive(true);
+        _hiddenCross.SetActive(true);
+        _hiddenText.SetActive(true);
         StaticFunctions.ChangeLightSettings(_offLight, 0, AmbientMode.Flat);
     }
     #endregion

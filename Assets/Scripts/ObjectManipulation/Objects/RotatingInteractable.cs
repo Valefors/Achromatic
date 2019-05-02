@@ -13,6 +13,7 @@ public class RotatingInteractable : Interactable
     bool _isFirstClick = false;
 
     Vector3 _originalPosition;
+    Quaternion _originalRotation;
 
     private void Start()
     {
@@ -24,6 +25,7 @@ public class RotatingInteractable : Interactable
         base.Init();
         _roScript = GetComponent<rotateObject>();
         _originalPosition = transform.position;
+        _originalRotation = transform.rotation;
 
         _interactionName = Utils.ROTATING_OBJECT_INTERACTION;
     }
@@ -64,7 +66,7 @@ public class RotatingInteractable : Interactable
     {
         _roScript.SetNormalMode();
         transform.position = _originalPosition;
-        transform.rotation = Quaternion.identity;
+        transform.rotation = _originalRotation;
 
         _isManipulate = false;
 
