@@ -12,7 +12,7 @@ public class PuzzleManager : MonoBehaviour
     [SerializeField] GameObject _hiddenNumbers;
 
     Color _offLight = new Color(0, 0, 0);
-    Color _ambientLight = new Color(108, 108, 108);
+    Color _ambientLight = Utils.lightColor;
 
     #region Singleton
     public static PuzzleManager instance {

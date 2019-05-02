@@ -30,7 +30,6 @@ public class PutInteractable : Interactable
     {
         if (!InteractableManager.instance.holdingObject) return;
 
-
         _phantomObject = Instantiate(InteractableManager.instance.holdingObject, spawnPosition.position, Quaternion.identity).gameObject;
         Destroy(_phantomObject.GetComponent<Interactable>());
         Destroy(_phantomObject.GetComponent<Outline>());
