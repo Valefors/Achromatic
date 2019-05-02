@@ -52,6 +52,13 @@ sysinfo.txt
 
 # Wwise settings
 /[Aa]ssets/WwiseSettings.xml
+/[Aa]ssets/WwiseSettings.xml.meta
+
+# Other
+/[Aa]ssets/Shader.meta
+/[Aa]ssets/Materials/Objects/Clues.meta
+/[Aa]ssets/Meshes/Objects/Clues.meta
+/[Aa]ssets/Textures/Objects/Decorations.meta
 
 
 # Crashlytics generated file
