@@ -14,7 +14,7 @@ public class PlayerControls : MonoBehaviour
     //Rotation
     float rotX = 0;
     float rotY = 0;
-    private float _mouseSensivity = 250.0f;
+    [SerializeField] float _mouseSensivity = 250.0f;
     [SerializeField] float CLAMP_ANGLE_Y = 30f;
 
     //Position for rotating objects
