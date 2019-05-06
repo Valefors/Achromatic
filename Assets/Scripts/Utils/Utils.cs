@@ -12,14 +12,19 @@ public static class Utils
     public static string RIGHT_CLICK_ACTION = "RightClick";
 
     //Interaction possible
-    public static string ROTATING_OBJECT_INTERACTION = "EXAMINE";
-    public static string MOVABLE_OBJECT_INTERACTION = "TAKE";
-    public static string PUT_INTERACTION = "PUT";
+    public static string ROTATING_OBJECT_INTERACTION = "I should have a look at it.";
+    public static string MOVABLE_OBJECT_INTERACTION = "I feel like I have to put it somewhere else...";
+    public static string PUT_INTERACTION = "Let’s put it here.";
     public static string UNLOCK_INTERACTION = "UNLOCK";
-    public static string OPEN_INTERACTION = "OPEN";
-    public static string CLOSE_INTERACTION = "CLOSE";
+    public static string OPEN_INTERACTION = "Let’s open it.";
+    public static string CLOSE_INTERACTION = "Let’s close it.";
     public static string OTHER_HOLDING_INTERACTION = "You already have an object in hand!";
 
     //Color light
     public static Color lightColor = new Color(150, 150, 150);
+
+    //SCENE NAME
+    public static int MENU_SCENE = 0;
+    public static int LOADING_SCENE = 1;
+    public static int INGAME_SCENE = 2;
 }

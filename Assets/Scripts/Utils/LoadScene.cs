@@ -8,7 +8,7 @@ public class LoadScene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(Utils.INGAME_SCENE);
         AkSoundEngine.SetState("Navigation", "Ingame");
     }
 }

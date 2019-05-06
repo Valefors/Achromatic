@@ -2,13 +2,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
-    bool _optionScreenEnabled = false;
+    bool _screenEnabled = false;
     Player _player;
-    [SerializeField] RectTransform _optionScreen = null;
-    public bool onUI = false; //When an UI thing is shown on screen
+    [SerializeField] RectTransform _pauseScreen = null;
+    [SerializeField] RectTransform _optionsScreen = null;
+    [HideInInspector] public bool onUI = false; //When an UI thing is shown on screen
 
     RectTransform _currentScreen;
 
@@ -45,15 +47,15 @@ public class UIManager : MonoBehaviour
 
     void GetInput()
     {
-        _optionScreenEnabled = _player.GetButtonDown(Utils.REWIRED_OPTION_ACTION);
+        _screenEnabled = _player.GetButtonDown(Utils.REWIRED_OPTION_ACTION);
     }
 
     void ProcessInput()
     {
-        if (_optionScreenEnabled)
+        if (_screenEnabled)
         {
-            _optionScreen.gameObject.SetActive(true);
-            _currentScreen = _optionScreen;
+            _pauseScreen.gameObject.SetActive(true);
+            _currentScreen = _pauseScreen;
 
             onUI = true;
             Cursor.visible = true;
@@ -70,6 +72,30 @@ public class UIManager : MonoBehaviour
             Cursor.visible = true;
             CursorLock();
         }
+    }
+
+    public void OnOptions()
+    {
+        _currentScreen.gameObject.SetActive(false);
+        _currentScreen = _optionsScreen;
+        _currentScreen.gameObject.SetActive(true);
+    }
+
+    public void OnBack()
+    {
+        _currentScreen.gameObject.SetActive(false);
+        _currentScreen = _pauseScreen;
+        _currentScreen.gameObject.SetActive(true);
+    }
+
+    public void OnBackMenu()
+    {
+        SceneManager.LoadScene(Utils.MENU_SCENE);
+    }
+
+    public void OnQuit()
+    {
+        StaticFunctions.QuitGame();
     }
 
     void CursorLock()

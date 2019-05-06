@@ -79,4 +79,9 @@ public static class StaticFunctions
         RenderSettings.ambientMode = pAmbientMode;
         RenderSettings.ambientSkyColor = pLightColor;
     }
+
+    public static void QuitGame()
+    {
+        Application.Quit();
+    }
 }
