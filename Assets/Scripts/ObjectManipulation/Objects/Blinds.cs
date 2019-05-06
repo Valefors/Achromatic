@@ -29,10 +29,6 @@ public class Blinds : Interactable
         _isOpen = true;
         if (_animator != null) _animator.SetBool("isOpen", _isOpen);
 
-        PuzzleManager.instance.OpenBlinds();
-        PlayerControls.instance.SetModeLightOn();
-        _interactionName = Utils.CLOSE_INTERACTION;
-
         AkSoundEngine.PostEvent("Play_StoreOuvre", gameObject);
     }
 
@@ -41,10 +37,24 @@ public class Blinds : Interactable
         _isOpen = false;
         if (_animator != null) _animator.SetBool("isOpen", _isOpen);
 
+        AkSoundEngine.PostEvent("Play_StoreFerme", gameObject);
+    }
+
+    public void OnOpenAnimationEnd()
+    {
+        if (!_isOpen) return;
+
+        PuzzleManager.instance.OpenBlinds();
+        PlayerControls.instance.SetModeLightOn();
+        _interactionName = Utils.CLOSE_INTERACTION;   
+    }
+
+    public void OnCloseAnimationEnd()
+    {
+        if (_isOpen) return;
+
         PuzzleManager.instance.CloseBlinds();
         PlayerControls.instance.SetModeLightOff();
         _interactionName = Utils.OPEN_INTERACTION;
-
-        AkSoundEngine.PostEvent("Play_StoreFerme", gameObject);
     }
 }
