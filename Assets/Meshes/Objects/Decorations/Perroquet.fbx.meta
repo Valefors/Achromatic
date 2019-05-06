@@ -1,15 +1,14 @@
 fileFormatVersion: 2
-guid: a8bcaddb439d83240b15255cd372b8e3
+guid: 677791c2932de9440b427b66ec3f0313
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: lambert3
-    2100002: lambert7
+    2100000: lambert1
     2300000: //RootNode
     3300000: //RootNode
-    4300000: NewsPaper02
+    4300000: pSphere8
   externalObjects: {}
   materials:
     importMaterials: 1

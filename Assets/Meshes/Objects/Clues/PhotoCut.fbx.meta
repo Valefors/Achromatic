@@ -1,15 +1,31 @@
 fileFormatVersion: 2
-guid: a8bcaddb439d83240b15255cd372b8e3
+guid: 960d21c6f80f39d4db8cf529a205bae7
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: lambert3
-    2100002: lambert7
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: NewsPaper02
+    100000: Photo01
+    100002: Photo02
+    100004: Photo03
+    100006: Photo04
+    100008: //RootNode
+    400000: Photo01
+    400002: Photo02
+    400004: Photo03
+    400006: Photo04
+    400008: //RootNode
+    2100000: lambert1
+    2300000: Photo01
+    2300002: Photo02
+    2300004: Photo03
+    2300006: Photo04
+    3300000: Photo01
+    3300002: Photo02
+    3300004: Photo03
+    3300006: Photo04
+    4300000: Photo01
+    4300002: Photo02
+    4300004: Photo03
+    4300006: Photo04
   externalObjects: {}
   materials:
     importMaterials: 1
