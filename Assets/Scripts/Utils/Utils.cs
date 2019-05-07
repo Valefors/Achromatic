@@ -15,7 +15,7 @@ public static class Utils
     public static string ROTATING_OBJECT_INTERACTION = "I should have a look at it.";
     public static string MOVABLE_OBJECT_INTERACTION = "I feel like I have to put it somewhere else...";
     public static string PUT_INTERACTION = "Let’s put it here.";
-    public static string UNLOCK_INTERACTION = "UNLOCK";
+    public static string UNLOCK_INTERACTION = "You did it! W.I.P feature";
     public static string OPEN_INTERACTION = "Let’s open it.";
     public static string CLOSE_INTERACTION = "Let’s close it.";
     public static string OTHER_HOLDING_INTERACTION = "You already have an object in hand!";
