@@ -45,8 +45,6 @@ public class RotatingInteractable : Interactable
 
     void ProcessInput()
     {
-        /*if (_rightClick) _roScript.SetManipulationMode();
-        else _roScript.SetNormalMode();*/
         _roScript.SetManipulationMode();
         if (_leftClick) PutBack();
     }

@@ -133,7 +133,6 @@ public class CrossHair : MonoBehaviour
     public void ShowCursor()
     {
         _imageComponent.gameObject.SetActive(true);
-        _objectSelectedText.gameObject.SetActive(true);
         _objectInteractionText.gameObject.SetActive(true);
 
         _isDisplay = true;
