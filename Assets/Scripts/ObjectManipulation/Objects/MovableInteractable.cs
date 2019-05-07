@@ -8,7 +8,7 @@ public class MovableInteractable : Interactable
 {
     protected bool _isHolding = false;
     public PutInteractable putLocation;
-    [SerializeField] private PutInteractable _correctLocation;
+    [SerializeField] public PutInteractable correctLocation;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +22,6 @@ public class MovableInteractable : Interactable
         _interactionName = Utils.MOVABLE_OBJECT_INTERACTION;
         if (putLocation == null) Debug.LogError("MISSING REFERENCE IN " + this);
         putLocation.gameObject.SetActive(false);
-        if (_correctLocation == putLocation) PuzzleManager.instance.UpdateCorrectSpots(true);
     }
 
     // Update is called once per frame
@@ -72,7 +71,6 @@ public class MovableInteractable : Interactable
 
         AkSoundEngine.PostEvent("Play_Poser", gameObject);
 
-        if (putLocation == _correctLocation) PuzzleManager.instance.UpdateCorrectSpots(true);
-        else PuzzleManager.instance.UpdateCorrectSpots(false);
+        PuzzleManager.instance.CheckCorrectPosition();
     }
 }

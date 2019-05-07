@@ -14,6 +14,8 @@ public class PuzzleManager : MonoBehaviour
     [SerializeField] GameObject _hiddenCross;
     [SerializeField] GameObject _hiddenText;
 
+    [SerializeField] MovableInteractable[] _movableObjects;
+
     Color _offLight = new Color(0, 0, 0);
     Color _ambientLight = Utils.lightColor;
 
@@ -58,18 +60,19 @@ public class PuzzleManager : MonoBehaviour
     #endregion
 
     #region Puzzle 2
-    public void UpdateCorrectSpots(bool pUpOrNot)
+    public void CheckCorrectPosition()
     {
         if (_correctSpots >= MAX_SPOTS) return;
 
-        if (pUpOrNot) _correctSpots++;
-        else _correctSpots--;
+        _correctSpots = 0;
 
-        if(_correctSpots >= 4)
+        for(int i = 0; i < _movableObjects.Length; i++)
         {
-            _correctSpots = 4;
-            UnlockDrawer();
+            if (_movableObjects[i].putLocation == _movableObjects[i].correctLocation) _correctSpots++;
         }
+
+        print(_correctSpots);
+        if (_correctSpots == MAX_SPOTS) UnlockDrawer();
     }
 
     void UnlockDrawer()
