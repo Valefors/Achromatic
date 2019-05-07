@@ -13,7 +13,7 @@ public static class Utils
 
     //Interaction possible
     public static string ROTATING_OBJECT_INTERACTION = "I should have a look at it.";
-    public static string MOVABLE_OBJECT_INTERACTION = "I feel like I have to put it somewhere else...";
+    public static string MOVABLE_OBJECT_INTERACTION = "I feel like I have to do something with it...";
     public static string PUT_INTERACTION = "Let’s put it here.";
     public static string UNLOCK_INTERACTION = "You did it! W.I.P feature";
     public static string OPEN_INTERACTION = "Let’s open it.";
