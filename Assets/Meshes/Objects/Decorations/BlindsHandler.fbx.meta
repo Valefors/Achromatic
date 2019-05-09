@@ -1,36 +1,26 @@
 fileFormatVersion: 2
-guid: 57d46d6cf8c94aa4e9e0b2a00b28e853
+guid: c65089901a8078a448a7d4c1a926fbc2
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Television:Body
-    100002: Television:Button
-    100004: Television:Feet
-    100006: Television:Frame
-    100008: Television:Screen
-    100010: //RootNode
-    400000: Television:Body
-    400002: Television:Button
-    400004: Television:Feet
-    400006: Television:Frame
-    400008: Television:Screen
-    400010: //RootNode
+    100000: BlindsHandle
+    100002: //RootNode
+    100004: group1
+    100006: pCylinder1
+    100008: pCylinder2
+    100010: transform1
+    100012: transform2
+    400000: BlindsHandle
+    400002: //RootNode
+    400004: group1
+    400006: pCylinder1
+    400008: pCylinder2
+    400010: transform1
+    400012: transform2
     2100000: lambert1
-    2300000: Television:Body
-    2300002: Television:Button
-    2300004: Television:Feet
-    2300006: Television:Frame
-    2300008: Television:Screen
-    3300000: Television:Body
-    3300002: Television:Button
-    3300004: Television:Feet
-    3300006: Television:Frame
-    3300008: Television:Screen
-    4300000: Television:Body
-    4300002: Television:Feet
-    4300004: Television:Button
-    4300006: Television:Frame
-    4300008: Television:Screen
+    2300000: BlindsHandle
+    3300000: BlindsHandle
+    4300000: BlindsHandle
   externalObjects: {}
   materials:
     importMaterials: 1

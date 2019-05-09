@@ -1,25 +1,31 @@
 fileFormatVersion: 2
-guid: 60570567a7ae7fe478740aabc87ba02f
+guid: 73a29a1f070657c49848ebb9bff23ccc
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: CeilingFan
-    100004: CeilingFan_Base
-    400000: //RootNode
-    400002: CeilingFan
-    400004: CeilingFan_Base
+    100000: Body
+    100002: Button
+    100004: Feet
+    100006: Screen
+    100008: //RootNode
+    400000: Body
+    400002: Button
+    400004: Feet
+    400006: Screen
+    400008: //RootNode
     2100000: lambert1
-    2100002: lambert2
-    2100004: lambert4
-    2300000: CeilingFan
-    2300002: CeilingFan_Base
-    3300000: CeilingFan
-    3300002: CeilingFan_Base
-    4300000: CeilingFan_Base
-    4300002: CeilingFan
-    7400000: Take 001
-    9500000: //RootNode
+    2300000: Body
+    2300002: Button
+    2300004: Feet
+    2300006: Screen
+    3300000: Body
+    3300002: Button
+    3300004: Feet
+    3300006: Screen
+    4300000: Body
+    4300002: Screen
+    4300004: Button
+    4300006: Feet
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -47,35 +53,7 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: Take 001
-      takeName: Take 001
-      firstFrame: 2
-      lastFrame: 60
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -101,7 +79,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -128,7 +106,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
