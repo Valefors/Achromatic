@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce10f53f3b2f5f6439482d76b077cfbb, type: 3}
+  m_Name: 64A958BC-646A-4331-B894-18FE1E68CBCB
+  m_EditorClassIdentifier: 
+  objectName: StartMusic
+  id: 3827058668
+  guid: 64A958BC-646A-4331-B894-18FE1E68CBCB

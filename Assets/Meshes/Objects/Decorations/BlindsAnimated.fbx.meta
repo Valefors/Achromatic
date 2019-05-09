@@ -1,0 +1,235 @@
+fileFormatVersion: 2
+guid: 0366705ab7fb4af44ba63e143fa411c5
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Blind01
+    100002: Blind010
+    100004: Blind011
+    100006: Blind012
+    100008: Blind013
+    100010: Blind014
+    100012: Blind015
+    100014: Blind016
+    100016: Blind017
+    100018: Blind018
+    100020: Blind02
+    100022: Blind03
+    100024: Blind04
+    100026: Blind05
+    100028: Blind06
+    100030: Blind07
+    100032: Blind08
+    100034: Blind09
+    100036: Blind_Group
+    100038: //RootNode
+    100040: BlindsSupport
+    400000: Blind01
+    400002: Blind010
+    400004: Blind011
+    400006: Blind012
+    400008: Blind013
+    400010: Blind014
+    400012: Blind015
+    400014: Blind016
+    400016: Blind017
+    400018: Blind018
+    400020: Blind02
+    400022: Blind03
+    400024: Blind04
+    400026: Blind05
+    400028: Blind06
+    400030: Blind07
+    400032: Blind08
+    400034: Blind09
+    400036: Blind_Group
+    400038: //RootNode
+    400040: BlindsSupport
+    2100000: lambert1
+    2300000: Blind01
+    2300002: Blind010
+    2300004: Blind011
+    2300006: Blind012
+    2300008: Blind013
+    2300010: Blind014
+    2300012: Blind015
+    2300014: Blind016
+    2300016: Blind017
+    2300018: Blind018
+    2300020: Blind02
+    2300022: Blind03
+    2300024: Blind04
+    2300026: Blind05
+    2300028: Blind06
+    2300030: Blind07
+    2300032: Blind08
+    2300034: Blind09
+    2300036: BlindsSupport
+    3300000: Blind01
+    3300002: Blind010
+    3300004: Blind011
+    3300006: Blind012
+    3300008: Blind013
+    3300010: Blind014
+    3300012: Blind015
+    3300014: Blind016
+    3300016: Blind017
+    3300018: Blind018
+    3300020: Blind02
+    3300022: Blind03
+    3300024: Blind04
+    3300026: Blind05
+    3300028: Blind06
+    3300030: Blind07
+    3300032: Blind08
+    3300034: Blind09
+    3300036: BlindsSupport
+    4300000: BlindsSupport
+    4300002: Blind01
+    4300004: Blind02
+    4300006: Blind03
+    4300008: Blind04
+    4300010: Blind05
+    4300012: Blind06
+    4300014: Blind07
+    4300016: Blind08
+    4300018: Blind09
+    4300020: Blind010
+    4300022: Blind011
+    4300024: Blind012
+    4300026: Blind013
+    4300028: Blind014
+    4300030: Blind015
+    4300032: Blind016
+    4300034: Blind017
+    4300036: Blind018
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 1
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.10610932
+        functionName: OnOpenAnimationEnd
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.90032154
+        functionName: OnCloseAnimationEnd
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

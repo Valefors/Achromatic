@@ -1,0 +1,330 @@
+fileFormatVersion: 2
+guid: 891289d5889568542bc07967a12125a2
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ButtonLine01
+    100002: ButtonLine02
+    100004: ButtonLine03
+    100006: ButtonLine04
+    100008: ButtonLine05
+    100010: Buttons_L101
+    100012: Buttons_L102
+    100014: Buttons_L201
+    100016: Buttons_L201 1
+    100018: Buttons_L2010
+    100020: Buttons_L2010 1
+    100022: Buttons_L2010 2
+    100024: Buttons_L2011
+    100026: Buttons_L202
+    100028: Buttons_L202 1
+    100030: Buttons_L203
+    100032: Buttons_L203 1
+    100034: Buttons_L203 2
+    100036: Buttons_L204
+    100038: Buttons_L204 1
+    100040: Buttons_L204 2
+    100042: Buttons_L205
+    100044: Buttons_L205 1
+    100046: Buttons_L205 2
+    100048: Buttons_L206
+    100050: Buttons_L206 1
+    100052: Buttons_L206 2
+    100054: Buttons_L207
+    100056: Buttons_L207 1
+    100058: Buttons_L207 2
+    100060: Buttons_L208
+    100062: Buttons_L208 1
+    100064: Buttons_L208 2
+    100066: Buttons_L209
+    100068: Buttons_L209 1
+    100070: Buttons_L209 2
+    100072: Buttons_L401
+    100074: Buttons_L402
+    100076: Buttons_L403
+    100078: Buttons_L404
+    100080: Buttons_L405
+    100082: Buttons_L406
+    100084: Buttons_L407
+    100086: Buttons_L408
+    100088: Buttons_L409
+    100090: Buttons_L410
+    100092: Buttons_L501
+    100094: Buttons_L502
+    100096: ButtonSpace
+    100098: //RootNode
+    100100: TypeWriterBase
+    400000: ButtonLine01
+    400002: ButtonLine02
+    400004: ButtonLine03
+    400006: ButtonLine04
+    400008: ButtonLine05
+    400010: Buttons_L101
+    400012: Buttons_L102
+    400014: Buttons_L201
+    400016: Buttons_L201 1
+    400018: Buttons_L2010
+    400020: Buttons_L2010 1
+    400022: Buttons_L2010 2
+    400024: Buttons_L2011
+    400026: Buttons_L202
+    400028: Buttons_L202 1
+    400030: Buttons_L203
+    400032: Buttons_L203 1
+    400034: Buttons_L203 2
+    400036: Buttons_L204
+    400038: Buttons_L204 1
+    400040: Buttons_L204 2
+    400042: Buttons_L205
+    400044: Buttons_L205 1
+    400046: Buttons_L205 2
+    400048: Buttons_L206
+    400050: Buttons_L206 1
+    400052: Buttons_L206 2
+    400054: Buttons_L207
+    400056: Buttons_L207 1
+    400058: Buttons_L207 2
+    400060: Buttons_L208
+    400062: Buttons_L208 1
+    400064: Buttons_L208 2
+    400066: Buttons_L209
+    400068: Buttons_L209 1
+    400070: Buttons_L209 2
+    400072: Buttons_L401
+    400074: Buttons_L402
+    400076: Buttons_L403
+    400078: Buttons_L404
+    400080: Buttons_L405
+    400082: Buttons_L406
+    400084: Buttons_L407
+    400086: Buttons_L408
+    400088: Buttons_L409
+    400090: Buttons_L410
+    400092: Buttons_L501
+    400094: Buttons_L502
+    400096: ButtonSpace
+    400098: //RootNode
+    400100: TypeWriterBase
+    2100000: lambert3
+    2100002: lambert4
+    2300000: Buttons_L101
+    2300002: Buttons_L102
+    2300004: Buttons_L201
+    2300006: Buttons_L201 1
+    2300008: Buttons_L2010
+    2300010: Buttons_L2010 1
+    2300012: Buttons_L2010 2
+    2300014: Buttons_L2011
+    2300016: Buttons_L202
+    2300018: Buttons_L202 1
+    2300020: Buttons_L203
+    2300022: Buttons_L203 1
+    2300024: Buttons_L203 2
+    2300026: Buttons_L204
+    2300028: Buttons_L204 1
+    2300030: Buttons_L204 2
+    2300032: Buttons_L205
+    2300034: Buttons_L205 1
+    2300036: Buttons_L205 2
+    2300038: Buttons_L206
+    2300040: Buttons_L206 1
+    2300042: Buttons_L206 2
+    2300044: Buttons_L207
+    2300046: Buttons_L207 1
+    2300048: Buttons_L207 2
+    2300050: Buttons_L208
+    2300052: Buttons_L208 1
+    2300054: Buttons_L208 2
+    2300056: Buttons_L209
+    2300058: Buttons_L209 1
+    2300060: Buttons_L209 2
+    2300062: Buttons_L401
+    2300064: Buttons_L402
+    2300066: Buttons_L403
+    2300068: Buttons_L404
+    2300070: Buttons_L405
+    2300072: Buttons_L406
+    2300074: Buttons_L407
+    2300076: Buttons_L408
+    2300078: Buttons_L409
+    2300080: Buttons_L410
+    2300082: Buttons_L501
+    2300084: Buttons_L502
+    2300086: ButtonSpace
+    2300088: TypeWriterBase
+    3300000: Buttons_L101
+    3300002: Buttons_L102
+    3300004: Buttons_L201
+    3300006: Buttons_L201 1
+    3300008: Buttons_L2010
+    3300010: Buttons_L2010 1
+    3300012: Buttons_L2010 2
+    3300014: Buttons_L2011
+    3300016: Buttons_L202
+    3300018: Buttons_L202 1
+    3300020: Buttons_L203
+    3300022: Buttons_L203 1
+    3300024: Buttons_L203 2
+    3300026: Buttons_L204
+    3300028: Buttons_L204 1
+    3300030: Buttons_L204 2
+    3300032: Buttons_L205
+    3300034: Buttons_L205 1
+    3300036: Buttons_L205 2
+    3300038: Buttons_L206
+    3300040: Buttons_L206 1
+    3300042: Buttons_L206 2
+    3300044: Buttons_L207
+    3300046: Buttons_L207 1
+    3300048: Buttons_L207 2
+    3300050: Buttons_L208
+    3300052: Buttons_L208 1
+    3300054: Buttons_L208 2
+    3300056: Buttons_L209
+    3300058: Buttons_L209 1
+    3300060: Buttons_L209 2
+    3300062: Buttons_L401
+    3300064: Buttons_L402
+    3300066: Buttons_L403
+    3300068: Buttons_L404
+    3300070: Buttons_L405
+    3300072: Buttons_L406
+    3300074: Buttons_L407
+    3300076: Buttons_L408
+    3300078: Buttons_L409
+    3300080: Buttons_L410
+    3300082: Buttons_L501
+    3300084: Buttons_L502
+    3300086: ButtonSpace
+    3300088: TypeWriterBase
+    4300000: TypeWriterBase
+    4300002: Buttons_L101
+    4300004: Buttons_L102
+    4300006: Buttons_L203
+    4300008: Buttons_L204
+    4300010: Buttons_L205
+    4300012: Buttons_L206
+    4300014: Buttons_L207
+    4300016: Buttons_L208
+    4300018: Buttons_L209
+    4300020: Buttons_L2010
+    4300022: Buttons_L2011
+    4300024: Buttons_L201
+    4300026: Buttons_L202
+    4300028: Buttons_L203
+    4300030: Buttons_L204
+    4300032: Buttons_L205
+    4300034: Buttons_L206
+    4300036: Buttons_L207
+    4300038: Buttons_L208
+    4300040: Buttons_L209
+    4300042: Buttons_L2010
+    4300044: Buttons_L201
+    4300046: Buttons_L202
+    4300048: Buttons_L203
+    4300050: Buttons_L204
+    4300052: Buttons_L205
+    4300054: Buttons_L206
+    4300056: Buttons_L207
+    4300058: Buttons_L208
+    4300060: Buttons_L209
+    4300062: Buttons_L2010
+    4300064: Buttons_L401
+    4300066: Buttons_L402
+    4300068: Buttons_L403
+    4300070: Buttons_L404
+    4300072: Buttons_L405
+    4300074: Buttons_L406
+    4300076: Buttons_L407
+    4300078: Buttons_L408
+    4300080: Buttons_L409
+    4300082: Buttons_L410
+    4300084: ButtonSpace
+    4300086: Buttons_L501
+    4300088: Buttons_L502
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
