@@ -15,4 +15,5 @@ MonoBehaviour:
   objectName: Menu
   id: 2607556080
   guid: 30A95CC4-5E18-4A11-B2FB-E2BF4BF008CB
-  WwiseStateGroupReference: {fileID: 0}
+  WwiseStateGroupReference: {fileID: 11400000, guid: eff1e7d77e7afc54984c31c02958bd3f,
+    type: 2}
