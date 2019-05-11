@@ -1,14 +1,26 @@
 fileFormatVersion: 2
-guid: 901e511ef44645c44b62617094191040
+guid: d2ea77c30e29ad64f8ff20f239f2c391
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: lambert5
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Book1
+    100000: ClosedDoor
+    100002: Door
+    100004: //RootNode
+    100006: KeyHole
+    100008: transform1
+    100010: transform2
+    400000: ClosedDoor
+    400002: Door
+    400004: //RootNode
+    400006: KeyHole
+    400008: transform1
+    400010: transform2
+    2100000: lambert1
+    2100002: lambert2
+    2100004: lambert3
+    2300000: Door
+    3300000: Door
+    4300000: Door
   externalObjects: {}
   materials:
     importMaterials: 1

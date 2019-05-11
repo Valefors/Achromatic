@@ -1,14 +1,37 @@
 fileFormatVersion: 2
-guid: 48490635b339f354097f827c1c575e88
+guid: 8321b6f35b93dda468987bb88eca5951
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Frame
+    100004: Frame2
+    100006: Frame3
+    100008: Frame4
+    100010: Frame5
     400000: //RootNode
-    2100000: lambert5
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Book2
+    400002: Frame
+    400004: Frame2
+    400006: Frame3
+    400008: Frame4
+    400010: Frame5
+    2100000: lambert14
+    2100002: lambert2
+    2300000: Frame
+    2300002: Frame2
+    2300004: Frame3
+    2300006: Frame4
+    2300008: Frame5
+    3300000: Frame
+    3300002: Frame2
+    3300004: Frame3
+    3300006: Frame4
+    3300008: Frame5
+    4300000: Frame
+    4300002: Frame2
+    4300004: Frame3
+    4300006: Frame4
+    4300008: Frame5
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -49,7 +72,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
