@@ -1,15 +1,23 @@
 fileFormatVersion: 2
-guid: 2ab6077444e959647848c3d6ff952403
+guid: 60696f1645655ef41807fad56925c3c1
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
+    100000: PaperCase
+    100002: //RootNode
+    100004: PaperPile
+    400000: PaperCase
+    400002: //RootNode
+    400004: PaperPile
     2100000: lambert1
-    2100002: lambert2
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: pCylinder2
+    2100002: lambert3
+    2100004: lambert5
+    2300000: PaperCase
+    2300002: PaperPile
+    3300000: PaperCase
+    3300002: PaperPile
+    4300000: PaperCase
+    4300002: PaperPile
   externalObjects: {}
   materials:
     importMaterials: 1

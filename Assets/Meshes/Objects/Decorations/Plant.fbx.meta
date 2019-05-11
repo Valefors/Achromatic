@@ -1,15 +1,44 @@
 fileFormatVersion: 2
-guid: 2ab6077444e959647848c3d6ff952403
+guid: a390df77f87c4d04bae8f8e13709f751
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    400000: //RootNode
+    100002: Plant
+    100004: Plant01
+    100006: Plant02
+    100008: Plant03
+    100010: Plant04
+    100012: Plant05
+    100014: Plant06
+    100016: Plant07
+    100018: transform1
+    100020: transform2
+    100022: transform3
+    100024: transform4
+    100026: transform5
+    100028: transform6
+    100030: transform7
+    400000: Plant
+    400002: //RootNode
+    400004: Plant01
+    400006: Plant02
+    400008: Plant03
+    400010: Plant04
+    400012: Plant05
+    400014: Plant06
+    400016: Plant07
+    400018: transform1
+    400020: transform2
+    400022: transform3
+    400024: transform4
+    400026: transform5
+    400028: transform6
+    400030: transform7
     2100000: lambert1
-    2100002: lambert2
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: pCylinder2
+    2300000: Plant
+    3300000: Plant
+    4300000: Plant
   externalObjects: {}
   materials:
     importMaterials: 1
