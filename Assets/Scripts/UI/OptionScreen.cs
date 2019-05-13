@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class OptionScreen : MonoBehaviour
 {
+    public static float MOUSE_SENSIBILITY = 120;
+
     public void OnClickSwitchControllersEn()
     {
         ReInput.players.GetPlayer(0).controllers.maps.SetMapsEnabled(false, 0);
