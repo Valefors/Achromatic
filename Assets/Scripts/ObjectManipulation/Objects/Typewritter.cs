@@ -15,7 +15,7 @@ public class Typewritter : Interactable
     // Update is called once per frame
     public override void SetInteractionMode()
     {
-        UIManager.instance.OnChoiceScreen();
+        UIManager.instance.OnTypewritterScreen();
         SetModeNormal();
     }
 }
