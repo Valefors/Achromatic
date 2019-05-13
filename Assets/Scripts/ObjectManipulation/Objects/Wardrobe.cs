@@ -19,11 +19,6 @@ public class Wardrobe : Interactable
         _collider = GetComponent<BoxCollider>();
     }
 
-    public override void SetModeHoover()
-    {
-        base.SetModeHoover();
-    }
-
     public override void SetInteractionMode()
     {
         if (_isFirstOpen) return;

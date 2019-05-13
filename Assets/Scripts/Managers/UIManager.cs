@@ -10,9 +10,13 @@ public class UIManager : MonoBehaviour
     Player _player;
     [SerializeField] RectTransform _pauseScreen = null;
     [SerializeField] RectTransform _optionsScreen = null;
+    [SerializeField] RectTransform _typeWriterScreen = null;
+    [SerializeField] RectTransform _choiceScreen = null;
+    [SerializeField] RectTransform _endScreen = null;
+
     [HideInInspector] public bool onUI = false; //When an UI thing is shown on screen
 
-    RectTransform _currentScreen;
+    RectTransform _currentScreen = null;
 
     #region Singleton
     public static UIManager instance {
@@ -52,15 +56,20 @@ public class UIManager : MonoBehaviour
 
     void ProcessInput()
     {
-        if (_screenEnabled)
+        if (_screenEnabled && _currentScreen == null)
         {
             _pauseScreen.gameObject.SetActive(true);
             _currentScreen = _pauseScreen;
 
-            onUI = true;
-            Cursor.visible = true;
-            CursorUnlock();
+            SetUIMode();
         }
+    }
+
+    void SetUIMode()
+    {
+        onUI = true;
+        Cursor.visible = true;
+        CursorUnlock();
     }
 
     public void DisableCurrentScreen()
@@ -68,10 +77,36 @@ public class UIManager : MonoBehaviour
         if (_currentScreen != null)
         {
             _currentScreen.gameObject.SetActive(false);
+            _currentScreen = null;
             onUI = false;
             Cursor.visible = true;
             CursorLock();
         }
+    }
+
+    public void OnTypewritterScreen()
+    {
+        SetUIMode();
+
+        _currentScreen = _typeWriterScreen;
+        _currentScreen.gameObject.SetActive(true);
+    }
+
+    public void OnChoiceScreen()
+    {
+        if (_currentScreen != null) _currentScreen.gameObject.SetActive(false);
+
+        _currentScreen = _choiceScreen;
+        _currentScreen.gameObject.SetActive(true);
+
+        SetUIMode();
+    }
+
+    public void OnEndScreen()
+    {
+        _currentScreen.gameObject.SetActive(false);
+        _currentScreen = _endScreen;
+        _currentScreen.gameObject.SetActive(true);
     }
 
     public void OnOptions()

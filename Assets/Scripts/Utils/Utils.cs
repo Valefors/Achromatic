@@ -18,6 +18,7 @@ public static class Utils
     public static string UNLOCK_INTERACTION = "You did it! W.I.P feature";
     public static string OPEN_INTERACTION = "Let’s open it.";
     public static string CLOSE_INTERACTION = "Let’s close it.";
+    public static string TYPEWRITTER_INTERACTION = "Let’s make this clear.";
     public static string OTHER_HOLDING_INTERACTION = "You already have an object in hand!";
 
     //Color light
