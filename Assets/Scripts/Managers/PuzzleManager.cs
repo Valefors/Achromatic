@@ -47,7 +47,7 @@ public class PuzzleManager : MonoBehaviour
         _hiddenNumbers.SetActive(false);
         _hiddenCross.SetActive(false);
         _hiddenText.SetActive(false);
-        StaticFunctions.ChangeLightSettings(_ambientLight, 1, AmbientMode.Skybox);
+        StaticFunctions.ChangeLightSettings(_ambientLight, 1);
     }
 
     public void CloseBlinds()
@@ -55,7 +55,8 @@ public class PuzzleManager : MonoBehaviour
         _hiddenNumbers.SetActive(true);
         _hiddenCross.SetActive(true);
         _hiddenText.SetActive(true);
-        StaticFunctions.ChangeLightSettings(_offLight, 0, AmbientMode.Flat);
+
+        StaticFunctions.ChangeLightSettings(_offLight, 0);
     }
     #endregion
 

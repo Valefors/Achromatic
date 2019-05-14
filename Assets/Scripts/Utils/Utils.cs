@@ -22,7 +22,7 @@ public static class Utils
     public static string OTHER_HOLDING_INTERACTION = "You already have an object in hand!";
 
     //Color light
-    public static Color lightColor = new Color(150, 150, 150);
+    public static Color lightColor = new Color(0.509f, 0.509f, 0.509f);
 
     //SCENE NAME
     public static int MENU_SCENE = 0;
