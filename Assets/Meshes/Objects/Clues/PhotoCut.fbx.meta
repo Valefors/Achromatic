@@ -8,24 +8,30 @@ ModelImporter:
     100004: Photo03
     100006: Photo04
     100008: //RootNode
+    100010: Photo05
     400000: Photo01
     400002: Photo02
     400004: Photo03
     400006: Photo04
     400008: //RootNode
+    400010: Photo05
     2100000: lambert1
+    2100002: lambert4
     2300000: Photo01
     2300002: Photo02
     2300004: Photo03
     2300006: Photo04
+    2300008: Photo05
     3300000: Photo01
     3300002: Photo02
     3300004: Photo03
     3300006: Photo04
+    3300008: Photo05
     4300000: Photo01
     4300002: Photo02
     4300004: Photo03
     4300006: Photo04
+    4300008: Photo05
   externalObjects: {}
   materials:
     importMaterials: 1
