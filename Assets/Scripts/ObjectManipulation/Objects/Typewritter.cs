@@ -9,7 +9,7 @@ public class Typewritter : Interactable
     void Start()
     {
         Init();
-        _interactionName = Utils.TYPEWRITTER_INTERACTION;
+        if (interactionText == "") _interactionName = Utils.TYPEWRITTER_INTERACTION;
     }
 
     // Update is called once per frame

@@ -11,7 +11,7 @@ public class Door : Interactable
     void Start()
     {
         Init();
-        _interactionName = Utils.OPEN_INTERACTION;
+        if (interactionText == "") _interactionName = Utils.OPEN_INTERACTION;
     }
 
     public override void SetInteractionMode()

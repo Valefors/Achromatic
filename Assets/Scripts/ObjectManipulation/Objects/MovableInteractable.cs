@@ -19,7 +19,7 @@ public class MovableInteractable : Interactable
     protected override void Init()
     {
         base.Init();
-        _interactionName = Utils.MOVABLE_OBJECT_INTERACTION;
+        if (interactionText == "") _interactionName = Utils.MOVABLE_OBJECT_INTERACTION;
         if (putLocation == null) Debug.LogError("MISSING REFERENCE IN " + this);
         putLocation.gameObject.SetActive(false);
     }

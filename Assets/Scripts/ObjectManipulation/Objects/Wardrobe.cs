@@ -14,7 +14,7 @@ public class Wardrobe : Interactable
     void Start()
     {
         Init();
-        _interactionName = Utils.OPEN_INTERACTION;
+        if (interactionText == "") _interactionName = Utils.OPEN_INTERACTION;
         _animator = GetComponent<Animator>();
         _collider = GetComponent<BoxCollider>();
     }
