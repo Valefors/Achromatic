@@ -15,7 +15,8 @@ public class PlayerControls : MonoBehaviour
     float rotX = 0;
     float rotY = 0;
     [SerializeField] float _mouseSensivity = 250.0f;
-    [SerializeField] float CLAMP_ANGLE_Y = 30f;
+    [SerializeField] float CLAMP_ANGLE_MIN_Y = -50f;
+    [SerializeField] float CLAMP_ANGLE_MAX_Y = 50f;
 
     //Position for rotating objects
     public Transform manipulationPosition;
@@ -81,7 +82,7 @@ public class PlayerControls : MonoBehaviour
     {
         rotX += Input.GetAxis("Mouse X") * _mouseSensivity * Time.deltaTime;
         rotY += Input.GetAxis("Mouse Y") * _mouseSensivity * Time.deltaTime;
-        rotY = Mathf.Clamp(rotY, -CLAMP_ANGLE_Y, CLAMP_ANGLE_Y);
+        rotY = Mathf.Clamp(rotY, CLAMP_ANGLE_MIN_Y, CLAMP_ANGLE_MAX_Y);
 
         transform.rotation = Quaternion.Euler(-rotY, rotX, 0f);
     }

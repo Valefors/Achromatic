@@ -13606,7 +13606,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 333095239}
   m_LocalRotation: {x: -0.19412887, y: -0.66835225, z: -0.2164128, w: -0.6846787}
-  m_LocalPosition: {x: 0, y: 0, z: 36.41}
+  m_LocalPosition: {x: 0, y: 0, z: 35.510002}
   m_LocalScale: {x: 2.0344, y: 2.0344, z: 2.0344}
   m_Children:
   - {fileID: 296774567}
@@ -13615,7 +13615,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -1.3440001, y: -271.791, z: 33.779003}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.94, y: 1.88}
+  m_AnchoredPosition: {x: 4.93996, y: 1.9499999}
   m_SizeDelta: {x: 0.799, y: 0.891}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &333095241
@@ -13827,7 +13827,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 336414072}
   m_LocalRotation: {x: 0.122787856, y: -0.6963643, z: 0.122787856, w: -0.6963643}
-  m_LocalPosition: {x: 0, y: 0, z: 33.56}
+  m_LocalPosition: {x: 0, y: 0, z: 32.350002}
   m_LocalScale: {x: 2.0344005, y: 2.0344, z: 2.0344005}
   m_Children:
   - {fileID: 1465023102}
@@ -13836,7 +13836,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -270, z: -20}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.959962, y: 0.099999994}
+  m_AnchoredPosition: {x: 4.9599633, y: 0.099999994}
   m_SizeDelta: {x: 0.799, y: 0.891}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &336414074
@@ -16601,7 +16601,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 386435831}
   m_LocalRotation: {x: 0.015115728, y: -0.6958054, z: 0.015595757, w: -0.717902}
-  m_LocalPosition: {x: 0, y: 0, z: 35.430004}
+  m_LocalPosition: {x: 0, y: 0, z: 34.220005}
   m_LocalScale: {x: 2.0344017, y: 2.0344005, z: 2.0344012}
   m_Children:
   - {fileID: 1641547178}
@@ -16610,7 +16610,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -271.791, z: -2.489}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.99996, y: 0.25}
+  m_AnchoredPosition: {x: 4.9999614, y: 0.25}
   m_SizeDelta: {x: 0.799, y: 0.891}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &386435833
@@ -17356,6 +17356,16 @@ PrefabInstance:
         type: 3}
       propertyPath: _mouseSensivity
       value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 1012209555659999327, guid: 268ec72a81a75f24ca81a45694ad88af,
+        type: 3}
+      propertyPath: CLAMP_ANGLE_MAX_Y
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1012209555659999327, guid: 268ec72a81a75f24ca81a45694ad88af,
+        type: 3}
+      propertyPath: CLAMP_ANGLE_MIN_Y
+      value: -80
       objectReference: {fileID: 0}
     - target: {fileID: 7230779636906013952, guid: 268ec72a81a75f24ca81a45694ad88af,
         type: 3}
@@ -24794,7 +24804,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 557264752}
   m_LocalRotation: {x: -0.083383046, y: -0.6909616, z: -0.10273025, w: -0.7106799}
-  m_LocalPosition: {x: 0, y: 0, z: 34.630005}
+  m_LocalPosition: {x: 0, y: 0, z: 33.420002}
   m_LocalScale: {x: 2.0344002, y: 2.0344, z: 2.0343995}
   m_Children:
   - {fileID: 440649837}
@@ -24803,7 +24813,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -1.3440001, y: -271.791, z: 15.148001}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.9699607, y: 0.28}
+  m_AnchoredPosition: {x: 4.969962, y: 0.28}
   m_SizeDelta: {x: 0.799, y: 0.891}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &557264754
@@ -26031,6 +26041,39 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1568502459}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &585795076 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4800530791355076419, guid: 16b7b33be57d4f849ae6a8f8b34c5aa3,
+    type: 3}
+  m_PrefabInstance: {fileID: 345442638}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &585795079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585795076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionText: A nice clock.
+--- !u!64 &585795080
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585795076}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 0}
 --- !u!1001 &588523974
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26134,7 +26177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionText: It has been ripped off from a newspaper or something like that
-    ...
+    ... There's maybe a link with the page 10.
 --- !u!114 &591098858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33899,6 +33942,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: 8f6b5690b0ed1da4fbcb1df2f9d63b2f, type: 3}
+--- !u!114 &757048186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757048181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionText: A Television, not working.
 --- !u!1 &761159726 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 87705c269124818449da00c9a58f64fe,
@@ -42091,7 +42147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionText: It has been torn up, looks like the other half of the paper page
-    8.
+    5.
 --- !u!114 &936422621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46229,7 +46285,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1028968836}
   m_LocalRotation: {x: -0.035657745, y: -0.6967785, z: -0.07430288, w: -0.7125359}
-  m_LocalPosition: {x: 0, y: 0, z: 34.115}
+  m_LocalPosition: {x: 0, y: 0, z: 33.215}
   m_LocalScale: {x: 1.9251, y: 1.9251, z: 1.9251}
   m_Children:
   - {fileID: 2060867407}
@@ -46238,7 +46294,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -3.0230002, y: -271.518, z: 8.963}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.9399614, y: 1.74}
+  m_AnchoredPosition: {x: 4.93996, y: 1.81}
   m_SizeDelta: {x: 0.799, y: 0.891}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1028968838
@@ -47605,52 +47661,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1053473670}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1063723193 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 409708590412120843, guid: 806ba8eb11aa858409edcfaf4ca9dd38,
-    type: 3}
-  m_PrefabInstance: {fileID: 1431834137}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1063723194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1063723193}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactionText: A Television, not working.
---- !u!114 &1063723196
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1063723193}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactionText: A simple TV not working.
---- !u!64 &1063723197
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1063723193}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 0}
 --- !u!1 &1065286276
 GameObject:
   m_ObjectHideFlags: 0
@@ -47940,7 +47950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionText: It has been ripped off from a newspaper or something like that
-    ...
+    ... There's maybe a link with the page 10.
 --- !u!114 &1077178738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54277,7 +54287,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1201507325}
   m_LocalRotation: {x: 0.11984573, y: -0.69312143, z: 0.067045, w: -0.7076191}
-  m_LocalPosition: {x: 0, y: 0, z: 33.08}
+  m_LocalPosition: {x: 0, y: 0, z: 32.18}
   m_LocalScale: {x: 2.1066, y: 2.1066, z: 2.1066}
   m_Children:
   - {fileID: 663310242}
@@ -54286,7 +54296,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -4.3970003, y: -270.6, z: -15.176001}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.9399624, y: 1.4449999}
+  m_AnchoredPosition: {x: 4.939961, y: 1.5149999}
   m_SizeDelta: {x: 0.799, y: 0.891}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1201507327
@@ -61584,7 +61594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionText: It has been ripped off from a newspaper or something like that
-    ...
+    ... There's maybe a link with the page 10.
 --- !u!114 &1355200897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62546,6 +62556,38 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371267332}
   m_Mesh: {fileID: 4300006, guid: 5087c4ce90dab8d48973148a69b259b8, type: 3}
+--- !u!1 &1375397184 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 20deeb8967d952c42a69a390e0a1c12f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1863366365}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1375397187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375397184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionText: A cigarette.
+--- !u!65 &1375397188
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375397184}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.1095567, y: 1.0148778, z: 7.0871882}
+  m_Center: {x: 2.0547562, y: 0.13192484, z: -1.6608396}
 --- !u!1 &1375977812
 GameObject:
   m_ObjectHideFlags: 0
@@ -64459,6 +64501,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1412352725}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1413791739 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 260465875689801072, guid: af4227d37e14b6849a32a99754f7a8e3,
+    type: 3}
+  m_PrefabInstance: {fileID: 248991230}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1413791743
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413791739}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300004, guid: c70c6535db5a3d046b1a253ae3348e30, type: 3}
 --- !u!4 &1418092105 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3812089933223128430, guid: 994028d3d9753174e89e625b29d9c9c0,
@@ -74826,7 +74888,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1559617378}
   m_LocalRotation: {x: 0.96989554, y: 0.24352118, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 22.309992}
+  m_LocalPosition: {x: 0, y: 0, z: 22.349987}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 424383191}
@@ -74835,7 +74897,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -179.99998, z: -208.189}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11.140026, y: 0.5}
+  m_AnchoredPosition: {x: -11.140025, y: 0.5}
   m_SizeDelta: {x: 0.947, y: 1.214}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1559617380
@@ -77543,6 +77605,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 280370960}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1616386588 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 260465875689801074, guid: af4227d37e14b6849a32a99754f7a8e3,
+    type: 3}
+  m_PrefabInstance: {fileID: 248991230}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1616386592
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616386588}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300002, guid: c70c6535db5a3d046b1a253ae3348e30, type: 3}
 --- !u!1001 &1620760030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -86854,7 +86936,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionText: It has been ripped off from a newspaper or something like that
-    ...
+    ... There's maybe a link with the page 10.
 --- !u!114 &1849093803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93720,7 +93802,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983085503}
   m_LocalRotation: {x: -0.07765743, y: -0.6916234, z: -0.080123596, w: -0.7135872}
-  m_LocalPosition: {x: 0, y: 0, z: 34.120003}
+  m_LocalPosition: {x: 0, y: 0, z: 32.910004}
   m_LocalScale: {x: 2.0344002, y: 2.0344, z: 2.0343995}
   m_Children:
   - {fileID: 34179266}
@@ -93729,7 +93811,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -271.791, z: 12.813001}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.989961, y: 0.35}
+  m_AnchoredPosition: {x: 4.9899626, y: 0.35}
   m_SizeDelta: {x: 0.799, y: 0.891}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1983085505
@@ -95036,7 +95118,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1998728654}
   m_LocalRotation: {x: 0.16238242, y: -0.67702335, z: 0.15568759, w: -0.7007373}
-  m_LocalPosition: {x: 0, y: 0, z: 33.515003}
+  m_LocalPosition: {x: 0, y: 0, z: 25.230005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1533483519}
@@ -95045,7 +95127,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -0.961, y: -271.75, z: -25.984001}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.914962, y: -0.9}
+  m_AnchoredPosition: {x: 4.9999714, y: -0.32}
   m_SizeDelta: {x: 0.799, y: 0.891}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1998728656
@@ -99063,7 +99145,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2079359944}
   m_LocalRotation: {x: 0.017811827, y: -0.699014, z: -0.025910888, w: -0.71441644}
-  m_LocalPosition: {x: 0, y: 0, z: 35.31}
+  m_LocalPosition: {x: 0, y: 0, z: 34.41}
   m_LocalScale: {x: 1.7722, y: 1.7722, z: 1.7722}
   m_Children:
   - {fileID: 501548097}
@@ -99072,7 +99154,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -3.5360003, y: -271.27, z: 0.69600004}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.93996, y: 1.5849999}
+  m_AnchoredPosition: {x: 4.9399586, y: 1.6549999}
   m_SizeDelta: {x: 0.799, y: 0.891}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2079359946
