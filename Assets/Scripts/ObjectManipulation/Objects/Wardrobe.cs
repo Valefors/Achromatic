@@ -41,5 +41,6 @@ public class Wardrobe : Interactable
     void OpenWardrobe()
     {
         if (_animator != null) _animator.SetBool("IsOpen", true);
+        //CORENTIN : OUVRE ARMOIRE
     }
 }

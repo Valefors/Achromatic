@@ -10,6 +10,8 @@ public class MovableInteractable : Interactable
     public PutInteractable putLocation;
     [SerializeField] public PutInteractable correctLocation;
 
+    public Enums.EMovableType type = Enums.EMovableType.NONE;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -52,7 +54,8 @@ public class MovableInteractable : Interactable
         if(putLocation != null) putLocation.gameObject.SetActive(true);
         putLocation = null;
 
-        AkSoundEngine.PostEvent("Play_Prendre", gameObject);
+        //AkSoundEngine.PostEvent("Play_Prendre", gameObject);
+        PlayCorrectSound(true);
     }
 
     protected void HoldingMode()
@@ -69,8 +72,37 @@ public class MovableInteractable : Interactable
 
         _isHolding = false;
 
-        AkSoundEngine.PostEvent("Play_Poser", gameObject);
+        //AkSoundEngine.PostEvent("Play_Poser", gameObject);
+        PlayCorrectSound(false);
 
         PuzzleManager.instance.CheckCorrectPosition();
+    }
+
+    void PlayCorrectSound(bool pIsTaking)
+    {
+        switch (type)
+        {
+            case Enums.EMovableType.ASHTRAY:
+                if (pIsTaking) print("CORENTIN: PRENDRE CENDRIER");
+                else print("CORENTIN: POSER CENDRIER");
+                break;
+
+            case Enums.EMovableType.BOTTLE:
+                if (pIsTaking) print("CORENTIN: PRENDRE BOUTEILLE");
+                else print("CORENTIN: POSER BOUTEILLE");
+                break;
+            case Enums.EMovableType.BOOK:
+                if (pIsTaking) print("CORENTIN: PRENDRE BOOK");
+                else print("CORENTIN: POSER BOOK");
+                break;
+            case Enums.EMovableType.GLASS:
+                if (pIsTaking) print("CORENTIN: PRENDRE GLASS");
+                else print("CORENTIN: POSER GLASS");
+                break;
+            case Enums.EMovableType.NONE:
+                if (pIsTaking) print("CORENTIN: SON GENERIQUE");
+                else print("CORENTIN: POSER GENERIQUE");
+                break;
+        }
     }
 }

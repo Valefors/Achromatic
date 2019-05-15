@@ -16003,6 +16003,7 @@ MonoBehaviour:
   interactionText: An ashtray similar of the one appearing on the pages 7 and 8.
   putLocation: {fileID: 309465573}
   correctLocation: {fileID: 937867138}
+  type: 1
 --- !u!114 &368608266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27810,6 +27811,7 @@ MonoBehaviour:
     the desk pages 7 and 8.
   putLocation: {fileID: 177630657}
   correctLocation: {fileID: 1234525240}
+  type: 2
 --- !u!114 &618166448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40137,6 +40139,7 @@ MonoBehaviour:
   interactionText: A glass similar to the one appearing pages 7 and 8.
   putLocation: {fileID: 1193058061}
   correctLocation: {fileID: 109978937}
+  type: 4
 --- !u!114 &903992215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58418,6 +58421,7 @@ MonoBehaviour:
   interactionText: The book appearing on the pages 7 and 8.
   putLocation: {fileID: 1172575304}
   correctLocation: {fileID: 1499318187}
+  type: 3
 --- !u!114 &1281471937
 MonoBehaviour:
   m_ObjectHideFlags: 0

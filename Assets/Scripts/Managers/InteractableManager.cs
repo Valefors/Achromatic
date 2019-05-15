@@ -54,6 +54,7 @@ public class InteractableManager : MonoBehaviour
             }
 
             hooverObject.SetInteractionMode();
+            //CORENTIN: RIEN A PRENDRE
         }
 
         hooverObject = null;

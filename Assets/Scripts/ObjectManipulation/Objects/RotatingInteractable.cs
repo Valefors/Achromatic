@@ -15,6 +15,8 @@ public class RotatingInteractable : Interactable
     Vector3 _originalPosition;
     Quaternion _originalRotation;
 
+    public Enums.ERotatingType type = Enums.ERotatingType.NONE;
+
     private void Start()
     {
         Init();
@@ -56,6 +58,7 @@ public class RotatingInteractable : Interactable
 
     void ManipulationMode()
     {
+        PlayCorrectSound(true);
         transform.position = PlayerControls.instance.manipulationPosition.position;
         _isManipulate = true;
     }
@@ -69,5 +72,22 @@ public class RotatingInteractable : Interactable
         _isManipulate = false;
 
         InteractableManager.instance.StopRotatingInteraction();
+        PlayCorrectSound(false);
+    }
+
+    void PlayCorrectSound(bool pIsTaking)
+    {
+        switch (type)
+        {
+            case Enums.ERotatingType.PAPER:
+                if (pIsTaking) print("CORENTIN: PRENDRE FEUILLE");
+                else print("CORENTIN: POSER FEUILLE");
+                break;
+
+            case Enums.ERotatingType.NONE:
+                if (pIsTaking) print("CORENTIN: SON GENERIQUE");
+                else print("CORENTIN: POSER GENERIQUE");
+                break;
+        }
     }
 }

@@ -27,6 +27,11 @@ public class PlayerControls : MonoBehaviour
 
     Light _lightSpot;
 
+    int footstepTimer = 0;
+    int FOOTSTEP_RATE = 60;
+
+    bool _isFinishedWalk = true;
+
     #region Singleton
     public static PlayerControls instance {
         get { return _instance; }
@@ -69,13 +74,31 @@ public class PlayerControls : MonoBehaviour
         if (_isManipulating) return;
 
         if (_moveVector.x != 0.0f || _moveVector.y != 0.0f) Move();
+        else
+        {
+            if (_isFinishedWalk)
+            {
+                //CORENTIN ARRETE DE MARCHER
+                footstepTimer = 0;
+                _isFinishedWalk = false;
+            }
+
+        }
+
         Rotation();
     }
 
     void Move()
     {
+        if (!_isFinishedWalk)
+        {
+            _isFinishedWalk = true;
+        }
+
         transform.position += transform.forward * Time.deltaTime * _speed * _moveVector.y;
         transform.position += transform.right * Time.deltaTime * _speed * _moveVector.x;
+
+        FootStepSound();
     }
 
     void Rotation()
@@ -105,5 +128,16 @@ public class PlayerControls : MonoBehaviour
     public void SetModeLightOff()
     {
         _lightSpot.enabled = true;
+    }
+
+    void FootStepSound()
+    {
+        footstepTimer++;
+
+        if(footstepTimer >= FOOTSTEP_RATE)
+        {
+            //CORENTIN FOOTSTEPS
+            footstepTimer = 0;
+        }
     }
 }

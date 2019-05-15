@@ -80,6 +80,7 @@ public class PuzzleManager : MonoBehaviour
     {
         InteractableManager.instance.DisableMovableInteraction();
         _drawer.GetComponent<Animator>().SetBool("isOpen", true);
+        //CORENTIN: OUVRIR TIRROIR
     }
     #endregion
 }
