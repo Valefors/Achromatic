@@ -26,7 +26,12 @@ public class Interactable : MonoBehaviour
     {
         _outline = GetComponent<Outline>();
 
-        if (_outline != null) _outline.enabled = false;
+        if (_outline != null)
+        {
+            _outline.enabled = false;
+            _outline.OutlineMode = Outline.Mode.OutlineVisible;
+        }
+
         _player = ReInput.players.GetPlayer(0);
 
         if (interactionText != "") _interactionName = interactionText;

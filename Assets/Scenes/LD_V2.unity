@@ -3102,26 +3102,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75162810}
   m_Mesh: {fileID: 4300012, guid: 5087c4ce90dab8d48973148a69b259b8, type: 3}
---- !u!1 &76326133 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1012209555988945496, guid: 268ec72a81a75f24ca81a45694ad88af,
-    type: 3}
-  m_PrefabInstance: {fileID: 400014558}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &76326140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 76326133}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1eed1d9cbe64423499f1fefc0ce50417, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Resolution: 0
-  DefaultSpotCookie: {fileID: 2800000, guid: 5157bf6d690b6df458f6c0ce0c06d329, type: 3}
 --- !u!4 &76645797 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2014741262319101987, guid: 3779a2d08b08c244f8c064bce3300742,
@@ -3427,6 +3407,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Particle System (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9006981993833064250, guid: ea3cda44da9362d4eae8d8ad6b4ea0d2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9003841206521815894, guid: ea3cda44da9362d4eae8d8ad6b4ea0d2,
         type: 3}
@@ -6346,6 +6331,24 @@ Transform:
   m_Father: {fileID: 50313179}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &142728667 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1012209556088186761, guid: 268ec72a81a75f24ca81a45694ad88af,
+    type: 3}
+  m_PrefabInstance: {fileID: 400014558}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &142728668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142728667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4314b35272b216e4dbe46942474636b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &146181521
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12979,6 +12982,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Particle System (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 9006981993833064250, guid: ea3cda44da9362d4eae8d8ad6b4ea0d2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9003841206521815894, guid: ea3cda44da9362d4eae8d8ad6b4ea0d2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17393,71 +17401,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -1.439
       objectReference: {fileID: 0}
-    - target: {fileID: 1012209555180383853, guid: 268ec72a81a75f24ca81a45694ad88af,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.010151893
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012209555180383853, guid: 268ec72a81a75f24ca81a45694ad88af,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.5119822
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012209555180383853, guid: 268ec72a81a75f24ca81a45694ad88af,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.6795853
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012209555988945498, guid: 268ec72a81a75f24ca81a45694ad88af,
-        type: 3}
-      propertyPath: far clip plane
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 7230779636906013953, guid: 268ec72a81a75f24ca81a45694ad88af,
-        type: 3}
-      propertyPath: m_ShowToolkit
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7230779636906013953, guid: 268ec72a81a75f24ca81a45694ad88af,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012209556088186767, guid: 268ec72a81a75f24ca81a45694ad88af,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 112
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012209556088186767, guid: 268ec72a81a75f24ca81a45694ad88af,
-        type: 3}
-      propertyPath: m_Mass
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012209555659999327, guid: 268ec72a81a75f24ca81a45694ad88af,
-        type: 3}
-      propertyPath: _mouseSensivity
-      value: 120
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012209555659999327, guid: 268ec72a81a75f24ca81a45694ad88af,
-        type: 3}
-      propertyPath: CLAMP_ANGLE_MAX_Y
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 1012209555659999327, guid: 268ec72a81a75f24ca81a45694ad88af,
-        type: 3}
-      propertyPath: CLAMP_ANGLE_MIN_Y
-      value: -80
-      objectReference: {fileID: 0}
-    - target: {fileID: 7230779636906013952, guid: 268ec72a81a75f24ca81a45694ad88af,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7230779635927445215, guid: 268ec72a81a75f24ca81a45694ad88af,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7230779635927445213, guid: 268ec72a81a75f24ca81a45694ad88af,
+        type: 3}
+      propertyPath: m_Range
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5984469611498233676, guid: 268ec72a81a75f24ca81a45694ad88af,
+        type: 3}
+      propertyPath: _lightSpot
+      value: 
+      objectReference: {fileID: 1986677317}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 268ec72a81a75f24ca81a45694ad88af, type: 3}
 --- !u!4 &400019202 stripped
@@ -41444,7 +41402,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 923739014}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4bcb3f1d5fb71041bdc3817964ecf84, type: 3}
   m_Name: 
@@ -60050,6 +60008,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Particle System
       objectReference: {fileID: 0}
+    - target: {fileID: 9006981993833064250, guid: ea3cda44da9362d4eae8d8ad6b4ea0d2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9003841206521815894, guid: ea3cda44da9362d4eae8d8ad6b4ea0d2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -65462,7 +65425,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1437254410
 Transform:
   m_ObjectHideFlags: 0
@@ -67460,7 +67423,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &1491627519
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -94376,6 +94339,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: feaa1dbe3bba0bd43a467b2230991dfe, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20ddec2cbf53c6e4592409ab9c07cef3, type: 3}
+--- !u!108 &1986677317 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 7230779635927445213, guid: 268ec72a81a75f24ca81a45694ad88af,
+    type: 3}
+  m_PrefabInstance: {fileID: 400014558}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1986740241
 GameObject:
   m_ObjectHideFlags: 0

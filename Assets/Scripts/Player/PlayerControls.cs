@@ -25,7 +25,10 @@ public class PlayerControls : MonoBehaviour
     //Position for movable objects
     public Transform holdingPoint;
 
-    Light _lightSpot;
+    //Camera
+    [SerializeField] Camera _camera;
+
+    [SerializeField] Light _lightSpot;
 
     int footstepTimer = 0;
     int FOOTSTEP_RATE = 60;
@@ -45,13 +48,14 @@ public class PlayerControls : MonoBehaviour
         else Debug.LogError("AN INSTANCE ALREADY EXISTS");
 
         _player = ReInput.players.GetPlayer(0);
-        _lightSpot = GetComponent<Light>();
     }
     #endregion
 
     private void Start()
     {
         SetModeLightOn();
+        if (_camera == null) Debug.LogError("NO CAMERA ATTACHED TO PLAYER");
+        if (_lightSpot == null) Debug.LogError("NO LIGHT POINT ATTACHED TO PLAYER");
     }
 
     // Update is called once per frame
@@ -107,7 +111,8 @@ public class PlayerControls : MonoBehaviour
         rotY += Input.GetAxis("Mouse Y") * _mouseSensivity * Time.deltaTime;
         rotY = Mathf.Clamp(rotY, CLAMP_ANGLE_MIN_Y, CLAMP_ANGLE_MAX_Y);
 
-        transform.rotation = Quaternion.Euler(-rotY, rotX, 0f);
+        if(_camera != null) _camera.transform.rotation = Quaternion.Euler(-rotY, rotX, 0f);
+        transform.rotation = Quaternion.Euler(0f, rotX, 0f);
     }
 
     public void SetManipulationMode()
