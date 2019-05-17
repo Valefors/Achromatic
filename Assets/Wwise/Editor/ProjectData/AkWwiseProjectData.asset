@@ -184,14 +184,25 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: d1df59b071e17c4c95f5ddc6a5e0be58
     GuidInternal: 
-    m_lastTime: -8586468763698568878
-    List: []
+    m_lastTime: -8586437663668854815
+    List:
+    - name: Reverb
+      guid: 9263142e18d79640baff8d934ec71912
+      id: 348963605
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Reverb
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\Reverb
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 5431db33e0abce49a36a5c955da577d1
     GuidInternal: 
-    m_lastTime: -8586450492725886444
+    m_lastTime: -8586437636937068955
     List:
     - name: MainSoundbank
       guid: 8d03fac40834914eb17985f729118ac9
@@ -207,7 +218,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: ea02e87e1b1f2b43a3a880b8176a3219
     GuidInternal: 
-    m_lastTime: -8586450493137486154
+    m_lastTime: -8586437637851940818
     List:
     - name: Play_Ambient
       guid: ebb2121b08340c4a9881a2f0023c9f54
@@ -215,33 +226,255 @@ MonoBehaviour:
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
+      - ElementName: Ambient
+        ObjectType: 4
       - ElementName: Play_Ambient
         ObjectType: 3
-      Path: Default Work Unit\Play_Ambient
+      Path: Default Work Unit\Ambient\Play_Ambient
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: Play_Poser
+    - name: Play_Armoire_Ouvrir
+      guid: ce7dd52f61af414bbce77026fb8e0ea9
+      id: 1778446475
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Armoire_Ouvrir
+        ObjectType: 3
+      Path: Default Work Unit\Play_Armoire_Ouvrir
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Lampe
+      guid: 1556922351e6244682edbb20d9737c76
+      id: 2119672069
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambient
+        ObjectType: 4
+      - ElementName: Play_Lampe
+        ObjectType: 3
+      Path: Default Work Unit\Ambient\Play_Lampe
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Nothing
+      guid: c434cf0266076b4994e5ce82d34ce9ae
+      id: 4237641461
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Nothing
+        ObjectType: 3
+      Path: Default Work Unit\Play_Nothing
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_PoserBouteille
+      guid: b7e04bf8f90eec40aa937cb50ec8cd40
+      id: 3766867606
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Props
+        ObjectType: 4
+      - ElementName: Poser
+        ObjectType: 4
+      - ElementName: Play_PoserBouteille
+        ObjectType: 3
+      Path: Default Work Unit\Props\Poser\Play_PoserBouteille
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_PoserCendrier
+      guid: 41c7fd1427e4e74b83dbba9bb61b1f20
+      id: 119174249
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Props
+        ObjectType: 4
+      - ElementName: Poser
+        ObjectType: 4
+      - ElementName: Play_PoserCendrier
+        ObjectType: 3
+      Path: Default Work Unit\Props\Poser\Play_PoserCendrier
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_PoserCle
+      guid: f99bef316f5cfb458673651f2c97b75a
+      id: 2128636697
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Props
+        ObjectType: 4
+      - ElementName: Poser
+        ObjectType: 4
+      - ElementName: Play_PoserCle
+        ObjectType: 3
+      Path: Default Work Unit\Props\Poser\Play_PoserCle
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_PoserFeuille
+      guid: e69862e59c3532409528bd1f410fd95b
+      id: 3817844813
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Props
+        ObjectType: 4
+      - ElementName: Poser
+        ObjectType: 4
+      - ElementName: Play_PoserFeuille
+        ObjectType: 3
+      Path: Default Work Unit\Props\Poser\Play_PoserFeuille
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_PoserLivre
+      guid: 556df145e7804644bdcbd463f1fdff62
+      id: 1093607113
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Props
+        ObjectType: 4
+      - ElementName: Poser
+        ObjectType: 4
+      - ElementName: Play_PoserLivre
+        ObjectType: 3
+      Path: Default Work Unit\Props\Poser\Play_PoserLivre
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_PoserVerre
       guid: 60d31f35eeca504eb45eb67467861dea
-      id: 1485308649
+      id: 3822140175
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Play_Poser
+      - ElementName: Props
+        ObjectType: 4
+      - ElementName: Poser
+        ObjectType: 4
+      - ElementName: Play_PoserVerre
         ObjectType: 3
-      Path: Default Work Unit\Play_Poser
+      Path: Default Work Unit\Props\Poser\Play_PoserVerre
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: Play_Prendre
-      guid: 3e5e23feb096e240bef4402e47298b78
-      id: 326001232
+    - name: Play_PrendreBouteille
+      guid: 75fc6b6c5cdd7841b1720ff41275276d
+      id: 1569238785
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Play_Prendre
+      - ElementName: Props
+        ObjectType: 4
+      - ElementName: Prendre
+        ObjectType: 4
+      - ElementName: Play_PrendreBouteille
         ObjectType: 3
-      Path: Default Work Unit\Play_Prendre
+      Path: Default Work Unit\Props\Prendre\Play_PrendreBouteille
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_PrendreCendrier
+      guid: 5c0df96409dc9a469e071080a78e6ddb
+      id: 1175188020
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Props
+        ObjectType: 4
+      - ElementName: Prendre
+        ObjectType: 4
+      - ElementName: Play_PrendreCendrier
+        ObjectType: 3
+      Path: Default Work Unit\Props\Prendre\Play_PrendreCendrier
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_PrendreCle
+      guid: 70212293d60df8458d75f4c271b908c0
+      id: 1628284858
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Props
+        ObjectType: 4
+      - ElementName: Prendre
+        ObjectType: 4
+      - ElementName: Play_PrendreCle
+        ObjectType: 3
+      Path: Default Work Unit\Props\Prendre\Play_PrendreCle
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_PrendreFeuille
+      guid: 59271e026d32d34b9aa8b3c9a60d2c20
+      id: 2702842750
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Props
+        ObjectType: 4
+      - ElementName: Prendre
+        ObjectType: 4
+      - ElementName: Play_PrendreFeuille
+        ObjectType: 3
+      Path: Default Work Unit\Props\Prendre\Play_PrendreFeuille
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_PrendreLivre
+      guid: 9ea2448c342cbd4fb5b3e197bb4536bc
+      id: 3563957990
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Props
+        ObjectType: 4
+      - ElementName: Prendre
+        ObjectType: 4
+      - ElementName: Play_PrendreLivre
+        ObjectType: 3
+      Path: Default Work Unit\Props\Prendre\Play_PrendreLivre
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_PrendreVerre
+      guid: 3e5e23feb096e240bef4402e47298b78
+      id: 2086780912
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Props
+        ObjectType: 4
+      - ElementName: Prendre
+        ObjectType: 4
+      - ElementName: Play_PrendreVerre
+        ObjectType: 3
+      Path: Default Work Unit\Props\Prendre\Play_PrendreVerre
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_RandomFloor
+      guid: 9df422488071ce40853c249324ef4606
+      id: 3700147003
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambient
+        ObjectType: 4
+      - ElementName: Play_RandomFloor
+        ObjectType: 3
+      Path: Default Work Unit\Ambient\Play_RandomFloor
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -269,15 +502,69 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Play_TV
+      guid: 50fe247b0cf12f45b0f1fac1b5351733
+      id: 2027969872
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambient
+        ObjectType: 4
+      - ElementName: Play_TV
+        ObjectType: 3
+      Path: Default Work Unit\Ambient\Play_TV
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Ventilateur
+      guid: 28455db6ebcb11439ed55e4210ecc369
+      id: 3013956005
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambient
+        ObjectType: 4
+      - ElementName: Play_Ventilateur
+        ObjectType: 3
+      Path: Default Work Unit\Ambient\Play_Ventilateur
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Player_Move
+      guid: c869b404db85584a9c11fd7abed4b4ea
+      id: 2248092158
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player_Move
+        ObjectType: 3
+      Path: Default Work Unit\Player_Move
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Player_Stop
+      guid: ae1b9004e5071e46bb2dc944012a6964
+      id: 3361170585
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player_Stop
+        ObjectType: 3
+      Path: Default Work Unit\Player_Stop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: StartMusic
       guid: bc58a9646a643143b89418fe1e68cbcb
       id: 3827058668
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
+      - ElementName: Ambient
+        ObjectType: 4
       - ElementName: StartMusic
         ObjectType: 3
-      Path: Default Work Unit\StartMusic
+      Path: Default Work Unit\Ambient\StartMusic
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -286,32 +573,44 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: e04d55784c355a49a4b3b2567860f9cf
     GuidInternal: 
-    m_lastTime: -8586468763698608763
-    List: []
-  - PhysicalPath: Game Parameters\Factory Motion.wwu
-    ParentPhysicalPath: 
-    guid: 225213d7dbd1d042adc0930743567776
-    GuidInternal: 
-    m_lastTime: -8586468763698538969
+    m_lastTime: -8586436843550280486
     List:
-    - name: Playback_Rate
-      guid: e37e38283ac11643b9c3db5c521624af
-      id: 1524500807
+    - name: Acceleration_Rot_RTPC
+      guid: eada300522a9084aa01898b86269f857
+      id: 3898180431
       PathAndIcons:
-      - ElementName: Factory Motion
+      - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Playback_Rate
+      - ElementName: Acceleration_Rot_RTPC
         ObjectType: 13
-      Path: Factory Motion\Playback_Rate
-    - name: RPM
-      guid: 05aa129177f5fd449f4e4424158129e6
-      id: 796049864
+      Path: Default Work Unit\Acceleration_Rot_RTPC
+    - name: DistancePiece
+      guid: 5d1e0752a34b24458e85ef96ea0512fb
+      id: 155651270
       PathAndIcons:
-      - ElementName: Factory Motion
+      - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: RPM
+      - ElementName: DistancePiece
         ObjectType: 13
-      Path: Factory Motion\RPM
+      Path: Default Work Unit\DistancePiece
+    - name: DistanceVentilateur
+      guid: 728d7c189c529f4b90536936834c77c9
+      id: 1225552155
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: DistanceVentilateur
+        ObjectType: 13
+      Path: Default Work Unit\DistanceVentilateur
+    - name: TVSideChain
+      guid: 5b08fdd09fed3d42b3ec170835eaf9fa
+      id: 3411313193
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: TVSideChain
+        ObjectType: 13
+      Path: Default Work Unit\TVSideChain
   - PhysicalPath: Game Parameters\Factory SoundSeed Air Game Syncs.wwu
     ParentPhysicalPath: 
     guid: 5577163b42fb8b4598bf96f557afb3b9
@@ -408,13 +707,68 @@ MonoBehaviour:
       - ElementName: SS_Air_Turbulence
         ObjectType: 13
       Path: Factory SoundSeed Air Game Syncs\SS_Air_Turbulence
+  - PhysicalPath: Game Parameters\FactoryGameParameter.wwu
+    ParentPhysicalPath: 
+    guid: 225213d7dbd1d042adc0930743567776
+    GuidInternal: 
+    m_lastTime: -8586443883645969667
+    List:
+    - name: Playback_Rate
+      guid: e37e38283ac11643b9c3db5c521624af
+      id: 1524500807
+      PathAndIcons:
+      - ElementName: FactoryGameParameter
+        ObjectType: 12
+      - ElementName: Playback_Rate
+        ObjectType: 13
+      Path: FactoryGameParameter\Playback_Rate
+    - name: RPM
+      guid: 05aa129177f5fd449f4e4424158129e6
+      id: 796049864
+      PathAndIcons:
+      - ElementName: FactoryGameParameter
+        ObjectType: 12
+      - ElementName: RPM
+        ObjectType: 13
+      Path: FactoryGameParameter\RPM
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: cf583aa02c766a46800db63ca387b0e0
     GuidInternal: 
-    m_lastTime: -8586449753417325523
+    m_lastTime: -8586443648887132186
     List:
+    - name: GroundType
+      guid: 9ce5a7ca826c5c4a8f079f13610f2ecf
+      id: 2835351336
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GroundType
+        ObjectType: 9
+      Path: Default Work Unit\GroundType
+      values:
+      - name: None
+        guid: 0de973e0ab69374880d3a059323ffe45
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Parquet
+        guid: 668754a5c2bf4942a3c3793a967f787d
+        id: 1791601991
+        PathAndIcons:
+        - ElementName: Parquet
+          ObjectType: 8
+      - name: Tapis
+        guid: 85c7f9f3a4613d42b4bc96092d85e268
+        id: 1391533176
+        PathAndIcons:
+        - ElementName: Tapis
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: Navigation
       guid: e6b7acbd07689c4ca0588816580734c1
       id: 1082482811
@@ -451,8 +805,33 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 6bd9a0f29f6f2942b6a3168f45197355
     GuidInternal: 
-    m_lastTime: -8586449753417395338
-    List: []
+    m_lastTime: -8586437663666740477
+    List:
+    - name: Virage_Switch
+      guid: 1a5697fffa2c05459650e970f614ea44
+      id: 2654804740
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Virage_Switch
+        ObjectType: 11
+      Path: Default Work Unit\Virage_Switch
+      values:
+      - name: Off
+        guid: 4c1a0a59b7023a42a9e8dbe0c53da433
+        id: 930712164
+        PathAndIcons:
+        - ElementName: Off
+          ObjectType: 10
+      - name: On
+        guid: 03ed63fc85f3bb4abc2b45a513b52df1
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: On
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -462,8 +841,8 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /AchromaticWwise
-  - /AchromaticWwise/States
-  - /AchromaticWwise/States/Default Work Unit
-  - /AchromaticWwise/States/Default Work Unit/Navigation
+  - /AchromaticWwise/Events
+  - /AchromaticWwise/Events/Default Work Unit
+  - /AchromaticWwise/Events/Default Work Unit/Ambient
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
