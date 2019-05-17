@@ -75,12 +75,11 @@ public static class StaticFunctions
 
     public static void ChangeLightSettings(Color pLightColor, float pLightIntensity = 1,  AmbientMode pAmbientMode = AmbientMode.Flat)
     {
-        Debug.Log(RenderSettings.ambientLight);
         RenderSettings.reflectionIntensity = pLightIntensity;
         RenderSettings.ambientMode = pAmbientMode;
         //RenderSettings.ambientSkyColor = pLightColor;
-        RenderSettings.ambientLight = pLightColor;
-        Debug.Log(RenderSettings.ambientLight);
+       RenderSettings.ambientLight = pLightColor;
+
     }
 
     public static void QuitGame()

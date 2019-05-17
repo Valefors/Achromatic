@@ -10747,6 +10747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionText: A pair of scissors...
+  type: 0
 --- !u!114 &265070421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12061,6 +12062,85 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &299519801
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 299519804}
+  - component: {fileID: 299519803}
+  - component: {fileID: 299519802}
+  m_Layer: 5
+  m_Name: FPS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &299519802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299519801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 50
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 000
+--- !u!222 &299519803
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299519801}
+  m_CullTransparentMesh: 0
+--- !u!224 &299519804
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299519801}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 764269174}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 300, y: -280}
+  m_SizeDelta: {x: 400, y: 400}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &299799833
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26179,6 +26259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionText: It has been ripped off from a newspaper or something like that
     ... There's maybe a link with the page 10.
+  type: 0
 --- !u!114 &591098858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34430,6 +34511,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1294134988}
+  - {fileID: 299519804}
   m_Father: {fileID: 1034237567}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -36793,6 +36875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionText: A dagger...
+  type: 0
 --- !u!114 &822712111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37753,6 +37836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionText: 
+  type: 0
 --- !u!114 &840080809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37983,6 +38067,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionText: Maybe there's something behind it...
+  type: 0
 --- !u!114 &848276824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42151,6 +42236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionText: It has been torn up, looks like the other half of the paper page
     5.
+  type: 0
 --- !u!114 &936422621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47954,6 +48040,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionText: It has been ripped off from a newspaper or something like that
     ... There's maybe a link with the page 10.
+  type: 0
 --- !u!114 &1077178738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56142,6 +56229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionText: 
+  type: 0
 --- !u!114 &1228179883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61599,6 +61687,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionText: It has been ripped off from a newspaper or something like that
     ... There's maybe a link with the page 10.
+  type: 0
 --- !u!114 &1355200897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86941,6 +87030,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionText: It has been ripped off from a newspaper or something like that
     ... There's maybe a link with the page 10.
+  type: 0
 --- !u!114 &1849093803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92023,6 +92113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionText: A razor...
+  type: 0
 --- !u!114 &1936785001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94683,6 +94774,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionText: It refers to the page 7 and 8... It seems I need to fusion the
     two pages...
+  type: 0
 --- !u!114 &1992595283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95498,6 +95590,7 @@ Transform:
   - {fileID: 626648026}
   - {fileID: 1189289087}
   - {fileID: 1535880543}
+  - {fileID: 2123167797}
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -101189,6 +101282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionText: 
+  type: 0
 --- !u!114 &2122317159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101226,6 +101320,51 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 913286956}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2123167796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2123167797}
+  - component: {fileID: 2123167798}
+  m_Layer: 0
+  m_Name: DebugManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2123167797
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123167796}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2006025062}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2123167798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123167796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61746a8eee46633448531a5980294b19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isRealeased: 0
+  fpsText: {fileID: 299519802}
 --- !u!1001 &2123325076
 PrefabInstance:
   m_ObjectHideFlags: 0
