@@ -1,14 +1,61 @@
 fileFormatVersion: 2
-guid: 975a8d656ff3ed446b8c6fb59d21c8d1
+guid: 95a12058d18dee643b4050b9255a8b5d
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
+    100000: Paper01
+    100002: Paper02
+    100004: Paper03
+    100006: pCube1
+    100008: pCylinder1
+    100010: PostIt01
+    100012: PostIt02
+    100014: PostIt03
+    100016: //RootNode
+    100018: Writing
+    100020: Writing1
+    400000: Paper01
+    400002: Paper02
+    400004: Paper03
+    400006: pCube1
+    400008: pCylinder1
+    400010: PostIt01
+    400012: PostIt02
+    400014: PostIt03
+    400016: //RootNode
+    400018: Writing
+    400020: Writing1
     2100000: lambert1
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: pCylinder2
+    2300000: Paper01
+    2300002: Paper02
+    2300004: Paper03
+    2300006: pCube1
+    2300008: pCylinder1
+    2300010: PostIt01
+    2300012: PostIt02
+    2300014: PostIt03
+    2300016: Writing
+    2300018: Writing1
+    3300000: Paper01
+    3300002: Paper02
+    3300004: Paper03
+    3300006: pCube1
+    3300008: pCylinder1
+    3300010: PostIt01
+    3300012: PostIt02
+    3300014: PostIt03
+    3300016: Writing
+    3300018: Writing1
+    4300000: pCube1
+    4300002: PostIt01
+    4300004: PostIt02
+    4300006: PostIt03
+    4300008: Paper01
+    4300010: Paper02
+    4300012: Paper03
+    4300014: Writing
+    4300016: Writing1
+    4300018: pCylinder1
   externalObjects: {}
   materials:
     importMaterials: 1
