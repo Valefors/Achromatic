@@ -72,7 +72,7 @@ public class InteractableManager : MonoBehaviour
     {
         if(hooverObject != null)
         {
-            hooverObject.SetModeNormal();
+            //hooverObject.SetModeNormal();
             hooverObject = null;
         }
     }

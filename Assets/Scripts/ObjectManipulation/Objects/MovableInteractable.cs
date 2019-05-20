@@ -56,6 +56,7 @@ public class MovableInteractable : Interactable
 
         //AkSoundEngine.PostEvent("Play_Prendre", gameObject);
         PlayCorrectSound(true);
+        gameObject.layer = Utils.OBJECT_LAYER;
     }
 
     protected void HoldingMode()
@@ -74,6 +75,7 @@ public class MovableInteractable : Interactable
 
         //AkSoundEngine.PostEvent("Play_Poser", gameObject);
         PlayCorrectSound(false);
+        gameObject.layer = Utils.DEFAULT_LAYER;
 
         PuzzleManager.instance.CheckCorrectPosition();
     }

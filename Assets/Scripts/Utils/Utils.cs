@@ -28,4 +28,8 @@ public static class Utils
     public static int MENU_SCENE = 0;
     public static int LOADING_SCENE = 1;
     public static int INGAME_SCENE = 2;
+
+    //Layers
+    public static int OBJECT_LAYER = 9;
+    public static int DEFAULT_LAYER = 0;
 }

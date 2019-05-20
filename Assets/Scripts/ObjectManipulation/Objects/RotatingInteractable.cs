@@ -61,6 +61,8 @@ public class RotatingInteractable : Interactable
         PlayCorrectSound(true);
         transform.position = PlayerControls.instance.manipulationPosition.position;
         _isManipulate = true;
+
+        gameObject.layer = Utils.OBJECT_LAYER;
     }
 
     void PutBack()
@@ -70,6 +72,7 @@ public class RotatingInteractable : Interactable
         transform.rotation = _originalRotation;
 
         _isManipulate = false;
+        gameObject.layer = Utils.DEFAULT_LAYER;
 
         InteractableManager.instance.StopRotatingInteraction();
         PlayCorrectSound(false);
