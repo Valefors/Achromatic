@@ -127,12 +127,14 @@ public class PlayerControls : MonoBehaviour
 
     public void SetModeLightOn()
     {
-        _lightSpot.enabled = false;
+        //_lightSpot.enabled = false;
+        StartCoroutine(StaticFunctions.ChangeLightSettings(_lightSpot, Utils.lightOff, Utils.TURN_OFF_LIGHT_DELAY));
     }
 
     public void SetModeLightOff()
     {
-        _lightSpot.enabled = true;
+        //_lightSpot.enabled = true;
+        StartCoroutine(StaticFunctions.ChangeLightSettings(_lightSpot, Utils.lightColor, Utils.TURN_ON_LIGHT_DELAY - 10));
     }
 
     void FootStepSound()

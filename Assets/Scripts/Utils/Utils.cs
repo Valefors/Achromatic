@@ -23,6 +23,9 @@ public static class Utils
 
     //Color light
     public static Color lightColor = new Color(0.509f, 0.509f, 0.509f);
+    public static Color lightOff = new Color(0f, 0f, 0f);
+    public static Color lightOn = new Color(118, 118, 118);
+
 
     //SCENE NAME
     public static int MENU_SCENE = 0;
@@ -32,4 +35,8 @@ public static class Utils
     //Layers
     public static int OBJECT_LAYER = 9;
     public static int DEFAULT_LAYER = 0;
+
+    //Lights
+    public static int TURN_ON_LIGHT_DELAY = 15;
+    public static int TURN_OFF_LIGHT_DELAY = 25;
 }

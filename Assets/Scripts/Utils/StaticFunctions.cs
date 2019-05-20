@@ -32,6 +32,7 @@ public static class StaticFunctions
 
         while (newValue > 0f)
         {
+            Debug.Log(newValue);
             newValue = Mathf.Lerp(1f, 0f, progress);
             myVariableResult(newValue);
             progress += Time.deltaTime / fadeTime;
@@ -73,12 +74,26 @@ public static class StaticFunctions
         }
     }
 
-    public static void ChangeLightSettings(Color pLightColor, float pLightIntensity = 1,  AmbientMode pAmbientMode = AmbientMode.Flat)
+    public static IEnumerator ChangeLightSettings(Light pLight, Color pLightColor, float fadeTime, float pLightIntensity = 1,  AmbientMode pAmbientMode = AmbientMode.Flat)
     {
-        RenderSettings.reflectionIntensity = pLightIntensity;
-        RenderSettings.ambientMode = pAmbientMode;
+        //RenderSettings.reflectionIntensity = pLightIntensity;
+        //RenderSettings.ambientMode = pAmbientMode;
+        //Color light = pLight == null ? RenderSettings.ambientLight : pLight;
+        Color lightCurrentColor = pLight == null ? RenderSettings.ambientLight : pLight.color;
+        float progress = 0f;
+
+        while (lightCurrentColor != pLightColor)
+        {
+            lightCurrentColor = Color.Lerp(lightCurrentColor, pLightColor, progress);
+            progress += Time.deltaTime / fadeTime;
+
+            if (pLight != null) pLight.color = lightCurrentColor;
+            else RenderSettings.ambientLight = lightCurrentColor;
+
+            yield return null;
+        }
         //RenderSettings.ambientSkyColor = pLightColor;
-       RenderSettings.ambientLight = pLightColor;
+        lightCurrentColor = pLightColor;
 
     }
 

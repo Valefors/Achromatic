@@ -157,6 +157,13 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
+      - time: 0.07666667
+        functionName: SwitchLightOff
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       - time: 0.10610932
         functionName: OnOpenAnimationEnd
         data: 
@@ -166,6 +173,13 @@ ModelImporter:
         messageOptions: 0
       - time: 0.90032154
         functionName: OnCloseAnimationEnd
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.99333334
+        functionName: SwitchLightOn
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
