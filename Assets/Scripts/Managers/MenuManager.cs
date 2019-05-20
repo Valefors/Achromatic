@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 public class MenuManager : MonoBehaviour
 {
@@ -17,6 +18,22 @@ public class MenuManager : MonoBehaviour
 
     bool _inIntro = false;
     int _introIndex = 0;
+
+    #region Singleton
+    public static MenuManager instance {
+        get { return _instance; }
+    }
+
+    private static MenuManager _instance;
+
+    private void Awake()
+    {
+        if (_instance == null) _instance = this;
+        else Debug.LogError("AN INSTANCE ALREADY EXISTS");
+
+    }
+    #endregion
+
 
     private void Start()
     {
@@ -55,8 +72,11 @@ public class MenuManager : MonoBehaviour
     {
         _introPanel.gameObject.SetActive(true);
         StartCoroutine(StaticFunctions.FadeOut(result => _FadeInOutPanel.GetComponent<CanvasGroup>().alpha = result, 0.1f));
-        _introPanel.GetComponent<Image>().sprite = _introImages[_introIndex];
-        _inIntro = true;
+        //_introPanel.GetComponent<Image>().sprite = _introImages[_introIndex];
+        StartCoroutine(StaticFunctions.FadeIn(result => _introPanel.GetComponent<CanvasGroup>().alpha = result, 2f));
+        StreamVideo.instance.StartVideo();
+        //_inIntro = true;
+
     }
 
     void UpdateIntro()
@@ -72,7 +92,7 @@ public class MenuManager : MonoBehaviour
         _introPanel.GetComponent<Image>().sprite = _introImages[_introIndex];
     }
 
-    void OnLoading()
+    public void OnLoading(VideoPlayer e = null)
     {
         StartCoroutine(StaticFunctions.FadeIn(result => _FadeInOutPanel.GetComponent<CanvasGroup>().alpha = result, 1f, LoadScene));
     }

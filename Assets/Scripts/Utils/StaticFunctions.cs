@@ -32,7 +32,6 @@ public static class StaticFunctions
 
         while (newValue > 0f)
         {
-            Debug.Log(newValue);
             newValue = Mathf.Lerp(1f, 0f, progress);
             myVariableResult(newValue);
             progress += Time.deltaTime / fadeTime;
