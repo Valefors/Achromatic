@@ -60,8 +60,8 @@ Transform:
   m_Children:
   - {fileID: 773689289}
   - {fileID: 476315198}
-  m_Father: {fileID: 1012209556088186765}
-  m_RootOrder: 0
+  m_Father: {fileID: 428647004664636102}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &679734522
 Camera:
@@ -165,11 +165,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1012209555988945496}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.00436797, y: 0.7474684, z: 0.003382817}
+  m_LocalPosition: {x: -0.00436797, y: 0.74746835, z: 0.003382817}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1012209556088186765}
-  m_RootOrder: 1
+  m_Father: {fileID: 428647004664636102}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &1012209555988945498
 Camera:
@@ -349,10 +349,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1012209556088186765}
-  - component: {fileID: 7933486897819186354}
   - component: {fileID: 8502348664236236043}
-  - component: {fileID: 5984469611498233676}
-  - component: {fileID: 142728668}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -371,27 +368,10 @@ Transform:
   m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1.7, z: 1}
   m_Children:
-  - {fileID: 679734516}
-  - {fileID: 1012209555988945499}
-  - {fileID: 7230779635927445212}
-  - {fileID: 375682954663502338}
+  - {fileID: 428647004664636102}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &7933486897819186354
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1012209556088186761}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 1.6243241
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.18783568, z: -0}
 --- !u!54 &8502348664236236043
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -408,39 +388,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &5984469611498233676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1012209556088186761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 734e8e02bc35f9147913e5409927775b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speed: 4.5
-  _mouseSensivity: 200
-  CLAMP_ANGLE_MIN_Y: -80
-  CLAMP_ANGLE_MAX_Y: 40
-  manipulationPosition: {fileID: 476315198}
-  _isManipulating: 0
-  holdingPoint: {fileID: 773689289}
-  _camera: {fileID: 1012209555988945498}
-  _lightSpot: {fileID: 7230779635927445213}
---- !u!114 &142728668
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1012209556088186761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4314b35272b216e4dbe46942474636b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4750801478719984151
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,8 +417,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1012209556088186765}
-  m_RootOrder: 3
+  m_Father: {fileID: 428647004664636102}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &3695039689817896166
 SphereCollider:
@@ -526,8 +473,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1012209556088186765}
-  m_RootOrder: 2
+  m_Father: {fileID: 428647004664636102}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &7230779635927445213
 Light:
@@ -567,3 +514,74 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &7359882748541412849
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 428647004664636102}
+  - component: {fileID: 1415820382705062441}
+  - component: {fileID: 7418154727244348805}
+  m_Layer: 0
+  m_Name: PlayerComponent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &428647004664636102
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7359882748541412849}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 375682954663502338}
+  - {fileID: 7230779635927445212}
+  - {fileID: 1012209555988945499}
+  - {fileID: 679734516}
+  m_Father: {fileID: 1012209556088186765}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &1415820382705062441
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7359882748541412849}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1.6243241
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.18783568, z: -0}
+--- !u!114 &7418154727244348805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7359882748541412849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 734e8e02bc35f9147913e5409927775b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 4.5
+  _mouseSensivity: 200
+  CLAMP_ANGLE_MIN_Y: -80
+  CLAMP_ANGLE_MAX_Y: 40
+  manipulationPosition: {fileID: 476315198}
+  _isManipulating: 0
+  holdingPoint: {fileID: 773689289}
+  _camera: {fileID: 1012209555988945498}
+  _lightSpot: {fileID: 7230779635927445213}

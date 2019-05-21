@@ -30,6 +30,8 @@ public class PlayerControls : MonoBehaviour
 
     [SerializeField] Light _lightSpot;
 
+    [SerializeField] Rigidbody _rb;
+
     int footstepTimer = 0;
     int FOOTSTEP_RATE = 60;
 
@@ -48,6 +50,7 @@ public class PlayerControls : MonoBehaviour
         else Debug.LogError("AN INSTANCE ALREADY EXISTS");
 
         _player = ReInput.players.GetPlayer(0);
+        _rb = transform.parent.GetComponent<Rigidbody>();
     }
     #endregion
 
@@ -56,6 +59,8 @@ public class PlayerControls : MonoBehaviour
         SetModeLightOn();
         if (_camera == null) Debug.LogError("NO CAMERA ATTACHED TO PLAYER");
         if (_lightSpot == null) Debug.LogError("NO LIGHT POINT ATTACHED TO PLAYER");
+        if (_rb == null) Debug.LogError("NO Rigidbody ATTACHED TO PLAYER");
+
     }
 
     // Update is called once per frame
@@ -77,6 +82,8 @@ public class PlayerControls : MonoBehaviour
 
         if (_isManipulating) return;
 
+        Rotation();
+
         if (_moveVector.x != 0.0f || _moveVector.y != 0.0f) Move();
         else
         {
@@ -88,8 +95,6 @@ public class PlayerControls : MonoBehaviour
             }
 
         }
-
-        Rotation();
     }
 
     void Move()
@@ -99,8 +104,13 @@ public class PlayerControls : MonoBehaviour
             _isFinishedWalk = true;
         }
 
-        transform.position += transform.forward * Time.deltaTime * _speed * _moveVector.y;
-        transform.position += transform.right * Time.deltaTime * _speed * _moveVector.x;
+        // transform.position += transform.forward * Time.deltaTime * _speed * _moveVector.y;
+        // transform.position += transform.right * Time.deltaTime * _speed * _moveVector.x;
+
+        Vector3 speed = new Vector3();
+        speed += transform.forward * _speed * _moveVector.y;
+        speed += transform.right * _speed * _moveVector.x;
+        _rb.velocity = speed;
 
         FootStepSound();
     }
@@ -111,8 +121,11 @@ public class PlayerControls : MonoBehaviour
         rotY += Input.GetAxis("Mouse Y") * _mouseSensivity * Time.deltaTime;
         rotY = Mathf.Clamp(rotY, CLAMP_ANGLE_MIN_Y, CLAMP_ANGLE_MAX_Y);
 
-        if(_camera != null) _camera.transform.rotation = Quaternion.Euler(-rotY, rotX, 0f);
-        transform.rotation = Quaternion.Euler(0f, rotX, 0f);
+        if(_camera != null)
+            _camera.transform.localRotation = Quaternion.Lerp(_camera.transform.localRotation, Quaternion.Euler(-rotY,0f, 0f), 0.5f); 
+
+        transform.localRotation =Quaternion.Lerp(transform.localRotation, Quaternion.Euler(0f, rotX, 0f), 0.5f);
+        //GetComponent<Rigidbody>().angularVelocity = new Vector3(0f, rotX, 0f); 
     }
 
     public void SetManipulationMode()
