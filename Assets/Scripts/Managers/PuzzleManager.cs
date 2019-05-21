@@ -36,73 +36,53 @@ public class PuzzleManager : MonoBehaviour
 
     private void Start()
     {
-        _hiddenNumbers.SetActive(false);
-        //HideNumbers();
-        _hiddenCross.SetActive(false);
-        _hiddenText.SetActive(false);
+        HideNumbers();
     }
 
     #region Puzzle 1
 
     public void OpenBlinds()
     {
-        _hiddenNumbers.SetActive(false);
-        //ShowNumbers();
-        _hiddenCross.SetActive(false);
-        _hiddenText.SetActive(false);
-        
+        HideNumbers(Utils.TURN_ON_LIGHT_DELAY / 5);
     }
 
     public void CloseBlinds()
     {
-        _hiddenNumbers.SetActive(true);
-        //HideNumbers();
-        _hiddenCross.SetActive(true);
-        _hiddenText.SetActive(true);
+        ShowNumbers(Utils.TURN_OFF_LIGHT_DELAY);
     }
 
-    void ShowNumbers()
+    void ShowNumbers(float pDelay = 2)
     {
         int children = _hiddenNumbers.transform.childCount;
 
         for (int i = 0; i < children; i++)
         {
-            Color colorText = _hiddenNumbers.transform.GetChild(i).GetComponentInChildren<TextMeshPro>().color;
-            StaticFunctions.FadeIn(result => colorText.a = result, Utils.TURN_ON_LIGHT_DELAY);
-            _hiddenNumbers.transform.GetChild(i).GetComponentInChildren<TextMeshPro>().color = colorText;
+            TextMeshPro child = _hiddenNumbers.transform.GetChild(i).GetComponentInChildren<TextMeshPro>();
+            StartCoroutine(StaticFunctions.FadeInAlpha(result => child.color = result, child.color, pDelay));
         }
 
-        Color colorOtherText = _hiddenCross.GetComponentInChildren<TextMeshPro>().color;
-        StaticFunctions.FadeIn(result => colorOtherText.a = result, Utils.TURN_ON_LIGHT_DELAY);
+        TextMeshPro hiddenCross = _hiddenCross.transform.GetComponentInChildren<TextMeshPro>();
+        StartCoroutine(StaticFunctions.FadeInAlpha(result => hiddenCross.color = result, hiddenCross.color, pDelay));
 
-        _hiddenCross.GetComponentInChildren<TextMeshPro>().color = colorOtherText;
-        _hiddenText.GetComponentInChildren<TextMeshPro>().color = colorOtherText;
+        TextMeshPro hiddenText = _hiddenText.transform.GetComponentInChildren<TextMeshPro>();
+        StartCoroutine(StaticFunctions.FadeInAlpha(result => hiddenText.color = result, hiddenText.color, pDelay));
     }
 
-    void HideNumbers()
+    void HideNumbers(float pDelay = 0.5f)
     {
         int children = _hiddenNumbers.transform.childCount;
-        
-        /*for(int i = 0; i < children; i++)
+
+        for (int i = 0; i < children; i++)
         {
-            Color colorText = _hiddenNumbers.transform.GetChild(i).GetComponentInChildren<TextMeshPro>().faceColor;
-            print(colorText.a);
-            //Color colorOutlineText = _hiddenNumbers.transform.GetChild(i).GetComponentInChildren<TextMeshPro>().outlineColor;
-            //colorText.a = 0f;
-            StartCoroutine(StaticFunctions.FadeOut(result => colorText.a = result, 0.1f, null));
-            print(colorText.a);
-            //StaticFunctions.FadeOut(result => colorOutlineText.a = result, Utils.TURN_OFF_LIGHT_DELAY);
-            _hiddenNumbers.transform.GetChild(i).GetComponentInChildren<TextMeshPro>().faceColor = colorText;
-            _hiddenNumbers.transform.GetChild(i).GetComponentInChildren<TextMeshPro>().outlineColor = colorText;
-        }*/
-        Color colorOtherText = _hiddenCross.GetComponentInChildren<TextMeshPro>().faceColor;
+            TextMeshPro child = _hiddenNumbers.transform.GetChild(i).GetComponentInChildren<TextMeshPro>();
+            StartCoroutine(StaticFunctions.FadeOutAlpha(result => child.color = result, child.color, pDelay));
+        }
 
-        StartCoroutine(StaticFunctions.FadeOut(result => colorOtherText.a = result, 1f, null));
+        TextMeshPro hiddenCross = _hiddenCross.transform.GetComponentInChildren<TextMeshPro>();
+        StartCoroutine(StaticFunctions.FadeOutAlpha(result => hiddenCross.color = result, hiddenCross.color, pDelay));
 
-        _hiddenCross.GetComponentInChildren<TextMeshPro>().faceColor = colorOtherText;
-        _hiddenCross.GetComponentInChildren<TextMeshPro>().outlineColor = colorOtherText;
-        _hiddenText.GetComponentInChildren<TextMeshPro>().faceColor = colorOtherText;
-        _hiddenText.GetComponentInChildren<TextMeshPro>().outlineColor = colorOtherText;
+        TextMeshPro hiddenText = _hiddenText.transform.GetComponentInChildren<TextMeshPro>();
+        StartCoroutine(StaticFunctions.FadeOutAlpha(result => hiddenText.color = result, hiddenText.color, pDelay));
     }
 
     #endregion

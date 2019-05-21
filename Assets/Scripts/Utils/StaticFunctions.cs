@@ -45,6 +45,38 @@ public static class StaticFunctions
         }
     }
 
+    public static IEnumerator FadeInAlpha(Action<Color> myVariableResult, Color startColor, float fadeTime)
+    {
+        float progress = 0f;
+        float alpha = 0f;
+        Color color = startColor;
+
+        while (alpha < 1f)
+        {
+            alpha = Mathf.Lerp(0f, 1f, progress);
+            color = new Color(color.r, color.g, color.b, alpha);
+            myVariableResult(color);
+            progress += Time.deltaTime / fadeTime;
+            yield return null;
+        }
+    }
+
+    public static IEnumerator FadeOutAlpha(Action<Color> myVariableResult, Color startColor, float fadeTime)
+    {
+        float progress = 0f;
+        float alpha = 1f;
+        Color color = startColor;
+
+        while (alpha > 0f)
+        {
+            alpha = Mathf.Lerp(1f, 0f, progress);
+            color = new Color(color.r, color.g, color.b, alpha);
+            myVariableResult(color);
+            progress += Time.deltaTime / fadeTime;
+            yield return null;
+        }
+
+    }
     public static IEnumerator FadeInWwise(string RTPCname, float duration)
     {
         float progress = 0f;

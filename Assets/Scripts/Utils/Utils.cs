@@ -39,4 +39,7 @@ public static class Utils
     //Lights
     public static int TURN_ON_LIGHT_DELAY = 15;
     public static int TURN_OFF_LIGHT_DELAY = 25;
+
+    //Skip Delay
+    public static int SKIP_DELAY = 4;
 }

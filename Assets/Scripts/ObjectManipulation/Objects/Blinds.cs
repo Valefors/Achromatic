@@ -44,7 +44,7 @@ public class Blinds : Interactable
     {
         if (!_isOpen) return;
 
-        PuzzleManager.instance.OpenBlinds();
+        //PuzzleManager.instance.OpenBlinds();
         PlayerControls.instance.SetModeLightOn();
         _interactionName = Utils.CLOSE_INTERACTION;   
     }
@@ -53,7 +53,7 @@ public class Blinds : Interactable
     {
         if (_isOpen) return;
 
-        PuzzleManager.instance.CloseBlinds();
+        //PuzzleManager.instance.CloseBlinds();
         PlayerControls.instance.SetModeLightOff();
         _interactionName = Utils.OPEN_INTERACTION;
     }
@@ -61,12 +61,14 @@ public class Blinds : Interactable
     public void SwitchLightOn()
     {
         if (!_isOpen) return;
+        PuzzleManager.instance.OpenBlinds();
         StartCoroutine(StaticFunctions.ChangeLightSettings(null, Utils.lightColor, Utils.TURN_ON_LIGHT_DELAY, 1));
     }
 
     public void SwitchLightOff()
     {
         if (_isOpen) return;
+        PuzzleManager.instance.CloseBlinds();
         StartCoroutine(StaticFunctions.ChangeLightSettings(null, new Color(0,0,0), Utils.TURN_OFF_LIGHT_DELAY, 0));
     }
 }

@@ -15,6 +15,7 @@ public class MenuManager : MonoBehaviour
 
     [SerializeField] RectTransform _FadeInOutPanel;
     [SerializeField] Sprite[] _introImages;
+    [SerializeField] Button _skipButton;
 
     bool _inIntro = false;
     int _introIndex = 0;
@@ -39,9 +40,10 @@ public class MenuManager : MonoBehaviour
     {
         StartCoroutine(StaticFunctions.FadeOut(result => _FadeInOutPanel.GetComponent<CanvasGroup>().alpha = result, 0.8f, null));
         _currentPanel = _menuPanel;
+        _skipButton.gameObject.SetActive(false);
     }
 
-    private void Update()
+    /*private void Update()
     {
         if (!_inIntro) return;
 
@@ -49,7 +51,7 @@ public class MenuManager : MonoBehaviour
         {
             UpdateIntro();
         }   
-    }
+    }*/
 
     public void OnBack()
     {
@@ -75,11 +77,19 @@ public class MenuManager : MonoBehaviour
         //_introPanel.GetComponent<Image>().sprite = _introImages[_introIndex];
         StartCoroutine(StaticFunctions.FadeIn(result => _introPanel.GetComponent<CanvasGroup>().alpha = result, 2f));
         StreamVideo.instance.StartVideo();
+
+        Invoke("EnableSkipButton", Utils.SKIP_DELAY);
         //_inIntro = true;
 
     }
 
-    void UpdateIntro()
+    void EnableSkipButton()
+    {
+        StartCoroutine(StaticFunctions.FadeInAlpha(result => _skipButton.GetComponent<Image>().color = result, _skipButton.GetComponent<Image>().color, 0.8f));
+        _skipButton.gameObject.SetActive(true);
+    }
+
+    /*void UpdateIntro()
     {
         if(_introIndex >= _introImages.Length - 1)
         {
@@ -90,7 +100,7 @@ public class MenuManager : MonoBehaviour
 
         _introIndex++;
         _introPanel.GetComponent<Image>().sprite = _introImages[_introIndex];
-    }
+    }*/
 
     public void OnLoading(VideoPlayer e = null)
     {
@@ -99,7 +109,7 @@ public class MenuManager : MonoBehaviour
 
     void LoadScene()
     {
-        SceneManager.LoadScene("LoadingScene");
+        SceneManager.LoadScene(Utils.LOADING_SCENE);
     }
 
     void DisableCurrentScreen()
