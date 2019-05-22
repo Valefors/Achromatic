@@ -34,6 +34,11 @@ public class PlayerControls : MonoBehaviour
 
     int footstepTimer = 0;
     int FOOTSTEP_RATE = 60;
+    float previousMouseX = 0;
+
+    //Angular velocity
+    Quaternion _lastRotation;
+    float _rotationSpeed = 0;
 
     bool _isFinishedWalk = true;
 
@@ -61,6 +66,7 @@ public class PlayerControls : MonoBehaviour
         if (_lightSpot == null) Debug.LogError("NO LIGHT POINT ATTACHED TO PLAYER");
         if (_rb == null) Debug.LogError("NO Rigidbody ATTACHED TO PLAYER");
 
+        _lastRotation = transform.rotation;
     }
 
     // Update is called once per frame
@@ -117,6 +123,8 @@ public class PlayerControls : MonoBehaviour
 
     void Rotation()
     {
+        CalculateRotationSpeed();
+
         rotX += Input.GetAxis("Mouse X") * Utils.MOUSE_SENSIBILITY * Time.deltaTime;
         rotY += Input.GetAxis("Mouse Y") * Utils.MOUSE_SENSIBILITY * Time.deltaTime;
         rotY = Mathf.Clamp(rotY, CLAMP_ANGLE_MIN_Y, CLAMP_ANGLE_MAX_Y);
@@ -126,6 +134,24 @@ public class PlayerControls : MonoBehaviour
 
         transform.localRotation =Quaternion.Lerp(transform.localRotation, Quaternion.Euler(0f, rotX, 0f), 0.5f);
         //GetComponent<Rigidbody>().angularVelocity = new Vector3(0f, rotX, 0f); 
+    }
+
+    void CalculateRotationSpeed()
+    {
+        Quaternion deltaRotation = transform.rotation * Quaternion.Inverse(_lastRotation);
+        _lastRotation = transform.rotation;
+
+        float angle = 0.0f;
+        Vector3 axis = Vector3.zero;
+
+        deltaRotation.ToAngleAxis(out angle, out axis);
+        angle *= Mathf.Deg2Rad;
+
+        Vector3 lAngularVelocity = axis * angle * (1.0f / Time.deltaTime);
+        _rotationSpeed = Mathf.Abs(lAngularVelocity.y);
+
+        //CORENTIN LA VITESSE C EST _ROTATIONSPEED
+        //print(_rotationSpeed);
     }
 
     public void SetManipulationMode()

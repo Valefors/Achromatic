@@ -61,6 +61,7 @@ public class Blinds : Interactable
     public void SwitchLightOn()
     {
         if (!_isOpen) return;
+
         PuzzleManager.instance.OpenBlinds();
         StartCoroutine(StaticFunctions.ChangeLightSettings(null, Utils.lightColor, Utils.TURN_ON_LIGHT_DELAY, 1));
     }
@@ -68,6 +69,8 @@ public class Blinds : Interactable
     public void SwitchLightOff()
     {
         if (_isOpen) return;
+
+        //PuzzleManager.instance.OpenBlinds();
         PuzzleManager.instance.CloseBlinds();
         StartCoroutine(StaticFunctions.ChangeLightSettings(null, new Color(0,0,0), Utils.TURN_OFF_LIGHT_DELAY, 0));
     }

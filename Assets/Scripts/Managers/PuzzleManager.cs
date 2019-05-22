@@ -43,15 +43,15 @@ public class PuzzleManager : MonoBehaviour
 
     public void OpenBlinds()
     {
-        HideNumbers(Utils.TURN_ON_LIGHT_DELAY / 5);
+        HideNumbers(0.1f);
     }
 
     public void CloseBlinds()
     {
-        ShowNumbers(Utils.TURN_OFF_LIGHT_DELAY);
+        ShowNumbers(3);
     }
 
-    void ShowNumbers(float pDelay = 2)
+    void ShowNumbers(float pDelay = 0.5f)
     {
         int children = _hiddenNumbers.transform.childCount;
 
@@ -76,13 +76,16 @@ public class PuzzleManager : MonoBehaviour
         {
             TextMeshPro child = _hiddenNumbers.transform.GetChild(i).GetComponentInChildren<TextMeshPro>();
             StartCoroutine(StaticFunctions.FadeOutAlpha(result => child.color = result, child.color, pDelay));
+            child.color = new Color(0, 0, 0, 0);
         }
 
         TextMeshPro hiddenCross = _hiddenCross.transform.GetComponentInChildren<TextMeshPro>();
         StartCoroutine(StaticFunctions.FadeOutAlpha(result => hiddenCross.color = result, hiddenCross.color, pDelay));
+        hiddenCross.color = new Color(0, 0, 0, 0);
 
         TextMeshPro hiddenText = _hiddenText.transform.GetComponentInChildren<TextMeshPro>();
         StartCoroutine(StaticFunctions.FadeOutAlpha(result => hiddenText.color = result, hiddenText.color, pDelay));
+        hiddenText.color = new Color(0, 0, 0, 0);
     }
 
     #endregion
