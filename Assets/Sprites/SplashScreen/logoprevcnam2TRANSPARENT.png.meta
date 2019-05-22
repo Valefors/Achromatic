@@ -1,0 +1,1506 @@
+fileFormatVersion: 2
+guid: 1b8e3b6aee55aad4cb37be473e58d84e
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: logoprevcnam2TRANSPARENT_0
+    21300002: logoprevcnam2TRANSPARENT_1
+    21300004: logoprevcnam2TRANSPARENT_2
+    21300006: logoprevcnam2TRANSPARENT_3
+    21300008: logoprevcnam2TRANSPARENT_4
+    21300010: logoprevcnam2TRANSPARENT_5
+    21300012: logoprevcnam2TRANSPARENT_6
+    21300014: logoprevcnam2TRANSPARENT_7
+    21300016: logoprevcnam2TRANSPARENT_8
+    21300018: logoprevcnam2TRANSPARENT_9
+    21300020: logoprevcnam2TRANSPARENT_10
+    21300022: logoprevcnam2TRANSPARENT_11
+    21300024: logoprevcnam2TRANSPARENT_12
+    21300026: logoprevcnam2TRANSPARENT_13
+    21300028: logoprevcnam2TRANSPARENT_14
+    21300030: logoprevcnam2TRANSPARENT_15
+    21300032: logoprevcnam2TRANSPARENT_16
+    21300034: logoprevcnam2TRANSPARENT_17
+    21300036: logoprevcnam2TRANSPARENT_18
+    21300038: logoprevcnam2TRANSPARENT_19
+    21300040: logoprevcnam2TRANSPARENT_20
+    21300042: logoprevcnam2TRANSPARENT_21
+    21300044: logoprevcnam2TRANSPARENT_22
+    21300046: logoprevcnam2TRANSPARENT_23
+    21300048: logoprevcnam2TRANSPARENT_24
+    21300050: logoprevcnam2TRANSPARENT_25
+    21300052: logoprevcnam2TRANSPARENT_26
+    21300054: logoprevcnam2TRANSPARENT_27
+    21300056: logoprevcnam2TRANSPARENT_28
+    21300058: logoprevcnam2TRANSPARENT_29
+    21300060: logoprevcnam2TRANSPARENT_30
+    21300062: logoprevcnam2TRANSPARENT_31
+    21300064: logoprevcnam2TRANSPARENT_32
+    21300066: logoprevcnam2TRANSPARENT_33
+    21300068: logoprevcnam2TRANSPARENT_34
+    21300070: logoprevcnam2TRANSPARENT_35
+    21300072: logoprevcnam2TRANSPARENT_36
+    21300074: logoprevcnam2TRANSPARENT_37
+    21300076: logoprevcnam2TRANSPARENT_38
+    21300078: logoprevcnam2TRANSPARENT_39
+    21300080: logoprevcnam2TRANSPARENT_40
+    21300082: logoprevcnam2TRANSPARENT_41
+    21300084: logoprevcnam2TRANSPARENT_42
+    21300086: logoprevcnam2TRANSPARENT_43
+    21300088: logoprevcnam2TRANSPARENT_44
+    21300090: logoprevcnam2TRANSPARENT_45
+    21300092: logoprevcnam2TRANSPARENT_46
+    21300094: logoprevcnam2TRANSPARENT_47
+    21300096: logoprevcnam2TRANSPARENT_48
+    21300098: logoprevcnam2TRANSPARENT_49
+    21300100: logoprevcnam2TRANSPARENT_50
+    21300102: logoprevcnam2TRANSPARENT_51
+    21300104: logoprevcnam2TRANSPARENT_52
+    21300106: logoprevcnam2TRANSPARENT_53
+    21300108: logoprevcnam2TRANSPARENT_54
+    21300110: logoprevcnam2TRANSPARENT_55
+    21300112: logoprevcnam2TRANSPARENT_56
+    21300114: logoprevcnam2TRANSPARENT_57
+    21300116: logoprevcnam2TRANSPARENT_58
+    21300118: logoprevcnam2TRANSPARENT_59
+    21300120: logoprevcnam2TRANSPARENT_60
+    21300122: logoprevcnam2TRANSPARENT_61
+    21300124: logoprevcnam2TRANSPARENT_62
+    21300126: logoprevcnam2TRANSPARENT_63
+    21300128: logoprevcnam2TRANSPARENT_64
+    21300130: logoprevcnam2TRANSPARENT_65
+    21300132: logoprevcnam2TRANSPARENT_66
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_0
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 551
+        width: 279
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c061f53027decff4b8cac26e898ee6cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_1
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 563
+        width: 181
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 876834ea6a276254ba8f773072358449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_2
+      rect:
+        serializedVersion: 2
+        x: 1527
+        y: 687
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52bc77baa26cc804c8efb95e4c56b1ee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_3
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 687
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c9234cc2d0afed468b6a44be06ae0e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_4
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 687
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ed493cc60fabc4faed69e1bc1a0a82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_5
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 561
+        width: 47
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceaa5d5a31eb60a4285c237b2b18dd41
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_6
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 562
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a826f8be3e3faa4584b4885675c8b63
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_7
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 554
+        width: 42
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f005e33e8a70a34cb780a54e560b729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_8
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 561
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7938d37cc642b9e40bb1f35f74ccde57
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_9
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 562
+        width: 7
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 127b2bb04e7cdd54ba0027426cbe169a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_10
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 464
+        width: 29
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6f1f331b18649a4db665f159f4e0d1e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_11
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 553
+        width: 6
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5cbfca05520b2a43bd93e9967c9548a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_12
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 552
+        width: 59
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c8ed418f330134c8d1f1549a0d96f3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_13
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 551
+        width: 62
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d7b7e88c18f9c43aeb818cd22e46a5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_14
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 552
+        width: 62
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72952f6b59801e040bd2050cdb499c6a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_15
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 551
+        width: 73
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bfcad16ae21954459e8ca45cca6261d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_16
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 552
+        width: 118
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a4ca88b06cbd84498e37e7d774d814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_17
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 499
+        width: 83
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a56396a563cdab9469adcf5d89ec3f3b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_18
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 556
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0aabe90a3267a64aa803c27a97ca33f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_19
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 556
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a8d58f2120881468e4d714f2d1757b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_20
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 556
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf3eca8da2164cc44a943f29b0984148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_21
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 556
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e181c18d4b389074c9a78a0233254fed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_22
+      rect:
+        serializedVersion: 2
+        x: 1667
+        y: 556
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93fefa80a4a55684094def41a3751e75
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_23
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 500
+        width: 38
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e88944a87973e4d8a542f2045a9ea4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_24
+      rect:
+        serializedVersion: 2
+        x: 1742
+        y: 556
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e65ad833885616e488146cdeda009767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_25
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 468
+        width: 102
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bbe1591753234a41b8019b28d61e49c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_26
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 469
+        width: 53
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 292b69a9a806fb542ba18fe222d41253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_27
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 431
+        width: 71
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 976c9066ee79f25429b19aaaa15272e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_28
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 469
+        width: 58
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44f5b574f96455c48a2752f948b85000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_29
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 468
+        width: 12
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dad5d5d494705be448574456e0c99c06
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_30
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 466
+        width: 57
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7faf99800f8abb4583d21df088ad84e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_31
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 518
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7343fb0c108a39749b7505163f2726fe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_32
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 518
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab02475733ec9554e8ffab491cb52271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_33
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 500
+        width: 87
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a19e6f322dbb8b4fa161ba58ca8b72a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_34
+      rect:
+        serializedVersion: 2
+        x: 1473
+        y: 499
+        width: 59
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e62315706d10d5e4393645887887a767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_35
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 499
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c199a3d11a888f42a831e1ceb319194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_36
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 500
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 075f24ef81909ea4f85a443f1df26a17
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_37
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 499
+        width: 39
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4387b935afa3aba4f8662bd94ac12367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_38
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 500
+        width: 28
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1976c54d0124c17408fbf78c176fea7b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_39
+      rect:
+        serializedVersion: 2
+        x: 1727
+        y: 499
+        width: 43
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52bf769e014f3cd44be95eae8fd49bc4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_40
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 455
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3c76f96299496943845175f15dc2901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_41
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 456
+        width: 46
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1124dcc563dbfe40bba9cbd4f619057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_42
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 436
+        width: 19
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28fd1d1cd4ea4af42879d538d3702bb4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_43
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 456
+        width: 81
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56488c32744a5754a8c54e862fc086f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_44
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 456
+        width: 10
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a1a2b745c1d8d4e94b4233f6ce49c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_45
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 456
+        width: 46
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de308f355c68db8478aab20d4a3de043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_46
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 450
+        width: 52
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b776d115e2e320e4aac00796dc6b83b6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_47
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 430
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a0ef114ca93d584c874400dba355b51
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_48
+      rect:
+        serializedVersion: 2
+        x: 1527
+        y: 480
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b192521dc0145974e8349d6ff4405983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_49
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 429
+        width: 33
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5907546b97d674c86ea8d92a974aca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_50
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 480
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4874dd0d5656f4396c395f4fd23aba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_51
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 371
+        width: 181
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f9b82931a2be84a92d29fef82070e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_52
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 435
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74b52e0cae513043a06061bbd7dae3b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_53
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 435
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e688fe7dfe10afd4b8da72a98220d271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_54
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 429
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 158e47ff9ea343c4c8526982d4f157f9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_55
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 434
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b4b6ffb0ada364eb71cea366db7186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_56
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 432
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29adfac7a28f0f042894558706e04dfd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_57
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 434
+        width: 5
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e07a9c9b48ca55540850a6c477960029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_58
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 434
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e6dc4a6c44e6743a33a3cf0d9465ae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_59
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 435
+        width: 27
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f468f6b4987efe4297e0809da64c447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_60
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 434
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c41fd83fcba044185579757c5ddda7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_61
+      rect:
+        serializedVersion: 2
+        x: 1483
+        y: 428
+        width: 41
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3cee53030f9d043af53f314dbee4b4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_62
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 430
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f493afc8f9d4340a7a83cdde2aa27c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_63
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 430
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d8a63b74fff0bb47b97ad734ddd9339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_64
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 429
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b28a407545b1ef4d94bd3d953f559c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_65
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 430
+        width: 38
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe001277c066c6d44a775360c7ac91e4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevcnam2TRANSPARENT_66
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 429
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a38cce1439a064f428878ceacc219f29
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d4431b01bbde8fa4b94284093d1aab6d
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
