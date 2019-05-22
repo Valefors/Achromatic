@@ -50,5 +50,5 @@ public static class Utils
     public static bool FULLSCREEN = true;
 
     //Detection Player
-    public static int PLAYER_DETECTION = 5;
+    public static int PLAYER_DETECTION = 3;
 }
