@@ -42,4 +42,13 @@ public static class Utils
 
     //Skip Delay
     public static int SKIP_DELAY = 4;
+
+    //Options Value
+    public static float MOUSE_SENSIBILITY = 250;
+    public static Enums.ELanguage LANGUAGE = Enums.ELanguage.FRENCH;
+    public static int QUALITY_LEVEL = 2;
+    public static bool FULLSCREEN = true;
+
+    //Detection Player
+    public static int PLAYER_DETECTION = 5;
 }

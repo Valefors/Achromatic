@@ -14,7 +14,7 @@ public class PlayerControls : MonoBehaviour
     //Rotation
     float rotX = 0;
     float rotY = 0;
-    [SerializeField] float _mouseSensivity = 250.0f;
+    //[SerializeField] float _mouseSensivity = Utils.MOUSE_SENSIBILITY;
     [SerializeField] float CLAMP_ANGLE_MIN_Y = -50f;
     [SerializeField] float CLAMP_ANGLE_MAX_Y = 50f;
 
@@ -117,8 +117,8 @@ public class PlayerControls : MonoBehaviour
 
     void Rotation()
     {
-        rotX += Input.GetAxis("Mouse X") * _mouseSensivity * Time.deltaTime;
-        rotY += Input.GetAxis("Mouse Y") * _mouseSensivity * Time.deltaTime;
+        rotX += Input.GetAxis("Mouse X") * Utils.MOUSE_SENSIBILITY * Time.deltaTime;
+        rotY += Input.GetAxis("Mouse Y") * Utils.MOUSE_SENSIBILITY * Time.deltaTime;
         rotY = Mathf.Clamp(rotY, CLAMP_ANGLE_MIN_Y, CLAMP_ANGLE_MAX_Y);
 
         if(_camera != null)

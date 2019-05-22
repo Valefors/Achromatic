@@ -18,4 +18,10 @@ public static class Enums
         NONE,
         PAPER
     }
+
+    public enum ELanguage
+    {
+        ENGLISH,
+        FRENCH
+    }
 }
