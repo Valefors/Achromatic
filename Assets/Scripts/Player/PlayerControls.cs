@@ -14,8 +14,9 @@ public class PlayerControls : MonoBehaviour
     //Rotation
     float rotX = 0;
     float rotY = 0;
-    [SerializeField] float _mouseSensivity = 250.0f;
-    [SerializeField] float CLAMP_ANGLE_Y = 30f;
+    //[SerializeField] float _mouseSensivity = Utils.MOUSE_SENSIBILITY;
+    [SerializeField] float CLAMP_ANGLE_MIN_Y = -50f;
+    [SerializeField] float CLAMP_ANGLE_MAX_Y = 50f;
 
     //Position for rotating objects
     public Transform manipulationPosition;
@@ -24,7 +25,22 @@ public class PlayerControls : MonoBehaviour
     //Position for movable objects
     public Transform holdingPoint;
 
-    Light _lightSpot;
+    //Camera
+    [SerializeField] Camera _camera;
+
+    [SerializeField] Light _lightSpot;
+
+    [SerializeField] Rigidbody _rb;
+
+    int footstepTimer = 0;
+    int FOOTSTEP_RATE = 60;
+    float previousMouseX = 0;
+
+    //Angular velocity
+    Quaternion _lastRotation;
+    float _rotationSpeed = 0;
+
+    bool _isFinishedWalk = true;
 
     #region Singleton
     public static PlayerControls instance {
@@ -39,13 +55,18 @@ public class PlayerControls : MonoBehaviour
         else Debug.LogError("AN INSTANCE ALREADY EXISTS");
 
         _player = ReInput.players.GetPlayer(0);
-        _lightSpot = GetComponent<Light>();
+        _rb = transform.parent.GetComponent<Rigidbody>();
     }
     #endregion
 
     private void Start()
     {
         SetModeLightOn();
+        if (_camera == null) Debug.LogError("NO CAMERA ATTACHED TO PLAYER");
+        if (_lightSpot == null) Debug.LogError("NO LIGHT POINT ATTACHED TO PLAYER");
+        if (_rb == null) Debug.LogError("NO Rigidbody ATTACHED TO PLAYER");
+
+        _lastRotation = transform.rotation;
     }
 
     // Update is called once per frame
@@ -67,23 +88,70 @@ public class PlayerControls : MonoBehaviour
 
         if (_isManipulating) return;
 
-        if (_moveVector.x != 0.0f || _moveVector.y != 0.0f) Move();
         Rotation();
+
+        if (_moveVector.x != 0.0f || _moveVector.y != 0.0f) Move();
+        else
+        {
+            if (_isFinishedWalk)
+            {
+                //CORENTIN ARRETE DE MARCHER
+                footstepTimer = 0;
+                _isFinishedWalk = false;
+            }
+
+        }
     }
 
     void Move()
     {
-        transform.position += transform.forward * Time.deltaTime * _speed * _moveVector.y;
-        transform.position += transform.right * Time.deltaTime * _speed * _moveVector.x;
+        if (!_isFinishedWalk)
+        {
+            _isFinishedWalk = true;
+        }
+
+        // transform.position += transform.forward * Time.deltaTime * _speed * _moveVector.y;
+        // transform.position += transform.right * Time.deltaTime * _speed * _moveVector.x;
+
+        Vector3 speed = new Vector3();
+        speed += transform.forward * _speed * _moveVector.y;
+        speed += transform.right * _speed * _moveVector.x;
+        _rb.velocity = speed;
+
+        FootStepSound();
     }
 
     void Rotation()
     {
-        rotX += Input.GetAxis("Mouse X") * _mouseSensivity * Time.deltaTime;
-        rotY += Input.GetAxis("Mouse Y") * _mouseSensivity * Time.deltaTime;
-        rotY = Mathf.Clamp(rotY, -CLAMP_ANGLE_Y, CLAMP_ANGLE_Y);
+        CalculateRotationSpeed();
 
-        transform.rotation = Quaternion.Euler(-rotY, rotX, 0f);
+        rotX += Input.GetAxis("Mouse X") * Utils.MOUSE_SENSIBILITY * Time.deltaTime;
+        rotY += Input.GetAxis("Mouse Y") * Utils.MOUSE_SENSIBILITY * Time.deltaTime;
+        rotY = Mathf.Clamp(rotY, CLAMP_ANGLE_MIN_Y, CLAMP_ANGLE_MAX_Y);
+
+        if(_camera != null)
+            _camera.transform.localRotation = Quaternion.Lerp(_camera.transform.localRotation, Quaternion.Euler(-rotY,0f, 0f), 0.5f); 
+
+        transform.localRotation =Quaternion.Lerp(transform.localRotation, Quaternion.Euler(0f, rotX, 0f), 0.5f);
+        //GetComponent<Rigidbody>().angularVelocity = new Vector3(0f, rotX, 0f); 
+    }
+
+    void CalculateRotationSpeed()
+    {
+        Quaternion deltaRotation = transform.rotation * Quaternion.Inverse(_lastRotation);
+        _lastRotation = transform.rotation;
+
+        float angle = 0.0f;
+        Vector3 axis = Vector3.zero;
+
+        deltaRotation.ToAngleAxis(out angle, out axis);
+        angle *= Mathf.Deg2Rad;
+
+        Vector3 lAngularVelocity = axis * angle * (1.0f / Time.deltaTime);
+        _rotationSpeed = Mathf.Abs(lAngularVelocity.y);
+
+        //CORENTIN LA VITESSE C EST _ROTATIONSPEED
+        //print(_rotationSpeed);
     }
 
     public void SetManipulationMode()
@@ -98,11 +166,24 @@ public class PlayerControls : MonoBehaviour
 
     public void SetModeLightOn()
     {
-        _lightSpot.enabled = false;
+        //_lightSpot.enabled = false;
+        StartCoroutine(StaticFunctions.ChangeLightSettings(_lightSpot, Utils.lightOff, Utils.TURN_OFF_LIGHT_DELAY));
     }
 
     public void SetModeLightOff()
     {
-        _lightSpot.enabled = true;
+        //_lightSpot.enabled = true;
+        StartCoroutine(StaticFunctions.ChangeLightSettings(_lightSpot, Utils.lightColor, Utils.TURN_ON_LIGHT_DELAY - 10));
+    }
+
+    void FootStepSound()
+    {
+        footstepTimer++;
+
+        if(footstepTimer >= FOOTSTEP_RATE)
+        {
+            //CORENTIN FOOTSTEPS
+            footstepTimer = 0;
+        }
     }
 }

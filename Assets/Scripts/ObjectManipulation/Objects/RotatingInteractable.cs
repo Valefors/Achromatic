@@ -7,13 +7,15 @@ using UnityEngine;
 public class RotatingInteractable : Interactable
 {
     rotateObject _roScript;
-    bool _rightClick = false;
+    //bool _rightClick = false;
     bool _leftClick = false;
     bool _isManipulate = false;
-    bool _isFirstClick = false;
+    //bool _isFirstClick = false;
 
     Vector3 _originalPosition;
     Quaternion _originalRotation;
+
+    public Enums.ERotatingType type = Enums.ERotatingType.NONE;
 
     private void Start()
     {
@@ -27,7 +29,7 @@ public class RotatingInteractable : Interactable
         _originalPosition = transform.position;
         _originalRotation = transform.rotation;
 
-        _interactionName = Utils.ROTATING_OBJECT_INTERACTION;
+        if (interactionText == "") _interactionName = Utils.ROTATING_OBJECT_INTERACTION;
     }
 
     private void Update()
@@ -39,7 +41,7 @@ public class RotatingInteractable : Interactable
 
     void GetInput()
     {
-        _rightClick = _player.GetButton(Utils.RIGHT_CLICK_ACTION);
+        //_rightClick = _player.GetButton(Utils.RIGHT_CLICK_ACTION);
         _leftClick = Input.GetMouseButtonDown(0);
     }
 
@@ -56,8 +58,15 @@ public class RotatingInteractable : Interactable
 
     void ManipulationMode()
     {
+        PlayCorrectSound(true);
         transform.position = PlayerControls.instance.manipulationPosition.position;
         _isManipulate = true;
+
+        gameObject.layer = Utils.OBJECT_LAYER;
+        for(int i = 0; i < gameObject.transform.childCount; i++)
+        {
+            gameObject.transform.GetChild(i).gameObject.layer = Utils.OBJECT_LAYER;
+        }
     }
 
     void PutBack()
@@ -68,6 +77,29 @@ public class RotatingInteractable : Interactable
 
         _isManipulate = false;
 
+        gameObject.layer = Utils.DEFAULT_LAYER;
+        for (int i = 0; i < gameObject.transform.childCount; i++)
+        {
+            gameObject.transform.GetChild(i).gameObject.layer = Utils.DEFAULT_LAYER;
+        }
+
         InteractableManager.instance.StopRotatingInteraction();
+        PlayCorrectSound(false);
+    }
+
+    void PlayCorrectSound(bool pIsTaking)
+    {
+        switch (type)
+        {
+            case Enums.ERotatingType.PAPER:
+                if (pIsTaking) print("CORENTIN: PRENDRE FEUILLE");
+                else print("CORENTIN: POSER FEUILLE");
+                break;
+
+            case Enums.ERotatingType.NONE:
+                if (pIsTaking) print("CORENTIN: SON GENERIQUE");
+                else print("CORENTIN: POSER GENERIQUE");
+                break;
+        }
     }
 }

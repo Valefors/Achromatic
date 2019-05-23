@@ -45,6 +45,38 @@ public static class StaticFunctions
         }
     }
 
+    public static IEnumerator FadeInAlpha(Action<Color> myVariableResult, Color startColor, float fadeTime)
+    {
+        float progress = 0f;
+        float alpha = 0f;
+        Color color = startColor;
+
+        while (alpha < 1f)
+        {
+            alpha = Mathf.Lerp(0f, 1f, progress);
+            color = new Color(color.r, color.g, color.b, alpha);
+            myVariableResult(color);
+            progress += Time.deltaTime / fadeTime;
+            yield return null;
+        }
+    }
+
+    public static IEnumerator FadeOutAlpha(Action<Color> myVariableResult, Color startColor, float fadeTime)
+    {
+        float progress = 0f;
+        float alpha = 1f;
+        Color color = startColor;
+
+        while (alpha > 0f)
+        {
+            alpha = Mathf.Lerp(1f, 0f, progress);
+            color = new Color(color.r, color.g, color.b, alpha);
+            myVariableResult(color);
+            progress += Time.deltaTime / fadeTime;
+            yield return null;
+        }
+
+    }
     public static IEnumerator FadeInWwise(string RTPCname, float duration)
     {
         float progress = 0f;
@@ -73,11 +105,27 @@ public static class StaticFunctions
         }
     }
 
-    public static void ChangeLightSettings(Color pLightColor, float pLightIntensity = 1,  AmbientMode pAmbientMode = AmbientMode.Skybox)
+    public static IEnumerator ChangeLightSettings(Light pLight, Color pLightColor, float fadeTime, float pLightIntensity = 1,  AmbientMode pAmbientMode = AmbientMode.Flat)
     {
-        RenderSettings.reflectionIntensity = pLightIntensity;
-        RenderSettings.ambientMode = pAmbientMode;
-        RenderSettings.ambientSkyColor = pLightColor;
+        //RenderSettings.reflectionIntensity = pLightIntensity;
+        //RenderSettings.ambientMode = pAmbientMode;
+        //Color light = pLight == null ? RenderSettings.ambientLight : pLight;
+        Color lightCurrentColor = pLight == null ? RenderSettings.ambientLight : pLight.color;
+        float progress = 0f;
+
+        while (lightCurrentColor != pLightColor)
+        {
+            lightCurrentColor = Color.Lerp(lightCurrentColor, pLightColor, progress);
+            progress += Time.deltaTime / fadeTime;
+
+            if (pLight != null) pLight.color = lightCurrentColor;
+            else RenderSettings.ambientLight = lightCurrentColor;
+
+            yield return null;
+        }
+        //RenderSettings.ambientSkyColor = pLightColor;
+        lightCurrentColor = pLightColor;
+
     }
 
     public static void QuitGame()

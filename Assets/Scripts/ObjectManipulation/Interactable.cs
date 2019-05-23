@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Interactable : MonoBehaviour
+public class Interactable : MonoBehaviour
 {
     protected Outline _outline;
     protected bool _isHoover = false;
@@ -15,6 +15,8 @@ public abstract class Interactable : MonoBehaviour
 
     protected string _interactionName = "";
 
+    [SerializeField] protected string interactionText = "";
+
     void Start()
     {
         Init();
@@ -24,8 +26,15 @@ public abstract class Interactable : MonoBehaviour
     {
         _outline = GetComponent<Outline>();
 
-        _outline.enabled = false;
+        if (_outline != null)
+        {
+            _outline.enabled = false;
+            _outline.OutlineMode = Outline.Mode.OutlineVisible;
+        }
+
         _player = ReInput.players.GetPlayer(0);
+
+        if (interactionText != "") _interactionName = interactionText;
     }
 
     public virtual void SetModeHoover()

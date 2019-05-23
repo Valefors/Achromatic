@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -35,28 +36,58 @@ public class PuzzleManager : MonoBehaviour
 
     private void Start()
     {
-        _hiddenNumbers.SetActive(false);
-        _hiddenCross.SetActive(false);
-        _hiddenText.SetActive(false);
+        HideNumbers();
     }
 
     #region Puzzle 1
 
     public void OpenBlinds()
     {
-        _hiddenNumbers.SetActive(false);
-        _hiddenCross.SetActive(false);
-        _hiddenText.SetActive(false);
-        StaticFunctions.ChangeLightSettings(_ambientLight, 1, AmbientMode.Skybox);
+        HideNumbers(0.01f);
     }
 
     public void CloseBlinds()
     {
-        _hiddenNumbers.SetActive(true);
-        _hiddenCross.SetActive(true);
-        _hiddenText.SetActive(true);
-        StaticFunctions.ChangeLightSettings(_offLight, 0, AmbientMode.Flat);
+        ShowNumbers(1);
     }
+
+    void ShowNumbers(float pDelay = 0.5f)
+    {
+        int children = _hiddenNumbers.transform.childCount;
+
+        for (int i = 0; i < children; i++)
+        {
+            TextMeshPro child = _hiddenNumbers.transform.GetChild(i).GetComponentInChildren<TextMeshPro>();
+            StartCoroutine(StaticFunctions.FadeInAlpha(result => child.color = result, child.color, pDelay));
+        }
+
+        TextMeshPro hiddenCross = _hiddenCross.transform.GetComponentInChildren<TextMeshPro>();
+        StartCoroutine(StaticFunctions.FadeInAlpha(result => hiddenCross.color = result, hiddenCross.color, pDelay));
+
+        TextMeshPro hiddenText = _hiddenText.transform.GetComponentInChildren<TextMeshPro>();
+        StartCoroutine(StaticFunctions.FadeInAlpha(result => hiddenText.color = result, hiddenText.color, pDelay));
+    }
+
+    void HideNumbers(float pDelay = 0.5f)
+    {
+        int children = _hiddenNumbers.transform.childCount;
+
+        for (int i = 0; i < children; i++)
+        {
+            TextMeshPro child = _hiddenNumbers.transform.GetChild(i).GetComponentInChildren<TextMeshPro>();
+            StartCoroutine(StaticFunctions.FadeOutAlpha(result => child.color = result, child.color, pDelay));
+            child.color = new Color(0, 0, 0, 0);
+        }
+
+        TextMeshPro hiddenCross = _hiddenCross.transform.GetComponentInChildren<TextMeshPro>();
+        StartCoroutine(StaticFunctions.FadeOutAlpha(result => hiddenCross.color = result, hiddenCross.color, pDelay));
+        hiddenCross.color = new Color(0, 0, 0, 0);
+
+        TextMeshPro hiddenText = _hiddenText.transform.GetComponentInChildren<TextMeshPro>();
+        StartCoroutine(StaticFunctions.FadeOutAlpha(result => hiddenText.color = result, hiddenText.color, pDelay));
+        hiddenText.color = new Color(0, 0, 0, 0);
+    }
+
     #endregion
 
     #region Puzzle 2
@@ -79,6 +110,7 @@ public class PuzzleManager : MonoBehaviour
     {
         InteractableManager.instance.DisableMovableInteraction();
         _drawer.GetComponent<Animator>().SetBool("isOpen", true);
+        //CORENTIN: OUVRIR TIRROIR
     }
     #endregion
 }

@@ -18,13 +18,37 @@ public static class Utils
     public static string UNLOCK_INTERACTION = "You did it! W.I.P feature";
     public static string OPEN_INTERACTION = "Let’s open it.";
     public static string CLOSE_INTERACTION = "Let’s close it.";
+    public static string TYPEWRITTER_INTERACTION = "Let’s make this clear.";
     public static string OTHER_HOLDING_INTERACTION = "You already have an object in hand!";
 
     //Color light
-    public static Color lightColor = new Color(150, 150, 150);
+    public static Color lightColor = new Color(0.509f, 0.509f, 0.509f);
+    public static Color lightOff = new Color(0f, 0f, 0f);
+    public static Color lightOn = new Color(118, 118, 118);
+
 
     //SCENE NAME
     public static int MENU_SCENE = 0;
     public static int LOADING_SCENE = 1;
     public static int INGAME_SCENE = 2;
+
+    //Layers
+    public static int OBJECT_LAYER = 9;
+    public static int DEFAULT_LAYER = 0;
+
+    //Lights
+    public static int TURN_ON_LIGHT_DELAY = 15;
+    public static int TURN_OFF_LIGHT_DELAY = 25;
+
+    //Skip Delay
+    public static int SKIP_DELAY = 4;
+
+    //Options Value
+    public static float MOUSE_SENSIBILITY = 250;
+    public static Enums.ELanguage LANGUAGE = Enums.ELanguage.FRENCH;
+    public static int QUALITY_LEVEL = 2;
+    public static bool FULLSCREEN = true;
+
+    //Detection Player
+    public static int PLAYER_DETECTION = 3;
 }

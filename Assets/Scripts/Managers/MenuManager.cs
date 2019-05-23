@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 public class MenuManager : MonoBehaviour
 {
@@ -14,17 +15,35 @@ public class MenuManager : MonoBehaviour
 
     [SerializeField] RectTransform _FadeInOutPanel;
     [SerializeField] Sprite[] _introImages;
+    [SerializeField] Button _skipButton;
 
     bool _inIntro = false;
     int _introIndex = 0;
+
+    #region Singleton
+    public static MenuManager instance {
+        get { return _instance; }
+    }
+
+    private static MenuManager _instance;
+
+    private void Awake()
+    {
+        if (_instance == null) _instance = this;
+        else Debug.LogError("AN INSTANCE ALREADY EXISTS");
+
+    }
+    #endregion
+
 
     private void Start()
     {
         StartCoroutine(StaticFunctions.FadeOut(result => _FadeInOutPanel.GetComponent<CanvasGroup>().alpha = result, 0.8f, null));
         _currentPanel = _menuPanel;
+        _skipButton.gameObject.SetActive(false);
     }
 
-    private void Update()
+    /*private void Update()
     {
         if (!_inIntro) return;
 
@@ -32,7 +51,7 @@ public class MenuManager : MonoBehaviour
         {
             UpdateIntro();
         }   
-    }
+    }*/
 
     public void OnBack()
     {
@@ -55,11 +74,22 @@ public class MenuManager : MonoBehaviour
     {
         _introPanel.gameObject.SetActive(true);
         StartCoroutine(StaticFunctions.FadeOut(result => _FadeInOutPanel.GetComponent<CanvasGroup>().alpha = result, 0.1f));
-        _introPanel.GetComponent<Image>().sprite = _introImages[_introIndex];
-        _inIntro = true;
+        //_introPanel.GetComponent<Image>().sprite = _introImages[_introIndex];
+        StartCoroutine(StaticFunctions.FadeIn(result => _introPanel.GetComponent<CanvasGroup>().alpha = result, 2f));
+        StreamVideo.instance.StartVideo();
+
+        Invoke("EnableSkipButton", Utils.SKIP_DELAY);
+        //_inIntro = true;
+
     }
 
-    void UpdateIntro()
+    void EnableSkipButton()
+    {
+        StartCoroutine(StaticFunctions.FadeInAlpha(result => _skipButton.GetComponent<Image>().color = result, _skipButton.GetComponent<Image>().color, 0.8f));
+        _skipButton.gameObject.SetActive(true);
+    }
+
+    /*void UpdateIntro()
     {
         if(_introIndex >= _introImages.Length - 1)
         {
@@ -70,16 +100,16 @@ public class MenuManager : MonoBehaviour
 
         _introIndex++;
         _introPanel.GetComponent<Image>().sprite = _introImages[_introIndex];
-    }
+    }*/
 
-    void OnLoading()
+    public void OnLoading(VideoPlayer e = null)
     {
         StartCoroutine(StaticFunctions.FadeIn(result => _FadeInOutPanel.GetComponent<CanvasGroup>().alpha = result, 1f, LoadScene));
     }
 
     void LoadScene()
     {
-        SceneManager.LoadScene("LoadingScene");
+        SceneManager.LoadScene(Utils.LOADING_SCENE);
     }
 
     void DisableCurrentScreen()

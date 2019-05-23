@@ -14,6 +14,15 @@ ModelImporter:
     100016: Punaise2
     100018: Punaise3
     100020: Punaise4
+    100022: Polaroid01
+    100024: Polaroid02
+    100026: Polaroid03
+    100028: Polaroid05
+    100030: Punaise01
+    100032: Punaise02
+    100034: Punaise03
+    100036: Punaise04
+    100038: Punaise05
     400000: Polaroid001
     400002: Polaroid002
     400004: Polaroid003
@@ -25,7 +34,17 @@ ModelImporter:
     400016: Punaise2
     400018: Punaise3
     400020: Punaise4
+    400022: Polaroid01
+    400024: Polaroid02
+    400026: Polaroid03
+    400028: Polaroid05
+    400030: Punaise01
+    400032: Punaise02
+    400034: Punaise03
+    400036: Punaise04
+    400038: Punaise05
     2100000: lambert1
+    2100002: lambert2
     2300000: Polaroid001
     2300002: Polaroid002
     2300004: Polaroid003
@@ -36,6 +55,15 @@ ModelImporter:
     2300014: Punaise2
     2300016: Punaise3
     2300018: Punaise4
+    2300020: Polaroid01
+    2300022: Polaroid02
+    2300024: Polaroid03
+    2300026: Polaroid05
+    2300028: Punaise01
+    2300030: Punaise02
+    2300032: Punaise03
+    2300034: Punaise04
+    2300036: Punaise05
     3300000: Polaroid001
     3300002: Polaroid002
     3300004: Polaroid003
@@ -46,6 +74,15 @@ ModelImporter:
     3300014: Punaise2
     3300016: Punaise3
     3300018: Punaise4
+    3300020: Polaroid01
+    3300022: Polaroid02
+    3300024: Polaroid03
+    3300026: Polaroid05
+    3300028: Punaise01
+    3300030: Punaise02
+    3300032: Punaise03
+    3300034: Punaise04
+    3300036: Punaise05
     4300000: Polaroid001
     4300002: Polaroid002
     4300004: Polaroid003
@@ -56,6 +93,15 @@ ModelImporter:
     4300014: Punaise2
     4300016: Punaise3
     4300018: Punaise4
+    4300020: Polaroid01
+    4300022: Polaroid02
+    4300024: Polaroid03
+    4300026: Polaroid05
+    4300028: Punaise01
+    4300030: Punaise02
+    4300032: Punaise03
+    4300034: Punaise04
+    4300036: Punaise05
   externalObjects: {}
   materials:
     importMaterials: 1

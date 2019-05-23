@@ -1,0 +1,645 @@
+fileFormatVersion: 2
+guid: 9efa8d6adf43c9241953d3228ee523fc
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: logoprevachromaTRANSPARENT_0
+    21300002: logoprevachromaTRANSPARENT_1
+    21300004: logoprevachromaTRANSPARENT_2
+    21300006: logoprevachromaTRANSPARENT_3
+    21300008: logoprevachromaTRANSPARENT_4
+    21300010: logoprevachromaTRANSPARENT_5
+    21300012: logoprevachromaTRANSPARENT_6
+    21300014: logoprevachromaTRANSPARENT_7
+    21300016: logoprevachromaTRANSPARENT_8
+    21300018: logoprevachromaTRANSPARENT_9
+    21300020: logoprevachromaTRANSPARENT_10
+    21300022: logoprevachromaTRANSPARENT_11
+    21300024: logoprevachromaTRANSPARENT_12
+    21300026: logoprevachromaTRANSPARENT_13
+    21300028: logoprevachromaTRANSPARENT_14
+    21300030: logoprevachromaTRANSPARENT_15
+    21300032: logoprevachromaTRANSPARENT_16
+    21300034: logoprevachromaTRANSPARENT_17
+    21300036: logoprevachromaTRANSPARENT_18
+    21300038: logoprevachromaTRANSPARENT_19
+    21300040: logoprevachromaTRANSPARENT_20
+    21300042: logoprevachromaTRANSPARENT_21
+    21300044: logoprevachromaTRANSPARENT_22
+    21300046: logoprevachromaTRANSPARENT_23
+    21300048: logoprevachromaTRANSPARENT_24
+    21300050: logoprevachromaTRANSPARENT_25
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: logoprevachromaTRANSPARENT_0
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 782
+        width: 141
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2981e563233d6240b1c249ff1bb3dba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevachromaTRANSPARENT_1
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 780
+        width: 119
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb79eeb0876a0f469d197b718b0a542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevachromaTRANSPARENT_2
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 782
+        width: 116
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd652925843f697468d7c25bc4197cea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevachromaTRANSPARENT_3
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 782
+        width: 122
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 891b80ca50947d546a9ac7efb014ecb0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevachromaTRANSPARENT_4
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 780
+        width: 125
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a8473a67e83a4c4f9a20c5ae5ab37d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevachromaTRANSPARENT_5
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 782
+        width: 305
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1356fe0c66919f94182ed3b9b5d5121b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevachromaTRANSPARENT_6
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 784
+        width: 121
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d48a6d57474f0f74796a06476b3c0840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevachromaTRANSPARENT_7
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 782
+        width: 409
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a87a3c46b8ad64ab9c83d9025fdc73
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevachromaTRANSPARENT_8
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 747
+        width: 1523
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a2e7a3549176341ac09db95425b54f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevachromaTRANSPARENT_9
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 709
+        width: 611
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53712d120f76b5149a727dc9fb897fd2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevachromaTRANSPARENT_10
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 540
+        width: 356
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e8c5fb36da16784a80c826cc78c8f43
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevachromaTRANSPARENT_11
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 709
+        width: 588
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328a4cc320932c444b778b6859341112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevachromaTRANSPARENT_12
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 328
+        width: 66
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96dc4552ea566a14baed82f6a6d490d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevachromaTRANSPARENT_13
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 351
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60496e0ef70be2a4db52fa55e85e713f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevachromaTRANSPARENT_14
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 349
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 316d23592f0b3334583ddfe9f9e79850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevachromaTRANSPARENT_15
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 349
+        width: 51
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18fa72fc9fb0254b9d0a8084ce140a5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevachromaTRANSPARENT_16
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 349
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 127bb21ade060b44684d5e8f72d692c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevachromaTRANSPARENT_17
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 351
+        width: 62
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8a45fd3482fdd4e83b3c620ddce15e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevachromaTRANSPARENT_18
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 349
+        width: 59
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3104cbcf2b9ec0d44b62c213cd7b9d37
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevachromaTRANSPARENT_19
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 348
+        width: 51
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e134349fb50dc71448ce77c55293b2c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevachromaTRANSPARENT_20
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 328
+        width: 63
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f247059fde9fac47a11e922948825c2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevachromaTRANSPARENT_21
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 349
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f47a623f001394746b4fd1315346cf18
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevachromaTRANSPARENT_22
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 349
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2598294004c5b4d44a3b95b864e2ed0d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevachromaTRANSPARENT_23
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 350
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30c0b34dea2a03343a0ba0cab0d01b89
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevachromaTRANSPARENT_24
+      rect:
+        serializedVersion: 2
+        x: 1411
+        y: 350
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed44930ec5e5240419eac99ab8fd7aad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logoprevachromaTRANSPARENT_25
+      rect:
+        serializedVersion: 2
+        x: 1486
+        y: 350
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e85dd75a6c04c4287d95c013c48912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 4b014ab0c185ee44886d297832ee6b18
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
