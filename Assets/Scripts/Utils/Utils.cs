@@ -20,6 +20,8 @@ public static class Utils
     public static string CLOSE_INTERACTION = "Let’s close it.";
     public static string TYPEWRITTER_INTERACTION = "Let’s make this clear.";
     public static string OTHER_HOLDING_INTERACTION = "You already have an object in hand!";
+    public static string TURN_ON_INTERACTION = "Too quiet, let's turn on this TV.";
+    public static string TURN_OFF_INTERACTION = "Too noisy, let's turn off.";
 
     //Color light
     public static Color lightColor = new Color(0.509f, 0.509f, 0.509f);
@@ -50,5 +52,5 @@ public static class Utils
     public static bool FULLSCREEN = true;
 
     //Detection Player
-    public static int PLAYER_DETECTION = 3;
+    public static int PLAYER_DETECTION = 4;
 }

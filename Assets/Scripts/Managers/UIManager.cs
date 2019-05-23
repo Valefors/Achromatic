@@ -79,7 +79,7 @@ public class UIManager : MonoBehaviour
             _currentScreen.gameObject.SetActive(false);
             _currentScreen = null;
             onUI = false;
-            Cursor.visible = true;
+            Cursor.visible = false;
             CursorLock();
         }
     }
