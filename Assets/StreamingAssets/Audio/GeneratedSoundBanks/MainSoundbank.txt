@@ -12,6 +12,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2128636697	Play_PoserCle			\Default Work Unit\Props\Poser\Play_PoserCle	
 	2248092158	Player_Move			\Default Work Unit\Player_Move	
 	2702842750	Play_PrendreFeuille			\Default Work Unit\Props\Prendre\Play_PrendreFeuille	
+	2893389474	Stop_TV			\Default Work Unit\Ambient\Stop_TV	
 	3013956005	Play_Ventilateur			\Default Work Unit\Ambient\Play_Ventilateur	
 	3361170585	Player_Stop			\Default Work Unit\Player_Stop	
 	3535750338	Play_StoreFerme			\Default Work Unit\Play_StoreFerme	
@@ -46,6 +47,12 @@ State	ID	Name	State Group			Notes
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1225552155	DistanceVentilateur			\Default Work Unit\DistanceVentilateur	
 	3898180431	Acceleration_Rot_RTPC			\Default Work Unit\Acceleration_Rot_RTPC	
+
+Trigger	ID	Name			Wwise Object Path	Notes
+	2416262786	Trigger_Stin_Armoire			\Default Work Unit\Trigger_Stin_Armoire	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1024769875	EQ_Tempo_Music	Wwise Parametric EQ			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	8812298	PRENDRE LIVRE-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwise\.cache\Windows\SFX\PRENDRE LIVRE-001_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\LIVRE\PRENDRE\PRENDRE LIVRE-001		14816

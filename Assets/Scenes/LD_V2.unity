@@ -70462,6 +70462,26 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1776545777150203303, guid: 585ace273d3fd594681d0141210630a5,
+        type: 3}
+      propertyPath: m_positionOffsetData.KeepMe
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1776545777150203303, guid: 585ace273d3fd594681d0141210630a5,
+        type: 3}
+      propertyPath: m_positionOffsetData.positionOffset.x
+      value: -0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1776545777150203303, guid: 585ace273d3fd594681d0141210630a5,
+        type: 3}
+      propertyPath: m_positionOffsetData.positionOffset.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1776545777150203303, guid: 585ace273d3fd594681d0141210630a5,
+        type: 3}
+      propertyPath: m_positionOffsetData.positionOffset.z
+      value: 0.215
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 585ace273d3fd594681d0141210630a5, type: 3}
 --- !u!1 &1445110327
@@ -103582,24 +103602,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1431834137}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2002697178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2002697174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e61caa20b2d85b418c5950d53a09f13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadeTime: 0.5
-  LayerMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  maxDistance: -1
-  refreshInterval: 1
 --- !u!114 &2002697179
 MonoBehaviour:
   m_ObjectHideFlags: 0

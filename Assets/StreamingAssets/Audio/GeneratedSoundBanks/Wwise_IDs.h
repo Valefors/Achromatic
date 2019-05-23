@@ -37,6 +37,7 @@ namespace AK
         static const AkUniqueID PLAYER_MOVE = 2248092158U;
         static const AkUniqueID PLAYER_STOP = 3361170585U;
         static const AkUniqueID STARTMUSIC = 3827058668U;
+        static const AkUniqueID STOP_TV = 2893389474U;
     } // namespace EVENTS
 
     namespace STATES
@@ -99,6 +100,13 @@ namespace AK
         static const AkUniqueID SS_AIR_TURBULENCE = 4160247818U;
         static const AkUniqueID TVSIDECHAIN = 3411313193U;
     } // namespace GAME_PARAMETERS
+
+    namespace TRIGGERS
+    {
+        static const AkUniqueID NEW_TRIGGER = 4163741908U;
+        static const AkUniqueID TRIGGER_STIN_ARMOIRE = 2416262786U;
+        static const AkUniqueID TRIGGER_STIN_STORE = 1181401788U;
+    } // namespace TRIGGERS
 
     namespace BANKS
     {

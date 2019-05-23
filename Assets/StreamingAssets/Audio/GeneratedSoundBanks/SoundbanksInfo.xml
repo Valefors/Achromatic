@@ -36,10 +36,11 @@
 				<Event Id="3535750338" Name="Play_StoreFerme" ObjectPath="\Events\Default Work Unit\Play_StoreFerme"/>
 				<Event Id="3670131286" Name="Play_StoreOuvre" ObjectPath="\Events\Default Work Unit\Play_StoreOuvre"/>
 				<Event Id="2027969872" Name="Play_TV" ObjectPath="\Events\Default Work Unit\Ambient\Play_TV" MaxAttenuation="20.000000"/>
-				<Event Id="3013956005" Name="Play_Ventilateur" ObjectPath="\Events\Default Work Unit\Ambient\Play_Ventilateur" MaxAttenuation="5.000000"/>
+				<Event Id="3013956005" Name="Play_Ventilateur" ObjectPath="\Events\Default Work Unit\Ambient\Play_Ventilateur" MaxAttenuation="10.000000"/>
 				<Event Id="2248092158" Name="Player_Move" ObjectPath="\Events\Default Work Unit\Player_Move"/>
 				<Event Id="3361170585" Name="Player_Stop" ObjectPath="\Events\Default Work Unit\Player_Stop" MaxAttenuation="0.000000"/>
 				<Event Id="3827058668" Name="StartMusic" ObjectPath="\Events\Default Work Unit\Ambient\StartMusic"/>
+				<Event Id="2893389474" Name="Stop_TV" ObjectPath="\Events\Default Work Unit\Ambient\Stop_TV" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="8812298" Language="SFX">

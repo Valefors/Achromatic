@@ -573,7 +573,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: e04d55784c355a49a4b3b2567860f9cf
     GuidInternal: 
-    m_lastTime: -8586436843550280486
+    m_lastTime: -8586432607623520591
     List:
     - name: Acceleration_Rot_RTPC
       guid: eada300522a9084aa01898b86269f857
@@ -837,8 +837,35 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 59b6e8b544b22945b30fd6daf4de0a5c
     GuidInternal: 
-    m_lastTime: -8586468763698160104
-    List: []
+    m_lastTime: -8586432525372680913
+    List:
+    - name: New_Trigger
+      guid: 7c86b655a825724588b794f59ca0ac6c
+      id: 4163741908
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: New_Trigger
+        ObjectType: 14
+      Path: Default Work Unit\New_Trigger
+    - name: Trigger_Stin_Armoire
+      guid: 8e84b2b963d5224ab93598d5196ce433
+      id: 2416262786
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Trigger_Stin_Armoire
+        ObjectType: 14
+      Path: Default Work Unit\Trigger_Stin_Armoire
+    - name: Trigger_Stin_Store
+      guid: 33f445aaaf6bcf439b1e07470066495c
+      id: 1181401788
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Trigger_Stin_Store
+        ObjectType: 14
+      Path: Default Work Unit\Trigger_Stin_Store
   ExpandedItems:
   - /AchromaticWwise
   - /AchromaticWwise/Events

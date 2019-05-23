@@ -42,6 +42,7 @@ public class TV : Interactable
         _interactionName = Utils.TURN_ON_INTERACTION;
         //_screenMaterial = _screenOffMaterial;
         //CORENTIN COUPER SON ICI
+        AkSoundEngine.PostEvent("Stop_TV", gameObject);
     }
 
     void TurnOn()
@@ -52,5 +53,6 @@ public class TV : Interactable
         _interactionName = Utils.TURN_OFF_INTERACTION;
         //_screenMaterial = _originalScreenMaterial;
         //CORENTIN METTRE SON ICI
+        AkSoundEngine.PostEvent("Play_TV", gameObject);
     }
 }
