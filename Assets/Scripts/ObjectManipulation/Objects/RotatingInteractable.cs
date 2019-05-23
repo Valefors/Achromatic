@@ -7,10 +7,10 @@ using UnityEngine;
 public class RotatingInteractable : Interactable
 {
     rotateObject _roScript;
-    bool _rightClick = false;
+    //bool _rightClick = false;
     bool _leftClick = false;
     bool _isManipulate = false;
-    bool _isFirstClick = false;
+    //bool _isFirstClick = false;
 
     Vector3 _originalPosition;
     Quaternion _originalRotation;
@@ -41,7 +41,7 @@ public class RotatingInteractable : Interactable
 
     void GetInput()
     {
-        _rightClick = _player.GetButton(Utils.RIGHT_CLICK_ACTION);
+        //_rightClick = _player.GetButton(Utils.RIGHT_CLICK_ACTION);
         _leftClick = Input.GetMouseButtonDown(0);
     }
 
@@ -63,6 +63,10 @@ public class RotatingInteractable : Interactable
         _isManipulate = true;
 
         gameObject.layer = Utils.OBJECT_LAYER;
+        for(int i = 0; i < gameObject.transform.childCount; i++)
+        {
+            gameObject.transform.GetChild(i).gameObject.layer = Utils.OBJECT_LAYER;
+        }
     }
 
     void PutBack()
@@ -72,7 +76,12 @@ public class RotatingInteractable : Interactable
         transform.rotation = _originalRotation;
 
         _isManipulate = false;
+
         gameObject.layer = Utils.DEFAULT_LAYER;
+        for (int i = 0; i < gameObject.transform.childCount; i++)
+        {
+            gameObject.transform.GetChild(i).gameObject.layer = Utils.DEFAULT_LAYER;
+        }
 
         InteractableManager.instance.StopRotatingInteraction();
         PlayCorrectSound(false);

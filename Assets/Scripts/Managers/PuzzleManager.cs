@@ -43,12 +43,12 @@ public class PuzzleManager : MonoBehaviour
 
     public void OpenBlinds()
     {
-        HideNumbers(0.1f);
+        HideNumbers(0.01f);
     }
 
     public void CloseBlinds()
     {
-        ShowNumbers(3);
+        ShowNumbers(1);
     }
 
     void ShowNumbers(float pDelay = 0.5f)
