@@ -1,0 +1,106 @@
+{
+  "LABEL_TRASH_NOTE": {
+    "easy": "It has been torn up, looks like the other half of the paper page 5.",
+    "difficult": "It has been torn up, looks like the other half of the paper page 5."
+  },
+
+  "LABEL_CUT_PHOTOS": {
+    "easy": "It has been ripped off from a newspaper or something like that ... There's maybe a link with the page 10.",
+    "difficult": "It has been ripped off from a newspaper or something like that ... There's maybe a link with the page 10."
+  },
+
+  "LABEL_NOTE_DESK": {
+    "easy": "It refers to the page 7 and 8... It seems I need to fusion the two pages...",
+    "difficult": "It refers to the page 7 and 8... It seems I need to fusion the two pages..."
+  },
+
+  "LABEL_POLAROID_DAGGER": {
+    "easy": "A dagger...",
+    "difficult": "A dagger..."
+  },
+
+  "LABEL_POKER": {
+    "easy": "A poker...",
+    "difficult": "A poker..."
+  },
+
+  "LABEL_POLAROID_RAZOR": {
+    "easy": "A razor...",
+    "difficult": "A razor..."
+  },
+
+  "LABEL_POLAROID_SCISSORS": {
+    "easy": "A pair of scissors...",
+    "difficult": "A pair of scissors..."
+  },
+
+  "LABEL_POLAROID_BROKEN_GLASS": {
+    "easy": "A broken glass...",
+    "difficult": "A broken glass..."
+  },
+
+  "LABEL_FRAMECLUE": {
+    "easy": "Maybe there's something behind it...",
+    "difficult": "Maybe there's something behind it..."
+  },
+
+  "LABEL_SECRET_WARDROBE": {
+    "easy": "Strange location to place a wardrobe...",
+    "difficult": "..."
+  },
+
+  "LABEL_TYPEWRITER": {
+    "easy": "It is time to reveal who's the culprit !",
+    "difficult": "It is time to reveal who's the culprit !"
+  },
+
+  "LABEL_WARDROBE": {
+    "easy": "This wardrobe is completely locked.",
+    "difficult": "This wardrobe is completely locked."
+  },
+
+  "LABEL_CUP": {
+    "easy": "Whenever the time, it's tea time.",
+    "difficult": "Whenever the time, it's tea time."
+  },
+
+  "LABEL_BOOKSHELF": {
+    "easy": "A whole bunch of books.",
+    "difficult": "A whole bunch of books."
+  },
+
+  "LABEL_CIGARETTE": {
+    "easy": "A cigarette.",
+    "difficult": "A cigarette."
+  },
+
+  "LABEL_PLANT": {
+    "easy": "Nice plant.",
+    "difficult": "Nice plant."
+  },
+
+  "LABEL_LITTLE_PLANT": {
+    "easy": "Just a little plant.",
+    "difficult": "Just a little plant."
+  },
+
+  "LABEL_GOOD_NEWSPAPER": {
+    "easy": "Sometimes news are good.",
+    "difficult": "Sometimes news are good."
+  },
+
+  "LABEL_BAD_NEWSPAPER": {
+    "easy": "Sometimes the news are bad.",
+    "difficult": "Sometimes the news are bad."
+  },
+
+  "LABEL_CLOCK": {
+    "easy": "A nice clock.",
+    "difficult": "A nice clock."
+  },
+
+  "LABEL_GLOBE": {
+    "easy": "Just an ordinary glob.",
+    "difficult": "Just an ordinary glob."
+  }
+}

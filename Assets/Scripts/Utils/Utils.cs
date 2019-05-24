@@ -51,6 +51,11 @@ public static class Utils
     public static int QUALITY_LEVEL = 2;
     public static bool FULLSCREEN = true;
 
+    //Difficulty
+    public static string EASY_MODE = "easy";
+    public static string DIFFICULT_MODE = "difficult";
+    public static string DIFFICULTY_MODE = EASY_MODE;
+
     //Detection Player
-    public static int PLAYER_DETECTION = 4;
+    public static int PLAYER_DETECTION = 5;
 }

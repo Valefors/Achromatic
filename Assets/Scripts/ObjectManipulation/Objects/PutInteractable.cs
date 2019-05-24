@@ -16,7 +16,7 @@ public class PutInteractable : Interactable
 
     protected override void Init()
     {
-        if (interactionText == "") _interactionName = Utils.PUT_INTERACTION;
+        if (interactionLabel == "") _interactionName = Utils.PUT_INTERACTION;
         if (spawnPosition == null) Debug.LogError("NO SPAWN POSITION IN " + this);
     }
 

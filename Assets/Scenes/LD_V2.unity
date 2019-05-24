@@ -1865,7 +1865,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 160, y: 178}
+  m_AnchoredPosition: {x: 212, y: 178}
   m_SizeDelta: {x: 450, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &40998391
@@ -3027,7 +3027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: A whole bunch of books.
+  interactionLabel: 
 --- !u!1001 &66575674
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4904,7 +4904,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4bcb3f1d5fb71041bdc3817964ecf84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: 
+  interactionLabel: 
   spawnPosition: {fileID: 2120822938}
 --- !u!1001 &110108029
 PrefabInstance:
@@ -6276,6 +6276,44 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1261577940}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &140098838
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 140098839}
+  m_Layer: 5
+  m_Name: Difficulty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &140098839
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140098838}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 282955014}
+  - {fileID: 645949529}
+  - {fileID: 558036106}
+  m_Father: {fileID: 475227381}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -451}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &140118148
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6656,7 +6694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4d9716ed371c45a874973a4bbb219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: A broken glass...
+  interactionLabel: LABEL_POLAROID_BROKEN_GLASS
   type: 0
 --- !u!114 &159997170
 MonoBehaviour:
@@ -7202,7 +7240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 614b8c6b43cf81f4894abb4174baa921, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: '"Truth has it own dark side..." it''s writtien page 12.'
+  interactionLabel: 
 --- !u!114 &162805170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7595,9 +7633,9 @@ RectTransform:
   m_Father: {fileID: 475227381}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 960, y: -640}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -79}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &172487267 stripped
@@ -8157,7 +8195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4bcb3f1d5fb71041bdc3817964ecf84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: 
+  interactionLabel: 
   spawnPosition: {fileID: 1603847327}
 --- !u!1 &178531314
 GameObject:
@@ -11144,7 +11182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4d9716ed371c45a874973a4bbb219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: A pair of scissors...
+  interactionLabel: LABEL_POLAROID_SCISSORS
   type: 0
 --- !u!114 &265070421
 MonoBehaviour:
@@ -11209,6 +11247,10 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PFV_FrameClue
+      objectReference: {fileID: 0}
+    - target: {fileID: 149035661, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4336598001760374692, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5,
         type: 3}
@@ -11281,11 +11323,11 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 153167590, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
-      propertyPath: m_Layer
-      value: 0
+    - target: {fileID: 984713377, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 592633211, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
+    - target: {fileID: 149035666, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
@@ -11301,9 +11343,9 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 984713377, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
-      propertyPath: m_Mesh
-      value: 
+    - target: {fileID: 848276823, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
+      propertyPath: interactionLabel
+      value: LABEL_FRAMECLUE
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
@@ -11808,6 +11850,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: a3da27e9056306040a0e857e06e50918, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 325c0a3442fc40240b18b1242011dad1, type: 3}
+--- !u!224 &282955014 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 224340200432122086, guid: f736ef895720643b3b2e8a3a5f092df6,
+    type: 3}
+  m_PrefabInstance: {fileID: 352657105}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &286866557
 GameObject:
   m_ObjectHideFlags: 0
@@ -12913,7 +12961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4bcb3f1d5fb71041bdc3817964ecf84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: 
+  interactionLabel: 
   spawnPosition: {fileID: 141513244}
 --- !u!1001 &310717444
 PrefabInstance:
@@ -15652,7 +15700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: Sometimes news are good.
+  interactionLabel: LABEL_BAD_NEWSPAPER
 --- !u!64 &351405768
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15673,6 +15721,179 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 367039814}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &352657105
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 140098839}
+    m_Modifications:
+    - target: {fileID: 1500480367090248, guid: f736ef895720643b3b2e8a3a5f092df6, type: 3}
+      propertyPath: m_Name
+      value: Toggle
+      objectReference: {fileID: 0}
+    - target: {fileID: 224340200432122086, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224340200432122086, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224340200432122086, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224340200432122086, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224340200432122086, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224340200432122086, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224340200432122086, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224340200432122086, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224340200432122086, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224340200432122086, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224340200432122086, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224340200432122086, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 94
+      objectReference: {fileID: 0}
+    - target: {fileID: 224340200432122086, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 181
+      objectReference: {fileID: 0}
+    - target: {fileID: 224340200432122086, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 224340200432122086, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 224340200432122086, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224340200432122086, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224340200432122086, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224340200432122086, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224340200432122086, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224340200432122086, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224340200432122086, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224340200432122086, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224340200432122086, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114813106202897008, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: isOn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114813106202897008, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: onColorBg.r
+      value: 0.10588236
+      objectReference: {fileID: 0}
+    - target: {fileID: 114813106202897008, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: onColorBg.g
+      value: 0.10588236
+      objectReference: {fileID: 0}
+    - target: {fileID: 114813106202897008, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: onColorBg.b
+      value: 0.10588236
+      objectReference: {fileID: 0}
+    - target: {fileID: 114813106202897008, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: offColorBg.r
+      value: 0.34117648
+      objectReference: {fileID: 0}
+    - target: {fileID: 114813106202897008, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: offColorBg.g
+      value: 0.34117648
+      objectReference: {fileID: 0}
+    - target: {fileID: 114813106202897008, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: offColorBg.b
+      value: 0.34117648
+      objectReference: {fileID: 0}
+    - target: {fileID: 114813106202897008, guid: f736ef895720643b3b2e8a3a5f092df6,
+        type: 3}
+      propertyPath: _difficultyText
+      value: 
+      objectReference: {fileID: 558036107}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f736ef895720643b3b2e8a3a5f092df6, type: 3}
 --- !u!4 &353568396 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 325c0a3442fc40240b18b1242011dad1,
@@ -16878,8 +17099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: The ashtray is placed at the same location than the one on the
-    picture who's been taken at daylight page 7.
+  interactionLabel: 
 --- !u!1 &368832931
 GameObject:
   m_ObjectHideFlags: 0
@@ -20109,7 +20329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: The culprit only uses cutting weapons...
+  interactionLabel: 
 --- !u!64 &432411595
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22452,7 +22672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: A whole bunch of books.
+  interactionLabel: LABEL_BOOKSHELF
 --- !u!1001 &468531973
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22945,6 +23165,7 @@ RectTransform:
   - {fileID: 170845872}
   - {fileID: 2146574871}
   - {fileID: 1637977170}
+  - {fileID: 140098839}
   - {fileID: 713694919}
   m_Father: {fileID: 1034237567}
   m_RootOrder: 2
@@ -22966,8 +23187,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44fd4c85e03f30f46a3ce9a2c604d923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sliderValue: {fileID: 0}
-  _slider: {fileID: 0}
+  _sliderValue: {fileID: 1030207159}
+  _slider: {fileID: 1907210528}
 --- !u!114 &475227383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27371,6 +27592,167 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 557264752}
   m_Mesh: {fileID: 0}
+--- !u!1 &558036105
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 558036106}
+  - component: {fileID: 558036108}
+  - component: {fileID: 558036107}
+  m_Layer: 5
+  m_Name: DIFFICULTY_TEXT
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &558036106
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558036105}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 140098839}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 365, y: 176}
+  m_SizeDelta: {x: 300, y: 80}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &558036107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558036105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_text: EASY
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: a5810f38e9c9c2142a29aa559809ac6a, type: 2}
+  m_sharedMaterial: {fileID: 21637246168971756, guid: a5810f38e9c9c2142a29aa559809ac6a,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_outlineColor:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontSize: 50
+  m_fontSizeBase: 50
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_textAlignment: 514
+  m_isAlignmentEnumConverted: 1
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
+  m_linkedTextComponent: {fileID: 0}
+  m_isLinkedTextComponent: 0
+  m_isTextTruncated: 0
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_ignoreRectMaskCulling: 0
+  m_ignoreCulling: 1
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_firstVisibleCharacter: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_textInfo:
+    textComponent: {fileID: 558036107}
+    characterCount: 4
+    spriteCount: 0
+    spaceCount: 0
+    wordCount: 1
+    linkCount: 0
+    lineCount: 1
+    pageCount: 1
+    materialCount: 1
+  m_havePropertiesChanged: 0
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_isInputParsingRequired: 0
+  m_inputSource: 0
+  m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &558036108
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558036105}
+  m_CullTransparentMesh: 0
 --- !u!1 &558839946
 GameObject:
   m_ObjectHideFlags: 0
@@ -28356,7 +28738,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: A nice clock.
+  interactionLabel: LABEL_CLOCK
 --- !u!64 &585795080
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28542,8 +28924,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4d9716ed371c45a874973a4bbb219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: It has been ripped off from a newspaper or something like that
-    ... There's maybe a link with the page 10.
+  interactionLabel: LABEL_CUT_PHOTOS
   type: 0
 --- !u!114 &591098858
 MonoBehaviour:
@@ -28947,7 +29328,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 176, y: 180}
+  m_AnchoredPosition: {x: 192, y: 180}
   m_SizeDelta: {x: 400, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &594302448
@@ -30181,8 +30562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: The whisky bottle is placed at the same location than the one on
-    the picture who's been taken at night page 8.
+  interactionLabel: 
 --- !u!1001 &621127918
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30373,7 +30753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: Just a little plant.
+  interactionLabel: LABEL_LITTLE_PLANT
 --- !u!65 &621567040
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31198,6 +31578,167 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 643135751}
   m_Mesh: {fileID: 4300008, guid: 5087c4ce90dab8d48973148a69b259b8, type: 3}
+--- !u!1 &645949528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 645949529}
+  - component: {fileID: 645949531}
+  - component: {fileID: 645949530}
+  m_Layer: 5
+  m_Name: LEVEL_TEXT
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &645949529
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645949528}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 140098839}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: -402, y: 176}
+  m_SizeDelta: {x: 650, y: 80}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &645949530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645949528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_text: 'DIFFICULTY LEVEL :'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: a5810f38e9c9c2142a29aa559809ac6a, type: 2}
+  m_sharedMaterial: {fileID: 21637246168971756, guid: a5810f38e9c9c2142a29aa559809ac6a,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_outlineColor:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontSize: 70
+  m_fontSizeBase: 70
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_textAlignment: 514
+  m_isAlignmentEnumConverted: 1
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
+  m_linkedTextComponent: {fileID: 0}
+  m_isLinkedTextComponent: 0
+  m_isTextTruncated: 0
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_ignoreRectMaskCulling: 0
+  m_ignoreCulling: 1
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_firstVisibleCharacter: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_textInfo:
+    textComponent: {fileID: 645949530}
+    characterCount: 18
+    spriteCount: 0
+    spaceCount: 2
+    wordCount: 2
+    linkCount: 0
+    lineCount: 1
+    pageCount: 1
+    materialCount: 1
+  m_havePropertiesChanged: 0
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_isInputParsingRequired: 0
+  m_inputSource: 0
+  m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &645949531
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645949528}
+  m_CullTransparentMesh: 0
 --- !u!1 &647214041
 GameObject:
   m_ObjectHideFlags: 0
@@ -32110,7 +32651,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: Broken blinds.
+  interactionLabel: 
+--- !u!114 &667441346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667441344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 6
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!4 &667441348 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1496174373016209719, guid: 4bdf2a74daad32444bd0be2ff58d0900,
@@ -33918,7 +34477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: He writtes a lot too...
+  interactionLabel: 
 --- !u!64 &706224321
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -34249,7 +34808,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 475227381}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -35632,7 +36191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: Whenever the time, it's tea time.
+  interactionLabel: LABEL_CUP
 --- !u!64 &738365011
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -36270,7 +36829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: A Television, only the sound is working.
+  interactionLabel: 
 --- !u!1 &760881739
 GameObject:
   m_ObjectHideFlags: 0
@@ -39490,7 +40049,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4d9716ed371c45a874973a4bbb219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: A dagger...
+  interactionLabel: LABEL_POLAROID_DAGGER
   type: 0
 --- !u!114 &822712111
 MonoBehaviour:
@@ -40370,7 +40929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4d9716ed371c45a874973a4bbb219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: Therefore, he can't be the culprit...
+  interactionLabel: 
   type: 0
 --- !u!114 &840080809
 MonoBehaviour:
@@ -41596,7 +42155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: He liked to read a lot...
+  interactionLabel: 
 --- !u!64 &874425976
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -42769,8 +43328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: The glass is placed at the same location than the one on the picture
-    who's been taken at night page 8.
+  interactionLabel: 
 --- !u!1001 &904107690
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43492,9 +44050,9 @@ RectTransform:
   m_Father: {fileID: 475227381}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 960, y: -415}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 125}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &920739851 stripped
@@ -43906,7 +44464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4bcb3f1d5fb71041bdc3817964ecf84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: 
+  interactionLabel: 
   spawnPosition: {fileID: 0}
 --- !u!65 &923739017
 BoxCollider:
@@ -44674,7 +45232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4bcb3f1d5fb71041bdc3817964ecf84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: 
+  interactionLabel: 
   spawnPosition: {fileID: 0}
 --- !u!65 &934584170
 BoxCollider:
@@ -44719,8 +45277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4d9716ed371c45a874973a4bbb219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: It has been torn up, looks like the other half of the paper page
-    5.
+  interactionLabel: LABEL_TRASH_NOTE
   type: 0
 --- !u!114 &936422621
 MonoBehaviour:
@@ -44804,7 +45361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4bcb3f1d5fb71041bdc3817964ecf84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: 
+  interactionLabel: 
   spawnPosition: {fileID: 476963096}
 --- !u!65 &937867139
 BoxCollider:
@@ -48487,7 +49044,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: Just an ordinary glob.
+  interactionLabel: LABEL_GLOBE
 --- !u!64 &1008275626
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -48895,7 +49452,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 596, y: 175}
+  m_AnchoredPosition: {x: 612, y: 175}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1021512545
@@ -51157,8 +51714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4d9716ed371c45a874973a4bbb219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: It has been ripped off from a newspaper or something like that
-    ... There's maybe a link with the page 10.
+  interactionLabel: LABEL_CUT_PHOTOS
   type: 0
 --- !u!114 &1077178738
 MonoBehaviour:
@@ -53085,7 +53641,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: A whole bunch of books.
+  interactionLabel: LABEL_BOOKSHELF
 --- !u!1001 &1106880314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55626,7 +56182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: I see... He only uses cutting weapons...
+  interactionLabel: 
 --- !u!114 &1156227606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55639,7 +56195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: The culprit only uses cutting weapons...
+  interactionLabel: 
 --- !u!64 &1156227607
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -56461,7 +57017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4bcb3f1d5fb71041bdc3817964ecf84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: 
+  interactionLabel: 
   spawnPosition: {fileID: 1599173660}
 --- !u!4 &1173366549 stripped
 Transform:
@@ -57241,7 +57797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4bcb3f1d5fb71041bdc3817964ecf84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: 
+  interactionLabel: 
   spawnPosition: {fileID: 1831098003}
 --- !u!4 &1195198563 stripped
 Transform:
@@ -59865,7 +60421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4d9716ed371c45a874973a4bbb219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: A poker...
+  interactionLabel: LABEL_POKER
   type: 0
 --- !u!114 &1228179883
 MonoBehaviour:
@@ -60014,7 +60570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: This wardrobe is completely locked.
+  interactionLabel: LABEL_WARDROBE
 --- !u!1 &1230162413
 GameObject:
   m_ObjectHideFlags: 0
@@ -60239,7 +60795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4bcb3f1d5fb71041bdc3817964ecf84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: 
+  interactionLabel: 
   spawnPosition: {fileID: 1767268145}
 --- !u!1 &1237551828
 GameObject:
@@ -63004,8 +63560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: The book is placed at the same location than the one on the picture
-    who's been taken at daylight page 7.
+  interactionLabel: 
 --- !u!1 &1282855498
 GameObject:
   m_ObjectHideFlags: 0
@@ -66429,8 +66984,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4d9716ed371c45a874973a4bbb219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: It has been ripped off from a newspaper or something like that
-    ... There's maybe a link with the page 10.
+  interactionLabel: LABEL_CUT_PHOTOS
   type: 0
 --- !u!114 &1355200897
 MonoBehaviour:
@@ -67273,7 +67827,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: A cigarette.
+  interactionLabel: LABEL_CIGARETTE
 --- !u!65 &1375397188
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67373,7 +67927,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 63c7f336a04b0934ca9d4fe900a6c059, type: 3}
       propertyPath: m_Name
-      value: NoteTransparent
+      value: TrashNote
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 63c7f336a04b0934ca9d4fe900a6c059, type: 3}
       propertyPath: m_LocalPosition.x
@@ -68871,7 +69425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: A whole bunch of books.
+  interactionLabel: LABEL_BOOKSHELF
 --- !u!1001 &1400293063
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70352,7 +70906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 569036418c9ac34428e4d97bfcbb22cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: It is time to reveal who's the culprit !
+  interactionLabel: LABEL_TYPEWRITER
 --- !u!114 &1441831315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77447,7 +78001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: A whole bunch of books.
+  interactionLabel: LABEL_BOOKSHELF
 --- !u!4 &1498585329 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 325c0a3442fc40240b18b1242011dad1,
@@ -77484,7 +78038,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4bcb3f1d5fb71041bdc3817964ecf84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: 
+  interactionLabel: 
   spawnPosition: {fileID: 2065032228}
 --- !u!65 &1499318188
 BoxCollider:
@@ -84837,7 +85391,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1637977170
 RectTransform:
   m_ObjectHideFlags: 0
@@ -84856,9 +85410,9 @@ RectTransform:
   m_Father: {fileID: 475227381}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 960, y: -929}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -324}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1641547177
@@ -92408,7 +92962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: He writtes a lot too...
+  interactionLabel: 
 --- !u!64 &1799038093
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -93940,8 +94494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4d9716ed371c45a874973a4bbb219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: It has been ripped off from a newspaper or something like that
-    ... There's maybe a link with the page 10.
+  interactionLabel: LABEL_CUT_PHOTOS
   type: 0
 --- !u!114 &1849093803
 MonoBehaviour:
@@ -95741,7 +96294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: Just a little plant.
+  interactionLabel: LABEL_LITTLE_PLANT
 --- !u!65 &1866501716
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -95896,11 +96449,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -97976,7 +98529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: The culprit reads a lot...
+  interactionLabel: 
 --- !u!64 &1903522898
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -98347,7 +98900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: Nice plant.
+  interactionLabel: LABEL_PLANT
 --- !u!65 &1907785562
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -99924,7 +100477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: Sometimes news are good.
+  interactionLabel: LABEL_GOOD_NEWSPAPER
 --- !u!64 &1935518149
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -100166,7 +100719,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4d9716ed371c45a874973a4bbb219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: A razor...
+  interactionLabel: LABEL_POLAROID_RAZOR
   type: 0
 --- !u!114 &1936785001
 MonoBehaviour:
@@ -100508,7 +101061,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: A cigarette.
+  interactionLabel: LABEL_CIGARETTE
 --- !u!65 &1940967918
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -100625,7 +101178,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 707, y: 176}
+  m_AnchoredPosition: {x: 723, y: 176}
   m_SizeDelta: {x: 300, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1943706696
@@ -100726,11 +101279,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -102963,8 +103516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc4d9716ed371c45a874973a4bbb219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: It refers to the page 7 and 8... It seems I need to fusion the
-    two pages...
+  interactionLabel: LABEL_NOTE_DESK
   type: 0
 --- !u!114 &1992595283
 MonoBehaviour:
@@ -103220,7 +103772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1622d92b79491a48979a0a65e60b378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: Strange location to place a wardrobe...
+  interactionLabel: LABEL_SECRET_WARDROBE
 --- !u!114 &1997106092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103614,7 +104166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ce03849bbcc85840ba9e30f63e67ce7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: 
+  interactionLabel: 
   _screenRenderer: {fileID: 1585289420}
   _televisionLight: {fileID: 829991550}
 --- !u!114 &2002697180
@@ -103825,7 +104377,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: Broken Blinds
+  interactionLabel: 
+--- !u!114 &2008913916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008913914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 6
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!4 &2008913918 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1496174373016209719, guid: 4bdf2a74daad32444bd0be2ff58d0900,
@@ -109657,7 +110227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionText: Sometimes the news are bad.
+  interactionLabel: LABEL_GOOD_NEWSPAPER
 --- !u!64 &2127390902
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -110634,9 +111204,9 @@ RectTransform:
   m_Father: {fileID: 475227381}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 960, y: -779}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -190}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &826568852750439368

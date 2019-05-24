@@ -15,15 +15,12 @@ public class TV : Interactable
     void Start()
     {
         Init();
-        if (interactionText == "") _interactionName = Utils.TURN_OFF_INTERACTION;
+        if (interactionLabel == "") _interactionName = Utils.TURN_OFF_INTERACTION;
         if (_screenRenderer == null) Debug.LogError("NO MATERIAL LINKED IN " + this);
         if (_televisionLight == null) Debug.LogError("NO LIGHT LINKED IN " + this);
 
         _screenShader = Shader.Find("CustomOutline");
         _screenOffSahder = Shader.Find("Simple Double-Sided");
-        print(_screenShader);
-        print(_screenOffSahder);
-        //_originalScreenMaterial = _screenMaterial;
     }
 
     public override void SetInteractionMode()

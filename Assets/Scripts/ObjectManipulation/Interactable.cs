@@ -15,7 +15,7 @@ public class Interactable : MonoBehaviour
 
     protected string _interactionName = "";
 
-    [SerializeField] protected string interactionText = "";
+    [SerializeField] protected string interactionLabel = "";
 
     void Start()
     {
@@ -34,7 +34,8 @@ public class Interactable : MonoBehaviour
 
         _player = ReInput.players.GetPlayer(0);
 
-        if (interactionText != "") _interactionName = interactionText;
+        if (interactionLabel != "") _interactionName = ReadJSON.GetCorrectTextInteraction(interactionLabel);
+        OptionScreen.OnUpdate += UpdateInteractionName;
     }
 
     public virtual void SetModeHoover()
@@ -50,6 +51,11 @@ public class Interactable : MonoBehaviour
     public virtual void SetInteractionMode()
     {
 
+    }
+
+    void UpdateInteractionName()
+    {
+        _interactionName = ReadJSON.GetCorrectTextInteraction(interactionLabel);
     }
 
     private void OnDestroy()

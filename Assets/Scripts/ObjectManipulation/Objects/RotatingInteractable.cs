@@ -29,7 +29,7 @@ public class RotatingInteractable : Interactable
         _originalPosition = transform.position;
         _originalRotation = transform.rotation;
 
-        if (interactionText == "") _interactionName = Utils.ROTATING_OBJECT_INTERACTION;
+        if (interactionLabel == "") _interactionName = Utils.ROTATING_OBJECT_INTERACTION;
     }
 
     private void Update()

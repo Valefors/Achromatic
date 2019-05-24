@@ -10,6 +10,9 @@ public class OptionScreen : MonoBehaviour
     [SerializeField] TextMeshProUGUI _sliderValue;
     [SerializeField] Slider _slider;
 
+    public delegate void UpdateAction();
+    public static event UpdateAction OnUpdate;
+
     public void OnClickSwitchControllersEn()
     {
         ReInput.players.GetPlayer(0).controllers.maps.SetMapsEnabled(false, 0);
@@ -44,5 +47,13 @@ public class OptionScreen : MonoBehaviour
     {
         Utils.FULLSCREEN = pIsFullScreen;
         Screen.fullScreen = pIsFullScreen;
+    }
+
+    public static void SetDifficulty(bool pIsDifficult)
+    {
+        if (!pIsDifficult) Utils.DIFFICULTY_MODE = Utils.EASY_MODE;
+        else Utils.DIFFICULTY_MODE = Utils.DIFFICULT_MODE;
+
+        if (OnUpdate != null) OnUpdate();
     }
 }

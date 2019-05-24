@@ -21,6 +21,7 @@ public class InteractableManager : MonoBehaviour
     {
         if (_instance == null) _instance = this;
         else Debug.LogError("AN INSTANCE ALREADY EXISTS");
+        ReadJSON.StartReadingJSON();
     }
     #endregion
 
