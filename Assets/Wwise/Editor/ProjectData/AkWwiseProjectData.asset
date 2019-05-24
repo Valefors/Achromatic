@@ -202,7 +202,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 5431db33e0abce49a36a5c955da577d1
     GuidInternal: 
-    m_lastTime: -8586437636937068955
+    m_lastTime: -8586429976761815479
     List:
     - name: MainSoundbank
       guid: 8d03fac40834914eb17985f729118ac9
@@ -218,7 +218,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: ea02e87e1b1f2b43a3a880b8176a3219
     GuidInternal: 
-    m_lastTime: -8586437637851940818
+    m_lastTime: -8586430004048743833
     List:
     - name: Play_Ambient
       guid: ebb2121b08340c4a9881a2f0023c9f54
@@ -568,12 +568,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Stop_TV
+      guid: 8d9319ca43de05439adcca2faaebc17d
+      id: 2893389474
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambient
+        ObjectType: 4
+      - ElementName: Stop_TV
+        ObjectType: 3
+      Path: Default Work Unit\Ambient\Stop_TV
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: e04d55784c355a49a4b3b2567860f9cf
     GuidInternal: 
-    m_lastTime: -8586432607623520591
+    m_lastTime: -8586428963909984574
     List:
     - name: Acceleration_Rot_RTPC
       guid: eada300522a9084aa01898b86269f857
@@ -805,7 +819,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 6bd9a0f29f6f2942b6a3168f45197355
     GuidInternal: 
-    m_lastTime: -8586437663666740477
+    m_lastTime: -8586428963910044401
     List:
     - name: Virage_Switch
       guid: 1a5697fffa2c05459650e970f614ea44
