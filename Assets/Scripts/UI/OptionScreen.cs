@@ -61,6 +61,15 @@ public class OptionScreen : MonoBehaviour
         if(OnLightUpdate != null) OnLightUpdate();
     }
 
+    public void SetResolution(Dropdown pDropDown)
+    {
+        int value = pDropDown.value;
+        int width = (int)Mathf.Round(Utils.resolutionArray[value].x);
+        int height = (int)Mathf.Round(Utils.resolutionArray[value].y);
+
+        Screen.SetResolution(width, height, Utils.FULLSCREEN);
+    }
+
     public void SetFullScreen(Toggle pToggle)
     {
         bool isFullScreen = pToggle.isOn;

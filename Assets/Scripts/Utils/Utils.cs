@@ -59,4 +59,15 @@ public static class Utils
 
     //Detection Player
     public static int PLAYER_DETECTION = 5;
+
+    //Resolutions Array
+    public static readonly Dictionary<int, Vector2> resolutionArray
+    = new Dictionary<int, Vector2>
+    {
+    { 0, new Vector2(640,480) },
+    { 1, new Vector2(720,480) },
+    { 2, new Vector2(720,576) },
+    { 3, new Vector2(1280,800) },
+    { 4, new Vector2(1920,1080) }
+    };
 }
