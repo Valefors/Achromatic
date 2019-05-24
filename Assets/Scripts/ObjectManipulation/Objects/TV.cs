@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Outline))]
 public class TV : Interactable
 {
     bool _isTurnOn = true;
@@ -29,6 +28,8 @@ public class TV : Interactable
 
         if (_isTurnOn) TurnOff();
         else TurnOn();
+
+        SetModeNormal();
     }
 
     void TurnOff()

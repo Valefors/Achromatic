@@ -3,15 +3,31 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.UI;
 
 public class OptionScreen : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI _sliderValue;
-    [SerializeField] Slider _slider;
+    //Mouse sensibility
+    [SerializeField] TextMeshProUGUI _sliderMouseValue;
+    [SerializeField] Slider _sliderMouse;
+
+    //Brightness level
+    [SerializeField] TextMeshProUGUI _sliderBrightnessValue;
+    [SerializeField] Slider _sliderBrightness;
+    [SerializeField] PostProcessVolume _volume;
+    ColorGrading _colorGradingLayer = null;
 
     public delegate void UpdateAction();
     public static event UpdateAction OnUpdate;
+
+    public delegate void UpdateLight();
+    public static event UpdateLight OnLightUpdate;
+
+    public void Start()
+    {
+        _volume.profile.TryGetSettings(out _colorGradingLayer); 
+    }
 
     public void OnClickSwitchControllersEn()
     {
@@ -31,8 +47,8 @@ public class OptionScreen : MonoBehaviour
 
     public void UpdateSensibilityValue()
     {
-        if (_sliderValue != null) _sliderValue.text = _slider.value.ToString();
-        Utils.MOUSE_SENSIBILITY = _slider.value;
+        if (_sliderMouseValue != null) _sliderMouseValue.text = _sliderMouse.value.ToString();
+        Utils.MOUSE_SENSIBILITY = _sliderMouse.value;
     }
 
     public void SetQuality(Dropdown pDropDown)
@@ -41,12 +57,16 @@ public class OptionScreen : MonoBehaviour
 
         Utils.QUALITY_LEVEL = value;
         QualitySettings.SetQualityLevel(value);
+
+        if(OnLightUpdate != null) OnLightUpdate();
     }
 
-    public void SetFullScreen(bool pIsFullScreen)
+    public void SetFullScreen(Toggle pToggle)
     {
-        Utils.FULLSCREEN = pIsFullScreen;
-        Screen.fullScreen = pIsFullScreen;
+        bool isFullScreen = pToggle.isOn;
+
+        Utils.FULLSCREEN = isFullScreen;
+        Screen.fullScreen = isFullScreen;
     }
 
     public static void SetDifficulty(bool pIsDifficult)
@@ -55,5 +75,14 @@ public class OptionScreen : MonoBehaviour
         else Utils.DIFFICULTY_MODE = Utils.DIFFICULT_MODE;
 
         if (OnUpdate != null) OnUpdate();
+    }
+
+    public void UpdateBrightnessValue()
+    {
+        float value = Mathf.Round(_sliderBrightness.value * 10.0f) * 0.1f;
+
+        if (_sliderBrightness != null) _sliderBrightnessValue.text = value.ToString();
+        _colorGradingLayer.postExposure.value = value;
+        Utils.BRIGHTNESS_LEVEL = value;
     }
 }

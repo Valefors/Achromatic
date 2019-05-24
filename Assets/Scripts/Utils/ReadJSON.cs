@@ -21,7 +21,7 @@ public static class ReadJSON
         StreamReader sr = new StreamReader(Application.dataPath + "/StreamingAssets/" + fileName);
         string lContent = sr.ReadToEnd();
         sr.Close();
-        Debug.Log(lContent);
+
         return lContent;
     }
 
@@ -34,7 +34,6 @@ public static class ReadJSON
         }
 
         return json[pLabel][Utils.DIFFICULTY_MODE].Value;
-        //print(json[pLabel]["easy"].Value);
     }
 
 }
