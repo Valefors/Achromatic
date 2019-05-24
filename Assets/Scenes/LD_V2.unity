@@ -7289,7 +7289,6 @@ GameObject:
   - component: {fileID: 166851811}
   - component: {fileID: 166851814}
   - component: {fileID: 166851813}
-  - component: {fileID: 166851812}
   m_Layer: 5
   m_Name: ResumeScreen
   m_TagString: Untagged
@@ -7320,23 +7319,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &166851812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 166851810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44fd4c85e03f30f46a3ce9a2c604d923, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _sliderMouseValue: {fileID: 0}
-  _sliderMouse: {fileID: 0}
-  _sliderBrightnessValue: {fileID: 0}
-  _sliderBrightness: {fileID: 0}
-  _volume: {fileID: 0}
 --- !u!114 &166851813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11257,19 +11239,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 149035666, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
+    - target: {fileID: 592633211, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 149035666, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 149035663, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
+    - target: {fileID: 592633208, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
       propertyPath: m_havePropertiesChanged
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 149035663, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
+    - target: {fileID: 592633208, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
@@ -11277,11 +11255,19 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 592633208, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
+    - target: {fileID: 149035666, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 149035666, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 149035663, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
       propertyPath: m_havePropertiesChanged
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 592633208, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
+    - target: {fileID: 149035663, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
@@ -11292,10 +11278,6 @@ PrefabInstance:
     - target: {fileID: 848276823, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
       propertyPath: interactionLabel
       value: LABEL_FRAMECLUE
-      objectReference: {fileID: 0}
-    - target: {fileID: 592633211, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
-      propertyPath: m_Mesh
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
@@ -29189,19 +29171,30 @@ MonoBehaviour:
   m_Value: 4
   m_Options:
     m_Options:
-    - m_Text: 640 x 480
+    - m_Text: 480 x 270
       m_Image: {fileID: 0}
-    - m_Text: 720 x 480
+    - m_Text: 640 x 360
       m_Image: {fileID: 0}
-    - m_Text: 720 x 576
+    - m_Text: 960 x 540
       m_Image: {fileID: 0}
-    - m_Text: 1280 x 800
+    - m_Text: 1280 x 720
       m_Image: {fileID: 0}
     - m_Text: 1920 x 1080
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 475227382}
+        m_MethodName: SetResolution
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 594302448}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Dropdown, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Dropdown+DropdownEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &594302449
