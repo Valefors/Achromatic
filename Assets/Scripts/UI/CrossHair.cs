@@ -87,6 +87,8 @@ public class CrossHair : MonoBehaviour
         {
             if (rayHit.collider.gameObject.GetComponent<Interactable>())
             {
+                if(!TutorialManager.instance.secondStep) TutorialManager.instance.ShowInteractionStep();
+
                 if (InteractableManager.instance.holdingObject == null
                     && rayHit.collider.gameObject.GetComponent<PutInteractable>()) return;
 
@@ -99,7 +101,13 @@ public class CrossHair : MonoBehaviour
             else SetNormalMode();
         }
 
+        Invoke("HideFTUE", 2);
         SetNormalMode();
+    }
+
+    void HideFTUE()
+    {
+        TutorialManager.instance.HideTutorielStep();
     }
 
     void SetHooverMode()

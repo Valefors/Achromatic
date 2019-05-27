@@ -1048,7 +1048,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09146450144b3ca49acb7b924c2015aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _difficultySentence: NOT EZ
+  _difficultySentence: You will be a bit guided throughout the game. It might deteriorate
+    your experience.
   _sentence: {fileID: 1542006137}
 --- !u!1 &332323098
 GameObject:
@@ -1761,7 +1762,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09146450144b3ca49acb7b924c2015aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _difficultySentence: EZ
+  _difficultySentence: You will be very guided throughout the game. It might deteriorate
+    your experience.
   _sentence: {fileID: 1542006137}
 --- !u!1 &487493944
 GameObject:
@@ -4693,7 +4695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09146450144b3ca49acb7b924c2015aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _difficultySentence: PGM
+  _difficultySentence: You will receive no guidance. The experience as it was intended.
   _sentence: {fileID: 1542006137}
 --- !u!1 &1572339681
 GameObject:

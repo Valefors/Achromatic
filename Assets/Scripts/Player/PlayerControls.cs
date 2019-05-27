@@ -105,6 +105,12 @@ public class PlayerControls : MonoBehaviour
 
     void Move()
     {
+        if(!TutorialManager.instance.firstStep)
+        {
+            TutorialManager.instance.firstStep = true;
+            Invoke("HideFTUE", 1);
+        }
+
         if (!_isFinishedWalk)
         {
             _isFinishedWalk = true;
@@ -119,6 +125,11 @@ public class PlayerControls : MonoBehaviour
         _rb.velocity = speed;
 
         FootStepSound();
+    }
+
+    void HideFTUE()
+    {
+        TutorialManager.instance.HideTutorielStep();
     }
 
     void Rotation()
