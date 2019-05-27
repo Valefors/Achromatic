@@ -1,73 +1,73 @@
 {
   "LABEL_TRASH_NOTE": {
     "easy": "It is the second part of the paper page 5. There are words framed on both part.",
-	"normal": "I've seen the second part somewhere, there are words framed on it.",
+	  "normal": "I've seen the second part somewhere, there are words framed on it.",
     "difficult": "It's a poem, sadly it has been torn up."
   },
 
   "LABEL_CUT_PHOTOS": {
     "easy": "It has been ripped off from a newspaper. Does it correspond to the part missing of the newspaper page 10?",
-	"normal": "It has been ripped off from a newspaper.",
+	  "normal": "It has been ripped off from a newspaper.",
     "difficult": "It has been ripped off."
   },
 
   "LABEL_NOTE_DESK": {
     "easy": "It refers to the page 7 and 8... Pictures, Half, Moon, Sun... I have to fold the notebook.",
-	"normal": "Pictures, Half, Moon, Sun... I need to merge daytime and night-time.",
+	  "normal": "Pictures, Half, Moon, Sun... I need to merge daytime and night-time.",
     "difficult": "Nice poem but does it have a purpose?"
   },
 
   "LABEL_POLAROID_DAGGER": {
     "easy": "A dagger...",
-	"normal": "A dagger...",
+	  "normal": "A dagger...",
     "difficult": "A dagger..."
   },
 
   "LABEL_POKER": {
     "easy": "A poker...",
-	"normal": "A poker...",
+	  "normal": "A poker...",
     "difficult": "A poker..."
   },
 
   "LABEL_POLAROID_RAZOR": {
     "easy": "A razor...",
-	"normal": "A razor...",
+	  "normal": "A razor...",
     "difficult": "A razor..."
   },
 
   "LABEL_POLAROID_SCISSORS": {
     "easy": "A pair of scissors...",
-	"normal": "A pair of scissors...",
+	  "normal": "A pair of scissors...",
     "difficult": "A pair of scissors..."
   },
 
   "LABEL_POLAROID_BROKEN_GLASS": {
     "easy": "A broken glass...", 
-	"normal": "A broken glass...",
+	  "normal": "A broken glass...",
     "difficult": "A broken glass..."
   },
 
   "LABEL_FRAMECLUE": {
     "easy": "I'm pretty sure there's something behind it.",
-	"normal": "A modern art painting. Pretty nice.",
+	  "normal": "A modern art painting. Pretty nice.",
     "difficult": "A modern art painting."
   },
 
   "LABEL_SECRET_WARDROBE": {
     "easy": "Strange location to place a wardrobe...",
-	"normal": "Strange location to place a wardrobe...",
+	  "normal": "Strange location to place a wardrobe...",
     "difficult": "Strange location to place a wardrobe..."
   },
 
   "LABEL_TYPEWRITER": {
     "easy": "It's time to reveal who's the culprit !",
-	"normal": "It's time to reveal who's the culprit !",
+	  "normal": "It's time to reveal who's the culprit !",
     "difficult": "It's time to reveal who's the culprit !"
   },
 
   "LABEL_WARDROBE": {
     "easy": "This wardrobe is completely locked.",
-	"normal": "This wardrobe is completely locked.",
+	  "normal": "This wardrobe is completely locked.",
     "difficult": "This wardrobe is completely locked."
   },
 
@@ -79,49 +79,49 @@
 
   "LABEL_BOOKSHELF": {
     "easy": "A whole bunch of books, nothing interesting",
-	"normal": "A whole bunch of books.",
+	  "normal": "A whole bunch of books.",
     "difficult": "Well-furnished libraries."
   },
 
   "LABEL_CIGARETTE": {
     "easy": "A cigarette.",
-	"normal": "A cigarette.",
+	  "normal": "A cigarette.",
     "difficult": "A cigarette."
   },
 
   "LABEL_PLANT": {
     "easy": "Nice plant.",
-	"normal": "Nice plant.",
+	  "normal": "Nice plant.",
     "difficult": "Nice plant."
   },
 
   "LABEL_LITTLE_PLANT": {
     "easy": "Just a little plant.",
-	"normal": "Just a little plant.",
+	  "normal": "Just a little plant.",
     "difficult": "Just a little plant."
   },
 
   "LABEL_GOOD_NEWSPAPER": {
     "easy": "Sometimes news are good.",
-	"normal": "Sometimes news are good.",
+	  "normal": "Sometimes news are good.",
     "difficult": "Sometimes news are good."
   },
 
   "LABEL_BAD_NEWSPAPER": {
     "easy": "Sometimes the news are bad.",
-	"normal": "Sometimes the news are bad.",
+	  "normal": "Sometimes the news are bad.",
     "difficult": "Sometimes the news are bad."
   },
 
   "LABEL_CLOCK": {
     "easy": "A nice clock.",    
-	"normal": "A nice clock.",
+	  "normal": "A nice clock.",
     "difficult": "A nice clock."
   },  
 
   "LABEL_CUTTINGCLUE": {
     "easy": "The culprit only uses cutting weapons to commit murder.",    
-	"normal": "The murder without gunshot...",
+	  "normal": "The murder without gunshot...",
     "difficult": "What a title..."
   },
 
@@ -133,19 +133,19 @@
 
   "LABEL_BLINDS": {
     "easy": "Truth has its own dark side, that's what it's written page 12",    
-	"normal": "Truth has its own dark side.",
+	  "normal": "Truth has its own dark side.",
     "difficult": "The weather is pretty good."
   },
 
   "LABEL_NEWSCOPS": {
     "easy": "The cop is dead therefore not guilty...",    
-	"normal": "The cop is dead? Sad fate.",
+	  "normal": "The cop is dead? Sad fate.",
     "difficult": "Oh... I see."
   },
   
   "LABEL_PAPER2": {
     "easy": "A lot of paper. nothing important.",    
-	"normal": "A lot of paper.",
+	  "normal": "A lot of paper.",
     "difficult": "Is it a murderer or a scriptwritter?"
   },
 
@@ -157,44 +157,44 @@
   
   "LABEL_PACKET": {
     "easy": "A packet of cigarettes. The culprit had bad habits...",    
-	"normal": "A packet of cigarettes.",
+	  "normal": "A packet of cigarettes.",
     "difficult": "I'll light mine when I'll be at home."
   },
   
   "LABEL_BOTTLE": {
     "easy": "The whisky bottle is placed like the one in the night-time page 8",    
-	"normal": "A whisky bottle.",
+	  "normal": "A whisky bottle.",
     "difficult": "I want to drink it so bad, Goddamn."
   },
   
   "LABEL_GLASS": {
     "easy": "The glass is placed like the one in the night-time page 8",    
-	"normal": "A glass.",
+	  "normal": "A glass.",
     "difficult": "A glass."
   },
   
   "LABEL_DESKBOOK": {
     "easy": "The book is placed like the one in the daytime page 7",    
-	"normal": "A book.",
+	  "normal": "A book.",
     "difficult": "A book."
   },
   
   "LABEL_ASHTRAY": {
     "easy": "The ashtray is placed like the one in the daytime page 7",    
-	"normal": "An ashtray.",
+	  "normal": "An ashtray.",
     "difficult": "An ashtray."
   },
   
   "LABEL_POSTCARD": {
     "easy": "A simple postcard.",    
-	"normal": "A simple postcard.",
+	  "normal": "A simple postcard.",
     "difficult": "Me too I'd like to travel..."
   },
 
 
   "LABEL_GLOBE": {
     "easy": "Just an ordinary glob.",    
-	"normal": "Just an ordinary glob.",
+	  "normal": "Just an ordinary glob.",
     "difficult": "Where will I travel the next time?"
   }
 }

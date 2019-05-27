@@ -54,8 +54,14 @@ public static class Utils
 
     //Difficulty
     public static string EASY_MODE = "easy";
+    public static string NORMAL_MODE = "normal";
     public static string DIFFICULT_MODE = "difficult";
+
     public static string DIFFICULTY_MODE = EASY_MODE;
+
+    public static string EASY_TEXT_MODE = "DISCOVERY";
+    public static string NORMAL_TEXT_MODE = "STANDARD";
+    public static string DIFFICULT_TEXT_MODE = "IMMERSIVE";
 
     //Detection Player
     public static int PLAYER_DETECTION = 5;

@@ -69,7 +69,7 @@ public class ToggleController : MonoBehaviour
 	public void UpdateDifficulty()
 	{
 		Debug.Log(isOn);
-        OptionScreen.SetDifficulty(isOn);
+        //OptionScreen.SetDifficulty(isOn);
 	}
 
 	public void Switching()

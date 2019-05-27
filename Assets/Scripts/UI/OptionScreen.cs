@@ -18,6 +18,14 @@ public class OptionScreen : MonoBehaviour
     [SerializeField] PostProcessVolume _volume;
     ColorGrading _colorGradingLayer = null;
 
+    //Difficulty level
+    [SerializeField] Slider _sliderDifficulty;
+    [SerializeField] TextMeshProUGUI _difficultyText;
+
+    //Screen Resolution
+    [SerializeField] Toggle _fullscreenToggle;
+
+    //Events
     public delegate void UpdateAction();
     public static event UpdateAction OnUpdate;
 
@@ -29,6 +37,7 @@ public class OptionScreen : MonoBehaviour
         _volume.profile.TryGetSettings(out _colorGradingLayer); 
     }
 
+    #region Controls
     public void OnClickSwitchControllersEn()
     {
         ReInput.players.GetPlayer(0).controllers.maps.SetMapsEnabled(false, 0);
@@ -44,13 +53,17 @@ public class OptionScreen : MonoBehaviour
 
         Utils.LANGUAGE = Enums.ELanguage.FRENCH;
     }
+    #endregion
 
+    #region Mouse Sensibility
     public void UpdateSensibilityValue()
     {
         if (_sliderMouseValue != null) _sliderMouseValue.text = _sliderMouse.value.ToString();
         Utils.MOUSE_SENSIBILITY = _sliderMouse.value;
     }
+    #endregion
 
+    #region Quality
     public void SetQuality(Dropdown pDropDown)
     {
         int value = pDropDown.value;
@@ -60,6 +73,9 @@ public class OptionScreen : MonoBehaviour
 
         if(OnLightUpdate != null) OnLightUpdate();
     }
+    #endregion
+
+    #region Screen Resolution
 
     public void SetResolution(Dropdown pDropDown)
     {
@@ -67,24 +83,55 @@ public class OptionScreen : MonoBehaviour
         int width = (int)Mathf.Round(Utils.resolutionArray[value].x);
         int height = (int)Mathf.Round(Utils.resolutionArray[value].y);
 
+        if (value != Utils.resolutionArray.Count - 1 && Utils.FULLSCREEN)
+        {
+            _fullscreenToggle.isOn = false;
+            Utils.FULLSCREEN = false;
+        }
+
         Screen.SetResolution(width, height, Utils.FULLSCREEN);
     }
 
-    public void SetFullScreen(Toggle pToggle)
+    public void SetFullScreen()
     {
-        bool isFullScreen = pToggle.isOn;
+        bool isFullScreen = _fullscreenToggle.isOn;
 
         Utils.FULLSCREEN = isFullScreen;
         Screen.fullScreen = isFullScreen;
     }
 
-    public static void SetDifficulty(bool pIsDifficult)
+    #endregion
+
+    #region Difficulty
+
+    public void SetDifficulty(int pDifficultyLevel = 0)
     {
-        if (!pIsDifficult) Utils.DIFFICULTY_MODE = Utils.EASY_MODE;
-        else Utils.DIFFICULTY_MODE = Utils.DIFFICULT_MODE;
+        int value = _sliderDifficulty == null ? pDifficultyLevel : (int)_sliderDifficulty.value;
+
+        switch (value)
+        {
+            case 0:
+                Utils.DIFFICULTY_MODE = Utils.EASY_MODE;
+                _difficultyText.text = Utils.EASY_TEXT_MODE;
+                break;
+
+            case 1:
+                Utils.DIFFICULTY_MODE = Utils.NORMAL_MODE;
+                _difficultyText.text = Utils.NORMAL_TEXT_MODE;
+                break;
+
+            case 2:
+                Utils.DIFFICULTY_MODE = Utils.DIFFICULT_MODE;
+                _difficultyText.text = Utils.DIFFICULT_TEXT_MODE;
+                break;
+        }
 
         if (OnUpdate != null) OnUpdate();
     }
+
+    #endregion
+
+    #region Brightness
 
     public void UpdateBrightnessValue()
     {
@@ -94,4 +141,6 @@ public class OptionScreen : MonoBehaviour
         _colorGradingLayer.postExposure.value = value;
         Utils.BRIGHTNESS_LEVEL = value;
     }
+
+    #endregion
 }
