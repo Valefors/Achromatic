@@ -64,7 +64,7 @@ public static class Utils
     public static string DIFFICULT_TEXT_MODE = "IMMERSIVE";
 
     //Detection Player
-    public static int PLAYER_DETECTION = 5;
+    public static int PLAYER_DETECTION = 4;
 
     //Resolutions Array
     public static readonly Dictionary<int, Vector2> resolutionArray

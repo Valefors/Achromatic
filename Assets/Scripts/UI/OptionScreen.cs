@@ -34,7 +34,25 @@ public class OptionScreen : MonoBehaviour
 
     public void Start()
     {
-        _volume.profile.TryGetSettings(out _colorGradingLayer); 
+        _volume.profile.TryGetSettings(out _colorGradingLayer);
+
+        if (Utils.DIFFICULTY_MODE == Utils.EASY_MODE)
+        {
+            _sliderDifficulty.value = 0;
+            _difficultyText.text = Utils.EASY_TEXT_MODE;
+        }
+
+        if (Utils.DIFFICULTY_MODE == Utils.NORMAL_MODE)
+        {
+            _sliderDifficulty.value = 1;
+            _difficultyText.text = Utils.NORMAL_TEXT_MODE;
+        }
+
+        if (Utils.DIFFICULTY_MODE == Utils.DIFFICULT_MODE)
+        {
+            _sliderDifficulty.value = 2;
+            _difficultyText.text = Utils.DIFFICULT_TEXT_MODE;
+        }
     }
 
     #region Controls
@@ -77,7 +95,7 @@ public class OptionScreen : MonoBehaviour
 
     #region Screen Resolution
 
-    public void SetResolution(Dropdown pDropDown)
+    /*public void SetResolution(Dropdown pDropDown)
     {
         int value = pDropDown.value;
         int width = (int)Mathf.Round(Utils.resolutionArray[value].x);
@@ -90,7 +108,7 @@ public class OptionScreen : MonoBehaviour
         }
 
         Screen.SetResolution(width, height, Utils.FULLSCREEN);
-    }
+    }*/
 
     public void SetFullScreen()
     {
@@ -113,16 +131,19 @@ public class OptionScreen : MonoBehaviour
             case 0:
                 Utils.DIFFICULTY_MODE = Utils.EASY_MODE;
                 _difficultyText.text = Utils.EASY_TEXT_MODE;
+
                 break;
 
             case 1:
                 Utils.DIFFICULTY_MODE = Utils.NORMAL_MODE;
                 _difficultyText.text = Utils.NORMAL_TEXT_MODE;
+
                 break;
 
             case 2:
                 Utils.DIFFICULTY_MODE = Utils.DIFFICULT_MODE;
                 _difficultyText.text = Utils.DIFFICULT_TEXT_MODE;
+
                 break;
         }
 
