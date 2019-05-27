@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID PLAY_AMBIENT = 1562304622U;
         static const AkUniqueID PLAY_ARMOIRE_OUVRIR = 1778446475U;
+        static const AkUniqueID PLAY_HORLOGE = 1086738306U;
         static const AkUniqueID PLAY_LAMPE = 2119672069U;
         static const AkUniqueID PLAY_NOTHING = 4237641461U;
         static const AkUniqueID PLAY_POSERBOUTEILLE = 3766867606U;

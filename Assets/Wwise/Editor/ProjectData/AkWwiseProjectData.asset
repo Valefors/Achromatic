@@ -202,7 +202,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 5431db33e0abce49a36a5c955da577d1
     GuidInternal: 
-    m_lastTime: -8586429976761815479
+    m_lastTime: -8586426381670888023
     List:
     - name: MainSoundbank
       guid: 8d03fac40834914eb17985f729118ac9
@@ -218,7 +218,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: ea02e87e1b1f2b43a3a880b8176a3219
     GuidInternal: 
-    m_lastTime: -8586430004048743833
+    m_lastTime: -8586426381670987751
     List:
     - name: Play_Ambient
       guid: ebb2121b08340c4a9881a2f0023c9f54
@@ -243,6 +243,20 @@ MonoBehaviour:
       - ElementName: Play_Armoire_Ouvrir
         ObjectType: 3
       Path: Default Work Unit\Play_Armoire_Ouvrir
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Horloge
+      guid: 3ea35f2c47c68a48b78a0955b799b094
+      id: 1086738306
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambient
+        ObjectType: 4
+      - ElementName: Play_Horloge
+        ObjectType: 3
+      Path: Default Work Unit\Ambient\Play_Horloge
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0

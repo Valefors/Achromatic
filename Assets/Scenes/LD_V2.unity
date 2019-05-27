@@ -11372,22 +11372,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 592633211, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 592633208, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 592633208, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 984713377, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 149035666, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -11420,6 +11404,18 @@ PrefabInstance:
       propertyPath: m_overrideHtmlColors
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 984713377, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 592633208, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 592633208, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 153167593, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -11427,6 +11423,10 @@ PrefabInstance:
     - target: {fileID: 848276823, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
       propertyPath: interactionLabel
       value: LABEL_FRAMECLUE
+      objectReference: {fileID: 0}
+    - target: {fileID: 592633211, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
+      propertyPath: m_Mesh
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 149035662, guid: 6a12e9a6a1c3a414fbddf1e31aa4e3e5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -28865,6 +28865,40 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 345442638}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &585795077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585795076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d709ef33c9ffff45aca28c889360176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9bf88a955e31c5b4f88d87edde4b14f4,
+      type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+  MultiPositionType: 1
+  multiPositionTypeLabel: 0
+  LargeModePositions: []
+  multiPositionArray: []
 --- !u!4 &585795078 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4800530791355175779, guid: 16b7b33be57d4f849ae6a8f8b34c5aa3,
@@ -28898,6 +28932,28 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 0}
+--- !u!114 &585795081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585795076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7ca246d36c9e1d44b6e905489b6e400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &587627681
 GameObject:
   m_ObjectHideFlags: 0

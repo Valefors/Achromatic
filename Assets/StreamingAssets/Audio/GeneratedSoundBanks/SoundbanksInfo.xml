@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwise\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwise\.cache\Windows\</SourceFilesRoot>
+		<ProjectRoot>C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\</SourceFilesRoot>
 		<SoundBanksRoot>C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\Achromatic\Assets\StreamingAssets\Audio\GeneratedSoundBanks\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwise\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -18,6 +18,7 @@
 			<IncludedEvents>
 				<Event Id="1562304622" Name="Play_Ambient" ObjectPath="\Events\Default Work Unit\Ambient\Play_Ambient"/>
 				<Event Id="1778446475" Name="Play_Armoire_Ouvrir" ObjectPath="\Events\Default Work Unit\Play_Armoire_Ouvrir"/>
+				<Event Id="1086738306" Name="Play_Horloge" ObjectPath="\Events\Default Work Unit\Ambient\Play_Horloge" MaxAttenuation="100.000000"/>
 				<Event Id="2119672069" Name="Play_Lampe" ObjectPath="\Events\Default Work Unit\Ambient\Play_Lampe" MaxAttenuation="4.000000"/>
 				<Event Id="4237641461" Name="Play_Nothing" ObjectPath="\Events\Default Work Unit\Play_Nothing"/>
 				<Event Id="3766867606" Name="Play_PoserBouteille" ObjectPath="\Events\Default Work Unit\Props\Poser\Play_PoserBouteille"/>
@@ -390,6 +391,10 @@
 				<File Id="758920501" Language="SFX">
 					<ShortName>PAS_VIR_PARQUET-001.wav</ShortName>
 					<Path>SFX\PAS_VIR_PARQUET-001_33C4BA69.wem</Path>
+				</File>
+				<File Id="770375327" Language="SFX">
+					<ShortName>HORLOGE.wav</ShortName>
+					<Path>SFX\HORLOGE_D79FB2B7.wem</Path>
 				</File>
 				<File Id="771304780" Language="SFX">
 					<ShortName>LAMPE.wav</ShortName>
