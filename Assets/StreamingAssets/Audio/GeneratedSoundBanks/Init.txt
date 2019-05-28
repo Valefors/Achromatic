@@ -8,6 +8,7 @@ Switch	ID	Name	Switch Group			Notes
 State Group	ID	Name			Wwise Object Path	Notes
 	1082482811	Navigation			\Default Work Unit\Navigation	
 	2835351336	GroundType			\Default Work Unit\GroundType	
+	3374585465	InMenu			\Default Work Unit\InMenu	
 
 State	ID	Name	State Group			Notes
 	0	None	Navigation			
@@ -16,6 +17,9 @@ State	ID	Name	State Group			Notes
 	0	None	GroundType			
 	1391533176	Tapis	GroundType			
 	1791601991	Parquet	GroundType			
+	0	None	InMenu			
+	979470758	Yes	InMenu			
+	1668749452	No	InMenu			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	504532776	Brick			\Factory Reflect Acoustic Textures\Textures\Brick	

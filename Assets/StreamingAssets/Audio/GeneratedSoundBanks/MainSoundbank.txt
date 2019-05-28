@@ -1,30 +1,20 @@
 Event	ID	Name			Wwise Object Path	Notes
-	119174249	Play_PoserCendrier			\Default Work Unit\Props\Poser\Play_PoserCendrier	
+	43194316	Play_RandomFloorRoom2			\Default Work Unit\Ambient\Play_RandomFloorRoom2	
+	43194319	Play_RandomFloorRoom1			\Default Work Unit\Ambient\Play_RandomFloorRoom1	
 	1086738306	Play_Horloge			\Default Work Unit\Ambient\Play_Horloge	
-	1093607113	Play_PoserLivre			\Default Work Unit\Props\Poser\Play_PoserLivre	
-	1175188020	Play_PrendreCendrier			\Default Work Unit\Props\Prendre\Play_PrendreCendrier	
 	1562304622	Play_Ambient			\Default Work Unit\Ambient\Play_Ambient	
-	1569238785	Play_PrendreBouteille			\Default Work Unit\Props\Prendre\Play_PrendreBouteille	
-	1628284858	Play_PrendreCle			\Default Work Unit\Props\Prendre\Play_PrendreCle	
 	1778446475	Play_Armoire_Ouvrir			\Default Work Unit\Play_Armoire_Ouvrir	
 	2027969872	Play_TV			\Default Work Unit\Ambient\Play_TV	
-	2086780912	Play_PrendreVerre			\Default Work Unit\Props\Prendre\Play_PrendreVerre	
 	2119672069	Play_Lampe			\Default Work Unit\Ambient\Play_Lampe	
-	2128636697	Play_PoserCle			\Default Work Unit\Props\Poser\Play_PoserCle	
 	2248092158	Player_Move			\Default Work Unit\Player_Move	
 	2702842750	Play_PrendreFeuille			\Default Work Unit\Props\Prendre\Play_PrendreFeuille	
 	2893389474	Stop_TV			\Default Work Unit\Ambient\Stop_TV	
 	3013956005	Play_Ventilateur			\Default Work Unit\Ambient\Play_Ventilateur	
 	3361170585	Player_Stop			\Default Work Unit\Player_Stop	
 	3535750338	Play_StoreFerme			\Default Work Unit\Play_StoreFerme	
-	3563957990	Play_PrendreLivre			\Default Work Unit\Props\Prendre\Play_PrendreLivre	
 	3670131286	Play_StoreOuvre			\Default Work Unit\Play_StoreOuvre	
-	3700147003	Play_RandomFloor			\Default Work Unit\Ambient\Play_RandomFloor	
-	3766867606	Play_PoserBouteille			\Default Work Unit\Props\Poser\Play_PoserBouteille	
 	3817844813	Play_PoserFeuille			\Default Work Unit\Props\Poser\Play_PoserFeuille	
-	3822140175	Play_PoserVerre			\Default Work Unit\Props\Poser\Play_PoserVerre	
 	3827058668	StartMusic			\Default Work Unit\Ambient\StartMusic	
-	4237641461	Play_Nothing			\Default Work Unit\Play_Nothing	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	2654804740	Virage_Switch			\Default Work Unit\Virage_Switch	
@@ -36,6 +26,7 @@ Switch	ID	Name	Switch Group			Notes
 State Group	ID	Name			Wwise Object Path	Notes
 	1082482811	Navigation			\Default Work Unit\Navigation	
 	2835351336	GroundType			\Default Work Unit\GroundType	
+	3374585465	InMenu			\Default Work Unit\InMenu	
 
 State	ID	Name	State Group			Notes
 	0	None	Navigation			
@@ -44,134 +35,102 @@ State	ID	Name	State Group			Notes
 	0	None	GroundType			
 	1391533176	Tapis	GroundType			
 	1791601991	Parquet	GroundType			
+	0	None	InMenu			
+	979470758	Yes	InMenu			
+	1668749452	No	InMenu			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	528114702	Yes	InMenu	\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Phrase_Cello\BATTERIE-001		
+	866222237	Yes	InMenu	\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Batt_Basse\BATTERIE-001		
+	886499364	Yes	InMenu	\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Intro_Batt\BATTERIE-001		
+	909706492	Yes	InMenu	\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Batt_Piano_Vibra\BATTERIE-001		
+	918050201	Yes	InMenu	\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Batt_Basse2\BATTERIE-001		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1225552155	DistanceVentilateur			\Default Work Unit\DistanceVentilateur	
 	3898180431	Acceleration_Rot_RTPC			\Default Work Unit\Acceleration_Rot_RTPC	
 
 Trigger	ID	Name			Wwise Object Path	Notes
+	1181401788	Trigger_Stin_Store			\Default Work Unit\Trigger_Stin_Store	
 	2416262786	Trigger_Stin_Armoire			\Default Work Unit\Trigger_Stin_Armoire	
 
 Effect plug-ins	ID	Name	Type				Notes
-	1024769875	EQ_Tempo_Music	Wwise Parametric EQ			
+	589318455	EQ_BatterieCym	Wwise Parametric EQ			
+	2816736595	EQ_Feuilles	Wwise Parametric EQ			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	8812298	PRENDRE LIVRE-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE LIVRE-001_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\LIVRE\PRENDRE\PRENDRE LIVRE-001		14816
-	14095614	POSER LIVRE-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER LIVRE-002_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\LIVRE\POSER\POSER LIVRE-002		79744
-	16732554	PRENDRE FEUILLES-005	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE FEUILLES-005_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\PRENDRE\PRENDRE FEUILLES-005		83842
-	20267382	PRENDRE LIVRE-008	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE LIVRE-008_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\LIVRE\PRENDRE\PRENDRE LIVRE-008		54350
-	26001599	PAS_TAPIS-004	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_TAPIS-004_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisNormal\PAS_TAPIS-004		62030
-	31236994	PARQUET-005	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PARQUET-005_10C4C929.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\Random_Floor\PARQUET-005		125888
-	63054959	PAS_PARQUET-008	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_PARQUET-008_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetNormal\PAS_PARQUET-008		21294
-	69543352	TV_EMIT	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\TV_EMIT_D79FB2B7.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\TV_Complex\TV_EMIT		3523790
-	84516584	PAS_TAPIS-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_TAPIS-003_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisNormal\PAS_TAPIS-003		53768
-	101029358	POSER LIVRE-005	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER LIVRE-005_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\LIVRE\POSER\POSER LIVRE-005		78784
-	111345202	CENDRIER POSER-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CENDRIER POSER-003_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\CENDRIER\POSER\CENDRIER POSER-003		70808
-	112550655	POSER LIVRE-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER LIVRE-003_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\LIVRE\POSER\POSER LIVRE-003		66304
-	120859536	PAS_PARQUET-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_PARQUET-003_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetNormal\PAS_PARQUET-003		20614
-	126378789	BOUTEILLE EAU-005	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\BOUTEILLE EAU-005_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\BOUTEILLE\LIQUIDE\BOUTEILLE EAU-005		97198
-	134113573	CLE PRENDRE-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CLE PRENDRE-002_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\CLE\PRENDRE\CLE PRENDRE-002		48064
-	172074524	POSER FEUILLES-007	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER FEUILLES-007_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\POSER\POSER FEUILLES-007		63572
-	186527126	BOUTEILLE EAU-004	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\BOUTEILLE EAU-004_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\BOUTEILLE\LIQUIDE\BOUTEILLE EAU-004		97354
-	189522527	CENDRIER POSER-004	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CENDRIER POSER-004_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\CENDRIER\POSER\CENDRIER POSER-004		37860
-	197736451	PAS_TAPIS-006	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_TAPIS-006_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisNormal\PAS_TAPIS-006		66904
-	206253310	PRENDRE FEUILLES-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE FEUILLES-002_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\PRENDRE\PRENDRE FEUILLES-002		93300
-	208655312	POSER FEUILLES-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER FEUILLES-002_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\POSER\POSER FEUILLES-002		58168
-	210629628	PRENDRE	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\VERRE\PRENDRE		74856
-	220853139	PRENDRE FEUILLES-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE FEUILLES-003_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\PRENDRE\PRENDRE FEUILLES-003		91950
-	223175520	PAS_TAPIS-007	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_TAPIS-007_1FCB62EB.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisNormal\PAS_TAPIS-007		64042
-	232012727	ARMOIRE_OUVRIR	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\ARMOIRE_OUVRIR_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Armoire\ARMOIRE_OUVRIR		457844
-	240558308	POSER BOUTEILLE-005	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER BOUTEILLE-005_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\BOUTEILLE\POSER\POSER BOUTEILLE-005		51382
-	250741017	CLE POSER-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CLE POSER-001_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\CLE\POSER\CLE POSER-001		42408
-	255926729	POSER FEUILLES-005	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER FEUILLES-005_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\POSER\POSER FEUILLES-005		102760
-	258139928	BOUTEILLE EAU-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\BOUTEILLE EAU-001_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\BOUTEILLE\LIQUIDE\BOUTEILLE EAU-001		58168
-	260142681	CENDRIER POSER-007	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CENDRIER POSER-007_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\CENDRIER\POSER\CENDRIER POSER-007		48482
-	277922600	PRENDRE BOUTEILLE-008	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE BOUTEILLE-008_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\BOUTEILLE\PRENDRE\PRENDRE BOUTEILLE-008		38464
-	300693394	PRENDRE BOUTEILLE-005	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE BOUTEILLE-005_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\BOUTEILLE\PRENDRE\PRENDRE BOUTEILLE-005		49066
-	309852052	CENDRIER POSER-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CENDRIER POSER-001_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\CENDRIER\POSER\CENDRIER POSER-001		54784
-	311511211	VENTILATEUR	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\VENTILATEUR_AD2D5FDD.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\VENTILATEUR	REPLACE	5223192
-	314788024	POSER LIVRE-007	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER LIVRE-007_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\LIVRE\POSER\POSER LIVRE-007		70314
-	316580768	CLE POSER-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CLE POSER-003_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\CLE\POSER\CLE POSER-003		38276
-	333321032	PAS_VIR_TAPIS-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_VIR_TAPIS-001_82C4BA9A.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisVirage\PAS_VIR_TAPIS-001		28778
-	333576624	PAS_PARQUET-007	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_PARQUET-007_CFC0FB3B.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetNormal\PAS_PARQUET-007		18104
-	335499330	PRENDRE BOUTEILLE-006	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE BOUTEILLE-006_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\BOUTEILLE\PRENDRE\PRENDRE BOUTEILLE-006		40436
-	335532105	PRENDRE LIVRE-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE LIVRE-003_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\LIVRE\PRENDRE\PRENDRE LIVRE-003		25760
-	345043548	POSER BOUTEILLE-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER BOUTEILLE-002_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\BOUTEILLE\POSER\POSER BOUTEILLE-002		42838
-	356290728	POSER LIVRE-004	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER LIVRE-004_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\LIVRE\POSER\POSER LIVRE-004		56704
-	358498210	PAS_PARQUET-005	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_PARQUET-005_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetNormal\PAS_PARQUET-005		18210
-	367425553	CLE PRENDRE-004	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CLE PRENDRE-004_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\CLE\PRENDRE\CLE PRENDRE-004		42304
-	389308653	PRENDRE BOUTEILLE-004	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE BOUTEILLE-004_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\BOUTEILLE\PRENDRE\PRENDRE BOUTEILLE-004		29754
-	396302910	PARQUET-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PARQUET-002_10C4C929.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\Random_Floor\PARQUET-002		140906
-	397175661	ATMOSPHERE	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\ATOMSPHERE_D79FB2B7.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\Ambient\ATMOSPHERE		3397312
-	408457289	STORE OUVERT-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\STORE OUVERT-001_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Stores\StoreOuvre\STORE OUVERT-001		177132
-	410541730	PARQUET-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PARQUET-001_10C4C929.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\Random_Floor\PARQUET-001		33876
-	412149198	POSER LIVRE-006	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER LIVRE-006_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\LIVRE\POSER\POSER LIVRE-006		50930
-	413286709	PAS_TAPIS-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_TAPIS-002_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisNormal\PAS_TAPIS-002		49292
-	422061432	CLE PRENDRE-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CLE PRENDRE-003_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\CLE\PRENDRE\CLE PRENDRE-003		49024
-	440539624	BOUTEILLE EAU-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\BOUTEILLE EAU-002_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\BOUTEILLE\LIQUIDE\BOUTEILLE EAU-002		50060
-	442043567	PAS_PARQUET-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_PARQUET-002_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetNormal\PAS_PARQUET-002		23296
-	456602020	NOTHING	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\NOTHING_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\NOTHING		368944
-	457266610	PRENDRE FEUILLES-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE FEUILLES-001_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\PRENDRE\PRENDRE FEUILLES-001		83842
-	480456306	AchromaticIngame	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\AchromaticIngame_D79FB2B7.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\AchromaticIngame\AchromaticIngame		13759264
-	487856279	CENDRIER PRENDRE-007	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CENDRIER PRENDRE-007_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\CENDRIER\PRENDRE\CENDRIER PRENDRE-007		41748
-	494722341	CENDRIER PRENDRE-006	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CENDRIER PRENDRE-006_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\CENDRIER\PRENDRE\CENDRIER PRENDRE-006		35934
-	496174279	PAS_VIR_PARQUET-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_VIR_PARQUET-002_8CD7A39C.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetVirage\PAS_VIR_PARQUET-002		31590
-	499638082	CENDRIER POSER-008	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CENDRIER POSER-008_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\CENDRIER\POSER\CENDRIER POSER-008		42704
-	526328673	CENDRIER PRENDRE-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CENDRIER PRENDRE-003_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\CENDRIER\PRENDRE\CENDRIER PRENDRE-003		56756
-	538196052	POSER FEUILLES-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER FEUILLES-003_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\POSER\POSER FEUILLES-003		75734
-	545437078	TV_STATIC	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\TV_STATIC_D79FB2B7.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\TV_Complex\TV_STATIC		3182628
-	567844903	STORE FERME-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\STORE FERME-002_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Stores\StoreFerme\STORE FERME-002		181700
-	598001871	CLE PRENDRE-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CLE PRENDRE-001_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\CLE\PRENDRE\CLE PRENDRE-001		50930
-	616207912	PRENDRE FEUILLES-007	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE FEUILLES-007_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\PRENDRE\PRENDRE FEUILLES-007		97354
-	630324738	POSER FEUILLES-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER FEUILLES-001_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\POSER\POSER FEUILLES-001		81140
-	639317541	BOUTEILLE EAU-007	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\BOUTEILLE EAU-007_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\BOUTEILLE\LIQUIDE\BOUTEILLE EAU-007		75734
-	641694715	PRENDRE BOUTEILLE-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE BOUTEILLE-001_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\BOUTEILLE\PRENDRE\PRENDRE BOUTEILLE-001		32348
-	659614879	PRENDRE LIVRE-004	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE LIVRE-004_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\LIVRE\PRENDRE\PRENDRE LIVRE-004		42752
-	662016114	PARQUET-004	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PARQUET-004_10C4C929.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\Random_Floor\PARQUET-004		144628
-	665653885	PRENDRE LIVRE-006	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE LIVRE-006_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\LIVRE\PRENDRE\PRENDRE LIVRE-006		21472
-	668488317	PAS_TAPIS-005	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_TAPIS-005_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisNormal\PAS_TAPIS-005		56476
-	671581795	PAS_VIR_TAPIS-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_VIR_TAPIS-003_D48AD861.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisVirage\PAS_VIR_TAPIS-003		44602
-	678562847	POSER BOUTEILLE-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER BOUTEILLE-001_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\BOUTEILLE\POSER\POSER BOUTEILLE-001		76002
-	678999355	PAS_VIR_TAPIS-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_VIR_TAPIS-002_0FF60EFD.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisVirage\PAS_VIR_TAPIS-002		46878
-	687382861	PRENDRE BOUTEILLE-007	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE BOUTEILLE-007_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\BOUTEILLE\PRENDRE\PRENDRE BOUTEILLE-007		42008
-	692043432	POSER LIVRE-008	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER LIVRE-008_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\LIVRE\POSER\POSER LIVRE-008		71680
-	699570814	STORE OUVERT-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\STORE OUVERT-002_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Stores\StoreOuvre\STORE OUVERT-002		234232
-	702619200	CENDRIER POSER-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CENDRIER POSER-002_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\CENDRIER\POSER\CENDRIER POSER-002		46552
-	707793815	CENDRIER PRENDRE-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CENDRIER PRENDRE-002_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\CENDRIER\PRENDRE\CENDRIER PRENDRE-002		54784
-	709501363	PAS_PARQUET-004	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_PARQUET-004_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetNormal\PAS_PARQUET-004		18210
-	748057926	PRENDRE LIVRE-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE LIVRE-002_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\LIVRE\PRENDRE\PRENDRE LIVRE-002		24506
-	754932003	PAS_TAPIS-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_TAPIS-001_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisNormal\PAS_TAPIS-001		45850
-	755229790	PRENDRE FEUILLES-004	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE FEUILLES-004_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\PRENDRE\PRENDRE FEUILLES-004		55466
-	758920501	PAS_VIR_PARQUET-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_VIR_PARQUET-001_33C4BA69.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetVirage\PAS_VIR_PARQUET-001		25662
-	770375327	HORLOGE	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\HORLOGE_D79FB2B7.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\Horloge\HORLOGE		192140
-	771304780	LAMPE	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\LAMPE_8FD62B46.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\LAMPE		2430626
-	775273018	POSER BOUTEILLE-007	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER BOUTEILLE-007_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\BOUTEILLE\POSER\POSER BOUTEILLE-007		45534
-	783153111	POSER LIVRE-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER LIVRE-001_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\LIVRE\POSER\POSER LIVRE-001		70144
-	790485113	PRENDRE FEUILLES-006	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE FEUILLES-006_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\PRENDRE\PRENDRE FEUILLES-006		78436
-	802645583	BOUTEILLE EAU-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\BOUTEILLE EAU-003_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\BOUTEILLE\LIQUIDE\BOUTEILLE EAU-003		51412
-	802834052	POSER BOUTEILLE-004	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER BOUTEILLE-004_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\BOUTEILLE\POSER\POSER BOUTEILLE-004		50258
-	818942271	STORE FERME-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\STORE FERME-001_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Stores\StoreFerme\STORE FERME-001		181756
-	823889252	AchromaticMenu	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\AchromaticMenu_D79FB2B7.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Menu\AchromaticMenu\AchromaticMenu		16905664
-	824369109	CENDRIER POSER-006	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CENDRIER POSER-006_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\CENDRIER\POSER\CENDRIER POSER-006		42304
-	834012701	CENDRIER POSER-005	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CENDRIER POSER-005_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\CENDRIER\POSER\CENDRIER POSER-005		58624
-	846808034	PARQUET-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PARQUET-003_10C4C929.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\Random_Floor\PARQUET-003		75088
-	867770212	BOUTEILLE EAU-006	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\BOUTEILLE EAU-006_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\BOUTEILLE\LIQUIDE\BOUTEILLE EAU-006		52762
-	869454166	CENDRIER PRENDRE-004	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CENDRIER PRENDRE-004_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\CENDRIER\PRENDRE\CENDRIER PRENDRE-004		51426
-	883504487	POSER BOUTEILLE-008	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER BOUTEILLE-008_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\BOUTEILLE\POSER\POSER BOUTEILLE-008		61716
-	886139434	CENDRIER PRENDRE-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CENDRIER PRENDRE-001_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\CENDRIER\PRENDRE\CENDRIER PRENDRE-001		40384
-	890203097	CLE POSER-004	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CLE POSER-004_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\CLE\POSER\CLE POSER-004		24850
-	901382114	POSER FEUILLES-004	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER FEUILLES-004_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\POSER\POSER FEUILLES-004		78436
-	925330306	PRENDRE LIVRE-005	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE LIVRE-005_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\LIVRE\PRENDRE\PRENDRE LIVRE-005		57898
-	940636355	PRENDRE BOUTEILLE-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE BOUTEILLE-003_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\BOUTEILLE\PRENDRE\PRENDRE BOUTEILLE-003		47768
-	941482281	CLE POSER-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CLE POSER-002_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\CLE\POSER\CLE POSER-002		25538
-	955020850	PRENDRE LIVRE-007	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE LIVRE-007_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\LIVRE\PRENDRE\PRENDRE LIVRE-007		36682
-	955207873	PAS_PARQUET-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_PARQUET-001_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetNormal\PAS_PARQUET-001		22646
-	959189243	PRENDRE BOUTEILLE-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE BOUTEILLE-002_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\BOUTEILLE\PRENDRE\PRENDRE BOUTEILLE-002		33474
-	1007636296	POSER BOUTEILLE-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER BOUTEILLE-003_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\BOUTEILLE\POSER\POSER BOUTEILLE-003		73050
-	1009810986	POSER	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\VERRE\POSER		80196
-	1028449394	PAS_VIR_PARQUET-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_VIR_PARQUET-003_A9CEF3AC.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetVirage\PAS_VIR_PARQUET-003		27292
-	1032282761	POSER BOUTEILLE-006	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER BOUTEILLE-006_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\BOUTEILLE\POSER\POSER BOUTEILLE-006		74392
-	1039149825	CENDRIER PRENDRE-005	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CENDRIER PRENDRE-005_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\CENDRIER\PRENDRE\CENDRIER PRENDRE-005		39312
-	1053780947	POSER FEUILLES-006	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER FEUILLES-006_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\POSER\POSER FEUILLES-006		55466
-	1072999647	PAS_PARQUET-006	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_PARQUET-006_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetNormal\PAS_PARQUET-006		18482
+	7298924	BATTERIE-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\BATTERIE-005_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Intro_Batt\BATTERIE-001		459134
+	15145248	Piano_Vibra	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\VIBRA-002_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Batt_Piano_Vibra\Piano_Vibra		612468
+	16732554	PRENDRE FEUILLES-005	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE FEUILLES-005_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\PRENDRE\PRENDRE FEUILLES-005		29765
+	26001599	PAS_TAPIS-004	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_TAPIS-004_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisNormal\PAS_TAPIS-004		18518
+	31236994	PARQUET-005	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PARQUET-005_E37C7245.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\Random_Floor\PARQUET-005		36746
+	35789335	BATTERIE-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\BATTERIE-003_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Intro_Batt\BATTERIE-001		448371
+	63054959	PAS_PARQUET-008	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_PARQUET-008_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetNormal\PAS_PARQUET-008		7108
+	69543352	TV_EMIT	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\TV_EMIT_592D8723.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\TV_Complex\TV_EMIT		762661
+	84516584	PAS_TAPIS-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_TAPIS-003_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisNormal\PAS_TAPIS-003		16121
+	87580081	VIBRA-005	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\VIBRA-005_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Phrase_Cello\VIBRA-005		637910
+	120859536	PAS_PARQUET-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_PARQUET-003_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetNormal\PAS_PARQUET-003		6170
+	128360679	BATTERIE-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\BATTERIE-004_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Intro_Batt\BATTERIE-001		455668
+	172074524	POSER FEUILLES-007	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER FEUILLES-007_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\POSER\POSER FEUILLES-007		19000
+	197736451	PAS_TAPIS-006	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_TAPIS-006_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisNormal\PAS_TAPIS-006		19839
+	206253310	PRENDRE FEUILLES-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE FEUILLES-002_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\PRENDRE\PRENDRE FEUILLES-002		30818
+	208655312	POSER FEUILLES-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER FEUILLES-002_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\POSER\POSER FEUILLES-002		18504
+	220853139	PRENDRE FEUILLES-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE FEUILLES-003_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\PRENDRE\PRENDRE FEUILLES-003		29530
+	223175520	PAS_TAPIS-007	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_TAPIS-007_CFAE6DCF.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisNormal\PAS_TAPIS-007		18727
+	232012727	ARMOIRE_OUVRIR	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\ARMOIRE_OUVRIR_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Armoire\ARMOIRE_OUVRIR		160165
+	255926729	POSER FEUILLES-005	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER FEUILLES-005_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\POSER\POSER FEUILLES-005		28773
+	311511211	VENTILATEUR	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\VENTILATEUR_664BF079.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\VENTILATEUR	REPLACE	1666896
+	333321032	PAS_VIR_TAPIS-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_VIR_TAPIS-001_24CCD0BE.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisVirage\PAS_VIR_TAPIS-001		9145
+	333576624	PAS_PARQUET-007	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_PARQUET-007_44D00457.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetNormal\PAS_PARQUET-007		6311
+	358498210	PAS_PARQUET-005	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_PARQUET-005_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetNormal\PAS_PARQUET-005		6210
+	365159095	VIBRA-005	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\VIBRA-004_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Phrase_Cello\VIBRA-005		611001
+	396302910	PARQUET-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PARQUET-002_E37C7245.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\Random_Floor\PARQUET-002		40920
+	397175661	ATMOSPHERE	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\ATOMSPHERE_592D8723.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\Ambient\ATMOSPHERE		795929
+	406224302	Cello	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CELLO-005_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Phrase_Cello\Cello		193486
+	408457289	STORE OUVERT-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\STORE OUVERT-001_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Stores\StoreOuvre\STORE OUVERT-001		59924
+	410541730	PARQUET-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PARQUET-001_E37C7245.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\Random_Floor\PARQUET-001		10951
+	413286709	PAS_TAPIS-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_TAPIS-002_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisNormal\PAS_TAPIS-002		14927
+	442043567	PAS_PARQUET-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_PARQUET-002_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetNormal\PAS_PARQUET-002		7233
+	457266610	PRENDRE FEUILLES-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE FEUILLES-001_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\PRENDRE\PRENDRE FEUILLES-001		29389
+	476890880	CELLO-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CELLO-002_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Batt_Basse2\CELLO-002		973450
+	496174279	PAS_VIR_PARQUET-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_VIR_PARQUET-002_9E58EA70.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetVirage\PAS_VIR_PARQUET-002		7540
+	538196052	POSER FEUILLES-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER FEUILLES-003_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\POSER\POSER FEUILLES-003		23619
+	545437078	TV_STATIC	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\TV_STATIC_592D8723.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\TV_Complex\TV_STATIC		922780
+	551177651	BATTERIE-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\BATTERIE-008_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Intro_Batt\BATTERIE-001		450190
+	567844903	STORE FERME-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\STORE FERME-002_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Stores\StoreFerme\STORE FERME-002		65121
+	616207912	PRENDRE FEUILLES-007	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE FEUILLES-007_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\PRENDRE\PRENDRE FEUILLES-007		32437
+	623712756	CymbLight	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CYMBALE-002_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\StingerStore\CymbLight		219588
+	630324738	POSER FEUILLES-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER FEUILLES-001_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\POSER\POSER FEUILLES-001		25633
+	662016114	PARQUET-004	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PARQUET-004_E37C7245.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\Random_Floor\PARQUET-004		41209
+	668488317	PAS_TAPIS-005	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_TAPIS-005_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisNormal\PAS_TAPIS-005		17156
+	671581795	PAS_VIR_TAPIS-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_VIR_TAPIS-003_39554315.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisVirage\PAS_VIR_TAPIS-003		14294
+	677159568	Piano_Vibra	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PIANO-002_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Batt_Piano_Vibra\Piano_Vibra		476484
+	678999355	PAS_VIR_TAPIS-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_VIR_TAPIS-002_9A75D1D9.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisVirage\PAS_VIR_TAPIS-002		14640
+	685759871	CymbLight	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CYMBALE-001_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\StingerArmoire\CymbLight		225562
+	699570814	STORE OUVERT-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\STORE OUVERT-002_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Stores\StoreOuvre\STORE OUVERT-002		82545
+	702351034	BATTERIE-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\BATTERIE-002_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Intro_Batt\BATTERIE-001		451637
+	709501363	PAS_PARQUET-004	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_PARQUET-004_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetNormal\PAS_PARQUET-004		6280
+	754932003	PAS_TAPIS-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_TAPIS-001_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisNormal\PAS_TAPIS-001		13763
+	755229790	PRENDRE FEUILLES-004	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE FEUILLES-004_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\PRENDRE\PRENDRE FEUILLES-004		17653
+	758920501	PAS_VIR_PARQUET-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_VIR_PARQUET-001_65246965.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetVirage\PAS_VIR_PARQUET-001		6691
+	768076036	BATTERIE-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\BATTERIE-001_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Intro_Batt\BATTERIE-001		448383
+	770375327	HORLOGE	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\HORLOGE_592D8723.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\Horloge\HORLOGE		41348
+	771304780	LAMPE	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\LAMPE_F6E1682A.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\LAMPE		1046770
+	784186395	BATTERIE-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\BREAK_BATTERIE_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Batt_Piano_Vibra\BATTERIE-001		584006
+	790485113	PRENDRE FEUILLES-006	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE FEUILLES-006_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\PRENDRE\PRENDRE FEUILLES-006		24567
+	818942271	STORE FERME-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\STORE FERME-001_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Stores\StoreFerme\STORE FERME-001		64747
+	823889252	AchromaticMenu	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\AchromaticMenu_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Menu\AchromaticMenu\AchromaticMenu		5385434
+	834928987	Piano_Vibra	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\VIBRA-003_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Batt_Piano_Vibra\Piano_Vibra		608883
+	846808034	PARQUET-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PARQUET-003_E37C7245.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\Random_Floor\PARQUET-003		22646
+	883840472	BATTERIE-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\BATTERIE-007_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Intro_Batt\BATTERIE-001		450960
+	901382114	POSER FEUILLES-004	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER FEUILLES-004_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\POSER\POSER FEUILLES-004		22609
+	955207873	PAS_PARQUET-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_PARQUET-001_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetNormal\PAS_PARQUET-001		7350
+	989282167	Piano_Vibra	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PIANO-001_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Batt_Piano_Vibra\Piano_Vibra		470315
+	994715476	BASSE	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CELLO-001_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Batt_Basse\BASSE		875704
+	1009252245	BATTERIE-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\BATTERIE-006_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Intro_Batt\BATTERIE-001		447265
+	1010569367	Cello	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CELLO-003_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Batt_Piano_Vibra\Cello		1255046
+	1025221322	Cello	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CELLO-004_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Phrase_Cello\Cello		207457
+	1028449394	PAS_VIR_PARQUET-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_VIR_PARQUET-003_D3CFA9D8.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetVirage\PAS_VIR_PARQUET-003		5844
+	1053780947	POSER FEUILLES-006	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER FEUILLES-006_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\POSER\POSER FEUILLES-006		17474
+	1072999647	PAS_PARQUET-006	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_PARQUET-006_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetNormal\PAS_PARQUET-006		6316
 

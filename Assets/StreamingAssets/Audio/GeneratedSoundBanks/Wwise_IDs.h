@@ -17,20 +17,10 @@ namespace AK
         static const AkUniqueID PLAY_ARMOIRE_OUVRIR = 1778446475U;
         static const AkUniqueID PLAY_HORLOGE = 1086738306U;
         static const AkUniqueID PLAY_LAMPE = 2119672069U;
-        static const AkUniqueID PLAY_NOTHING = 4237641461U;
-        static const AkUniqueID PLAY_POSERBOUTEILLE = 3766867606U;
-        static const AkUniqueID PLAY_POSERCENDRIER = 119174249U;
-        static const AkUniqueID PLAY_POSERCLE = 2128636697U;
         static const AkUniqueID PLAY_POSERFEUILLE = 3817844813U;
-        static const AkUniqueID PLAY_POSERLIVRE = 1093607113U;
-        static const AkUniqueID PLAY_POSERVERRE = 3822140175U;
-        static const AkUniqueID PLAY_PRENDREBOUTEILLE = 1569238785U;
-        static const AkUniqueID PLAY_PRENDRECENDRIER = 1175188020U;
-        static const AkUniqueID PLAY_PRENDRECLE = 1628284858U;
         static const AkUniqueID PLAY_PRENDREFEUILLE = 2702842750U;
-        static const AkUniqueID PLAY_PRENDRELIVRE = 3563957990U;
-        static const AkUniqueID PLAY_PRENDREVERRE = 2086780912U;
-        static const AkUniqueID PLAY_RANDOMFLOOR = 3700147003U;
+        static const AkUniqueID PLAY_RANDOMFLOORROOM1 = 43194319U;
+        static const AkUniqueID PLAY_RANDOMFLOORROOM2 = 43194316U;
         static const AkUniqueID PLAY_STOREFERME = 3535750338U;
         static const AkUniqueID PLAY_STOREOUVRE = 3670131286U;
         static const AkUniqueID PLAY_TV = 2027969872U;
@@ -53,6 +43,17 @@ namespace AK
                 static const AkUniqueID TAPIS = 1391533176U;
             } // namespace STATE
         } // namespace GROUNDTYPE
+
+        namespace INMENU
+        {
+            static const AkUniqueID GROUP = 3374585465U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NO = 1668749452U;
+                static const AkUniqueID YES = 979470758U;
+            } // namespace STATE
+        } // namespace INMENU
 
         namespace NAVIGATION
         {

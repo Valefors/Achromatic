@@ -20,20 +20,10 @@
 				<Event Id="1778446475" Name="Play_Armoire_Ouvrir" ObjectPath="\Events\Default Work Unit\Play_Armoire_Ouvrir"/>
 				<Event Id="1086738306" Name="Play_Horloge" ObjectPath="\Events\Default Work Unit\Ambient\Play_Horloge" MaxAttenuation="100.000000"/>
 				<Event Id="2119672069" Name="Play_Lampe" ObjectPath="\Events\Default Work Unit\Ambient\Play_Lampe" MaxAttenuation="4.000000"/>
-				<Event Id="4237641461" Name="Play_Nothing" ObjectPath="\Events\Default Work Unit\Play_Nothing"/>
-				<Event Id="3766867606" Name="Play_PoserBouteille" ObjectPath="\Events\Default Work Unit\Props\Poser\Play_PoserBouteille"/>
-				<Event Id="119174249" Name="Play_PoserCendrier" ObjectPath="\Events\Default Work Unit\Props\Poser\Play_PoserCendrier"/>
-				<Event Id="2128636697" Name="Play_PoserCle" ObjectPath="\Events\Default Work Unit\Props\Poser\Play_PoserCle"/>
 				<Event Id="3817844813" Name="Play_PoserFeuille" ObjectPath="\Events\Default Work Unit\Props\Poser\Play_PoserFeuille"/>
-				<Event Id="1093607113" Name="Play_PoserLivre" ObjectPath="\Events\Default Work Unit\Props\Poser\Play_PoserLivre"/>
-				<Event Id="3822140175" Name="Play_PoserVerre" ObjectPath="\Events\Default Work Unit\Props\Poser\Play_PoserVerre"/>
-				<Event Id="1569238785" Name="Play_PrendreBouteille" ObjectPath="\Events\Default Work Unit\Props\Prendre\Play_PrendreBouteille"/>
-				<Event Id="1175188020" Name="Play_PrendreCendrier" ObjectPath="\Events\Default Work Unit\Props\Prendre\Play_PrendreCendrier"/>
-				<Event Id="1628284858" Name="Play_PrendreCle" ObjectPath="\Events\Default Work Unit\Props\Prendre\Play_PrendreCle"/>
 				<Event Id="2702842750" Name="Play_PrendreFeuille" ObjectPath="\Events\Default Work Unit\Props\Prendre\Play_PrendreFeuille"/>
-				<Event Id="3563957990" Name="Play_PrendreLivre" ObjectPath="\Events\Default Work Unit\Props\Prendre\Play_PrendreLivre"/>
-				<Event Id="2086780912" Name="Play_PrendreVerre" ObjectPath="\Events\Default Work Unit\Props\Prendre\Play_PrendreVerre"/>
-				<Event Id="3700147003" Name="Play_RandomFloor" ObjectPath="\Events\Default Work Unit\Ambient\Play_RandomFloor" MaxAttenuation="100.000000"/>
+				<Event Id="43194319" Name="Play_RandomFloorRoom1" ObjectPath="\Events\Default Work Unit\Ambient\Play_RandomFloorRoom1" MaxAttenuation="30.000000"/>
+				<Event Id="43194316" Name="Play_RandomFloorRoom2" ObjectPath="\Events\Default Work Unit\Ambient\Play_RandomFloorRoom2" MaxAttenuation="30.000000"/>
 				<Event Id="3535750338" Name="Play_StoreFerme" ObjectPath="\Events\Default Work Unit\Play_StoreFerme"/>
 				<Event Id="3670131286" Name="Play_StoreOuvre" ObjectPath="\Events\Default Work Unit\Play_StoreOuvre"/>
 				<Event Id="2027969872" Name="Play_TV" ObjectPath="\Events\Default Work Unit\Ambient\Play_TV" MaxAttenuation="20.000000"/>
@@ -44,477 +34,301 @@
 				<Event Id="2893389474" Name="Stop_TV" ObjectPath="\Events\Default Work Unit\Ambient\Stop_TV" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="8812298" Language="SFX">
-					<ShortName>PRENDRE LIVRE-001.wav</ShortName>
-					<Path>SFX\PRENDRE LIVRE-001_10C4C929.wem</Path>
+				<File Id="7298924" Language="SFX">
+					<ShortName>BATTERIE-005.wav</ShortName>
+					<Path>SFX\BATTERIE-005_592D8723.wem</Path>
 				</File>
-				<File Id="14095614" Language="SFX">
-					<ShortName>POSER LIVRE-002.wav</ShortName>
-					<Path>SFX\POSER LIVRE-002_10C4C929.wem</Path>
+				<File Id="15145248" Language="SFX">
+					<ShortName>VIBRA-002.wav</ShortName>
+					<Path>SFX\VIBRA-002_592D8723.wem</Path>
 				</File>
 				<File Id="16732554" Language="SFX">
 					<ShortName>PRENDRE FEUILLES-005.wav</ShortName>
-					<Path>SFX\PRENDRE FEUILLES-005_10C4C929.wem</Path>
-				</File>
-				<File Id="20267382" Language="SFX">
-					<ShortName>PRENDRE LIVRE-008.wav</ShortName>
-					<Path>SFX\PRENDRE LIVRE-008_10C4C929.wem</Path>
+					<Path>SFX\PRENDRE FEUILLES-005_E37C7245.wem</Path>
 				</File>
 				<File Id="26001599" Language="SFX">
 					<ShortName>PAS_TAPIS-004.wav</ShortName>
-					<Path>SFX\PAS_TAPIS-004_10C4C929.wem</Path>
+					<Path>SFX\PAS_TAPIS-004_E37C7245.wem</Path>
 				</File>
 				<File Id="31236994" Language="SFX">
 					<ShortName>PARQUET-005.wav</ShortName>
-					<Path>SFX\PARQUET-005_10C4C929.wem</Path>
+					<Path>SFX\PARQUET-005_E37C7245.wem</Path>
+				</File>
+				<File Id="35789335" Language="SFX">
+					<ShortName>BATTERIE-003.wav</ShortName>
+					<Path>SFX\BATTERIE-003_592D8723.wem</Path>
 				</File>
 				<File Id="63054959" Language="SFX">
 					<ShortName>PAS_PARQUET-008.wav</ShortName>
-					<Path>SFX\PAS_PARQUET-008_10C4C929.wem</Path>
+					<Path>SFX\PAS_PARQUET-008_E37C7245.wem</Path>
 				</File>
 				<File Id="69543352" Language="SFX">
 					<ShortName>TV_EMIT.wav</ShortName>
-					<Path>SFX\TV_EMIT_D79FB2B7.wem</Path>
+					<Path>SFX\TV_EMIT_592D8723.wem</Path>
 				</File>
 				<File Id="84516584" Language="SFX">
 					<ShortName>PAS_TAPIS-003.wav</ShortName>
-					<Path>SFX\PAS_TAPIS-003_10C4C929.wem</Path>
+					<Path>SFX\PAS_TAPIS-003_E37C7245.wem</Path>
 				</File>
-				<File Id="101029358" Language="SFX">
-					<ShortName>POSER LIVRE-005.wav</ShortName>
-					<Path>SFX\POSER LIVRE-005_10C4C929.wem</Path>
-				</File>
-				<File Id="111345202" Language="SFX">
-					<ShortName>CENDRIER POSER-003.wav</ShortName>
-					<Path>SFX\CENDRIER POSER-003_10C4C929.wem</Path>
-				</File>
-				<File Id="112550655" Language="SFX">
-					<ShortName>POSER LIVRE-003.wav</ShortName>
-					<Path>SFX\POSER LIVRE-003_10C4C929.wem</Path>
+				<File Id="87580081" Language="SFX">
+					<ShortName>VIBRA-005.wav</ShortName>
+					<Path>SFX\VIBRA-005_592D8723.wem</Path>
 				</File>
 				<File Id="120859536" Language="SFX">
 					<ShortName>PAS_PARQUET-003.wav</ShortName>
-					<Path>SFX\PAS_PARQUET-003_10C4C929.wem</Path>
+					<Path>SFX\PAS_PARQUET-003_E37C7245.wem</Path>
 				</File>
-				<File Id="126378789" Language="SFX">
-					<ShortName>BOUTEILLE EAU-005.wav</ShortName>
-					<Path>SFX\BOUTEILLE EAU-005_10C4C929.wem</Path>
-				</File>
-				<File Id="134113573" Language="SFX">
-					<ShortName>CLE PRENDRE-002.wav</ShortName>
-					<Path>SFX\CLE PRENDRE-002_10C4C929.wem</Path>
+				<File Id="128360679" Language="SFX">
+					<ShortName>BATTERIE-004.wav</ShortName>
+					<Path>SFX\BATTERIE-004_592D8723.wem</Path>
 				</File>
 				<File Id="172074524" Language="SFX">
 					<ShortName>POSER FEUILLES-007.wav</ShortName>
-					<Path>SFX\POSER FEUILLES-007_10C4C929.wem</Path>
-				</File>
-				<File Id="186527126" Language="SFX">
-					<ShortName>BOUTEILLE EAU-004.wav</ShortName>
-					<Path>SFX\BOUTEILLE EAU-004_10C4C929.wem</Path>
-				</File>
-				<File Id="189522527" Language="SFX">
-					<ShortName>CENDRIER POSER-004.wav</ShortName>
-					<Path>SFX\CENDRIER POSER-004_10C4C929.wem</Path>
+					<Path>SFX\POSER FEUILLES-007_E37C7245.wem</Path>
 				</File>
 				<File Id="197736451" Language="SFX">
 					<ShortName>PAS_TAPIS-006.wav</ShortName>
-					<Path>SFX\PAS_TAPIS-006_10C4C929.wem</Path>
+					<Path>SFX\PAS_TAPIS-006_E37C7245.wem</Path>
 				</File>
 				<File Id="206253310" Language="SFX">
 					<ShortName>PRENDRE FEUILLES-002.wav</ShortName>
-					<Path>SFX\PRENDRE FEUILLES-002_10C4C929.wem</Path>
+					<Path>SFX\PRENDRE FEUILLES-002_E37C7245.wem</Path>
 				</File>
 				<File Id="208655312" Language="SFX">
 					<ShortName>POSER FEUILLES-002.wav</ShortName>
-					<Path>SFX\POSER FEUILLES-002_10C4C929.wem</Path>
-				</File>
-				<File Id="210629628" Language="SFX">
-					<ShortName>PRENDRE.wav</ShortName>
-					<Path>SFX\PRENDRE_10C4C929.wem</Path>
+					<Path>SFX\POSER FEUILLES-002_E37C7245.wem</Path>
 				</File>
 				<File Id="220853139" Language="SFX">
 					<ShortName>PRENDRE FEUILLES-003.wav</ShortName>
-					<Path>SFX\PRENDRE FEUILLES-003_10C4C929.wem</Path>
+					<Path>SFX\PRENDRE FEUILLES-003_E37C7245.wem</Path>
 				</File>
 				<File Id="223175520" Language="SFX">
 					<ShortName>PAS_TAPIS-007.wav</ShortName>
-					<Path>SFX\PAS_TAPIS-007_1FCB62EB.wem</Path>
+					<Path>SFX\PAS_TAPIS-007_CFAE6DCF.wem</Path>
 				</File>
 				<File Id="232012727" Language="SFX">
 					<ShortName>ARMOIRE_OUVRIR.wav</ShortName>
-					<Path>SFX\ARMOIRE_OUVRIR_10C4C929.wem</Path>
-				</File>
-				<File Id="240558308" Language="SFX">
-					<ShortName>POSER BOUTEILLE-005.wav</ShortName>
-					<Path>SFX\POSER BOUTEILLE-005_10C4C929.wem</Path>
-				</File>
-				<File Id="250741017" Language="SFX">
-					<ShortName>CLE POSER-001.wav</ShortName>
-					<Path>SFX\CLE POSER-001_10C4C929.wem</Path>
+					<Path>SFX\ARMOIRE_OUVRIR_E37C7245.wem</Path>
 				</File>
 				<File Id="255926729" Language="SFX">
 					<ShortName>POSER FEUILLES-005.wav</ShortName>
-					<Path>SFX\POSER FEUILLES-005_10C4C929.wem</Path>
-				</File>
-				<File Id="258139928" Language="SFX">
-					<ShortName>BOUTEILLE EAU-001.wav</ShortName>
-					<Path>SFX\BOUTEILLE EAU-001_10C4C929.wem</Path>
-				</File>
-				<File Id="260142681" Language="SFX">
-					<ShortName>CENDRIER POSER-007.wav</ShortName>
-					<Path>SFX\CENDRIER POSER-007_10C4C929.wem</Path>
-				</File>
-				<File Id="277922600" Language="SFX">
-					<ShortName>PRENDRE BOUTEILLE-008.wav</ShortName>
-					<Path>SFX\PRENDRE BOUTEILLE-008_10C4C929.wem</Path>
-				</File>
-				<File Id="300693394" Language="SFX">
-					<ShortName>PRENDRE BOUTEILLE-005.wav</ShortName>
-					<Path>SFX\PRENDRE BOUTEILLE-005_10C4C929.wem</Path>
-				</File>
-				<File Id="309852052" Language="SFX">
-					<ShortName>CENDRIER POSER-001.wav</ShortName>
-					<Path>SFX\CENDRIER POSER-001_10C4C929.wem</Path>
+					<Path>SFX\POSER FEUILLES-005_E37C7245.wem</Path>
 				</File>
 				<File Id="311511211" Language="SFX">
 					<ShortName>VENTILATEUR.wav</ShortName>
-					<Path>SFX\VENTILATEUR_AD2D5FDD.wem</Path>
-				</File>
-				<File Id="314788024" Language="SFX">
-					<ShortName>POSER LIVRE-007.wav</ShortName>
-					<Path>SFX\POSER LIVRE-007_10C4C929.wem</Path>
-				</File>
-				<File Id="316580768" Language="SFX">
-					<ShortName>CLE POSER-003.wav</ShortName>
-					<Path>SFX\CLE POSER-003_10C4C929.wem</Path>
+					<Path>SFX\VENTILATEUR_664BF079.wem</Path>
 				</File>
 				<File Id="333321032" Language="SFX">
 					<ShortName>PAS_VIR_TAPIS-001.wav</ShortName>
-					<Path>SFX\PAS_VIR_TAPIS-001_82C4BA9A.wem</Path>
+					<Path>SFX\PAS_VIR_TAPIS-001_24CCD0BE.wem</Path>
 				</File>
 				<File Id="333576624" Language="SFX">
 					<ShortName>PAS_PARQUET-007.wav</ShortName>
-					<Path>SFX\PAS_PARQUET-007_CFC0FB3B.wem</Path>
-				</File>
-				<File Id="335499330" Language="SFX">
-					<ShortName>PRENDRE BOUTEILLE-006.wav</ShortName>
-					<Path>SFX\PRENDRE BOUTEILLE-006_10C4C929.wem</Path>
-				</File>
-				<File Id="335532105" Language="SFX">
-					<ShortName>PRENDRE LIVRE-003.wav</ShortName>
-					<Path>SFX\PRENDRE LIVRE-003_10C4C929.wem</Path>
-				</File>
-				<File Id="345043548" Language="SFX">
-					<ShortName>POSER BOUTEILLE-002.wav</ShortName>
-					<Path>SFX\POSER BOUTEILLE-002_10C4C929.wem</Path>
-				</File>
-				<File Id="356290728" Language="SFX">
-					<ShortName>POSER LIVRE-004.wav</ShortName>
-					<Path>SFX\POSER LIVRE-004_10C4C929.wem</Path>
+					<Path>SFX\PAS_PARQUET-007_44D00457.wem</Path>
 				</File>
 				<File Id="358498210" Language="SFX">
 					<ShortName>PAS_PARQUET-005.wav</ShortName>
-					<Path>SFX\PAS_PARQUET-005_10C4C929.wem</Path>
+					<Path>SFX\PAS_PARQUET-005_E37C7245.wem</Path>
 				</File>
-				<File Id="367425553" Language="SFX">
-					<ShortName>CLE PRENDRE-004.wav</ShortName>
-					<Path>SFX\CLE PRENDRE-004_10C4C929.wem</Path>
-				</File>
-				<File Id="389308653" Language="SFX">
-					<ShortName>PRENDRE BOUTEILLE-004.wav</ShortName>
-					<Path>SFX\PRENDRE BOUTEILLE-004_10C4C929.wem</Path>
+				<File Id="365159095" Language="SFX">
+					<ShortName>VIBRA-004.wav</ShortName>
+					<Path>SFX\VIBRA-004_592D8723.wem</Path>
 				</File>
 				<File Id="396302910" Language="SFX">
 					<ShortName>PARQUET-002.wav</ShortName>
-					<Path>SFX\PARQUET-002_10C4C929.wem</Path>
+					<Path>SFX\PARQUET-002_E37C7245.wem</Path>
 				</File>
 				<File Id="397175661" Language="SFX">
 					<ShortName>ATOMSPHERE.wav</ShortName>
-					<Path>SFX\ATOMSPHERE_D79FB2B7.wem</Path>
+					<Path>SFX\ATOMSPHERE_592D8723.wem</Path>
+				</File>
+				<File Id="406224302" Language="SFX">
+					<ShortName>CELLO-005.wav</ShortName>
+					<Path>SFX\CELLO-005_592D8723.wem</Path>
 				</File>
 				<File Id="408457289" Language="SFX">
 					<ShortName>STORE OUVERT-001.wav</ShortName>
-					<Path>SFX\STORE OUVERT-001_10C4C929.wem</Path>
+					<Path>SFX\STORE OUVERT-001_E37C7245.wem</Path>
 				</File>
 				<File Id="410541730" Language="SFX">
 					<ShortName>PARQUET-001.wav</ShortName>
-					<Path>SFX\PARQUET-001_10C4C929.wem</Path>
-				</File>
-				<File Id="412149198" Language="SFX">
-					<ShortName>POSER LIVRE-006.wav</ShortName>
-					<Path>SFX\POSER LIVRE-006_10C4C929.wem</Path>
+					<Path>SFX\PARQUET-001_E37C7245.wem</Path>
 				</File>
 				<File Id="413286709" Language="SFX">
 					<ShortName>PAS_TAPIS-002.wav</ShortName>
-					<Path>SFX\PAS_TAPIS-002_10C4C929.wem</Path>
-				</File>
-				<File Id="422061432" Language="SFX">
-					<ShortName>CLE PRENDRE-003.wav</ShortName>
-					<Path>SFX\CLE PRENDRE-003_10C4C929.wem</Path>
-				</File>
-				<File Id="440539624" Language="SFX">
-					<ShortName>BOUTEILLE EAU-002.wav</ShortName>
-					<Path>SFX\BOUTEILLE EAU-002_10C4C929.wem</Path>
+					<Path>SFX\PAS_TAPIS-002_E37C7245.wem</Path>
 				</File>
 				<File Id="442043567" Language="SFX">
 					<ShortName>PAS_PARQUET-002.wav</ShortName>
-					<Path>SFX\PAS_PARQUET-002_10C4C929.wem</Path>
-				</File>
-				<File Id="456602020" Language="SFX">
-					<ShortName>NOTHING.wav</ShortName>
-					<Path>SFX\NOTHING_10C4C929.wem</Path>
+					<Path>SFX\PAS_PARQUET-002_E37C7245.wem</Path>
 				</File>
 				<File Id="457266610" Language="SFX">
 					<ShortName>PRENDRE FEUILLES-001.wav</ShortName>
-					<Path>SFX\PRENDRE FEUILLES-001_10C4C929.wem</Path>
+					<Path>SFX\PRENDRE FEUILLES-001_E37C7245.wem</Path>
 				</File>
-				<File Id="480456306" Language="SFX">
-					<ShortName>AchromaticIngame.wav</ShortName>
-					<Path>SFX\AchromaticIngame_D79FB2B7.wem</Path>
-				</File>
-				<File Id="487856279" Language="SFX">
-					<ShortName>CENDRIER PRENDRE-007.wav</ShortName>
-					<Path>SFX\CENDRIER PRENDRE-007_10C4C929.wem</Path>
-				</File>
-				<File Id="494722341" Language="SFX">
-					<ShortName>CENDRIER PRENDRE-006.wav</ShortName>
-					<Path>SFX\CENDRIER PRENDRE-006_10C4C929.wem</Path>
+				<File Id="476890880" Language="SFX">
+					<ShortName>CELLO-002.wav</ShortName>
+					<Path>SFX\CELLO-002_592D8723.wem</Path>
 				</File>
 				<File Id="496174279" Language="SFX">
 					<ShortName>PAS_VIR_PARQUET-002.wav</ShortName>
-					<Path>SFX\PAS_VIR_PARQUET-002_8CD7A39C.wem</Path>
-				</File>
-				<File Id="499638082" Language="SFX">
-					<ShortName>CENDRIER POSER-008.wav</ShortName>
-					<Path>SFX\CENDRIER POSER-008_10C4C929.wem</Path>
-				</File>
-				<File Id="526328673" Language="SFX">
-					<ShortName>CENDRIER PRENDRE-003.wav</ShortName>
-					<Path>SFX\CENDRIER PRENDRE-003_10C4C929.wem</Path>
+					<Path>SFX\PAS_VIR_PARQUET-002_9E58EA70.wem</Path>
 				</File>
 				<File Id="538196052" Language="SFX">
 					<ShortName>POSER FEUILLES-003.wav</ShortName>
-					<Path>SFX\POSER FEUILLES-003_10C4C929.wem</Path>
+					<Path>SFX\POSER FEUILLES-003_E37C7245.wem</Path>
 				</File>
 				<File Id="545437078" Language="SFX">
 					<ShortName>TV_STATIC.wav</ShortName>
-					<Path>SFX\TV_STATIC_D79FB2B7.wem</Path>
+					<Path>SFX\TV_STATIC_592D8723.wem</Path>
+				</File>
+				<File Id="551177651" Language="SFX">
+					<ShortName>BATTERIE-008.wav</ShortName>
+					<Path>SFX\BATTERIE-008_592D8723.wem</Path>
 				</File>
 				<File Id="567844903" Language="SFX">
 					<ShortName>STORE FERME-002.wav</ShortName>
-					<Path>SFX\STORE FERME-002_10C4C929.wem</Path>
-				</File>
-				<File Id="598001871" Language="SFX">
-					<ShortName>CLE PRENDRE-001.wav</ShortName>
-					<Path>SFX\CLE PRENDRE-001_10C4C929.wem</Path>
+					<Path>SFX\STORE FERME-002_E37C7245.wem</Path>
 				</File>
 				<File Id="616207912" Language="SFX">
 					<ShortName>PRENDRE FEUILLES-007.wav</ShortName>
-					<Path>SFX\PRENDRE FEUILLES-007_10C4C929.wem</Path>
+					<Path>SFX\PRENDRE FEUILLES-007_E37C7245.wem</Path>
+				</File>
+				<File Id="623712756" Language="SFX">
+					<ShortName>CYMBALE-002.wav</ShortName>
+					<Path>SFX\CYMBALE-002_592D8723.wem</Path>
 				</File>
 				<File Id="630324738" Language="SFX">
 					<ShortName>POSER FEUILLES-001.wav</ShortName>
-					<Path>SFX\POSER FEUILLES-001_10C4C929.wem</Path>
-				</File>
-				<File Id="639317541" Language="SFX">
-					<ShortName>BOUTEILLE EAU-007.wav</ShortName>
-					<Path>SFX\BOUTEILLE EAU-007_10C4C929.wem</Path>
-				</File>
-				<File Id="641694715" Language="SFX">
-					<ShortName>PRENDRE BOUTEILLE-001.wav</ShortName>
-					<Path>SFX\PRENDRE BOUTEILLE-001_10C4C929.wem</Path>
-				</File>
-				<File Id="659614879" Language="SFX">
-					<ShortName>PRENDRE LIVRE-004.wav</ShortName>
-					<Path>SFX\PRENDRE LIVRE-004_10C4C929.wem</Path>
+					<Path>SFX\POSER FEUILLES-001_E37C7245.wem</Path>
 				</File>
 				<File Id="662016114" Language="SFX">
 					<ShortName>PARQUET-004.wav</ShortName>
-					<Path>SFX\PARQUET-004_10C4C929.wem</Path>
-				</File>
-				<File Id="665653885" Language="SFX">
-					<ShortName>PRENDRE LIVRE-006.wav</ShortName>
-					<Path>SFX\PRENDRE LIVRE-006_10C4C929.wem</Path>
+					<Path>SFX\PARQUET-004_E37C7245.wem</Path>
 				</File>
 				<File Id="668488317" Language="SFX">
 					<ShortName>PAS_TAPIS-005.wav</ShortName>
-					<Path>SFX\PAS_TAPIS-005_10C4C929.wem</Path>
+					<Path>SFX\PAS_TAPIS-005_E37C7245.wem</Path>
 				</File>
 				<File Id="671581795" Language="SFX">
 					<ShortName>PAS_VIR_TAPIS-003.wav</ShortName>
-					<Path>SFX\PAS_VIR_TAPIS-003_D48AD861.wem</Path>
+					<Path>SFX\PAS_VIR_TAPIS-003_39554315.wem</Path>
 				</File>
-				<File Id="678562847" Language="SFX">
-					<ShortName>POSER BOUTEILLE-001.wav</ShortName>
-					<Path>SFX\POSER BOUTEILLE-001_10C4C929.wem</Path>
+				<File Id="677159568" Language="SFX">
+					<ShortName>PIANO-002.wav</ShortName>
+					<Path>SFX\PIANO-002_592D8723.wem</Path>
 				</File>
 				<File Id="678999355" Language="SFX">
 					<ShortName>PAS_VIR_TAPIS-002.wav</ShortName>
-					<Path>SFX\PAS_VIR_TAPIS-002_0FF60EFD.wem</Path>
+					<Path>SFX\PAS_VIR_TAPIS-002_9A75D1D9.wem</Path>
 				</File>
-				<File Id="687382861" Language="SFX">
-					<ShortName>PRENDRE BOUTEILLE-007.wav</ShortName>
-					<Path>SFX\PRENDRE BOUTEILLE-007_10C4C929.wem</Path>
-				</File>
-				<File Id="692043432" Language="SFX">
-					<ShortName>POSER LIVRE-008.wav</ShortName>
-					<Path>SFX\POSER LIVRE-008_10C4C929.wem</Path>
+				<File Id="685759871" Language="SFX">
+					<ShortName>CYMBALE-001.wav</ShortName>
+					<Path>SFX\CYMBALE-001_592D8723.wem</Path>
 				</File>
 				<File Id="699570814" Language="SFX">
 					<ShortName>STORE OUVERT-002.wav</ShortName>
-					<Path>SFX\STORE OUVERT-002_10C4C929.wem</Path>
+					<Path>SFX\STORE OUVERT-002_E37C7245.wem</Path>
 				</File>
-				<File Id="702619200" Language="SFX">
-					<ShortName>CENDRIER POSER-002.wav</ShortName>
-					<Path>SFX\CENDRIER POSER-002_10C4C929.wem</Path>
-				</File>
-				<File Id="707793815" Language="SFX">
-					<ShortName>CENDRIER PRENDRE-002.wav</ShortName>
-					<Path>SFX\CENDRIER PRENDRE-002_10C4C929.wem</Path>
+				<File Id="702351034" Language="SFX">
+					<ShortName>BATTERIE-002.wav</ShortName>
+					<Path>SFX\BATTERIE-002_592D8723.wem</Path>
 				</File>
 				<File Id="709501363" Language="SFX">
 					<ShortName>PAS_PARQUET-004.wav</ShortName>
-					<Path>SFX\PAS_PARQUET-004_10C4C929.wem</Path>
-				</File>
-				<File Id="748057926" Language="SFX">
-					<ShortName>PRENDRE LIVRE-002.wav</ShortName>
-					<Path>SFX\PRENDRE LIVRE-002_10C4C929.wem</Path>
+					<Path>SFX\PAS_PARQUET-004_E37C7245.wem</Path>
 				</File>
 				<File Id="754932003" Language="SFX">
 					<ShortName>PAS_TAPIS-001.wav</ShortName>
-					<Path>SFX\PAS_TAPIS-001_10C4C929.wem</Path>
+					<Path>SFX\PAS_TAPIS-001_E37C7245.wem</Path>
 				</File>
 				<File Id="755229790" Language="SFX">
 					<ShortName>PRENDRE FEUILLES-004.wav</ShortName>
-					<Path>SFX\PRENDRE FEUILLES-004_10C4C929.wem</Path>
+					<Path>SFX\PRENDRE FEUILLES-004_E37C7245.wem</Path>
 				</File>
 				<File Id="758920501" Language="SFX">
 					<ShortName>PAS_VIR_PARQUET-001.wav</ShortName>
-					<Path>SFX\PAS_VIR_PARQUET-001_33C4BA69.wem</Path>
+					<Path>SFX\PAS_VIR_PARQUET-001_65246965.wem</Path>
+				</File>
+				<File Id="768076036" Language="SFX">
+					<ShortName>BATTERIE-001.wav</ShortName>
+					<Path>SFX\BATTERIE-001_592D8723.wem</Path>
 				</File>
 				<File Id="770375327" Language="SFX">
 					<ShortName>HORLOGE.wav</ShortName>
-					<Path>SFX\HORLOGE_D79FB2B7.wem</Path>
+					<Path>SFX\HORLOGE_592D8723.wem</Path>
 				</File>
 				<File Id="771304780" Language="SFX">
 					<ShortName>LAMPE.wav</ShortName>
-					<Path>SFX\LAMPE_8FD62B46.wem</Path>
+					<Path>SFX\LAMPE_F6E1682A.wem</Path>
 				</File>
-				<File Id="775273018" Language="SFX">
-					<ShortName>POSER BOUTEILLE-007.wav</ShortName>
-					<Path>SFX\POSER BOUTEILLE-007_10C4C929.wem</Path>
-				</File>
-				<File Id="783153111" Language="SFX">
-					<ShortName>POSER LIVRE-001.wav</ShortName>
-					<Path>SFX\POSER LIVRE-001_10C4C929.wem</Path>
+				<File Id="784186395" Language="SFX">
+					<ShortName>BREAK_BATTERIE.wav</ShortName>
+					<Path>SFX\BREAK_BATTERIE_592D8723.wem</Path>
 				</File>
 				<File Id="790485113" Language="SFX">
 					<ShortName>PRENDRE FEUILLES-006.wav</ShortName>
-					<Path>SFX\PRENDRE FEUILLES-006_10C4C929.wem</Path>
-				</File>
-				<File Id="802645583" Language="SFX">
-					<ShortName>BOUTEILLE EAU-003.wav</ShortName>
-					<Path>SFX\BOUTEILLE EAU-003_10C4C929.wem</Path>
-				</File>
-				<File Id="802834052" Language="SFX">
-					<ShortName>POSER BOUTEILLE-004.wav</ShortName>
-					<Path>SFX\POSER BOUTEILLE-004_10C4C929.wem</Path>
+					<Path>SFX\PRENDRE FEUILLES-006_E37C7245.wem</Path>
 				</File>
 				<File Id="818942271" Language="SFX">
 					<ShortName>STORE FERME-001.wav</ShortName>
-					<Path>SFX\STORE FERME-001_10C4C929.wem</Path>
+					<Path>SFX\STORE FERME-001_E37C7245.wem</Path>
 				</File>
 				<File Id="823889252" Language="SFX">
 					<ShortName>AchromaticMenu.wav</ShortName>
-					<Path>SFX\AchromaticMenu_D79FB2B7.wem</Path>
+					<Path>SFX\AchromaticMenu_592D8723.wem</Path>
 				</File>
-				<File Id="824369109" Language="SFX">
-					<ShortName>CENDRIER POSER-006.wav</ShortName>
-					<Path>SFX\CENDRIER POSER-006_10C4C929.wem</Path>
-				</File>
-				<File Id="834012701" Language="SFX">
-					<ShortName>CENDRIER POSER-005.wav</ShortName>
-					<Path>SFX\CENDRIER POSER-005_10C4C929.wem</Path>
+				<File Id="834928987" Language="SFX">
+					<ShortName>VIBRA-003.wav</ShortName>
+					<Path>SFX\VIBRA-003_592D8723.wem</Path>
 				</File>
 				<File Id="846808034" Language="SFX">
 					<ShortName>PARQUET-003.wav</ShortName>
-					<Path>SFX\PARQUET-003_10C4C929.wem</Path>
+					<Path>SFX\PARQUET-003_E37C7245.wem</Path>
 				</File>
-				<File Id="867770212" Language="SFX">
-					<ShortName>BOUTEILLE EAU-006.wav</ShortName>
-					<Path>SFX\BOUTEILLE EAU-006_10C4C929.wem</Path>
-				</File>
-				<File Id="869454166" Language="SFX">
-					<ShortName>CENDRIER PRENDRE-004.wav</ShortName>
-					<Path>SFX\CENDRIER PRENDRE-004_10C4C929.wem</Path>
-				</File>
-				<File Id="883504487" Language="SFX">
-					<ShortName>POSER BOUTEILLE-008.wav</ShortName>
-					<Path>SFX\POSER BOUTEILLE-008_10C4C929.wem</Path>
-				</File>
-				<File Id="886139434" Language="SFX">
-					<ShortName>CENDRIER PRENDRE-001.wav</ShortName>
-					<Path>SFX\CENDRIER PRENDRE-001_10C4C929.wem</Path>
-				</File>
-				<File Id="890203097" Language="SFX">
-					<ShortName>CLE POSER-004.wav</ShortName>
-					<Path>SFX\CLE POSER-004_10C4C929.wem</Path>
+				<File Id="883840472" Language="SFX">
+					<ShortName>BATTERIE-007.wav</ShortName>
+					<Path>SFX\BATTERIE-007_592D8723.wem</Path>
 				</File>
 				<File Id="901382114" Language="SFX">
 					<ShortName>POSER FEUILLES-004.wav</ShortName>
-					<Path>SFX\POSER FEUILLES-004_10C4C929.wem</Path>
-				</File>
-				<File Id="925330306" Language="SFX">
-					<ShortName>PRENDRE LIVRE-005.wav</ShortName>
-					<Path>SFX\PRENDRE LIVRE-005_10C4C929.wem</Path>
-				</File>
-				<File Id="940636355" Language="SFX">
-					<ShortName>PRENDRE BOUTEILLE-003.wav</ShortName>
-					<Path>SFX\PRENDRE BOUTEILLE-003_10C4C929.wem</Path>
-				</File>
-				<File Id="941482281" Language="SFX">
-					<ShortName>CLE POSER-002.wav</ShortName>
-					<Path>SFX\CLE POSER-002_10C4C929.wem</Path>
-				</File>
-				<File Id="955020850" Language="SFX">
-					<ShortName>PRENDRE LIVRE-007.wav</ShortName>
-					<Path>SFX\PRENDRE LIVRE-007_10C4C929.wem</Path>
+					<Path>SFX\POSER FEUILLES-004_E37C7245.wem</Path>
 				</File>
 				<File Id="955207873" Language="SFX">
 					<ShortName>PAS_PARQUET-001.wav</ShortName>
-					<Path>SFX\PAS_PARQUET-001_10C4C929.wem</Path>
+					<Path>SFX\PAS_PARQUET-001_E37C7245.wem</Path>
 				</File>
-				<File Id="959189243" Language="SFX">
-					<ShortName>PRENDRE BOUTEILLE-002.wav</ShortName>
-					<Path>SFX\PRENDRE BOUTEILLE-002_10C4C929.wem</Path>
+				<File Id="989282167" Language="SFX">
+					<ShortName>PIANO-001.wav</ShortName>
+					<Path>SFX\PIANO-001_592D8723.wem</Path>
 				</File>
-				<File Id="1007636296" Language="SFX">
-					<ShortName>POSER BOUTEILLE-003.wav</ShortName>
-					<Path>SFX\POSER BOUTEILLE-003_10C4C929.wem</Path>
+				<File Id="994715476" Language="SFX">
+					<ShortName>CELLO-001.wav</ShortName>
+					<Path>SFX\CELLO-001_592D8723.wem</Path>
 				</File>
-				<File Id="1009810986" Language="SFX">
-					<ShortName>POSER.wav</ShortName>
-					<Path>SFX\POSER_10C4C929.wem</Path>
+				<File Id="1009252245" Language="SFX">
+					<ShortName>BATTERIE-006.wav</ShortName>
+					<Path>SFX\BATTERIE-006_592D8723.wem</Path>
+				</File>
+				<File Id="1010569367" Language="SFX">
+					<ShortName>CELLO-003.wav</ShortName>
+					<Path>SFX\CELLO-003_592D8723.wem</Path>
+				</File>
+				<File Id="1025221322" Language="SFX">
+					<ShortName>CELLO-004.wav</ShortName>
+					<Path>SFX\CELLO-004_592D8723.wem</Path>
 				</File>
 				<File Id="1028449394" Language="SFX">
 					<ShortName>PAS_VIR_PARQUET-003.wav</ShortName>
-					<Path>SFX\PAS_VIR_PARQUET-003_A9CEF3AC.wem</Path>
-				</File>
-				<File Id="1032282761" Language="SFX">
-					<ShortName>POSER BOUTEILLE-006.wav</ShortName>
-					<Path>SFX\POSER BOUTEILLE-006_10C4C929.wem</Path>
-				</File>
-				<File Id="1039149825" Language="SFX">
-					<ShortName>CENDRIER PRENDRE-005.wav</ShortName>
-					<Path>SFX\CENDRIER PRENDRE-005_10C4C929.wem</Path>
+					<Path>SFX\PAS_VIR_PARQUET-003_D3CFA9D8.wem</Path>
 				</File>
 				<File Id="1053780947" Language="SFX">
 					<ShortName>POSER FEUILLES-006.wav</ShortName>
-					<Path>SFX\POSER FEUILLES-006_10C4C929.wem</Path>
+					<Path>SFX\POSER FEUILLES-006_E37C7245.wem</Path>
 				</File>
 				<File Id="1072999647" Language="SFX">
 					<ShortName>PAS_PARQUET-006.wav</ShortName>
-					<Path>SFX\PAS_PARQUET-006_10C4C929.wem</Path>
+					<Path>SFX\PAS_PARQUET-006_E37C7245.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
