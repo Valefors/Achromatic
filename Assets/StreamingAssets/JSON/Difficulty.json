@@ -80,7 +80,7 @@
   "LABEL_BOOKSHELF": {
     "easy": "A whole bunch of books, nothing interesting",
 	  "normal": "A whole bunch of books.",
-    "difficult": "Well-furnished libraries."
+    "difficult": "A well-furnished libraries."
   },
 
   "LABEL_CIGARETTE": {
@@ -197,7 +197,6 @@
 	  "normal": "What will be my next destination?",
     "difficult": "What will be my next destination?"
   },
-  //additionnel
 
   "LABEL_PAINTINGP1SUN": {
     "easy": "Sometimes I like to walk in the nature.",    
@@ -229,9 +228,39 @@
     "difficult": "I'd rather drink a good old whisky."
   },  
   
-  "LABEL_XXXXXXXX": {
-    "easy": "Just an ordinary glob.",    
-	  "normal": "Just an ordinary glob.",
-    "difficult": "Where will I travel the next time?"
+  "LABEL_ADDCIGARETTE": {
+    "easy": "This investigation waste away like a cigarette, a good old cigarette.",    
+	  "normal": "This investigation waste away like a cigarette, a good old cigarette.",
+    "difficult": "This investigation waste away like a cigarette, a good old cigarette."
+  },  
+  
+  "LABEL_SOUP": {
+    "easy": "Is there anyone who really likes soup?",    
+	  "normal": "Is there anyone who really likes soup?",
+    "difficult": "Is there anyone who really likes soup?"
+  },  
+  
+  "LABEL_JAZZ": {
+    "easy": "Me too I like Jazz concerts.",    
+	  "normal": "Me too I like Jazz concerts.",
+    "difficult": "Me too I like Jazz concerts."
+  },  
+  
+  "LABEL_FILM": {
+    "easy": "I'd like to see it, it seems great.",    
+	  "normal": "I'd like to see it, it seems great.",
+    "difficult": "I'd like to see it, it seems great."
+  },  
+
+  "LABEL_DOG": {
+    "easy": "This polaroid is pretty fun.",    
+	  "normal": "This polaroid is pretty fun.",
+    "difficult": "This polaroid is pretty fun."
+  },
+  
+  "LABEL_HAT": {
+    "easy": "A bunch of hats.",    
+	  "normal": "A bunch of hats.",
+    "difficult": "A bunch of hats."
   }
 }
