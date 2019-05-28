@@ -105,10 +105,10 @@ public class PlayerControls : MonoBehaviour
 
     void Move()
     {
-        if(!TutorialManager.instance.firstStep)
+        if(TutorialManager.instance.indexStep == 0)
         {
-            TutorialManager.instance.firstStep = true;
-            Invoke("HideFTUE", 1);
+            TutorialManager.instance.HideTutorielStep();
+            TutorialManager.instance.UpdateIndex();
         }
 
         if (!_isFinishedWalk)
@@ -130,6 +130,7 @@ public class PlayerControls : MonoBehaviour
     void HideFTUE()
     {
         TutorialManager.instance.HideTutorielStep();
+        TutorialManager.instance.UpdateIndex();
     }
 
     void Rotation()

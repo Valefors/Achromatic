@@ -24,39 +24,64 @@ public class TutorialManager : MonoBehaviour
     [SerializeField] Image _tutorialImage;
     [SerializeField] Sprite[] _imageArray;
 
-    public bool firstStep = false;
-    public bool secondStep = false;
-    public bool thridStep = false;
+    [HideInInspector] public int indexStep = 0;
+
+    [SerializeField] Image _optionsImage;
 
     // Start is called before the first frame update
     void Start()
     {
         _tutorialImage.gameObject.SetActive(false);
         Invoke("ShowMoveStep", 0.5f);
+        Invoke("DisableOptionsImage", 15f);
     }
 
     void ShowMoveStep()
     {
-        _tutorialImage.gameObject.SetActive(true);
-        if (Utils.LANGUAGE == Enums.ELanguage.FRENCH) _tutorialImage.sprite = _imageArray[0];
-        if(Utils.LANGUAGE == Enums.ELanguage.ENGLISH) _tutorialImage.sprite = _imageArray[1];
+        if (Utils.LANGUAGE == Enums.ELanguage.FRENCH) _tutorialImage.sprite = _imageArray[indexStep];
+        if(Utils.LANGUAGE == Enums.ELanguage.ENGLISH) _tutorialImage.sprite = _imageArray[indexStep + 1];
+
+        ShowImage();
+    }
+
+    public void UpdateIndex()
+    {
+        indexStep += 1;
     }
 
     public void ShowInteractionStep()
     {
-        secondStep = true;
+        _tutorialImage.sprite = _imageArray[indexStep + 1];
+
+        ShowImage();
+    }
+
+    public void ShowRotationStep()
+    {
+        _tutorialImage.sprite = _imageArray[indexStep + 1];
+
+        ShowImage();
+    }
+
+    void ShowImage()
+    {
         _tutorialImage.gameObject.SetActive(true);
-        _tutorialImage.sprite = _imageArray[2];
+        StartCoroutine(StaticFunctions.FadeInAlpha(result => _tutorialImage.color = result, _tutorialImage.color, 1f));
     }
 
     public void HideTutorielStep()
     {
+        StartCoroutine(StaticFunctions.FadeOutAlpha(result => _tutorialImage.color = result, _tutorialImage.color, 1f, DisableImage));
+    }
+
+    void DisableImage()
+    {
         _tutorialImage.gameObject.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    //Options images
+    public void DisableOptionsImage()
     {
-        
+        _optionsImage.gameObject.SetActive(false);
     }
 }

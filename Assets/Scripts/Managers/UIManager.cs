@@ -58,6 +58,8 @@ public class UIManager : MonoBehaviour
     {
         if (_screenEnabled && _currentScreen == null)
         {
+            TutorialManager.instance.DisableOptionsImage();
+
             _pauseScreen.gameObject.SetActive(true);
             _currentScreen = _pauseScreen;
 
