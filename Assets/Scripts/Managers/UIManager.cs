@@ -2,7 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class UIManager : MonoBehaviour
 {
@@ -17,6 +19,11 @@ public class UIManager : MonoBehaviour
     [HideInInspector] public bool onUI = false; //When an UI thing is shown on screen
 
     RectTransform _currentScreen = null;
+
+    //End Screen
+    [SerializeField] VideoPlayer _videoPlayer;
+    [SerializeField] Button[] _buttons;
+    [SerializeField] RawImage _rawImage;
 
     #region Singleton
     public static UIManager instance {
@@ -40,6 +47,7 @@ public class UIManager : MonoBehaviour
         CursorLock();
 
         AkSoundEngine.PostEvent("Play_Ambient", gameObject);
+        _videoPlayer.loopPointReached += ShowEndButtons;
     }
 
     // Update is called once per frame
@@ -64,6 +72,14 @@ public class UIManager : MonoBehaviour
             _currentScreen = _pauseScreen;
 
             SetUIMode();
+        }
+    }
+
+    void ShowEndButtons(VideoPlayer e)
+    {
+        for(int i = 0; i < _buttons.Length; i++)
+        {
+            _buttons[i].gameObject.SetActive(true);
         }
     }
 
@@ -109,6 +125,7 @@ public class UIManager : MonoBehaviour
         _currentScreen.gameObject.SetActive(false);
         _currentScreen = _endScreen;
         _currentScreen.gameObject.SetActive(true);
+        StartCoroutine(PlayVideo());
     }
 
     public void OnOptions()
@@ -143,5 +160,20 @@ public class UIManager : MonoBehaviour
     void CursorUnlock()
     {
         Cursor.lockState = CursorLockMode.None;
+    }
+
+    IEnumerator PlayVideo()
+    {
+        _videoPlayer.Prepare();
+        WaitForSeconds waitForSeconds = new WaitForSeconds(1);
+
+        while (!_videoPlayer.isPrepared)
+        {
+            yield return waitForSeconds;
+            break;
+        }
+
+        _rawImage.texture = _videoPlayer.texture;
+        _videoPlayer.Play();
     }
 }

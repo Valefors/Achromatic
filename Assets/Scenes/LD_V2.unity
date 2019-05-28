@@ -7700,8 +7700,8 @@ GameObject:
   m_Component:
   - component: {fileID: 173387990}
   - component: {fileID: 173387993}
-  - component: {fileID: 173387992}
   - component: {fileID: 173387991}
+  - component: {fileID: 173387992}
   m_Layer: 5
   m_Name: EndScreen
   m_TagString: Untagged
@@ -7731,26 +7731,38 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &173387991
-MonoBehaviour:
+--- !u!328 &173387991
+VideoPlayer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 173387989}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44fd4c85e03f30f46a3ce9a2c604d923, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _sliderMouseValue: {fileID: 0}
-  _sliderMouse: {fileID: 0}
-  _sliderBrightnessValue: {fileID: 0}
-  _sliderBrightness: {fileID: 0}
-  _volume: {fileID: 0}
-  _sliderDifficulty: {fileID: 0}
-  _difficultyText: {fileID: 0}
-  _fullscreenToggle: {fileID: 0}
+  m_VideoClip: {fileID: 32900000, guid: ed0dc3244c027d64c9427830c0cc1507, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 0}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _MainTex
+  m_RenderMode: 2
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
+  m_Url: 
+  m_EnabledAudioTracks: 
+  m_DirectAudioMutes: 
+  m_ControlledAudioTrackCount: 0
+  m_PlayOnAwake: 0
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
 --- !u!114 &173387992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7760,26 +7772,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 173387989}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.12941177, g: 0.12941177, b: 0.12941177, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
 --- !u!222 &173387993
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -27289,7 +27299,6 @@ GameObject:
   - component: {fileID: 555221073}
   - component: {fileID: 555221076}
   - component: {fileID: 555221075}
-  - component: {fileID: 555221074}
   m_Layer: 5
   m_Name: TypeWriterScreen
   m_TagString: Untagged
@@ -27319,26 +27328,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &555221074
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 555221072}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44fd4c85e03f30f46a3ce9a2c604d923, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _sliderMouseValue: {fileID: 0}
-  _sliderMouse: {fileID: 0}
-  _sliderBrightnessValue: {fileID: 0}
-  _sliderBrightness: {fileID: 0}
-  _volume: {fileID: 0}
-  _sliderDifficulty: {fileID: 0}
-  _difficultyText: {fileID: 0}
-  _fullscreenToggle: {fileID: 0}
 --- !u!114 &555221075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31099,6 +31088,11 @@ MonoBehaviour:
   _choiceScreen: {fileID: 609767881}
   _endScreen: {fileID: 173387990}
   onUI: 0
+  _videoPlayer: {fileID: 173387991}
+  _buttons:
+  - {fileID: 994898377}
+  - {fileID: 1577770926}
+  _rawImage: {fileID: 173387992}
 --- !u!4 &626648026
 Transform:
   m_ObjectHideFlags: 0
@@ -37814,7 +37808,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &770349606
 RectTransform:
   m_ObjectHideFlags: 0
@@ -37934,11 +37928,11 @@ MonoBehaviour:
     lineCount: 3
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -48535,7 +48529,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &994898375
 RectTransform:
   m_ObjectHideFlags: 0
@@ -82657,7 +82651,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1577770924
 RectTransform:
   m_ObjectHideFlags: 0
