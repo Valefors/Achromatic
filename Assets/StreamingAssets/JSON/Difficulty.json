@@ -150,39 +150,39 @@
   },
 
   "LABEL_BOOKP2": {
-    "easy": "Nothing but an ordinary book.",    
-	"normal": "The culprit likes to read.",
-    "difficult": "A lot of reading, so much reading."
+    "easy": "Nothing but a regular book.",    
+	"normal": "A regular book.",
+    "difficult": "The culprit reads and writtes a lot."
   },
   
   "LABEL_PACKET": {
     "easy": "A packet of cigarettes. The culprit had bad habits...",    
-	  "normal": "A packet of cigarettes.",
+	  "normal": "I'll light mine when I'll be at home.",
     "difficult": "I'll light mine when I'll be at home."
   },
   
   "LABEL_BOTTLE": {
     "easy": "The whisky bottle is placed like the one in the night-time page 8",    
-	  "normal": "A whisky bottle.",
+	  "normal": "I want to drink it so bad, Goddamn.",
     "difficult": "I want to drink it so bad, Goddamn."
   },
   
   "LABEL_GLASS": {
     "easy": "The glass is placed like the one in the night-time page 8",    
-	  "normal": "A glass.",
-    "difficult": "A glass."
+	  "normal": "A regular glass.",
+    "difficult": "A regular glass."
   },
   
   "LABEL_DESKBOOK": {
     "easy": "The book is placed like the one in the daytime page 7",    
-	  "normal": "A book.",
-    "difficult": "A book."
+	  "normal": "A regular book.",
+    "difficult": "A regular book."
   },
   
   "LABEL_ASHTRAY": {
     "easy": "The ashtray is placed like the one in the daytime page 7",    
-	  "normal": "An ashtray.",
-    "difficult": "An ashtray."
+	  "normal": "A regular ashtray.",
+    "difficult": "A regular ashtray."
   },
   
   "LABEL_POSTCARD": {
@@ -193,6 +193,43 @@
 
 
   "LABEL_GLOBE": {
+    "easy": "What will be my next destination?",    
+	  "normal": "What will be my next destination?",
+    "difficult": "What will be my next destination?"
+  },
+  //additionnel
+
+  "LABEL_PAINTINGP1SUN": {
+    "easy": "Sometimes I like to walk in the nature.",    
+	  "normal": "Sometimes I like to walk in the nature.",
+    "difficult": "Sometimes I like to walk in the nature."
+  },
+  
+  "LABEL_PAINTINGP1SEA": {
+    "easy": "The sea, will I see it this summer?",    
+	  "normal": "The sea, will I see it this summer?",
+    "difficult": "The sea, will I see it this summer?"
+  },  
+  
+  "LABEL_CAR": {
+    "easy": "I'd like to buy one in the future.",    
+	  "normal": "I'd like to buy one in the future.",
+    "difficult": "I'd like to buy one in the future."
+  },
+  
+  "LABEL_CEREALS": {
+    "easy": "I don't like cereals.",    
+	  "normal": "I don't like cereals.",
+    "difficult": "I don't like cereals."
+  },  
+  
+  "LABEL_SODA": {
+    "easy": "I'd rather drink a good old whisky.",    
+	  "normal": "I'd rather drink a good old whisky.",
+    "difficult": "I'd rather drink a good old whisky."
+  },  
+  
+  "LABEL_XXXXXXXX": {
     "easy": "Just an ordinary glob.",    
 	  "normal": "Just an ordinary glob.",
     "difficult": "Where will I travel the next time?"
