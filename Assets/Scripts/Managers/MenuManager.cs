@@ -20,6 +20,8 @@ public class MenuManager : MonoBehaviour
     bool _inIntro = false;
     int _introIndex = 0;
 
+    [SerializeField] Animator _cameraAnimator;
+
     #region Singleton
     public static MenuManager instance {
         get { return _instance; }
@@ -47,12 +49,14 @@ public class MenuManager : MonoBehaviour
     {
         _selectedPanel = _menuPanel;
         DisableCurrentScreen();
+        _cameraAnimator.SetBool("isCredits", !_cameraAnimator.GetBool("isCredits"));
     }
 
     public void OnCredits()
     {
         _selectedPanel = _creditsPanel;
         DisableCurrentScreen();
+        _cameraAnimator.SetBool("isCredits", !_cameraAnimator.GetBool("isCredits"));
     }
 
     public void OnPlay()
