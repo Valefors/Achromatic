@@ -20,6 +20,8 @@ public static class Utils
     public static string CLOSE_INTERACTION = "Let’s close it.";
     public static string TYPEWRITTER_INTERACTION = "Let’s make this clear.";
     public static string OTHER_HOLDING_INTERACTION = "You already have an object in hand!";
+    public static string TURN_ON_INTERACTION = "Too quiet, let's turn on this TV.";
+    public static string TURN_OFF_INTERACTION = "Too noisy, let's turn off.";
 
     //Color light
     public static Color lightColor = new Color(0.509f, 0.509f, 0.509f);
@@ -45,10 +47,33 @@ public static class Utils
 
     //Options Value
     public static float MOUSE_SENSIBILITY = 250;
+    public static float BRIGHTNESS_LEVEL = 0;
     public static Enums.ELanguage LANGUAGE = Enums.ELanguage.FRENCH;
     public static int QUALITY_LEVEL = 2;
     public static bool FULLSCREEN = true;
 
+    //Difficulty
+    public static string EASY_MODE = "easy";
+    public static string NORMAL_MODE = "normal";
+    public static string DIFFICULT_MODE = "difficult";
+
+    public static string DIFFICULTY_MODE = EASY_MODE;
+
+    public static string EASY_TEXT_MODE = "DISCOVERY";
+    public static string NORMAL_TEXT_MODE = "STANDARD";
+    public static string DIFFICULT_TEXT_MODE = "IMMERSIVE";
+
     //Detection Player
-    public static int PLAYER_DETECTION = 3;
+    public static int PLAYER_DETECTION = 4;
+
+    //Resolutions Array
+    public static readonly Dictionary<int, Vector2> resolutionArray
+    = new Dictionary<int, Vector2>
+    {
+    { 0, new Vector2(480,270) },
+    { 1, new Vector2(640,360) },
+    { 2, new Vector2(960,540) },
+    { 3, new Vector2(1280,720) },
+    { 4, new Vector2(1920,1080) }
+    };
 }

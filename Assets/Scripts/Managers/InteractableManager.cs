@@ -21,6 +21,7 @@ public class InteractableManager : MonoBehaviour
     {
         if (_instance == null) _instance = this;
         else Debug.LogError("AN INSTANCE ALREADY EXISTS");
+        ReadJSON.StartReadingJSON();
     }
     #endregion
 
@@ -79,9 +80,21 @@ public class InteractableManager : MonoBehaviour
 
     void DoRotatingInteraction()
     {
+        if(TutorialManager.instance.indexStep == 2)
+        {
+            TutorialManager.instance.ShowRotationStep();
+            Invoke("HideFTUE", 4);
+        }
+
         hooverObject.SetInteractionMode();
         CrossHair.instance.HideCursor();
         PlayerControls.instance.SetManipulationMode();
+    }
+
+    void HideFTUE()
+    {
+        TutorialManager.instance.HideTutorielStep();
+        TutorialManager.instance.UpdateIndex();
     }
 
     public void StopRotatingInteraction()

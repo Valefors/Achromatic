@@ -202,7 +202,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 5431db33e0abce49a36a5c955da577d1
     GuidInternal: 
-    m_lastTime: -8586437636937068955
+    m_lastTime: -8586426381670888023
     List:
     - name: MainSoundbank
       guid: 8d03fac40834914eb17985f729118ac9
@@ -218,7 +218,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: ea02e87e1b1f2b43a3a880b8176a3219
     GuidInternal: 
-    m_lastTime: -8586437637851940818
+    m_lastTime: -8586426381670987751
     List:
     - name: Play_Ambient
       guid: ebb2121b08340c4a9881a2f0023c9f54
@@ -243,6 +243,20 @@ MonoBehaviour:
       - ElementName: Play_Armoire_Ouvrir
         ObjectType: 3
       Path: Default Work Unit\Play_Armoire_Ouvrir
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Horloge
+      guid: 3ea35f2c47c68a48b78a0955b799b094
+      id: 1086738306
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambient
+        ObjectType: 4
+      - ElementName: Play_Horloge
+        ObjectType: 3
+      Path: Default Work Unit\Ambient\Play_Horloge
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -568,12 +582,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Stop_TV
+      guid: 8d9319ca43de05439adcca2faaebc17d
+      id: 2893389474
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambient
+        ObjectType: 4
+      - ElementName: Stop_TV
+        ObjectType: 3
+      Path: Default Work Unit\Ambient\Stop_TV
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: e04d55784c355a49a4b3b2567860f9cf
     GuidInternal: 
-    m_lastTime: -8586436843550280486
+    m_lastTime: -8586428963909984574
     List:
     - name: Acceleration_Rot_RTPC
       guid: eada300522a9084aa01898b86269f857
@@ -805,7 +833,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 6bd9a0f29f6f2942b6a3168f45197355
     GuidInternal: 
-    m_lastTime: -8586437663666740477
+    m_lastTime: -8586428963910044401
     List:
     - name: Virage_Switch
       guid: 1a5697fffa2c05459650e970f614ea44
@@ -837,8 +865,35 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 59b6e8b544b22945b30fd6daf4de0a5c
     GuidInternal: 
-    m_lastTime: -8586468763698160104
-    List: []
+    m_lastTime: -8586432525372680913
+    List:
+    - name: New_Trigger
+      guid: 7c86b655a825724588b794f59ca0ac6c
+      id: 4163741908
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: New_Trigger
+        ObjectType: 14
+      Path: Default Work Unit\New_Trigger
+    - name: Trigger_Stin_Armoire
+      guid: 8e84b2b963d5224ab93598d5196ce433
+      id: 2416262786
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Trigger_Stin_Armoire
+        ObjectType: 14
+      Path: Default Work Unit\Trigger_Stin_Armoire
+    - name: Trigger_Stin_Store
+      guid: 33f445aaaf6bcf439b1e07470066495c
+      id: 1181401788
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Trigger_Stin_Store
+        ObjectType: 14
+      Path: Default Work Unit\Trigger_Stin_Store
   ExpandedItems:
   - /AchromaticWwise
   - /AchromaticWwise/Events

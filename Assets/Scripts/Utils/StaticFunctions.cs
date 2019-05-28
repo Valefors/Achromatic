@@ -45,7 +45,7 @@ public static class StaticFunctions
         }
     }
 
-    public static IEnumerator FadeInAlpha(Action<Color> myVariableResult, Color startColor, float fadeTime)
+    public static IEnumerator FadeInAlpha(Action<Color> myVariableResult, Color startColor, float fadeTime, Action callback = null)
     {
         float progress = 0f;
         float alpha = 0f;
@@ -59,9 +59,14 @@ public static class StaticFunctions
             progress += Time.deltaTime / fadeTime;
             yield return null;
         }
+
+        if (callback != null)
+        {
+            callback();
+        }
     }
 
-    public static IEnumerator FadeOutAlpha(Action<Color> myVariableResult, Color startColor, float fadeTime)
+    public static IEnumerator FadeOutAlpha(Action<Color> myVariableResult, Color startColor, float fadeTime, Action callback = null)
     {
         float progress = 0f;
         float alpha = 1f;
@@ -76,7 +81,13 @@ public static class StaticFunctions
             yield return null;
         }
 
+        if (callback != null)
+        {
+            callback();
+        }
+
     }
+
     public static IEnumerator FadeInWwise(string RTPCname, float duration)
     {
         float progress = 0f;

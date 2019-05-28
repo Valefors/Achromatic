@@ -58,6 +58,8 @@ public class UIManager : MonoBehaviour
     {
         if (_screenEnabled && _currentScreen == null)
         {
+            TutorialManager.instance.DisableOptionsImage();
+
             _pauseScreen.gameObject.SetActive(true);
             _currentScreen = _pauseScreen;
 
@@ -79,7 +81,7 @@ public class UIManager : MonoBehaviour
             _currentScreen.gameObject.SetActive(false);
             _currentScreen = null;
             onUI = false;
-            Cursor.visible = true;
+            Cursor.visible = false;
             CursorLock();
         }
     }

@@ -105,6 +105,12 @@ public class PlayerControls : MonoBehaviour
 
     void Move()
     {
+        if(TutorialManager.instance.indexStep == 0)
+        {
+            TutorialManager.instance.HideTutorielStep();
+            TutorialManager.instance.UpdateIndex();
+        }
+
         if (!_isFinishedWalk)
         {
             _isFinishedWalk = true;
@@ -119,6 +125,12 @@ public class PlayerControls : MonoBehaviour
         _rb.velocity = speed;
 
         FootStepSound();
+    }
+
+    void HideFTUE()
+    {
+        TutorialManager.instance.HideTutorielStep();
+        TutorialManager.instance.UpdateIndex();
     }
 
     void Rotation()

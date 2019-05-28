@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwise\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwise\.cache\Windows\</SourceFilesRoot>
+		<ProjectRoot>C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\</SourceFilesRoot>
 		<SoundBanksRoot>C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\Achromatic\Assets\StreamingAssets\Audio\GeneratedSoundBanks\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwise\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -18,6 +18,7 @@
 			<IncludedEvents>
 				<Event Id="1562304622" Name="Play_Ambient" ObjectPath="\Events\Default Work Unit\Ambient\Play_Ambient"/>
 				<Event Id="1778446475" Name="Play_Armoire_Ouvrir" ObjectPath="\Events\Default Work Unit\Play_Armoire_Ouvrir"/>
+				<Event Id="1086738306" Name="Play_Horloge" ObjectPath="\Events\Default Work Unit\Ambient\Play_Horloge" MaxAttenuation="100.000000"/>
 				<Event Id="2119672069" Name="Play_Lampe" ObjectPath="\Events\Default Work Unit\Ambient\Play_Lampe" MaxAttenuation="4.000000"/>
 				<Event Id="4237641461" Name="Play_Nothing" ObjectPath="\Events\Default Work Unit\Play_Nothing"/>
 				<Event Id="3766867606" Name="Play_PoserBouteille" ObjectPath="\Events\Default Work Unit\Props\Poser\Play_PoserBouteille"/>
@@ -36,10 +37,11 @@
 				<Event Id="3535750338" Name="Play_StoreFerme" ObjectPath="\Events\Default Work Unit\Play_StoreFerme"/>
 				<Event Id="3670131286" Name="Play_StoreOuvre" ObjectPath="\Events\Default Work Unit\Play_StoreOuvre"/>
 				<Event Id="2027969872" Name="Play_TV" ObjectPath="\Events\Default Work Unit\Ambient\Play_TV" MaxAttenuation="20.000000"/>
-				<Event Id="3013956005" Name="Play_Ventilateur" ObjectPath="\Events\Default Work Unit\Ambient\Play_Ventilateur" MaxAttenuation="5.000000"/>
+				<Event Id="3013956005" Name="Play_Ventilateur" ObjectPath="\Events\Default Work Unit\Ambient\Play_Ventilateur" MaxAttenuation="10.000000"/>
 				<Event Id="2248092158" Name="Player_Move" ObjectPath="\Events\Default Work Unit\Player_Move"/>
 				<Event Id="3361170585" Name="Player_Stop" ObjectPath="\Events\Default Work Unit\Player_Stop" MaxAttenuation="0.000000"/>
 				<Event Id="3827058668" Name="StartMusic" ObjectPath="\Events\Default Work Unit\Ambient\StartMusic"/>
+				<Event Id="2893389474" Name="Stop_TV" ObjectPath="\Events\Default Work Unit\Ambient\Stop_TV" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="8812298" Language="SFX">
@@ -389,6 +391,10 @@
 				<File Id="758920501" Language="SFX">
 					<ShortName>PAS_VIR_PARQUET-001.wav</ShortName>
 					<Path>SFX\PAS_VIR_PARQUET-001_33C4BA69.wem</Path>
+				</File>
+				<File Id="770375327" Language="SFX">
+					<ShortName>HORLOGE.wav</ShortName>
+					<Path>SFX\HORLOGE_D79FB2B7.wem</Path>
 				</File>
 				<File Id="771304780" Language="SFX">
 					<ShortName>LAMPE.wav</ShortName>

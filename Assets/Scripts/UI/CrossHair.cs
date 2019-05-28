@@ -87,8 +87,8 @@ public class CrossHair : MonoBehaviour
         {
             if (rayHit.collider.gameObject.GetComponent<Interactable>())
             {
-                if (InteractableManager.instance.holdingObject == null
-                    && rayHit.collider.gameObject.GetComponent<PutInteractable>()) return;
+                //if (InteractableManager.instance.holdingObject == null
+                    //&& rayHit.collider.gameObject.GetComponent<PutInteractable>()) return;
 
                 InteractableManager.instance.SetObjectHooverMode(rayHit.collider.gameObject.GetComponent<Interactable>());
                 SetHooverMode();
@@ -97,13 +97,27 @@ public class CrossHair : MonoBehaviour
             }
 
             else SetNormalMode();
+
         }
 
         SetNormalMode();
     }
 
+    void HideFTUE()
+    {
+        TutorialManager.instance.HideTutorielStep();
+        //TutorialManager.instance.UpdateIndex();
+    }
+
     void SetHooverMode()
     {
+        if (TutorialManager.instance.indexStep == 1)
+        {
+            TutorialManager.instance.ShowInteractionStep();
+            TutorialManager.instance.UpdateIndex();
+            Invoke("HideFTUE", 4);
+        }
+
         _imageComponent.sprite = _hooverSprite;
         _objectSelectedText.text = InteractableManager.instance.hooverObject.name;
         if (!_isRefusing) _objectInteractionText.text = InteractableManager.instance.hooverObject.INTERACTION_NAME;
@@ -122,10 +136,6 @@ public class CrossHair : MonoBehaviour
     {
         _imageComponent.sprite = _normalSprite;
         _imageComponent.gameObject.SetActive(false);
-        //_objectSelectedText.text = "";
-        //_objectInteractionText.text = "";
-        //_objectSelectedText.gameObject.SetActive(false);
-        //_objectInteractionText.gameObject.SetActive(false);
 
         _isDisplay = false;
     }

@@ -1,0 +1,237 @@
+{
+  "LABEL_TRASH_NOTE": {
+    "easy": "It is the second part of the paper page 5. There are words framed on both part.",
+	  "normal": "I've seen the second part somewhere, there are words framed on it.",
+    "difficult": "It's a poem, sadly it has been torn up."
+  },
+
+  "LABEL_CUT_PHOTOS": {
+    "easy": "It has been ripped off from a newspaper. Does it correspond to the part missing of the newspaper page 10?",
+	  "normal": "It has been ripped off from a newspaper.",
+    "difficult": "It has been ripped off."
+  },
+
+  "LABEL_NOTE_DESK": {
+    "easy": "It refers to the page 7 and 8... Pictures, Half, Moon, Sun... I have to fold the notebook.",
+	  "normal": "Pictures, Half, Moon, Sun... I need to merge daytime and night-time.",
+    "difficult": "Nice poem but does it have a purpose?"
+  },
+
+  "LABEL_POLAROID_DAGGER": {
+    "easy": "A dagger...",
+	  "normal": "A dagger...",
+    "difficult": "A dagger..."
+  },
+
+  "LABEL_POKER": {
+    "easy": "A poker...",
+	  "normal": "A poker...",
+    "difficult": "A poker..."
+  },
+
+  "LABEL_POLAROID_RAZOR": {
+    "easy": "A razor...",
+	  "normal": "A razor...",
+    "difficult": "A razor..."
+  },
+
+  "LABEL_POLAROID_SCISSORS": {
+    "easy": "A pair of scissors...",
+	  "normal": "A pair of scissors...",
+    "difficult": "A pair of scissors..."
+  },
+
+  "LABEL_POLAROID_BROKEN_GLASS": {
+    "easy": "A broken glass...", 
+	  "normal": "A broken glass...",
+    "difficult": "A broken glass..."
+  },
+
+  "LABEL_FRAMECLUE": {
+    "easy": "I'm pretty sure there's something behind it.",
+	  "normal": "A modern art painting. Pretty nice.",
+    "difficult": "A modern art painting."
+  },
+
+  "LABEL_SECRET_WARDROBE": {
+    "easy": "Strange location to place a wardrobe...",
+	  "normal": "Strange location to place a wardrobe...",
+    "difficult": "Strange location to place a wardrobe..."
+  },
+
+  "LABEL_TYPEWRITER": {
+    "easy": "It's time to reveal who's the culprit !",
+	  "normal": "It's time to reveal who's the culprit !",
+    "difficult": "It's time to reveal who's the culprit !"
+  },
+
+  "LABEL_WARDROBE": {
+    "easy": "This wardrobe is completely locked.",
+	  "normal": "This wardrobe is completely locked.",
+    "difficult": "This wardrobe is completely locked."
+  },
+
+  "LABEL_CUP": {
+    "easy": "Whenever the time, it's tea time.",
+    "normal": "Whenever the time, it's tea time.",
+    "difficult": "Whenever the time, it's tea time."
+  },
+
+  "LABEL_BOOKSHELF": {
+    "easy": "A whole bunch of books, nothing interesting",
+	  "normal": "A whole bunch of books.",
+    "difficult": "Well-furnished libraries."
+  },
+
+  "LABEL_CIGARETTE": {
+    "easy": "A cigarette.",
+	  "normal": "A cigarette.",
+    "difficult": "A cigarette."
+  },
+
+  "LABEL_PLANT": {
+    "easy": "Nice plant.",
+	  "normal": "Nice plant.",
+    "difficult": "Nice plant."
+  },
+
+  "LABEL_LITTLE_PLANT": {
+    "easy": "Just a little plant.",
+	  "normal": "Just a little plant.",
+    "difficult": "Just a little plant."
+  },
+
+  "LABEL_GOOD_NEWSPAPER": {
+    "easy": "Sometimes news are good.",
+	  "normal": "Sometimes news are good.",
+    "difficult": "Sometimes news are good."
+  },
+
+  "LABEL_BAD_NEWSPAPER": {
+    "easy": "Sometimes the news are bad.",
+	  "normal": "Sometimes the news are bad.",
+    "difficult": "Sometimes the news are bad."
+  },
+
+  "LABEL_CLOCK": {
+    "easy": "A nice clock.",    
+	  "normal": "A nice clock.",
+    "difficult": "A nice clock."
+  },  
+
+  "LABEL_CUTTINGCLUE": {
+    "easy": "The culprit only uses cutting weapons to commit murder.",    
+	  "normal": "The murder without gunshot...",
+    "difficult": "What a title..."
+  },
+
+  "LABEL_BROKENBLINDS": {
+    "easy": "The blinds have been broken. Is it the case for all?",    
+	"normal": "The blinds have been broken.",
+    "difficult": "The blinds have been broken."
+  },
+
+  "LABEL_BLINDS": {
+    "easy": "Truth has its own dark side, that's what it's written page 12",    
+	  "normal": "Truth has its own dark side.",
+    "difficult": "The weather is pretty good."
+  },
+
+  "LABEL_NEWSCOPS": {
+    "easy": "The cop is dead therefore not guilty...",    
+	  "normal": "The cop is dead? Sad fate.",
+    "difficult": "Oh... I see."
+  },
+  
+  "LABEL_PAPER2": {
+    "easy": "A lot of paper. nothing important.",    
+	  "normal": "A lot of paper.",
+    "difficult": "Is it a murderer or a scriptwritter?"
+  },
+
+  "LABEL_BOOKP2": {
+    "easy": "Nothing but a regular book.",    
+	"normal": "A regular book.",
+    "difficult": "The culprit reads and writtes a lot."
+  },
+  
+  "LABEL_PACKET": {
+    "easy": "A packet of cigarettes. The culprit had bad habits...",    
+	  "normal": "I'll light mine when I'll be at home.",
+    "difficult": "I'll light mine when I'll be at home."
+  },
+  
+  "LABEL_BOTTLE": {
+    "easy": "The whisky bottle is placed like the one in the night-time page 8",    
+	  "normal": "I want to drink it so bad, Goddamn.",
+    "difficult": "I want to drink it so bad, Goddamn."
+  },
+  
+  "LABEL_GLASS": {
+    "easy": "The glass is placed like the one in the night-time page 8",    
+	  "normal": "A regular glass.",
+    "difficult": "A regular glass."
+  },
+  
+  "LABEL_DESKBOOK": {
+    "easy": "The book is placed like the one in the daytime page 7",    
+	  "normal": "A regular book.",
+    "difficult": "A regular book."
+  },
+  
+  "LABEL_ASHTRAY": {
+    "easy": "The ashtray is placed like the one in the daytime page 7",    
+	  "normal": "A regular ashtray.",
+    "difficult": "A regular ashtray."
+  },
+  
+  "LABEL_POSTCARD": {
+    "easy": "A simple postcard.",    
+	  "normal": "A simple postcard.",
+    "difficult": "Me too I'd like to travel..."
+  },
+
+
+  "LABEL_GLOBE": {
+    "easy": "What will be my next destination?",    
+	  "normal": "What will be my next destination?",
+    "difficult": "What will be my next destination?"
+  },
+  //additionnel
+
+  "LABEL_PAINTINGP1SUN": {
+    "easy": "Sometimes I like to walk in the nature.",    
+	  "normal": "Sometimes I like to walk in the nature.",
+    "difficult": "Sometimes I like to walk in the nature."
+  },
+  
+  "LABEL_PAINTINGP1SEA": {
+    "easy": "The sea, will I see it this summer?",    
+	  "normal": "The sea, will I see it this summer?",
+    "difficult": "The sea, will I see it this summer?"
+  },  
+  
+  "LABEL_CAR": {
+    "easy": "I'd like to buy one in the future.",    
+	  "normal": "I'd like to buy one in the future.",
+    "difficult": "I'd like to buy one in the future."
+  },
+  
+  "LABEL_CEREALS": {
+    "easy": "I don't like cereals.",    
+	  "normal": "I don't like cereals.",
+    "difficult": "I don't like cereals."
+  },  
+  
+  "LABEL_SODA": {
+    "easy": "I'd rather drink a good old whisky.",    
+	  "normal": "I'd rather drink a good old whisky.",
+    "difficult": "I'd rather drink a good old whisky."
+  },  
+  
+  "LABEL_XXXXXXXX": {
+    "easy": "Just an ordinary glob.",    
+	  "normal": "Just an ordinary glob.",
+    "difficult": "Where will I travel the next time?"
+  }
+}

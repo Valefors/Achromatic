@@ -12,7 +12,7 @@ public class Blinds : Interactable
     void Start()
     {
         Init();
-        if(interactionText == "") _interactionName = Utils.CLOSE_INTERACTION;
+        if(interactionLabel == "") _interactionName = Utils.CLOSE_INTERACTION;
         _animator = GetComponent<Animator>();
     }
 
