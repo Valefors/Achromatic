@@ -6853,8 +6853,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: efe8d23fb815fd04fafc223d46e676e7,
-      type: 2}
+    WwiseObjectReference: {fileID: 0}
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
@@ -14701,5 +14700,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3765961652893372441, guid: 19747e74412df08478878654c846f321,
+        type: 3}
+      propertyPath: data.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: e52c1d0b14fd9c04b9303818e51e3c0f,
+        type: 2}
+    - target: {fileID: 3765961652893372443, guid: 19747e74412df08478878654c846f321,
+        type: 3}
+      propertyPath: data.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 37903c834df473b45ae0e33e9aec8715,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19747e74412df08478878654c846f321, type: 3}
