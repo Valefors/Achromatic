@@ -202,7 +202,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 5431db33e0abce49a36a5c955da577d1
     GuidInternal: 
-    m_lastTime: -8586426381670888023
+    m_lastTime: -8586425428292341392
     List:
     - name: MainSoundbank
       guid: 8d03fac40834914eb17985f729118ac9
@@ -218,7 +218,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: ea02e87e1b1f2b43a3a880b8176a3219
     GuidInternal: 
-    m_lastTime: -8586426381670987751
+    m_lastTime: -8586425428292481294
     List:
     - name: Play_Ambient
       guid: ebb2121b08340c4a9881a2f0023c9f54
@@ -274,66 +274,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: Play_Nothing
-      guid: c434cf0266076b4994e5ce82d34ce9ae
-      id: 4237641461
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Play_Nothing
-        ObjectType: 3
-      Path: Default Work Unit\Play_Nothing
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Play_PoserBouteille
-      guid: b7e04bf8f90eec40aa937cb50ec8cd40
-      id: 3766867606
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Props
-        ObjectType: 4
-      - ElementName: Poser
-        ObjectType: 4
-      - ElementName: Play_PoserBouteille
-        ObjectType: 3
-      Path: Default Work Unit\Props\Poser\Play_PoserBouteille
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Play_PoserCendrier
-      guid: 41c7fd1427e4e74b83dbba9bb61b1f20
-      id: 119174249
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Props
-        ObjectType: 4
-      - ElementName: Poser
-        ObjectType: 4
-      - ElementName: Play_PoserCendrier
-        ObjectType: 3
-      Path: Default Work Unit\Props\Poser\Play_PoserCendrier
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Play_PoserCle
-      guid: f99bef316f5cfb458673651f2c97b75a
-      id: 2128636697
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Props
-        ObjectType: 4
-      - ElementName: Poser
-        ObjectType: 4
-      - ElementName: Play_PoserCle
-        ObjectType: 3
-      Path: Default Work Unit\Props\Poser\Play_PoserCle
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
     - name: Play_PoserFeuille
       guid: e69862e59c3532409528bd1f410fd95b
       id: 3817844813
@@ -347,86 +287,6 @@ MonoBehaviour:
       - ElementName: Play_PoserFeuille
         ObjectType: 3
       Path: Default Work Unit\Props\Poser\Play_PoserFeuille
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Play_PoserLivre
-      guid: 556df145e7804644bdcbd463f1fdff62
-      id: 1093607113
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Props
-        ObjectType: 4
-      - ElementName: Poser
-        ObjectType: 4
-      - ElementName: Play_PoserLivre
-        ObjectType: 3
-      Path: Default Work Unit\Props\Poser\Play_PoserLivre
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Play_PoserVerre
-      guid: 60d31f35eeca504eb45eb67467861dea
-      id: 3822140175
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Props
-        ObjectType: 4
-      - ElementName: Poser
-        ObjectType: 4
-      - ElementName: Play_PoserVerre
-        ObjectType: 3
-      Path: Default Work Unit\Props\Poser\Play_PoserVerre
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Play_PrendreBouteille
-      guid: 75fc6b6c5cdd7841b1720ff41275276d
-      id: 1569238785
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Props
-        ObjectType: 4
-      - ElementName: Prendre
-        ObjectType: 4
-      - ElementName: Play_PrendreBouteille
-        ObjectType: 3
-      Path: Default Work Unit\Props\Prendre\Play_PrendreBouteille
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Play_PrendreCendrier
-      guid: 5c0df96409dc9a469e071080a78e6ddb
-      id: 1175188020
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Props
-        ObjectType: 4
-      - ElementName: Prendre
-        ObjectType: 4
-      - ElementName: Play_PrendreCendrier
-        ObjectType: 3
-      Path: Default Work Unit\Props\Prendre\Play_PrendreCendrier
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Play_PrendreCle
-      guid: 70212293d60df8458d75f4c271b908c0
-      id: 1628284858
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Props
-        ObjectType: 4
-      - ElementName: Prendre
-        ObjectType: 4
-      - ElementName: Play_PrendreCle
-        ObjectType: 3
-      Path: Default Work Unit\Props\Prendre\Play_PrendreCle
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -446,49 +306,31 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: Play_PrendreLivre
-      guid: 9ea2448c342cbd4fb5b3e197bb4536bc
-      id: 3563957990
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Props
-        ObjectType: 4
-      - ElementName: Prendre
-        ObjectType: 4
-      - ElementName: Play_PrendreLivre
-        ObjectType: 3
-      Path: Default Work Unit\Props\Prendre\Play_PrendreLivre
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Play_PrendreVerre
-      guid: 3e5e23feb096e240bef4402e47298b78
-      id: 2086780912
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Props
-        ObjectType: 4
-      - ElementName: Prendre
-        ObjectType: 4
-      - ElementName: Play_PrendreVerre
-        ObjectType: 3
-      Path: Default Work Unit\Props\Prendre\Play_PrendreVerre
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Play_RandomFloor
+    - name: Play_RandomFloorRoom1
       guid: 9df422488071ce40853c249324ef4606
-      id: 3700147003
+      id: 43194319
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Ambient
         ObjectType: 4
-      - ElementName: Play_RandomFloor
+      - ElementName: Play_RandomFloorRoom1
         ObjectType: 3
-      Path: Default Work Unit\Ambient\Play_RandomFloor
+      Path: Default Work Unit\Ambient\Play_RandomFloorRoom1
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_RandomFloorRoom2
+      guid: 40a2786768eacf4298632b271f6ee33e
+      id: 43194316
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambient
+        ObjectType: 4
+      - ElementName: Play_RandomFloorRoom2
+        ObjectType: 3
+      Path: Default Work Unit\Ambient\Play_RandomFloorRoom2
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -501,6 +343,18 @@ MonoBehaviour:
       - ElementName: Play_StoreFerme
         ObjectType: 3
       Path: Default Work Unit\Play_StoreFerme
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_StoreFirst
+      guid: a178702047718b469343bd5e44d95c0e
+      id: 1931338449
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_StoreFirst
+        ObjectType: 3
+      Path: Default Work Unit\Play_StoreFirst
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -541,6 +395,18 @@ MonoBehaviour:
       - ElementName: Play_Ventilateur
         ObjectType: 3
       Path: Default Work Unit\Ambient\Play_Ventilateur
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Voiture
+      guid: cbe7152e65595a4fa4dbbf8f0685ba14
+      id: 2965495642
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Voiture
+        ObjectType: 3
+      Path: Default Work Unit\Play_Voiture
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -601,7 +467,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: e04d55784c355a49a4b3b2567860f9cf
     GuidInternal: 
-    m_lastTime: -8586428963909984574
+    m_lastTime: -8586425446526828421
     List:
     - name: Acceleration_Rot_RTPC
       guid: eada300522a9084aa01898b86269f857
@@ -764,7 +630,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: cf583aa02c766a46800db63ca387b0e0
     GuidInternal: 
-    m_lastTime: -8586443648887132186
+    m_lastTime: -8586425541405037871
     List:
     - name: GroundType
       guid: 9ce5a7ca826c5c4a8f079f13610f2ecf
@@ -793,6 +659,37 @@ MonoBehaviour:
         id: 1391533176
         PathAndIcons:
         - ElementName: Tapis
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: InMenu
+      guid: 810c5b74ce41b04db8d450dd6e115f8b
+      id: 3374585465
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: InMenu
+        ObjectType: 9
+      Path: Default Work Unit\InMenu
+      values:
+      - name: No
+        guid: 662186f259a63e4794c1b52427a10dd1
+        id: 1668749452
+        PathAndIcons:
+        - ElementName: No
+          ObjectType: 8
+      - name: None
+        guid: eb3b986e5d73eb4088cffb7ec44ecbcb
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Yes
+        guid: c0d6e43f7a5d4f4f8192c2b2ed755f88
+        id: 979470758
+        PathAndIcons:
+        - ElementName: Yes
           ObjectType: 8
       ValueGuids: []
       ValueIcons: []
@@ -833,7 +730,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 6bd9a0f29f6f2942b6a3168f45197355
     GuidInternal: 
-    m_lastTime: -8586428963910044401
+    m_lastTime: -8586425446359819657
     List:
     - name: Virage_Switch
       guid: 1a5697fffa2c05459650e970f614ea44
@@ -896,8 +793,8 @@ MonoBehaviour:
       Path: Default Work Unit\Trigger_Stin_Store
   ExpandedItems:
   - /AchromaticWwise
-  - /AchromaticWwise/Events
-  - /AchromaticWwise/Events/Default Work Unit
-  - /AchromaticWwise/Events/Default Work Unit/Ambient
+  - /AchromaticWwise/States
+  - /AchromaticWwise/States/Default Work Unit
+  - /AchromaticWwise/States/Default Work Unit/Navigation
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

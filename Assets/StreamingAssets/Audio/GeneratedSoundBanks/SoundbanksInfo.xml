@@ -34,14 +34,6 @@
 				<Event Id="2893389474" Name="Stop_TV" ObjectPath="\Events\Default Work Unit\Ambient\Stop_TV" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="7298924" Language="SFX">
-					<ShortName>BATTERIE-005.wav</ShortName>
-					<Path>SFX\BATTERIE-005_592D8723.wem</Path>
-				</File>
-				<File Id="15145248" Language="SFX">
-					<ShortName>VIBRA-002.wav</ShortName>
-					<Path>SFX\VIBRA-002_592D8723.wem</Path>
-				</File>
 				<File Id="16732554" Language="SFX">
 					<ShortName>PRENDRE FEUILLES-005.wav</ShortName>
 					<Path>SFX\PRENDRE FEUILLES-005_E37C7245.wem</Path>
@@ -53,10 +45,6 @@
 				<File Id="31236994" Language="SFX">
 					<ShortName>PARQUET-005.wav</ShortName>
 					<Path>SFX\PARQUET-005_E37C7245.wem</Path>
-				</File>
-				<File Id="35789335" Language="SFX">
-					<ShortName>BATTERIE-003.wav</ShortName>
-					<Path>SFX\BATTERIE-003_592D8723.wem</Path>
 				</File>
 				<File Id="63054959" Language="SFX">
 					<ShortName>PAS_PARQUET-008.wav</ShortName>
@@ -70,17 +58,9 @@
 					<ShortName>PAS_TAPIS-003.wav</ShortName>
 					<Path>SFX\PAS_TAPIS-003_E37C7245.wem</Path>
 				</File>
-				<File Id="87580081" Language="SFX">
-					<ShortName>VIBRA-005.wav</ShortName>
-					<Path>SFX\VIBRA-005_592D8723.wem</Path>
-				</File>
 				<File Id="120859536" Language="SFX">
 					<ShortName>PAS_PARQUET-003.wav</ShortName>
 					<Path>SFX\PAS_PARQUET-003_E37C7245.wem</Path>
-				</File>
-				<File Id="128360679" Language="SFX">
-					<ShortName>BATTERIE-004.wav</ShortName>
-					<Path>SFX\BATTERIE-004_592D8723.wem</Path>
 				</File>
 				<File Id="172074524" Language="SFX">
 					<ShortName>POSER FEUILLES-007.wav</ShortName>
@@ -130,10 +110,6 @@
 					<ShortName>PAS_PARQUET-005.wav</ShortName>
 					<Path>SFX\PAS_PARQUET-005_E37C7245.wem</Path>
 				</File>
-				<File Id="365159095" Language="SFX">
-					<ShortName>VIBRA-004.wav</ShortName>
-					<Path>SFX\VIBRA-004_592D8723.wem</Path>
-				</File>
 				<File Id="396302910" Language="SFX">
 					<ShortName>PARQUET-002.wav</ShortName>
 					<Path>SFX\PARQUET-002_E37C7245.wem</Path>
@@ -141,10 +117,6 @@
 				<File Id="397175661" Language="SFX">
 					<ShortName>ATOMSPHERE.wav</ShortName>
 					<Path>SFX\ATOMSPHERE_592D8723.wem</Path>
-				</File>
-				<File Id="406224302" Language="SFX">
-					<ShortName>CELLO-005.wav</ShortName>
-					<Path>SFX\CELLO-005_592D8723.wem</Path>
 				</File>
 				<File Id="408457289" Language="SFX">
 					<ShortName>STORE OUVERT-001.wav</ShortName>
@@ -166,9 +138,9 @@
 					<ShortName>PRENDRE FEUILLES-001.wav</ShortName>
 					<Path>SFX\PRENDRE FEUILLES-001_E37C7245.wem</Path>
 				</File>
-				<File Id="476890880" Language="SFX">
-					<ShortName>CELLO-002.wav</ShortName>
-					<Path>SFX\CELLO-002_592D8723.wem</Path>
+				<File Id="480456306" Language="SFX">
+					<ShortName>AchromaticIngame.wav</ShortName>
+					<Path>SFX\AchromaticIngame_592D8723.wem</Path>
 				</File>
 				<File Id="496174279" Language="SFX">
 					<ShortName>PAS_VIR_PARQUET-002.wav</ShortName>
@@ -182,10 +154,6 @@
 					<ShortName>TV_STATIC.wav</ShortName>
 					<Path>SFX\TV_STATIC_592D8723.wem</Path>
 				</File>
-				<File Id="551177651" Language="SFX">
-					<ShortName>BATTERIE-008.wav</ShortName>
-					<Path>SFX\BATTERIE-008_592D8723.wem</Path>
-				</File>
 				<File Id="567844903" Language="SFX">
 					<ShortName>STORE FERME-002.wav</ShortName>
 					<Path>SFX\STORE FERME-002_E37C7245.wem</Path>
@@ -193,10 +161,6 @@
 				<File Id="616207912" Language="SFX">
 					<ShortName>PRENDRE FEUILLES-007.wav</ShortName>
 					<Path>SFX\PRENDRE FEUILLES-007_E37C7245.wem</Path>
-				</File>
-				<File Id="623712756" Language="SFX">
-					<ShortName>CYMBALE-002.wav</ShortName>
-					<Path>SFX\CYMBALE-002_592D8723.wem</Path>
 				</File>
 				<File Id="630324738" Language="SFX">
 					<ShortName>POSER FEUILLES-001.wav</ShortName>
@@ -214,25 +178,13 @@
 					<ShortName>PAS_VIR_TAPIS-003.wav</ShortName>
 					<Path>SFX\PAS_VIR_TAPIS-003_39554315.wem</Path>
 				</File>
-				<File Id="677159568" Language="SFX">
-					<ShortName>PIANO-002.wav</ShortName>
-					<Path>SFX\PIANO-002_592D8723.wem</Path>
-				</File>
 				<File Id="678999355" Language="SFX">
 					<ShortName>PAS_VIR_TAPIS-002.wav</ShortName>
 					<Path>SFX\PAS_VIR_TAPIS-002_9A75D1D9.wem</Path>
 				</File>
-				<File Id="685759871" Language="SFX">
-					<ShortName>CYMBALE-001.wav</ShortName>
-					<Path>SFX\CYMBALE-001_592D8723.wem</Path>
-				</File>
 				<File Id="699570814" Language="SFX">
 					<ShortName>STORE OUVERT-002.wav</ShortName>
 					<Path>SFX\STORE OUVERT-002_E37C7245.wem</Path>
-				</File>
-				<File Id="702351034" Language="SFX">
-					<ShortName>BATTERIE-002.wav</ShortName>
-					<Path>SFX\BATTERIE-002_592D8723.wem</Path>
 				</File>
 				<File Id="709501363" Language="SFX">
 					<ShortName>PAS_PARQUET-004.wav</ShortName>
@@ -250,10 +202,6 @@
 					<ShortName>PAS_VIR_PARQUET-001.wav</ShortName>
 					<Path>SFX\PAS_VIR_PARQUET-001_65246965.wem</Path>
 				</File>
-				<File Id="768076036" Language="SFX">
-					<ShortName>BATTERIE-001.wav</ShortName>
-					<Path>SFX\BATTERIE-001_592D8723.wem</Path>
-				</File>
 				<File Id="770375327" Language="SFX">
 					<ShortName>HORLOGE.wav</ShortName>
 					<Path>SFX\HORLOGE_592D8723.wem</Path>
@@ -261,10 +209,6 @@
 				<File Id="771304780" Language="SFX">
 					<ShortName>LAMPE.wav</ShortName>
 					<Path>SFX\LAMPE_F6E1682A.wem</Path>
-				</File>
-				<File Id="784186395" Language="SFX">
-					<ShortName>BREAK_BATTERIE.wav</ShortName>
-					<Path>SFX\BREAK_BATTERIE_592D8723.wem</Path>
 				</File>
 				<File Id="790485113" Language="SFX">
 					<ShortName>PRENDRE FEUILLES-006.wav</ShortName>
@@ -278,17 +222,9 @@
 					<ShortName>AchromaticMenu.wav</ShortName>
 					<Path>SFX\AchromaticMenu_592D8723.wem</Path>
 				</File>
-				<File Id="834928987" Language="SFX">
-					<ShortName>VIBRA-003.wav</ShortName>
-					<Path>SFX\VIBRA-003_592D8723.wem</Path>
-				</File>
 				<File Id="846808034" Language="SFX">
 					<ShortName>PARQUET-003.wav</ShortName>
 					<Path>SFX\PARQUET-003_E37C7245.wem</Path>
-				</File>
-				<File Id="883840472" Language="SFX">
-					<ShortName>BATTERIE-007.wav</ShortName>
-					<Path>SFX\BATTERIE-007_592D8723.wem</Path>
 				</File>
 				<File Id="901382114" Language="SFX">
 					<ShortName>POSER FEUILLES-004.wav</ShortName>
@@ -297,26 +233,6 @@
 				<File Id="955207873" Language="SFX">
 					<ShortName>PAS_PARQUET-001.wav</ShortName>
 					<Path>SFX\PAS_PARQUET-001_E37C7245.wem</Path>
-				</File>
-				<File Id="989282167" Language="SFX">
-					<ShortName>PIANO-001.wav</ShortName>
-					<Path>SFX\PIANO-001_592D8723.wem</Path>
-				</File>
-				<File Id="994715476" Language="SFX">
-					<ShortName>CELLO-001.wav</ShortName>
-					<Path>SFX\CELLO-001_592D8723.wem</Path>
-				</File>
-				<File Id="1009252245" Language="SFX">
-					<ShortName>BATTERIE-006.wav</ShortName>
-					<Path>SFX\BATTERIE-006_592D8723.wem</Path>
-				</File>
-				<File Id="1010569367" Language="SFX">
-					<ShortName>CELLO-003.wav</ShortName>
-					<Path>SFX\CELLO-003_592D8723.wem</Path>
-				</File>
-				<File Id="1025221322" Language="SFX">
-					<ShortName>CELLO-004.wav</ShortName>
-					<Path>SFX\CELLO-004_592D8723.wem</Path>
 				</File>
 				<File Id="1028449394" Language="SFX">
 					<ShortName>PAS_VIR_PARQUET-003.wav</ShortName>
