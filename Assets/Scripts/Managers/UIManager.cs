@@ -98,6 +98,8 @@ public class UIManager : MonoBehaviour
     {
         onUI = true;
         Cursor.visible = true;
+        //LE SONDIER EVENT "IN MENU"
+        print("in menu");
         CursorUnlock();
     }
 
@@ -108,6 +110,8 @@ public class UIManager : MonoBehaviour
             _currentScreen.gameObject.SetActive(false);
             _currentScreen = null;
             onUI = false;
+            //LE SONDIER EVENT "OUT MENU"
+            print("out menu");
             Cursor.visible = false;
             CursorLock();
         }

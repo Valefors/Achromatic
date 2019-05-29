@@ -18,8 +18,6 @@ public class ChoiceScreen : MonoBehaviour
     }
     #endregion
 
-    public int test = 3;
-
     public void OnCulpritSelected(bool pIsCorrect)
     {
         if (pIsCorrect) print("Marco best husbando");
