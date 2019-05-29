@@ -7810,6 +7810,7 @@ GameObject:
   - component: {fileID: 173387993}
   - component: {fileID: 173387991}
   - component: {fileID: 173387992}
+  - component: {fileID: 173387994}
   m_Layer: 5
   m_Name: EndScreen
   m_TagString: Untagged
@@ -7906,6 +7907,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 173387989}
   m_CullTransparentMesh: 0
+--- !u!225 &173387994
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173387989}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &174026379
 GameObject:
   m_ObjectHideFlags: 0
@@ -31867,6 +31880,10 @@ MonoBehaviour:
   - {fileID: 994898377}
   - {fileID: 1577770926}
   _rawImage: {fileID: 173387992}
+  _videos:
+  - {fileID: 32900000, guid: 7a3debfe35f76884b8a501a4b032525c, type: 3}
+  - {fileID: 32900000, guid: 19d7b7da1ab80234d8b6ac3d3da3ba42, type: 3}
+  - {fileID: 32900000, guid: ed0dc3244c027d64c9427830c0cc1507, type: 3}
 --- !u!4 &626648026
 Transform:
   m_ObjectHideFlags: 0

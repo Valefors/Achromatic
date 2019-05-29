@@ -24,6 +24,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] VideoPlayer _videoPlayer;
     [SerializeField] Button[] _buttons;
     [SerializeField] RawImage _rawImage;
+    [SerializeField] VideoClip[] _videos;
 
     #region Singleton
     public static UIManager instance {
@@ -47,7 +48,7 @@ public class UIManager : MonoBehaviour
         CursorLock();
 
         AkSoundEngine.PostEvent("Play_Ambient", gameObject);
-        _videoPlayer.loopPointReached += ShowEndButtons;
+        //_videoPlayer.loopPointReached += ShowEndButtons;
     }
 
     // Update is called once per frame
@@ -75,12 +76,22 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    void ShowEndButtons(VideoPlayer e)
+    void EndVideo(VideoPlayer e)
     {
-        for(int i = 0; i < _buttons.Length; i++)
+        if(_videoPlayer.clip == _videos[0] || _videoPlayer.clip == _videos[1])
         {
-            _buttons[i].gameObject.SetActive(true);
+            _videoPlayer.clip = _videos[2];
+            StartCoroutine(PlayVideo());
         }
+
+        else
+        {
+           for(int i = 0; i < _buttons.Length; i++)
+           {
+             _buttons[i].gameObject.SetActive(true);
+           }   
+        }
+
     }
 
     void SetUIMode()
@@ -120,11 +131,17 @@ public class UIManager : MonoBehaviour
         SetUIMode();
     }
 
-    public void OnEndScreen()
+    public void OnEndScreen(bool pIsCorrect)
     {
         _currentScreen.gameObject.SetActive(false);
         _currentScreen = _endScreen;
+        StartCoroutine(StaticFunctions.FadeIn(result => _endScreen.GetComponent<CanvasGroup>().alpha = result, 0.5f));
         _currentScreen.gameObject.SetActive(true);
+
+        if (pIsCorrect) _videoPlayer.clip = _videos[0];
+        else _videoPlayer.clip = _videos[1];
+
+        _videoPlayer.loopPointReached += EndVideo;
         StartCoroutine(PlayVideo());
     }
 
