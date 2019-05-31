@@ -97,7 +97,8 @@ public class MenuManager : MonoBehaviour
         StartCoroutine(StaticFunctions.FadeOut(result => _FadeInOutPanel.GetComponent<CanvasGroup>().alpha = result, 0.1f));
         //_introPanel.GetComponent<Image>().sprite = _introImages[_introIndex];
         StartCoroutine(StaticFunctions.FadeIn(result => _introPanel.GetComponent<CanvasGroup>().alpha = result, 2f));
-        StreamVideo.instance.StartVideo();
+        VideoScreen.instance.PlayIntro();
+        //StreamVideo.instance.StartVideo();
 
         Invoke("EnableSkipButton", Utils.SKIP_DELAY);
         //_inIntro = true;
@@ -110,7 +111,7 @@ public class MenuManager : MonoBehaviour
         _skipButton.gameObject.SetActive(true);
     }
 
-    public void OnLoading(VideoPlayer e = null)
+    public void OnLoading()
     {
         StartCoroutine(StaticFunctions.FadeIn(result => _FadeInOutPanel.GetComponent<CanvasGroup>().alpha = result, 1f, LoadScene));
     }
