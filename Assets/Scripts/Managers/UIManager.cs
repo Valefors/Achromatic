@@ -48,7 +48,6 @@ public class UIManager : MonoBehaviour
         CursorLock();
 
         AkSoundEngine.PostEvent("Play_Ambient", gameObject);
-        //_videoPlayer.loopPointReached += ShowEndButtons;
     }
 
     // Update is called once per frame
@@ -76,7 +75,7 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    void EndVideo(VideoPlayer e)
+    /*void EndVideo(VideoPlayer e)
     {
         if(_videoPlayer.clip == _videos[0] || _videoPlayer.clip == _videos[1])
         {
@@ -92,6 +91,14 @@ public class UIManager : MonoBehaviour
            }   
         }
 
+    }*/
+
+    public void ShowEndButtons()
+    {
+        for (int i = 0; i < _buttons.Length; i++)
+        {
+            _buttons[i].gameObject.SetActive(true);
+        }
     }
 
     void SetUIMode()
@@ -142,11 +149,12 @@ public class UIManager : MonoBehaviour
         StartCoroutine(StaticFunctions.FadeIn(result => _endScreen.GetComponent<CanvasGroup>().alpha = result, 0.5f));
         _currentScreen.gameObject.SetActive(true);
 
-        if (pIsCorrect) _videoPlayer.clip = _videos[0];
+        VideoScreen.instance.PlayEnding(pIsCorrect);
+        /*if (pIsCorrect) _videoPlayer.clip = _videos[0];
         else _videoPlayer.clip = _videos[1];
 
         _videoPlayer.loopPointReached += EndVideo;
-        StartCoroutine(PlayVideo());
+        StartCoroutine(PlayVideo());*/
     }
 
     public void OnOptions()

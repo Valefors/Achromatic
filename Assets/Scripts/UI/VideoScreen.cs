@@ -27,7 +27,6 @@ public class VideoScreen : MonoBehaviour
 
     public void EndIntro()
     {
-        print("here");
         MenuManager.instance.OnLoading();
         _animator.SetBool("isIntro", false);
     }
@@ -42,5 +41,13 @@ public class VideoScreen : MonoBehaviour
     {
         _animator.SetBool("isGoodEnding", false);
         _animator.SetBool("isBadEnding", false);
+
+        _animator.SetBool("isCredits", true);
+    }
+
+    public void EndCredits()
+    {
+        UIManager.instance.ShowEndButtons();
+        _animator.SetBool("isCredits", false);
     }
 }

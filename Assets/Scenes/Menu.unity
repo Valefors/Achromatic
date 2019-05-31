@@ -2656,13 +2656,15 @@ Transform:
   - {fileID: 963903475}
   - {fileID: 144796599}
   - {fileID: 838499585}
+  - {fileID: 1547889282}
+  - {fileID: 645441324}
+  - {fileID: 912629596}
   - {fileID: 2101899180}
   - {fileID: 761523584}
-  - {fileID: 912629596}
+  - {fileID: 1564656740}
   - {fileID: 2021804038}
   - {fileID: 348691052}
   - {fileID: 1489877077}
-  - {fileID: 1564656740}
   - {fileID: 376896519}
   - {fileID: 1945105281}
   - {fileID: 851013786}
@@ -2681,6 +2683,7 @@ Transform:
   - {fileID: 1472130226}
   - {fileID: 456030173}
   - {fileID: 765244347}
+  - {fileID: 1381396422}
   - {fileID: 636594199}
   - {fileID: 1974580808}
   - {fileID: 573311480}
@@ -3019,9 +3022,10 @@ GameObject:
   - component: {fileID: 625994332}
   - component: {fileID: 625994335}
   - component: {fileID: 625994333}
-  - component: {fileID: 625994336}
-  - component: {fileID: 625994334}
   - component: {fileID: 625994337}
+  - component: {fileID: 625994336}
+  - component: {fileID: 625994338}
+  - component: {fileID: 625994334}
   m_Layer: 5
   m_Name: IntroPanel
   m_TagString: Untagged
@@ -3056,7 +3060,7 @@ VideoPlayer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 625994331}
-  m_Enabled: 1
+  m_Enabled: 0
   m_VideoClip: {fileID: 32900000, guid: 91b59cd0d0c592546b6b722e57b53363, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
@@ -3090,11 +3094,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 625994331}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ea07babf2351bb4992af5118569f23a, type: 3}
+  m_Script: {fileID: 11500000, guid: fad26ccceb2a51a468665d72faa6a4bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rawImage: {fileID: 625994336}
-  _videoPlayer: {fileID: 625994333}
+  _animator: {fileID: 625994338}
 --- !u!222 &625994335
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3112,7 +3115,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 625994331}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -3123,13 +3126,15 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 0}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!225 &625994337
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -3142,6 +3147,25 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!95 &625994338
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625994331}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a40826093731f1d4e8c28b3ae1b7c32c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &636594198
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7921,10 +7945,10 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 227413173}
         m_MethodName: OnLoading
-        m_Mode: 2
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 625994333}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoPlayer, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
