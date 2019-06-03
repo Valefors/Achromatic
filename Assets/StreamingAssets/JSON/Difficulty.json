@@ -258,6 +258,12 @@
     "difficult": "This polaroid is pretty fun."
   },
   
+  "LABEL_TV": {
+    "easy": "This TV is useless, I can turn it off.",    
+	  "normal": "This TV is useless, I can turn it off.",
+    "difficult": "This TV is useless, I can turn it off."
+  },
+  
   "LABEL_HAT": {
     "easy": "A bunch of hats.",    
 	  "normal": "A bunch of hats.",
