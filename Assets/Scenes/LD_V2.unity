@@ -1340,6 +1340,26 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: a3da27e9056306040a0e857e06e50918, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 325c0a3442fc40240b18b1242011dad1, type: 3}
+--- !u!1 &30081023 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 1a7e0578ec1c64b409740ccd5507f0f7,
+    type: 3}
+  m_PrefabInstance: {fileID: 2066050213}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &30081024
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30081023}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 1a7e0578ec1c64b409740ccd5507f0f7, type: 3}
 --- !u!4 &31588145 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6718287500128579704, guid: e4470f76d41418e46af0e8d87f982589,
@@ -3148,7 +3168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e822148e3f88fcc42adb2e4bc3cdb499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionLabel: 
+  interactionLabel: LABEL_BOOKSHELF
 --- !u!1001 &66575674
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -108592,7 +108612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ce03849bbcc85840ba9e30f63e67ce7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionLabel: 
+  interactionLabel: LABEL_TV
   _screenRenderer: {fileID: 1585289420}
   _televisionLight: {fileID: 829991550}
 --- !u!65 &2002697181
