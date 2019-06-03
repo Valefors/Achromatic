@@ -31,7 +31,6 @@ public class Cars : MonoBehaviour
             PlayAnimation();
             counter = 0;
             playRate = Random.Range(PLAY_RATE_MIN, PLAY_RATE_MAX);
-            print(playRate);
         }
     }
     
