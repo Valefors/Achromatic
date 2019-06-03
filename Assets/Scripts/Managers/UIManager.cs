@@ -2,7 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class UIManager : MonoBehaviour
 {
@@ -17,6 +19,12 @@ public class UIManager : MonoBehaviour
     [HideInInspector] public bool onUI = false; //When an UI thing is shown on screen
 
     RectTransform _currentScreen = null;
+
+    //End Screen
+    [SerializeField] VideoPlayer _videoPlayer;
+    [SerializeField] Button[] _buttons;
+    [SerializeField] RawImage _rawImage;
+    [SerializeField] VideoClip[] _videos;
 
     #region Singleton
     public static UIManager instance {
@@ -67,10 +75,38 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    /*void EndVideo(VideoPlayer e)
+    {
+        if(_videoPlayer.clip == _videos[0] || _videoPlayer.clip == _videos[1])
+        {
+            _videoPlayer.clip = _videos[2];
+            StartCoroutine(PlayVideo());
+        }
+
+        else
+        {
+           for(int i = 0; i < _buttons.Length; i++)
+           {
+             _buttons[i].gameObject.SetActive(true);
+           }   
+        }
+
+    }*/
+
+    public void ShowEndButtons()
+    {
+        for (int i = 0; i < _buttons.Length; i++)
+        {
+            _buttons[i].gameObject.SetActive(true);
+        }
+    }
+
     void SetUIMode()
     {
         onUI = true;
         Cursor.visible = true;
+        //LE SONDIER EVENT "IN MENU"
+        print("in menu");
         CursorUnlock();
     }
 
@@ -81,6 +117,8 @@ public class UIManager : MonoBehaviour
             _currentScreen.gameObject.SetActive(false);
             _currentScreen = null;
             onUI = false;
+            //LE SONDIER EVENT "OUT MENU"
+            print("out menu");
             Cursor.visible = false;
             CursorLock();
         }
@@ -104,11 +142,19 @@ public class UIManager : MonoBehaviour
         SetUIMode();
     }
 
-    public void OnEndScreen()
+    public void OnEndScreen(bool pIsCorrect)
     {
         _currentScreen.gameObject.SetActive(false);
         _currentScreen = _endScreen;
+        StartCoroutine(StaticFunctions.FadeIn(result => _endScreen.GetComponent<CanvasGroup>().alpha = result, 0.5f));
         _currentScreen.gameObject.SetActive(true);
+
+        VideoScreen.instance.PlayEnding(pIsCorrect);
+        /*if (pIsCorrect) _videoPlayer.clip = _videos[0];
+        else _videoPlayer.clip = _videos[1];
+
+        _videoPlayer.loopPointReached += EndVideo;
+        StartCoroutine(PlayVideo());*/
     }
 
     public void OnOptions()
@@ -143,5 +189,20 @@ public class UIManager : MonoBehaviour
     void CursorUnlock()
     {
         Cursor.lockState = CursorLockMode.None;
+    }
+
+    IEnumerator PlayVideo()
+    {
+        _videoPlayer.Prepare();
+        WaitForSeconds waitForSeconds = new WaitForSeconds(1);
+
+        while (!_videoPlayer.isPrepared)
+        {
+            yield return waitForSeconds;
+            break;
+        }
+
+        _rawImage.texture = _videoPlayer.texture;
+        _videoPlayer.Play();
     }
 }

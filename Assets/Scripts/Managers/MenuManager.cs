@@ -20,6 +20,8 @@ public class MenuManager : MonoBehaviour
     bool _inIntro = false;
     int _introIndex = 0;
 
+    [SerializeField] Animator _cameraAnimator;
+
     #region Singleton
     public static MenuManager instance {
         get { return _instance; }
@@ -31,13 +33,13 @@ public class MenuManager : MonoBehaviour
     {
         if (_instance == null) _instance = this;
         else Debug.LogError("AN INSTANCE ALREADY EXISTS");
-
     }
     #endregion
 
 
     private void Start()
     {
+        QualitySettings.SetQualityLevel(2);
         StartCoroutine(StaticFunctions.FadeOut(result => _FadeInOutPanel.GetComponent<CanvasGroup>().alpha = result, 0.5f, null));
         _currentPanel = _menuPanel;
         _skipButton.gameObject.SetActive(false);
@@ -47,12 +49,14 @@ public class MenuManager : MonoBehaviour
     {
         _selectedPanel = _menuPanel;
         DisableCurrentScreen();
+        _cameraAnimator.SetBool("isCredits", !_cameraAnimator.GetBool("isCredits"));
     }
 
     public void OnCredits()
     {
         _selectedPanel = _creditsPanel;
         DisableCurrentScreen();
+        _cameraAnimator.SetBool("isCredits", !_cameraAnimator.GetBool("isCredits"));
     }
 
     public void OnPlay()
@@ -93,7 +97,8 @@ public class MenuManager : MonoBehaviour
         StartCoroutine(StaticFunctions.FadeOut(result => _FadeInOutPanel.GetComponent<CanvasGroup>().alpha = result, 0.1f));
         //_introPanel.GetComponent<Image>().sprite = _introImages[_introIndex];
         StartCoroutine(StaticFunctions.FadeIn(result => _introPanel.GetComponent<CanvasGroup>().alpha = result, 2f));
-        StreamVideo.instance.StartVideo();
+        VideoScreen.instance.PlayIntro();
+        //StreamVideo.instance.StartVideo();
 
         Invoke("EnableSkipButton", Utils.SKIP_DELAY);
         //_inIntro = true;
@@ -106,7 +111,7 @@ public class MenuManager : MonoBehaviour
         _skipButton.gameObject.SetActive(true);
     }
 
-    public void OnLoading(VideoPlayer e = null)
+    public void OnLoading()
     {
         StartCoroutine(StaticFunctions.FadeIn(result => _FadeInOutPanel.GetComponent<CanvasGroup>().alpha = result, 1f, LoadScene));
     }

@@ -28,7 +28,7 @@ public class StreamVideo : MonoBehaviour
     public void StartVideo()
     {
         StartCoroutine(PlayVideo());
-        _videoPlayer.loopPointReached += MenuManager.instance.OnLoading;
+        //_videoPlayer.loopPointReached += MenuManager.instance.OnLoading;
     }
 
     IEnumerator PlayVideo()

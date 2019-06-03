@@ -18,13 +18,11 @@ public class ChoiceScreen : MonoBehaviour
     }
     #endregion
 
-    public int test = 3;
-
     public void OnCulpritSelected(bool pIsCorrect)
     {
         if (pIsCorrect) print("Marco best husbando");
         else print("Bayonetta best waifu");
 
-        UIManager.instance.OnEndScreen();
+        UIManager.instance.OnEndScreen(pIsCorrect);
     }
 }

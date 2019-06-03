@@ -7,9 +7,11 @@ ModelImporter:
     400000: //RootNode
     2100000: lambert14
     2100002: lambert2
+    2100004: lambert1
     2300000: //RootNode
     3300000: //RootNode
     4300000: Frame
+    4300002: pCube11
   externalObjects: {}
   materials:
     importMaterials: 1

@@ -97,8 +97,8 @@ public class RotatingInteractable : Interactable
                 break;
 
             case Enums.ERotatingType.NONE:
-                if (pIsTaking) print("CORENTIN: SON GENERIQUE");
-                else print("CORENTIN: POSER GENERIQUE");
+                if (pIsTaking) AkSoundEngine.PostEvent("Play_PrendreFeuille", gameObject);
+                else AkSoundEngine.PostEvent("Play_PoserFeuille", gameObject);
                 break;
         }
     }
