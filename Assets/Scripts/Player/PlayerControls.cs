@@ -96,7 +96,7 @@ public class PlayerControls : MonoBehaviour
             if (_isFinishedWalk)
             {
                 //CORENTIN ARRETE DE MARCHER
-                print("stop");
+                AkSoundEngine.PostEvent("Player_Stop", gameObject);
                 footstepTimer = 0;
                 _isFinishedWalk = false;
             }

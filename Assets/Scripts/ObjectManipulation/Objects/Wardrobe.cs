@@ -42,5 +42,6 @@ public class Wardrobe : Interactable
     {
         if (_animator != null) _animator.SetBool("IsOpen", true);
         //CORENTIN : OUVRE ARMOIRE
+        AkSoundEngine.PostEvent("Play_Armoire_Ouvrir", gameObject);
     }
 }
