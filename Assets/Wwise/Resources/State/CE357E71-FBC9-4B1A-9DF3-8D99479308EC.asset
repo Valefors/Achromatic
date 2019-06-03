@@ -15,4 +15,5 @@ MonoBehaviour:
   objectName: Ingame
   id: 984691642
   guid: CE357E71-FBC9-4B1A-9DF3-8D99479308EC
-  WwiseStateGroupReference: {fileID: 0}
+  WwiseStateGroupReference: {fileID: 11400000, guid: eff1e7d77e7afc54984c31c02958bd3f,
+    type: 2}

@@ -96,6 +96,7 @@ public class PlayerControls : MonoBehaviour
             if (_isFinishedWalk)
             {
                 //CORENTIN ARRETE DE MARCHER
+                AkSoundEngine.PostEvent("Player_Stop", gameObject);
                 footstepTimer = 0;
                 _isFinishedWalk = false;
             }
@@ -195,6 +196,7 @@ public class PlayerControls : MonoBehaviour
         if(footstepTimer >= FOOTSTEP_RATE)
         {
             //CORENTIN FOOTSTEPS
+            AkSoundEngine.PostEvent("Player_Move", gameObject);
             footstepTimer = 0;
         }
     }

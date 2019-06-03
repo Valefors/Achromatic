@@ -218,7 +218,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: ea02e87e1b1f2b43a3a880b8176a3219
     GuidInternal: 
-    m_lastTime: -8586425428292481294
+    m_lastTime: -8586420448575799231
     List:
     - name: Play_Ambient
       guid: ebb2121b08340c4a9881a2f0023c9f54
@@ -793,6 +793,9 @@ MonoBehaviour:
       Path: Default Work Unit\Trigger_Stin_Store
   ExpandedItems:
   - /AchromaticWwise
+  - /AchromaticWwise/Events
+  - /AchromaticWwise/Events/Default Work Unit
+  - /AchromaticWwise/Events/Default Work Unit/Ambient
   - /AchromaticWwise/States
   - /AchromaticWwise/States/Default Work Unit
   - /AchromaticWwise/States/Default Work Unit/Navigation
