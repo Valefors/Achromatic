@@ -49,8 +49,8 @@
 
   "LABEL_FRAMECLUE": {
     "easy": "I'm pretty sure there's something behind it.",
-	  "normal": "A modern art painting. Pretty nice.",
-    "difficult": "A modern art painting."
+	  "normal": "Modern Art. Pretty nice.",
+    "difficult": "Modern art."
   },
 
   "LABEL_SECRET_WARDROBE": {
@@ -80,7 +80,7 @@
   "LABEL_BOOKSHELF": {
     "easy": "A whole bunch of books, nothing interesting",
 	  "normal": "A whole bunch of books.",
-    "difficult": "A well-furnished libraries."
+    "difficult": "A well-furnished library."
   },
 
   "LABEL_CIGARETTE": {
@@ -102,9 +102,9 @@
   },
 
   "LABEL_GOOD_NEWSPAPER": {
-    "easy": "Sometimes news are good.",
-	  "normal": "Sometimes news are good.",
-    "difficult": "Sometimes news are good."
+    "easy": "Sometimes the news are good.",
+	  "normal": "Sometimes the news are good.",
+    "difficult": "Sometimes the news are good."
   },
 
   "LABEL_BAD_NEWSPAPER": {
@@ -126,7 +126,7 @@
   },
 
   "LABEL_BROKENBLINDS": {
-    "easy": "The blinds have been broken. Is it the case for all?",    
+    "easy": "The blinds have been broken. Is it the case for all of them?",    
 	"normal": "The blinds have been broken.",
     "difficult": "The blinds have been broken."
   },
@@ -144,15 +144,15 @@
   },
   
   "LABEL_PAPER2": {
-    "easy": "A lot of paper. nothing important.",    
-	  "normal": "A lot of paper.",
-    "difficult": "Is it a murderer or a scriptwritter?"
+    "easy": "A lot of papers. nothing important.",    
+	  "normal": "A lot of papers.",
+    "difficult": "Is it a murderer or a scriptwriter?"
   },
 
   "LABEL_BOOKP2": {
     "easy": "Nothing but a regular book.",    
 	"normal": "A regular book.",
-    "difficult": "The culprit reads and writtes a lot."
+    "difficult": "The culprit reads and writes a lot."
   },
   
   "LABEL_PACKET": {
