@@ -96,6 +96,7 @@ public class PlayerControls : MonoBehaviour
             if (_isFinishedWalk)
             {
                 //CORENTIN ARRETE DE MARCHER
+                print("stop");
                 footstepTimer = 0;
                 _isFinishedWalk = false;
             }
@@ -114,6 +115,7 @@ public class PlayerControls : MonoBehaviour
         if (!_isFinishedWalk)
         {
             _isFinishedWalk = true;
+            print("pas");
         }
 
         // transform.position += transform.forward * Time.deltaTime * _speed * _moveVector.y;
@@ -123,8 +125,6 @@ public class PlayerControls : MonoBehaviour
         speed += transform.forward * _speed * _moveVector.y;
         speed += transform.right * _speed * _moveVector.x;
         _rb.velocity = speed;
-
-        FootStepSound();
     }
 
     void HideFTUE()
@@ -188,14 +188,4 @@ public class PlayerControls : MonoBehaviour
         StartCoroutine(StaticFunctions.ChangeLightSettings(_lightSpot, Utils.lightColor, Utils.TURN_ON_LIGHT_DELAY - 10));
     }
 
-    void FootStepSound()
-    {
-        footstepTimer++;
-
-        if(footstepTimer >= FOOTSTEP_RATE)
-        {
-            //CORENTIN FOOTSTEPS
-            footstepTimer = 0;
-        }
-    }
 }

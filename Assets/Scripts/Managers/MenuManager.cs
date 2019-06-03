@@ -39,6 +39,7 @@ public class MenuManager : MonoBehaviour
 
     private void Start()
     {
+        QualitySettings.SetQualityLevel(2);
         StartCoroutine(StaticFunctions.FadeOut(result => _FadeInOutPanel.GetComponent<CanvasGroup>().alpha = result, 0.5f, null));
         _currentPanel = _menuPanel;
         _skipButton.gameObject.SetActive(false);
