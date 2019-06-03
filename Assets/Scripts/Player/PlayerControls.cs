@@ -115,7 +115,7 @@ public class PlayerControls : MonoBehaviour
         if (!_isFinishedWalk)
         {
             _isFinishedWalk = true;
-            print("pas");
+            AkSoundEngine.PostEvent("Player_Move", gameObject);
         }
 
         // transform.position += transform.forward * Time.deltaTime * _speed * _moveVector.y;
