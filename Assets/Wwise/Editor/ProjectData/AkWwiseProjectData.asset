@@ -184,7 +184,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: d1df59b071e17c4c95f5ddc6a5e0be58
     GuidInternal: 
-    m_lastTime: -8586437663668854815
+    m_lastTime: -8586419693280893633
     List:
     - name: Reverb
       guid: 9263142e18d79640baff8d934ec71912
@@ -796,8 +796,5 @@ MonoBehaviour:
   - /AchromaticWwise/Events
   - /AchromaticWwise/Events/Default Work Unit
   - /AchromaticWwise/Events/Default Work Unit/Ambient
-  - /AchromaticWwise/States
-  - /AchromaticWwise/States/Default Work Unit
-  - /AchromaticWwise/States/Default Work Unit/Navigation
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
