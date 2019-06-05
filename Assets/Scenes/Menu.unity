@@ -1567,8 +1567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09146450144b3ca49acb7b924c2015aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _difficultySentence: You will be a bit guided throughout the game. It might deteriorate
-    your experience.
+  _difficultySentence: You will be a bit guided throughout the game.
   _sentence: {fileID: 1542006137}
 --- !u!4 &308566909 stripped
 Transform:
@@ -2611,8 +2610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09146450144b3ca49acb7b924c2015aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _difficultySentence: You will be very guided throughout the game. It might deteriorate
-    your experience.
+  _difficultySentence: You will be very guided throughout the game.
   _sentence: {fileID: 1542006137}
 --- !u!1 &487493944
 GameObject:
@@ -7864,7 +7862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09146450144b3ca49acb7b924c2015aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _difficultySentence: You will receive no guidance. The experience as it was intended.
+  _difficultySentence: You will receive no guidance.
   _sentence: {fileID: 1542006137}
 --- !u!1001 &1564656739
 PrefabInstance:
@@ -8093,7 +8091,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1591508757
 RectTransform:
   m_ObjectHideFlags: 0
