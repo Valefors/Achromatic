@@ -1,0 +1,62 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2654804740	Virage_Switch			\Default Work Unit\Virage_Switch	
+
+Switch	ID	Name	Switch Group			Notes
+	930712164	Off	Virage_Switch			
+	1651971902	On	Virage_Switch			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1082482811	Navigation			\Default Work Unit\Navigation	
+	2835351336	GroundType			\Default Work Unit\GroundType	
+	3374585465	InMenu			\Default Work Unit\InMenu	
+
+State	ID	Name	State Group			Notes
+	0	None	Navigation			
+	984691642	Ingame	Navigation			
+	2607556080	Menu	Navigation			
+	0	None	GroundType			
+	1391533176	Tapis	GroundType			
+	1791601991	Parquet	GroundType			
+	0	None	InMenu			
+	979470758	Yes	InMenu			
+	1668749452	No	InMenu			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	504532776	Brick			\Factory Reflect Acoustic Textures\Textures\Brick	
+	513139656	Mountain			\Factory Reflect Acoustic Textures\Textures\Mountain	
+	841620460	Concrete			\Factory Reflect Acoustic Textures\Textures\Concrete	
+	1755085759	Wood_Deep			\Factory Reflect Acoustic Textures\Textures\Wood_Deep	
+	1873957695	Anechoic			\Factory Reflect Acoustic Textures\Textures\Anechoic	
+	1970351858	Fabric			\Factory Reflect Acoustic Textures\Textures\Fabric	
+	2058049674	Wood			\Factory Reflect Acoustic Textures\Textures\Wood	
+	2412606308	Carpet			\Factory Reflect Acoustic Textures\Textures\Carpet	
+	2637588553	Tile			\Factory Reflect Acoustic Textures\Textures\Tile	
+	2928161104	Curtains			\Factory Reflect Acoustic Textures\Textures\Curtains	
+	3195498748	Cork_Tiles			\Factory Reflect Acoustic Textures\Textures\Cork_Tiles	
+	3411313193	TVSideChain			\Default Work Unit\TVSideChain	
+	3670307564	Drywall			\Factory Reflect Acoustic Textures\Textures\Drywall	
+	4168643977	Acoustic_Banner			\Factory Reflect Acoustic Textures\Textures\Acoustic_Banner	
+	4262522749	Wood_Bright			\Factory Reflect Acoustic Textures\Textures\Wood_Bright	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	77978275	Ambient			\Default Work Unit\Master Audio Bus\Ambient	
+	368632229	SFXAuro			\Default Work Unit\Master Audio Bus\SFXAuro	
+	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	1436086644	TV_STATIC			\Default Work Unit\Master Audio Bus\Ambient\TV_STATIC	
+	3108572563	TV_EMIT			\Default Work Unit\Master Audio Bus\Ambient\TV_EMIT	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	348963605	Reverb			\Default Work Unit\Master Audio Bus\Reverb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	44452220	Wwise_RoomVerb_(Custom)	Wwise RoomVerb			
+	419691232	New_Wwise_Recorder	Wwise Recorder			
+	460852095	Auro_Headphone_(Custom)	Auro Headphone			
+	674224535	Wwise_Meter_(Custom)	Wwise Meter			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

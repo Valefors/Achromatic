@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
+	<RootPaths>
+		<ProjectRoot>C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="534561221" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\MainSoundbank</ObjectPath>
+			<ShortName>MainSoundbank</ShortName>
+			<Path>MainSoundbank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1562304622" Name="Play_Ambient" ObjectPath="\Events\Default Work Unit\Ambient\Play_Ambient"/>
+				<Event Id="1778446475" Name="Play_Armoire_Ouvrir" ObjectPath="\Events\Default Work Unit\Play_Armoire_Ouvrir"/>
+				<Event Id="1086738306" Name="Play_Horloge" ObjectPath="\Events\Default Work Unit\Ambient\Play_Horloge" MaxAttenuation="100.000000"/>
+				<Event Id="2119672069" Name="Play_Lampe" ObjectPath="\Events\Default Work Unit\Ambient\Play_Lampe" MaxAttenuation="4.000000"/>
+				<Event Id="3817844813" Name="Play_PoserFeuille" ObjectPath="\Events\Default Work Unit\Props\Poser\Play_PoserFeuille"/>
+				<Event Id="2702842750" Name="Play_PrendreFeuille" ObjectPath="\Events\Default Work Unit\Props\Prendre\Play_PrendreFeuille"/>
+				<Event Id="43194319" Name="Play_RandomFloorRoom1" ObjectPath="\Events\Default Work Unit\Ambient\Play_RandomFloorRoom1" MaxAttenuation="30.000000"/>
+				<Event Id="43194316" Name="Play_RandomFloorRoom2" ObjectPath="\Events\Default Work Unit\Ambient\Play_RandomFloorRoom2" MaxAttenuation="30.000000"/>
+				<Event Id="3535750338" Name="Play_StoreFerme" ObjectPath="\Events\Default Work Unit\Play_StoreFerme"/>
+				<Event Id="3670131286" Name="Play_StoreOuvre" ObjectPath="\Events\Default Work Unit\Play_StoreOuvre"/>
+				<Event Id="2027969872" Name="Play_TV" ObjectPath="\Events\Default Work Unit\Ambient\Play_TV" MaxAttenuation="20.000000"/>
+				<Event Id="3013956005" Name="Play_Ventilateur" ObjectPath="\Events\Default Work Unit\Ambient\Play_Ventilateur" MaxAttenuation="10.000000"/>
+				<Event Id="2248092158" Name="Player_Move" ObjectPath="\Events\Default Work Unit\Player_Move"/>
+				<Event Id="3361170585" Name="Player_Stop" ObjectPath="\Events\Default Work Unit\Player_Stop" MaxAttenuation="0.000000"/>
+				<Event Id="3827058668" Name="StartMusic" ObjectPath="\Events\Default Work Unit\Ambient\StartMusic"/>
+				<Event Id="2893389474" Name="Stop_TV" ObjectPath="\Events\Default Work Unit\Ambient\Stop_TV" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="15145248" Language="SFX">
+					<ShortName>VIBRA-002.wav</ShortName>
+					<Path>SFX\VIBRA-002_592D8723.wem</Path>
+				</File>
+				<File Id="16732554" Language="SFX">
+					<ShortName>PRENDRE FEUILLES-005.wav</ShortName>
+					<Path>SFX\PRENDRE FEUILLES-005_E37C7245.wem</Path>
+				</File>
+				<File Id="26001599" Language="SFX">
+					<ShortName>PAS_TAPIS-004.wav</ShortName>
+					<Path>SFX\PAS_TAPIS-004_E37C7245.wem</Path>
+				</File>
+				<File Id="31236994" Language="SFX">
+					<ShortName>PARQUET-005.wav</ShortName>
+					<Path>SFX\PARQUET-005_E37C7245.wem</Path>
+				</File>
+				<File Id="63054959" Language="SFX">
+					<ShortName>PAS_PARQUET-008.wav</ShortName>
+					<Path>SFX\PAS_PARQUET-008_E37C7245.wem</Path>
+				</File>
+				<File Id="69543352" Language="SFX">
+					<ShortName>TV_EMIT.wav</ShortName>
+					<Path>SFX\TV_EMIT_592D8723.wem</Path>
+				</File>
+				<File Id="78367018" Language="SFX">
+					<ShortName>3M-DRUMS-B.wav</ShortName>
+					<Path>SFX\3M-DRUMS-B_592D8723.wem</Path>
+				</File>
+				<File Id="82006706" Language="SFX">
+					<ShortName>8M-Drums-A.wav</ShortName>
+					<Path>SFX\8M-Drums-A_592D8723.wem</Path>
+				</File>
+				<File Id="82715971" Language="SFX">
+					<ShortName>2M-DRUMS-B.wav</ShortName>
+					<Path>SFX\2M-DRUMS-B_592D8723.wem</Path>
+				</File>
+				<File Id="84516584" Language="SFX">
+					<ShortName>PAS_TAPIS-003.wav</ShortName>
+					<Path>SFX\PAS_TAPIS-003_E37C7245.wem</Path>
+				</File>
+				<File Id="87580081" Language="SFX">
+					<ShortName>VIBRA-005.wav</ShortName>
+					<Path>SFX\VIBRA-005_592D8723.wem</Path>
+				</File>
+				<File Id="101036067" Language="SFX">
+					<ShortName>3M-DRUMS-A.wav</ShortName>
+					<Path>SFX\3M-DRUMS-A_592D8723.wem</Path>
+				</File>
+				<File Id="120859536" Language="SFX">
+					<ShortName>PAS_PARQUET-003.wav</ShortName>
+					<Path>SFX\PAS_PARQUET-003_E37C7245.wem</Path>
+				</File>
+				<File Id="122317180" Language="SFX">
+					<ShortName>8M-DRUMS.wav</ShortName>
+					<Path>SFX\8M-DRUMS_592D8723.wem</Path>
+				</File>
+				<File Id="172074524" Language="SFX">
+					<ShortName>POSER FEUILLES-007.wav</ShortName>
+					<Path>SFX\POSER FEUILLES-007_E37C7245.wem</Path>
+				</File>
+				<File Id="197736451" Language="SFX">
+					<ShortName>PAS_TAPIS-006.wav</ShortName>
+					<Path>SFX\PAS_TAPIS-006_E37C7245.wem</Path>
+				</File>
+				<File Id="206253310" Language="SFX">
+					<ShortName>PRENDRE FEUILLES-002.wav</ShortName>
+					<Path>SFX\PRENDRE FEUILLES-002_E37C7245.wem</Path>
+				</File>
+				<File Id="208655312" Language="SFX">
+					<ShortName>POSER FEUILLES-002.wav</ShortName>
+					<Path>SFX\POSER FEUILLES-002_E37C7245.wem</Path>
+				</File>
+				<File Id="220853139" Language="SFX">
+					<ShortName>PRENDRE FEUILLES-003.wav</ShortName>
+					<Path>SFX\PRENDRE FEUILLES-003_E37C7245.wem</Path>
+				</File>
+				<File Id="223175520" Language="SFX">
+					<ShortName>PAS_TAPIS-007.wav</ShortName>
+					<Path>SFX\PAS_TAPIS-007_CFAE6DCF.wem</Path>
+				</File>
+				<File Id="232012727" Language="SFX">
+					<ShortName>ARMOIRE_OUVRIR.wav</ShortName>
+					<Path>SFX\ARMOIRE_OUVRIR_362B864C.wem</Path>
+				</File>
+				<File Id="255926729" Language="SFX">
+					<ShortName>POSER FEUILLES-005.wav</ShortName>
+					<Path>SFX\POSER FEUILLES-005_E37C7245.wem</Path>
+				</File>
+				<File Id="311511211" Language="SFX">
+					<ShortName>VENTILATEUR.wav</ShortName>
+					<Path>SFX\VENTILATEUR_664BF079.wem</Path>
+				</File>
+				<File Id="333321032" Language="SFX">
+					<ShortName>PAS_VIR_TAPIS-001.wav</ShortName>
+					<Path>SFX\PAS_VIR_TAPIS-001_24CCD0BE.wem</Path>
+				</File>
+				<File Id="333576624" Language="SFX">
+					<ShortName>PAS_PARQUET-007.wav</ShortName>
+					<Path>SFX\PAS_PARQUET-007_44D00457.wem</Path>
+				</File>
+				<File Id="358498210" Language="SFX">
+					<ShortName>PAS_PARQUET-005.wav</ShortName>
+					<Path>SFX\PAS_PARQUET-005_E37C7245.wem</Path>
+				</File>
+				<File Id="365159095" Language="SFX">
+					<ShortName>VIBRA-004.wav</ShortName>
+					<Path>SFX\VIBRA-004_592D8723.wem</Path>
+				</File>
+				<File Id="396302910" Language="SFX">
+					<ShortName>PARQUET-002.wav</ShortName>
+					<Path>SFX\PARQUET-002_E37C7245.wem</Path>
+				</File>
+				<File Id="397175661" Language="SFX">
+					<ShortName>ATOMSPHERE.wav</ShortName>
+					<Path>SFX\ATOMSPHERE_592D8723.wem</Path>
+				</File>
+				<File Id="406224302" Language="SFX">
+					<ShortName>CELLO-005.wav</ShortName>
+					<Path>SFX\CELLO-005_592D8723.wem</Path>
+				</File>
+				<File Id="408457289" Language="SFX">
+					<ShortName>STORE OUVERT-001.wav</ShortName>
+					<Path>SFX\STORE OUVERT-001_E37C7245.wem</Path>
+				</File>
+				<File Id="410541730" Language="SFX">
+					<ShortName>PARQUET-001.wav</ShortName>
+					<Path>SFX\PARQUET-001_E37C7245.wem</Path>
+				</File>
+				<File Id="413286709" Language="SFX">
+					<ShortName>PAS_TAPIS-002.wav</ShortName>
+					<Path>SFX\PAS_TAPIS-002_E37C7245.wem</Path>
+				</File>
+				<File Id="442043567" Language="SFX">
+					<ShortName>PAS_PARQUET-002.wav</ShortName>
+					<Path>SFX\PAS_PARQUET-002_E37C7245.wem</Path>
+				</File>
+				<File Id="457266610" Language="SFX">
+					<ShortName>PRENDRE FEUILLES-001.wav</ShortName>
+					<Path>SFX\PRENDRE FEUILLES-001_E37C7245.wem</Path>
+				</File>
+				<File Id="476890880" Language="SFX">
+					<ShortName>CELLO-002.wav</ShortName>
+					<Path>SFX\CELLO-002_592D8723.wem</Path>
+				</File>
+				<File Id="478430815" Language="SFX">
+					<ShortName>8M-Drums-Calm.wav</ShortName>
+					<Path>SFX\8M-Drums-Calm_592D8723.wem</Path>
+				</File>
+				<File Id="496174279" Language="SFX">
+					<ShortName>PAS_VIR_PARQUET-002.wav</ShortName>
+					<Path>SFX\PAS_VIR_PARQUET-002_9E58EA70.wem</Path>
+				</File>
+				<File Id="504107070" Language="SFX">
+					<ShortName>2M-DRUMS-A.wav</ShortName>
+					<Path>SFX\2M-DRUMS-A_592D8723.wem</Path>
+				</File>
+				<File Id="526710311" Language="SFX">
+					<ShortName>CELLO-006.wav</ShortName>
+					<Path>SFX\CELLO-006_592D8723.wem</Path>
+				</File>
+				<File Id="538196052" Language="SFX">
+					<ShortName>POSER FEUILLES-003.wav</ShortName>
+					<Path>SFX\POSER FEUILLES-003_E37C7245.wem</Path>
+				</File>
+				<File Id="545437078" Language="SFX">
+					<ShortName>TV_STATIC.wav</ShortName>
+					<Path>SFX\TV_STATIC_592D8723.wem</Path>
+				</File>
+				<File Id="567844903" Language="SFX">
+					<ShortName>STORE FERME-002.wav</ShortName>
+					<Path>SFX\STORE FERME-002_E37C7245.wem</Path>
+				</File>
+				<File Id="616207912" Language="SFX">
+					<ShortName>PRENDRE FEUILLES-007.wav</ShortName>
+					<Path>SFX\PRENDRE FEUILLES-007_E37C7245.wem</Path>
+				</File>
+				<File Id="623712756" Language="SFX">
+					<ShortName>CYMBALE-002.wav</ShortName>
+					<Path>SFX\CYMBALE-002_592D8723.wem</Path>
+				</File>
+				<File Id="630324738" Language="SFX">
+					<ShortName>POSER FEUILLES-001.wav</ShortName>
+					<Path>SFX\POSER FEUILLES-001_E37C7245.wem</Path>
+				</File>
+				<File Id="662016114" Language="SFX">
+					<ShortName>PARQUET-004.wav</ShortName>
+					<Path>SFX\PARQUET-004_E37C7245.wem</Path>
+				</File>
+				<File Id="668488317" Language="SFX">
+					<ShortName>PAS_TAPIS-005.wav</ShortName>
+					<Path>SFX\PAS_TAPIS-005_E37C7245.wem</Path>
+				</File>
+				<File Id="671581795" Language="SFX">
+					<ShortName>PAS_VIR_TAPIS-003.wav</ShortName>
+					<Path>SFX\PAS_VIR_TAPIS-003_39554315.wem</Path>
+				</File>
+				<File Id="677159568" Language="SFX">
+					<ShortName>PIANO-002.wav</ShortName>
+					<Path>SFX\PIANO-002_592D8723.wem</Path>
+				</File>
+				<File Id="678999355" Language="SFX">
+					<ShortName>PAS_VIR_TAPIS-002.wav</ShortName>
+					<Path>SFX\PAS_VIR_TAPIS-002_9A75D1D9.wem</Path>
+				</File>
+				<File Id="685759871" Language="SFX">
+					<ShortName>CYMBALE-001.wav</ShortName>
+					<Path>SFX\CYMBALE-001_592D8723.wem</Path>
+				</File>
+				<File Id="699570814" Language="SFX">
+					<ShortName>STORE OUVERT-002.wav</ShortName>
+					<Path>SFX\STORE OUVERT-002_E37C7245.wem</Path>
+				</File>
+				<File Id="702351034" Language="SFX">
+					<ShortName>BATTERIE-002.wav</ShortName>
+					<Path>SFX\BATTERIE-002_592D8723.wem</Path>
+				</File>
+				<File Id="709501363" Language="SFX">
+					<ShortName>PAS_PARQUET-004.wav</ShortName>
+					<Path>SFX\PAS_PARQUET-004_E37C7245.wem</Path>
+				</File>
+				<File Id="754932003" Language="SFX">
+					<ShortName>PAS_TAPIS-001.wav</ShortName>
+					<Path>SFX\PAS_TAPIS-001_E37C7245.wem</Path>
+				</File>
+				<File Id="755229790" Language="SFX">
+					<ShortName>PRENDRE FEUILLES-004.wav</ShortName>
+					<Path>SFX\PRENDRE FEUILLES-004_E37C7245.wem</Path>
+				</File>
+				<File Id="758920501" Language="SFX">
+					<ShortName>PAS_VIR_PARQUET-001.wav</ShortName>
+					<Path>SFX\PAS_VIR_PARQUET-001_65246965.wem</Path>
+				</File>
+				<File Id="768076036" Language="SFX">
+					<ShortName>BATTERIE-001.wav</ShortName>
+					<Path>SFX\BATTERIE-001_592D8723.wem</Path>
+				</File>
+				<File Id="770375327" Language="SFX">
+					<ShortName>HORLOGE.wav</ShortName>
+					<Path>SFX\HORLOGE_592D8723.wem</Path>
+				</File>
+				<File Id="771304780" Language="SFX">
+					<ShortName>LAMPE.wav</ShortName>
+					<Path>SFX\LAMPE_F6E1682A.wem</Path>
+				</File>
+				<File Id="784186395" Language="SFX">
+					<ShortName>BREAK_BATTERIE.wav</ShortName>
+					<Path>SFX\BREAK_BATTERIE_592D8723.wem</Path>
+				</File>
+				<File Id="790485113" Language="SFX">
+					<ShortName>PRENDRE FEUILLES-006.wav</ShortName>
+					<Path>SFX\PRENDRE FEUILLES-006_E37C7245.wem</Path>
+				</File>
+				<File Id="818942271" Language="SFX">
+					<ShortName>STORE FERME-001.wav</ShortName>
+					<Path>SFX\STORE FERME-001_E37C7245.wem</Path>
+				</File>
+				<File Id="823889252" Language="SFX">
+					<ShortName>AchromaticMenu.wav</ShortName>
+					<Path>SFX\AchromaticMenu_592D8723.wem</Path>
+				</File>
+				<File Id="834928987" Language="SFX">
+					<ShortName>VIBRA-003.wav</ShortName>
+					<Path>SFX\VIBRA-003_592D8723.wem</Path>
+				</File>
+				<File Id="846808034" Language="SFX">
+					<ShortName>PARQUET-003.wav</ShortName>
+					<Path>SFX\PARQUET-003_E37C7245.wem</Path>
+				</File>
+				<File Id="870200057" Language="SFX">
+					<ShortName>8M-Drums-B.wav</ShortName>
+					<Path>SFX\8M-Drums-B_592D8723.wem</Path>
+				</File>
+				<File Id="901382114" Language="SFX">
+					<ShortName>POSER FEUILLES-004.wav</ShortName>
+					<Path>SFX\POSER FEUILLES-004_E37C7245.wem</Path>
+				</File>
+				<File Id="955207873" Language="SFX">
+					<ShortName>PAS_PARQUET-001.wav</ShortName>
+					<Path>SFX\PAS_PARQUET-001_E37C7245.wem</Path>
+				</File>
+				<File Id="989282167" Language="SFX">
+					<ShortName>PIANO-001.wav</ShortName>
+					<Path>SFX\PIANO-001_592D8723.wem</Path>
+				</File>
+				<File Id="994715476" Language="SFX">
+					<ShortName>CELLO-001.wav</ShortName>
+					<Path>SFX\CELLO-001_592D8723.wem</Path>
+				</File>
+				<File Id="1009252245" Language="SFX">
+					<ShortName>BATTERIE-006.wav</ShortName>
+					<Path>SFX\BATTERIE-006_592D8723.wem</Path>
+				</File>
+				<File Id="1010569367" Language="SFX">
+					<ShortName>CELLO-003.wav</ShortName>
+					<Path>SFX\CELLO-003_592D8723.wem</Path>
+				</File>
+				<File Id="1025221322" Language="SFX">
+					<ShortName>CELLO-004.wav</ShortName>
+					<Path>SFX\CELLO-004_592D8723.wem</Path>
+				</File>
+				<File Id="1028449394" Language="SFX">
+					<ShortName>PAS_VIR_PARQUET-003.wav</ShortName>
+					<Path>SFX\PAS_VIR_PARQUET-003_D3CFA9D8.wem</Path>
+				</File>
+				<File Id="1053780947" Language="SFX">
+					<ShortName>POSER FEUILLES-006.wav</ShortName>
+					<Path>SFX\POSER FEUILLES-006_E37C7245.wem</Path>
+				</File>
+				<File Id="1072999647" Language="SFX">
+					<ShortName>PAS_PARQUET-006.wav</ShortName>
+					<Path>SFX\PAS_PARQUET-006_E37C7245.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

@@ -1,0 +1,138 @@
+Event	ID	Name			Wwise Object Path	Notes
+	43194316	Play_RandomFloorRoom2			\Default Work Unit\Ambient\Play_RandomFloorRoom2	
+	43194319	Play_RandomFloorRoom1			\Default Work Unit\Ambient\Play_RandomFloorRoom1	
+	1086738306	Play_Horloge			\Default Work Unit\Ambient\Play_Horloge	
+	1562304622	Play_Ambient			\Default Work Unit\Ambient\Play_Ambient	
+	1778446475	Play_Armoire_Ouvrir			\Default Work Unit\Play_Armoire_Ouvrir	
+	2027969872	Play_TV			\Default Work Unit\Ambient\Play_TV	
+	2119672069	Play_Lampe			\Default Work Unit\Ambient\Play_Lampe	
+	2248092158	Player_Move			\Default Work Unit\Player_Move	
+	2702842750	Play_PrendreFeuille			\Default Work Unit\Props\Prendre\Play_PrendreFeuille	
+	2893389474	Stop_TV			\Default Work Unit\Ambient\Stop_TV	
+	3013956005	Play_Ventilateur			\Default Work Unit\Ambient\Play_Ventilateur	
+	3361170585	Player_Stop			\Default Work Unit\Player_Stop	
+	3535750338	Play_StoreFerme			\Default Work Unit\Play_StoreFerme	
+	3670131286	Play_StoreOuvre			\Default Work Unit\Play_StoreOuvre	
+	3817844813	Play_PoserFeuille			\Default Work Unit\Props\Poser\Play_PoserFeuille	
+	3827058668	StartMusic			\Default Work Unit\Ambient\StartMusic	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2654804740	Virage_Switch			\Default Work Unit\Virage_Switch	
+
+Switch	ID	Name	Switch Group			Notes
+	930712164	Off	Virage_Switch			
+	1651971902	On	Virage_Switch			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1082482811	Navigation			\Default Work Unit\Navigation	
+	2835351336	GroundType			\Default Work Unit\GroundType	
+	3374585465	InMenu			\Default Work Unit\InMenu	
+
+State	ID	Name	State Group			Notes
+	0	None	Navigation			
+	984691642	Ingame	Navigation			
+	2607556080	Menu	Navigation			
+	0	None	GroundType			
+	1391533176	Tapis	GroundType			
+	1791601991	Parquet	GroundType			
+	0	None	InMenu			
+	979470758	Yes	InMenu			
+	1668749452	No	InMenu			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	528114702	Yes	InMenu	\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Phrase_Cello\BATTERIE-001		
+	909706492	Yes	InMenu	\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Batt_Piano_Vibra\BATTERIE-001		
+	918050201	Yes	InMenu	\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Batt_Basse2\BATTERIE-001		
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1225552155	DistanceVentilateur			\Default Work Unit\DistanceVentilateur	
+	3898180431	Acceleration_Rot_RTPC			\Default Work Unit\Acceleration_Rot_RTPC	
+
+Trigger	ID	Name			Wwise Object Path	Notes
+	1181401788	Trigger_Stin_Store			\Default Work Unit\Trigger_Stin_Store	
+	2416262786	Trigger_Stin_Armoire			\Default Work Unit\Trigger_Stin_Armoire	
+
+Effect plug-ins	ID	Name	Type				Notes
+	589318455	EQ_BatterieCym	Wwise Parametric EQ			
+	2816736595	EQ_Feuilles	Wwise Parametric EQ			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	15145248	Piano_Vibra	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\VIBRA-002_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Batt_Piano_Vibra\Piano_Vibra		612468
+	16732554	PRENDRE FEUILLES-005	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE FEUILLES-005_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\PRENDRE\PRENDRE FEUILLES-005		29765
+	26001599	PAS_TAPIS-004	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_TAPIS-004_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisNormal\PAS_TAPIS-004		18518
+	31236994	PARQUET-005	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PARQUET-005_E37C7245.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\Random_Floor\PARQUET-005		36746
+	63054959	PAS_PARQUET-008	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_PARQUET-008_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetNormal\PAS_PARQUET-008		7108
+	69543352	TV_EMIT	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\TV_EMIT_592D8723.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\TV_Complex\TV_EMIT		762661
+	78367018	3M-DRUMS-A	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\3M-DRUMS-B_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Batt_Basse\3M-DRUMS-A		1246679
+	82006706	BATTERIE-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\8M-Drums-A_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Batt_Basse2\BATTERIE-001		1598659
+	82715971	2M-DRUMS-A	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\2M-DRUMS-B_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Intro_Batt\2M-DRUMS-A		900215
+	84516584	PAS_TAPIS-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_TAPIS-003_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisNormal\PAS_TAPIS-003		16121
+	87580081	VIBRA-005	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\VIBRA-005_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Phrase_Cello\VIBRA-005		637910
+	101036067	3M-DRUMS-A	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\3M-DRUMS-A_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Batt_Basse\3M-DRUMS-A		1256681
+	120859536	PAS_PARQUET-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_PARQUET-003_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetNormal\PAS_PARQUET-003		6170
+	122317180	BATTERIE-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\8M-DRUMS_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Batt_Piano_Vibra\BATTERIE-001		1578797
+	172074524	POSER FEUILLES-007	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER FEUILLES-007_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\POSER\POSER FEUILLES-007		19000
+	197736451	PAS_TAPIS-006	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_TAPIS-006_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisNormal\PAS_TAPIS-006		19839
+	206253310	PRENDRE FEUILLES-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE FEUILLES-002_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\PRENDRE\PRENDRE FEUILLES-002		30818
+	208655312	POSER FEUILLES-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER FEUILLES-002_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\POSER\POSER FEUILLES-002		18504
+	220853139	PRENDRE FEUILLES-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE FEUILLES-003_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\PRENDRE\PRENDRE FEUILLES-003		29530
+	223175520	PAS_TAPIS-007	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_TAPIS-007_CFAE6DCF.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisNormal\PAS_TAPIS-007		18727
+	232012727	ARMOIRE_OUVRIR	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\ARMOIRE_OUVRIR_362B864C.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Armoire\ARMOIRE_OUVRIR		88819
+	255926729	POSER FEUILLES-005	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER FEUILLES-005_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\POSER\POSER FEUILLES-005		28773
+	311511211	VENTILATEUR	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\VENTILATEUR_664BF079.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\VENTILATEUR	REPLACE	1666896
+	333321032	PAS_VIR_TAPIS-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_VIR_TAPIS-001_24CCD0BE.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisVirage\PAS_VIR_TAPIS-001		9145
+	333576624	PAS_PARQUET-007	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_PARQUET-007_44D00457.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetNormal\PAS_PARQUET-007		6311
+	358498210	PAS_PARQUET-005	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_PARQUET-005_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetNormal\PAS_PARQUET-005		6210
+	365159095	VIBRA-005	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\VIBRA-004_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Phrase_Cello\VIBRA-005		611001
+	396302910	PARQUET-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PARQUET-002_E37C7245.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\Random_Floor\PARQUET-002		40920
+	397175661	ATMOSPHERE	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\ATOMSPHERE_592D8723.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\Ambient\ATMOSPHERE		795929
+	406224302	Cello	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CELLO-005_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Phrase_Cello\Cello		179454
+	408457289	STORE OUVERT-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\STORE OUVERT-001_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Stores\StoreOuvre\STORE OUVERT-001		59924
+	410541730	PARQUET-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PARQUET-001_E37C7245.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\Random_Floor\PARQUET-001		10951
+	413286709	PAS_TAPIS-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_TAPIS-002_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisNormal\PAS_TAPIS-002		14927
+	442043567	PAS_PARQUET-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_PARQUET-002_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetNormal\PAS_PARQUET-002		7233
+	457266610	PRENDRE FEUILLES-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE FEUILLES-001_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\PRENDRE\PRENDRE FEUILLES-001		29389
+	476890880	CELLO-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CELLO-002_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Batt_Basse2\CELLO-002		947724
+	478430815	3M-DRUMS-A	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\8M-Drums-Calm_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Batt_Basse\3M-DRUMS-A		1090293
+	496174279	PAS_VIR_PARQUET-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_VIR_PARQUET-002_9E58EA70.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetVirage\PAS_VIR_PARQUET-002		7540
+	504107070	2M-DRUMS-A	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\2M-DRUMS-A_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Intro_Batt\2M-DRUMS-A		901475
+	526710311	Cello	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CELLO-006_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Phrase_Cello\Cello		198906
+	538196052	POSER FEUILLES-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER FEUILLES-003_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\POSER\POSER FEUILLES-003		23619
+	545437078	TV_STATIC	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\TV_STATIC_592D8723.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\TV_Complex\TV_STATIC		922780
+	567844903	STORE FERME-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\STORE FERME-002_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Stores\StoreFerme\STORE FERME-002		65121
+	616207912	PRENDRE FEUILLES-007	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE FEUILLES-007_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\PRENDRE\PRENDRE FEUILLES-007		32437
+	623712756	CymbLight	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CYMBALE-002_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\StingerStore\CymbLight		219588
+	630324738	POSER FEUILLES-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER FEUILLES-001_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\POSER\POSER FEUILLES-001		25633
+	662016114	PARQUET-004	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PARQUET-004_E37C7245.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\Random_Floor\PARQUET-004		41209
+	668488317	PAS_TAPIS-005	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_TAPIS-005_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisNormal\PAS_TAPIS-005		17156
+	671581795	PAS_VIR_TAPIS-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_VIR_TAPIS-003_39554315.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisVirage\PAS_VIR_TAPIS-003		14294
+	677159568	Piano_Vibra	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PIANO-002_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Batt_Piano_Vibra\Piano_Vibra		476484
+	678999355	PAS_VIR_TAPIS-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_VIR_TAPIS-002_9A75D1D9.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisVirage\PAS_VIR_TAPIS-002		14640
+	685759871	CymbLight	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CYMBALE-001_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\StingerArmoire\CymbLight		225562
+	699570814	STORE OUVERT-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\STORE OUVERT-002_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Stores\StoreOuvre\STORE OUVERT-002		82545
+	702351034	BATTERIE-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\BATTERIE-002_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Batt_Piano_Vibra\BATTERIE-001		451637
+	709501363	PAS_PARQUET-004	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_PARQUET-004_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetNormal\PAS_PARQUET-004		6280
+	754932003	PAS_TAPIS-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_TAPIS-001_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisNormal\PAS_TAPIS-001		13763
+	755229790	PRENDRE FEUILLES-004	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE FEUILLES-004_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\PRENDRE\PRENDRE FEUILLES-004		17653
+	758920501	PAS_VIR_PARQUET-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_VIR_PARQUET-001_65246965.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetVirage\PAS_VIR_PARQUET-001		6691
+	768076036	BATTERIE-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\BATTERIE-001_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Batt_Piano_Vibra\BATTERIE-001		448383
+	770375327	HORLOGE	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\HORLOGE_592D8723.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\Horloge\HORLOGE		41348
+	771304780	LAMPE	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\LAMPE_F6E1682A.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\LAMPE		1046770
+	784186395	BATTERIE-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\BREAK_BATTERIE_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Batt_Piano_Vibra\BATTERIE-001		584006
+	790485113	PRENDRE FEUILLES-006	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE FEUILLES-006_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\PRENDRE\PRENDRE FEUILLES-006		24567
+	818942271	STORE FERME-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\STORE FERME-001_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Stores\StoreFerme\STORE FERME-001		64747
+	823889252	AchromaticMenu	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\AchromaticMenu_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Menu\AchromaticMenu\AchromaticMenu		5385434
+	834928987	Piano_Vibra	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\VIBRA-003_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Batt_Piano_Vibra\Piano_Vibra		608883
+	846808034	PARQUET-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PARQUET-003_E37C7245.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\Random_Floor\PARQUET-003		22646
+	870200057	BATTERIE-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\8M-Drums-B_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Batt_Basse2\BATTERIE-001		1602767
+	901382114	POSER FEUILLES-004	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER FEUILLES-004_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\POSER\POSER FEUILLES-004		22609
+	955207873	PAS_PARQUET-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_PARQUET-001_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetNormal\PAS_PARQUET-001		7350
+	989282167	Piano_Vibra	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PIANO-001_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Batt_Piano_Vibra\Piano_Vibra		470315
+	994715476	BASSE	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CELLO-001_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Batt_Basse\BASSE		875704
+	1009252245	BATTERIE-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\BATTERIE-006_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Batt_Piano_Vibra\BATTERIE-001		447265
+	1010569367	Cello	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CELLO-003_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Batt_Piano_Vibra\Cello		1125437
+	1025221322	Cello	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\CELLO-004_592D8723.wem		\Interactive Music Hierarchy\MusicWorkUnit\MusicSwitch\Ingame\Phrase_Cello\Cello		194087
+	1028449394	PAS_VIR_PARQUET-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_VIR_PARQUET-003_D3CFA9D8.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetVirage\PAS_VIR_PARQUET-003		5844
+	1053780947	POSER FEUILLES-006	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER FEUILLES-006_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\POSER\POSER FEUILLES-006		17474
+	1072999647	PAS_PARQUET-006	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_PARQUET-006_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Parquet\ParquetNormal\PAS_PARQUET-006		6316
+

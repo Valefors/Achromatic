@@ -1,0 +1,16 @@
+Event	ID	Name			Wwise Object Path	Notes
+	326001232	Play_Prendre			\Default Work Unit\Play_Prendre	
+	1485308649	Play_Poser			\Default Work Unit\Play_Poser	
+	1562304622	Play_Ambient			\Default Work Unit\Play_Ambient	
+	3535750338	Play_StoreFerme			\Default Work Unit\Play_StoreFerme	
+	3670131286	Play_StoreOuvre			\Default Work Unit\Play_StoreOuvre	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	210629628	PRENDRE	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwise\.cache\Windows\SFX\PRENDRE_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\PRENDRE		74856
+	397175661	ATMOSPHERE	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwise\.cache\Windows\SFX\ATOMSPHERE_D79FB2B7.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\Ambient\ATMOSPHERE		3397312
+	408457289	STORE OUVERT-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwise\.cache\Windows\SFX\STORE OUVERT-001_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Stores\StoreOuvre\STORE OUVERT-001		177132
+	567844903	STORE FERME-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwise\.cache\Windows\SFX\STORE FERME-002_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Stores\StoreFerme\STORE FERME-002		181700
+	699570814	STORE OUVERT-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwise\.cache\Windows\SFX\STORE OUVERT-002_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Stores\StoreOuvre\STORE OUVERT-002		234232
+	818942271	STORE FERME-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwise\.cache\Windows\SFX\STORE FERME-001_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Stores\StoreFerme\STORE FERME-001		181756
+	1009810986	POSER	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwise\.cache\Windows\SFX\POSER_10C4C929.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\POSER		80196
+
