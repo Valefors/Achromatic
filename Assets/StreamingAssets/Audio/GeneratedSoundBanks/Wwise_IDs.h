@@ -28,6 +28,7 @@ namespace AK
         static const AkUniqueID PLAYER_MOVE = 2248092158U;
         static const AkUniqueID PLAYER_STOP = 3361170585U;
         static const AkUniqueID STARTMUSIC = 3827058668U;
+        static const AkUniqueID STOP_ALL = 452547817U;
         static const AkUniqueID STOP_TV = 2893389474U;
     } // namespace EVENTS
 

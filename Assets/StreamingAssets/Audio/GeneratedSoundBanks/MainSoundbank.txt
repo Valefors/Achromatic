@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	43194316	Play_RandomFloorRoom2			\Default Work Unit\Ambient\Play_RandomFloorRoom2	
 	43194319	Play_RandomFloorRoom1			\Default Work Unit\Ambient\Play_RandomFloorRoom1	
+	452547817	Stop_All			\Default Work Unit\Stop_All	
 	1086738306	Play_Horloge			\Default Work Unit\Ambient\Play_Horloge	
 	1562304622	Play_Ambient			\Default Work Unit\Ambient\Play_Ambient	
 	1778446475	Play_Armoire_Ouvrir			\Default Work Unit\Play_Armoire_Ouvrir	
