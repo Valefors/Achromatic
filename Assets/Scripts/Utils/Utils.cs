@@ -48,7 +48,7 @@ public static class Utils
     //Options Value
     public static float MOUSE_SENSIBILITY = 250;
     public static float BRIGHTNESS_LEVEL = 0;
-    public static Enums.ELanguage LANGUAGE = Enums.ELanguage.FRENCH;
+    public static Enums.ELanguage LANGUAGE = Enums.ELanguage.ENGLISH;
     public static int QUALITY_LEVEL = 2;
     public static bool FULLSCREEN = true;
 
