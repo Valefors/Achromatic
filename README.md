@@ -1,4 +1,4 @@
-<img href = "https://img.itch.zone/aW1nLzIxNTY3NTEucG5n/original/3%2F1fur.png"></img>
+![alt text](https://img.itch.zone/aW1nLzIxNTY3NTEucG5n/original/3%2F1fur.png)
 
 Achromatic
 
