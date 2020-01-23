@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	43194316	Play_RandomFloorRoom2			\Default Work Unit\Ambient\Play_RandomFloorRoom2	
 	43194319	Play_RandomFloorRoom1			\Default Work Unit\Ambient\Play_RandomFloorRoom1	
+	452547817	Stop_All			\Default Work Unit\Stop_All	
 	1086738306	Play_Horloge			\Default Work Unit\Ambient\Play_Horloge	
 	1562304622	Play_Ambient			\Default Work Unit\Ambient\Play_Ambient	
 	1778446475	Play_Armoire_Ouvrir			\Default Work Unit\Play_Armoire_Ouvrir	
@@ -77,7 +78,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	208655312	POSER FEUILLES-002	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER FEUILLES-002_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\POSER\POSER FEUILLES-002		18504
 	220853139	PRENDRE FEUILLES-003	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PRENDRE FEUILLES-003_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\PRENDRE\PRENDRE FEUILLES-003		29530
 	223175520	PAS_TAPIS-007	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_TAPIS-007_CFAE6DCF.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisNormal\PAS_TAPIS-007		18727
-	232012727	ARMOIRE_OUVRIR	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\ARMOIRE_OUVRIR_D066BE4D.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Armoire\ARMOIRE_OUVRIR		88819
+	232012727	ARMOIRE_OUVRIR	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\ARMOIRE_OUVRIR_362B864C.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Armoire\ARMOIRE_OUVRIR		88819
 	255926729	POSER FEUILLES-005	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\POSER FEUILLES-005_E37C7245.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\Objects\FEUILLE\POSER\POSER FEUILLES-005		28773
 	311511211	VENTILATEUR	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\VENTILATEUR_664BF079.wem		\Actor-Mixer Hierarchy\AmbientWorkUnit\VENTILATEUR	REPLACE	1666896
 	333321032	PAS_VIR_TAPIS-001	C:\Users\corentin.lavergne\Documents\ProjetsM1\Achromatic\AchromaticWwiseSecond\.cache\Windows\SFX\PAS_VIR_TAPIS-001_24CCD0BE.wem		\Actor-Mixer Hierarchy\SFXWorkUnit\FootstepTrig\Footsteps\Tapis\TapisVirage\PAS_VIR_TAPIS-001		9145

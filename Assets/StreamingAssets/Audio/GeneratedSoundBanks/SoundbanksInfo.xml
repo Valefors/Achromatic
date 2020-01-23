@@ -31,6 +31,7 @@
 				<Event Id="2248092158" Name="Player_Move" ObjectPath="\Events\Default Work Unit\Player_Move"/>
 				<Event Id="3361170585" Name="Player_Stop" ObjectPath="\Events\Default Work Unit\Player_Stop" MaxAttenuation="0.000000"/>
 				<Event Id="3827058668" Name="StartMusic" ObjectPath="\Events\Default Work Unit\Ambient\StartMusic"/>
+				<Event Id="452547817" Name="Stop_All" ObjectPath="\Events\Default Work Unit\Stop_All" MaxAttenuation="0.000000"/>
 				<Event Id="2893389474" Name="Stop_TV" ObjectPath="\Events\Default Work Unit\Ambient\Stop_TV" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -116,7 +117,7 @@
 				</File>
 				<File Id="232012727" Language="SFX">
 					<ShortName>ARMOIRE_OUVRIR.wav</ShortName>
-					<Path>SFX\ARMOIRE_OUVRIR_D066BE4D.wem</Path>
+					<Path>SFX\ARMOIRE_OUVRIR_362B864C.wem</Path>
 				</File>
 				<File Id="255926729" Language="SFX">
 					<ShortName>POSER FEUILLES-005.wav</ShortName>

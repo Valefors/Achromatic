@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Rewired;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -34,6 +35,18 @@ public class TutorialManager : MonoBehaviour
         _tutorialImage.gameObject.SetActive(false);
         Invoke("ShowMoveStep", 0.5f);
         Invoke("DisableOptionsImage", 15f);
+
+        if (Utils.LANGUAGE == Enums.ELanguage.FRENCH)
+        {
+            ReInput.players.GetPlayer(0).controllers.maps.SetMapsEnabled(false, 1);
+            ReInput.players.GetPlayer(0).controllers.maps.SetMapsEnabled(true, 0);
+        }
+
+        if (Utils.LANGUAGE == Enums.ELanguage.ENGLISH)
+        {
+            ReInput.players.GetPlayer(0).controllers.maps.SetMapsEnabled(false, 0);
+            ReInput.players.GetPlayer(0).controllers.maps.SetMapsEnabled(true, 1);
+        }
     }
 
     void ShowMoveStep()

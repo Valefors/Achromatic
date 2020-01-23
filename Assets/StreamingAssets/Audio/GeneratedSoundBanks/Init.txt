@@ -52,6 +52,7 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 
 Effect plug-ins	ID	Name	Type				Notes
 	44452220	Wwise_RoomVerb_(Custom)	Wwise RoomVerb			
+	419691232	New_Wwise_Recorder	Wwise Recorder			
 	460852095	Auro_Headphone_(Custom)	Auro Headphone			
 	674224535	Wwise_Meter_(Custom)	Wwise Meter			
 
